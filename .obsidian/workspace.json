@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Content/怪物设计.md",
+                "file": "Content/技能设计.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "怪物设计"
+              "title": "技能设计"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Content/怪物设计.md",
+                "file": "目录.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "怪物设计 的大纲"
+              "title": "目录 的大纲"
             }
           },
           {
@@ -179,12 +179,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "02cf3b4dedfddb7c",
+  "active": "9e2d9a07dfa95940",
   "lastOpenFiles": [
-    "目录.md",
-    "Content/怪物设计.md",
-    "Content/地图设计.md",
+    "未命名.canvas",
     "Content/技能设计.md",
+    "目录.md",
+    "Content/物品设计.md",
+    "Content/地图设计.md",
+    "Content/怪物设计.md",
     "Content",
     "欢迎.md"
   ]
