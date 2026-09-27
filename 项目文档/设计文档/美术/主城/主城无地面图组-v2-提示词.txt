@@ -1,0 +1,25 @@
+主城无地面图组 v2
+制作方式：内置 imagegen
+日期：2026-09-26
+
+【三视图 v2：参考旧三视图与概念图】
+Use case: precise-object-edit.
+Asset type: fantasy RTS main-base building three-view model sheet, revised v2.
+Input image 1 is the EDIT TARGET: existing FRONT / RIGHT / REAR three-view sheet. Input image 2 is supporting architectural identity reference only.
+Primary request: Edit the existing sheet to REMOVE ALL GROUND AND ENVIRONMENT DRESSING, while preserving the same building design and three elevations. Return one wide landscape sheet, three complete unclipped orthographic elevations side by side, FRONT, RIGHT, REAR, same scale and bottom alignment. Keep existing small labels FRONT RIGHT REAR.
+Preserve the pale stone walls, structural buttresses and foundation courses, blue-gray slate roofs, timber beams, central lookout and red flag, doorway, attached entrance steps, integrated workshop, attached crane and its suspended load, attached lean-to. Preserve relative positions, proportions, colors, facade detail, and hand-painted fantasy RTS rendering. No redesign.
+Remove every patch of earth, soil, grass, bushes, weeds, loose rocks, external cobblestones/paving, road, scattered barrels/crates, terrain slice or display plinth. Keep stairs and structural foundation only where physically part of building. Do not replace removed ground with a stone slab or base. No vegetation at the wall foot, no ground strip under the three views. Ground baseline means alignment only, never a drawn floor.
+Background must be clean uniform very light neutral gray, immediately outside each architectural silhouette, including all gaps. No gradient scenery, no cast shadows on a ground plane. Soft even lighting on building itself, crisp isolated subject boundaries.
+Only the three building elevations and labels, no people, landscape, UI, dimensions, logos or watermark.
+
+【俯视图初次修订：参考旧俯视图与概念图】
+Use case: precise-object-edit.
+Asset type: fantasy RTS main-base strict orthographic top view, revised v2.
+Input image 1 is the EDIT TARGET: existing overhead building image. Input image 2 is supporting identity reference only.
+Primary request: Remove ALL surrounding earth, grass, foliage, scattered rocks, loose barrels/crates, cobblestone road, paved forecourt and environment dressing from the existing overhead image. Preserve the SAME building and genuine strict 90-degree camera looking vertically down. Front entrance and attached stairs face bottom.
+Preserve exact roof plan, blue-gray slate, brown roof beams, pale stone structural buttresses, central square lookout roof with red flag, central front gable, existing dormers, attached left workshop, attached crane including its suspended load, attached front-right lean-to, and entrance stairs. Keep architecture proportions and positions; do not redesign or rotate. Preserve building structural foundation but no expanded footprint ground pad or external paving platform.
+Background must be clean uniform very light neutral gray, visible immediately outside the true building silhouette and in any gaps; no terrain, vegetation, earth patch, road, display plinth, base slab, horizon or ground shadow. Only building itself, completely visible with comfortable margin. Use same hand-painted stylized fantasy RTS materials and crisp shape readability.
+Strict vertical overhead orthographic projection, no three-quarter camera, no visible facade fronts, no perspective convergence. No people, other buildings, labels, UI, text, logos or watermark.
+
+【俯视图最终背景修订】
+Use case: precise-object-edit. Input image 1 is the edit target, a fantasy RTS main-base overhead building. Change ONLY the background: replace all black and brown blurred vignette, red glow outside the flag, and cast shadows with completely uniform very light neutral gray (#eeeeee), including openings outside the building silhouette. Keep the entire building pixel-faithful where possible: its roof shapes, blue-gray tiles, pale stone structural buttresses, timber beams, lookout, red flag, left attached workshop and crane with suspended crate, front doorway roof, attached stairs and right lean-to. Remove only loose crates outside the attached workshop that are not structural or suspended from crane. Do not add any earth, paving, grass, rocks, ground plane, platform, base slab, scenery, text or people. Keep same vertical overhead camera, orientation with front entrance downward, composition and proportions. No redesign. Building itself remains richly detailed and sharply defined. Flat plain light gray backdrop directly meets silhouette, no gradient, glow or ground shadow.

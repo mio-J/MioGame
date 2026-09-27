@@ -1,0 +1,13 @@
+主城概念图 v1
+生成方式：内置 imagegen
+用途：游戏主城造型概念；不代表最终游戏模型。
+
+Use case: stylized-concept
+Asset type: game main-base building concept art, original building design for a top-down survival RTS.
+Primary request: Design one starter main base / command hall for a fantasy survival strategy game. The player is a modern-knowledge commander occupying an ancestor's body in a magical world and slowly introducing technology. This is the essential defensible home base, not an entire city.
+Subject: A compact, stout fortified stone-and-timber command hall, broad heavy stone foundation, strong corner buttresses, one large readable steep slate roof, a slightly raised central lookout and simple cloth banner, reinforced wooden main door, modest narrow windows. A small integrated workshop annex and practical wooden hoist with pulley hint at early engineering. A subtle carved magical motif above the doorway represents the existing magical culture. Starting-tier architecture, repaired and inhabited, sturdy but not a giant advanced castle. All attachments form one unified game building.
+Style/medium: Polished stylized hand-painted 3D fantasy RTS concept art, chunky proportions and readable silhouettes in the spirit of Warcraft III's overhead visual language, original architecture. Beautiful painterly textures with broad clean shapes, not photorealistic.
+Composition/framing: Single complete building at center, elevated three-quarter overhead orthographic-style view at approximately 50 degrees looking down, entire footprint and roof visible, front doorway visible. Building fills 75 percent of a landscape 3:2 image. A small irregular patch of earth and stone paving beneath it with a little grass, subdued light neutral background, generous margin. Clear silhouette readable at game camera distance.
+Lighting/mood: Soft daylight, subtle warm light at doorway, welcoming stronghold under threat, controlled shadows.
+Materials/textures: Rough pale gray stone, weathered brown timber, desaturated blue-gray slate roof, restrained metal hardware, a small muted red banner.
+Constraints: One building only. No soldiers, characters, enemies, siege scene, surrounding settlement, modern machinery, firearms, giant gears, chimneys with huge smoke, ornate palace spires, magical energy beams, excessive tiny props, UI, health bars, labels, text, logos or watermarks. This is a standalone concept illustration, not a screenshot and not a production-ready model.

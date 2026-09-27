@@ -1,0 +1,23 @@
+主城补充视图 v1
+生成方式：内置 imagegen
+共同参考图：主城概念图-v1.png
+
+【正上方俯视图】
+Use case: stylized-concept
+Asset type: orthographic top-down building reference for a survival RTS game.
+Input image 1 is the approved main-base concept and exact visual identity reference.
+Primary request: Create one strict 90-degree TOP VIEW looking vertically down at the SAME complete building from the reference. Reconstruct the roof plan faithfully. This must be a genuine orthographic overhead view, NOT the reference's three-quarter view. No front or side facade should be visible except the horizontal tops of their projections.
+Preserve the chunky fortified stone-and-timber hall, the blue-gray slate roofs and their ridge layout, central square lookout roof, stone corner buttresses, the main front entrance at the bottom of the image with its projecting gable and stair landing, integrated workshop on the image-left / building's left as seen from the front, the wood hoist and hanging crate outside that left wing, the small lean-to at the front-right, same red flag and natural stone/timber colors. Preserve the same relative layout, proportions and additions rather than redesigning them. Resolve hidden roof surfaces conservatively. The side and rear not seen in the reference have no new towers or additions.
+Style: same polished stylized hand-painted 3D fantasy RTS concept art, clean large shapes and readable roof materials.
+Composition: one centered full building, front entrance points straight toward bottom, rear toward top; absolute vertical camera, orthographic projection, all roof edges parallel as appropriate, no perspective convergence. Entire footprint visible with margin, a narrow earth and paving patch matching reference, neutral warm gray background. Soft even daylight, restrained shadows.
+No UI, labels, health bars, characters, surrounding buildings, text or watermarks. This is a top-view design reference, not a scene or cinematic illustration.
+
+【三视图】
+Use case: stylized-concept
+Asset type: game building orthographic three-view turnaround sheet.
+Input image 1 is the approved main-base concept and exact visual identity reference.
+Primary request: Create a wide professional architectural game art reference sheet showing exactly THREE separate orthographic elevations of the SAME fortified stone-and-timber main base, side by side in this order: FRONT elevation on left, RIGHT-SIDE elevation in middle (viewed from the building's right), REAR elevation on right. No overhead or perspective view. All three buildings sit on one common horizontal ground baseline and share identical vertical scale. Front and rear widths match. Keep comfortable empty space between views. Use small neat uppercase labels beneath the views, exactly "FRONT", "RIGHT", "REAR"; no other text.
+Match reference identity: broad chunky pale stone foundation and buttresses, steep blue-gray slate roofs, central raised square lookout with red flag, central front gable and reinforced arched wooden front door with short stairs, tree-like carved emblem and red hanging banner above/front of entrance, integrated lower timber workshop and pulley hoist attached on the viewer-left in the front view, small lean-to in the front-right. Preserve their relative sizes and roof heights.
+Geometry consistency: workshop appears on the viewer-left in FRONT, viewer-right in REAR, and is largely occluded behind the hall in RIGHT; do not relocate the hoist to whichever side is convenient. The entrance and its front steps are FRONT only, not duplicated on rear. RIGHT shows the actual right wall and corresponding right lean-to, with front of building on the sheet's left side in this view. Rear details unseen in reference should be simple consistent stone and timber wall construction with modest windows, no new entrance, wings, towers, machines or embellishment. Red banner/emblem belong on front only. Keep lookout and roof ridge heights identical across all three views.
+Style: clean polished hand-painted fantasy RTS game model-sheet rendering, matching reference materials and chunky proportions, crisp silhouette, soft even neutral lighting, warm light gray plain background, minimal ground shadow. Straight orthographic elevations from horizontal camera; no view from above, no perspective convergence, no isometric angles, no visible roof top planes beyond what is natural in horizontal elevations.
+Landscape wide sheet, three complete unclipped views, nothing overlaps. No people, landscape, UI, measurement arrows, numeric dimensions, logos or watermark.
