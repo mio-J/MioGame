@@ -2,52 +2,108 @@
   {
     "name": "箭塔",
     "doc": "建筑/箭塔.md",
-    "prompt": "Use case: stylized-concept. Create a polished game concept MODEL SHEET for 异星开拓史. Reference image is STYLE REFERENCE ONLY, not subject to reproduce. Closely match its painterly semi-realistic chunky fantasy RTS asset rendering, readable large shapes, hand-painted wood grain and restrained bevels, muted slate blue, warm oak brown, pale limestone, sparse dark red cloth, soft upper-left lighting. Clean uniform light warm gray background, absolutely NO ground, terrain, grass, paving, diorama plinth, scattered props, people for scale, UI, watermarks. Keep only subject and attached structures. A coherent designed object identical across all views, clear generous spacing. Landscape model sheet: upper left large elevated 3/4 concept view, upper right directly overhead TOP view with entrance towards bottom, lower row FRONT, RIGHT, REAR orthographic elevations at same scale and baseline. Label views only in small neat English. No extra text. These are the same building, not variants.  Subject: A basic small timber archer tower, footprint about 3x3 m, four stout wooden uprights with cross braces, minimal stone footings, elevated enclosed waist-high timber parapet with archery openings, small slate-blue pyramidal roof, compact dark-red pennant, attached entry ladder. Basic bow-and-arrow defense only; NO mounted crossbow, ballista, cannon, guns, big beacon or fortress masonry. No visible people. Distinct from thin beacon lookout tower.",
-    "image": "箭塔-设定图-v1.png",
-    "status": "已保存并检查"
+    "prompt": "Use case: precise-object-edit. Asset: 箭塔 for fantasy RTS 异星开拓史. Preserve the EXACT existing design in the supplied reference: silhouette, proportions, material colors and distinctive features. This is a format conversion, not a new design. Subject constraints: A basic small timber archer tower, footprint about 3x3 m, four stout wooden uprights with cross braces, minimal stone footings, elevated enclosed waist-high timber parapet with archery openings, small slate-blue pyramidal roof, compact dark-red pennant, attached entry ladder. Basic bow-and-arrow defense only; NO mounted crossbow, ballista, cannon, guns, big beacon or fortress masonry. No visible people. Distinct from thin beacon lookout tower.\nSame hand-painted semi-realistic fantasy RTS rendering, clear large forms, subtle brushwork, warm wood, slate-blue cloth/roofs, muted red accents and pale stone as in reference. Clean uniform warm light-gray background, no scenery, people for scale, ground patch, platform, terrain, extra objects, UI or watermark. Keep whole asset and all tips inside frame with comfortable margins.\nOutput ONE standalone elevated three-quarter building CONCEPT image, same angle and design as the concept panel in the original sheet. Square composition, centered large subject, no labels, inset, second view or other buildings. Only attached structural foundations and steps, no terrain. Preserve entrance and roof orientation.\n",
+    "image": "箭塔-概念图-v3.png",
+    "status": "已保存并检查",
+    "legacy_image": "箭塔-设定图-v1.png",
+    "images": {
+      "concept": "箭塔-概念图-v3.png",
+      "turnaround": "箭塔-三视图-v3.png"
+    },
+    "prompt_file": "箭塔-概念图-v3-提示词.txt",
+    "turnaround_prompt_file": "箭塔-三视图-v3-提示词.txt",
+    "updated_at": "2026-09-29"
   },
   {
     "name": "哨塔",
     "doc": "建筑/哨塔.md",
-    "prompt": "Use case: stylized-concept. Create a polished game concept MODEL SHEET for 异星开拓史. Reference image is STYLE REFERENCE ONLY, not subject to reproduce. Closely match its painterly semi-realistic chunky fantasy RTS asset rendering, readable large shapes, hand-painted wood grain and restrained bevels, muted slate blue, warm oak brown, pale limestone, sparse dark red cloth, soft upper-left lighting. Clean uniform light warm gray background, absolutely NO ground, terrain, grass, paving, diorama plinth, scattered props, people for scale, UI, watermarks. Keep only subject and attached structures. A coherent designed object identical across all views, clear generous spacing. Landscape model sheet: upper left large elevated 3/4 concept view, upper right directly overhead TOP view with entrance towards bottom, lower row FRONT, RIGHT, REAR orthographic elevations at same scale and baseline. Label views only in small neat English. No extra text. These are the same building, not variants.  Subject: A slender basic non-attacking wooden lookout tower, footprint about 2x2 m, four oak posts and X braces, open lookout platform with simple railing and attached ladder. A large enclosed amber oil lantern crowns the tower on a central vertical support above the platform, protected by a small slate-blue cap. Light is its primary visual identity; no weapons, no arrow slits, no radar or electric searchlight. Minimal stone footings and small dark-red cloth tie.",
-    "image": "哨塔-设定图-v1.png",
-    "status": "已保存并检查"
+    "prompt": "Use case: precise-object-edit. Asset: 哨塔 for fantasy RTS 异星开拓史. Preserve the EXACT existing design in the supplied reference: silhouette, proportions, material colors and distinctive features. This is a format conversion, not a new design. Subject constraints: A slender basic non-attacking wooden lookout tower, footprint about 2x2 m, four oak posts and X braces, open lookout platform with simple railing and attached ladder. A large enclosed amber oil lantern crowns the tower on a central vertical support above the platform, protected by a small slate-blue cap. Light is its primary visual identity; no weapons, no arrow slits, no radar or electric searchlight. Minimal stone footings and small dark-red cloth tie.\nSame hand-painted semi-realistic fantasy RTS rendering, clear large forms, subtle brushwork, warm wood, slate-blue cloth/roofs, muted red accents and pale stone as in reference. Clean uniform warm light-gray background, no scenery, people for scale, ground patch, platform, terrain, extra objects, UI or watermark. Keep whole asset and all tips inside frame with comfortable margins.\nOutput ONE standalone elevated three-quarter building CONCEPT image, same angle and design as the concept panel in the original sheet. Square composition, centered large subject, no labels, inset, second view or other buildings. Only attached structural foundations and steps, no terrain. Preserve entrance and roof orientation.\n",
+    "image": "哨塔-概念图-v3.png",
+    "status": "已保存并检查",
+    "legacy_image": "哨塔-设定图-v1.png",
+    "images": {
+      "concept": "哨塔-概念图-v3.png",
+      "turnaround": "哨塔-三视图-v3.png"
+    },
+    "prompt_file": "哨塔-概念图-v3-提示词.txt",
+    "turnaround_prompt_file": "哨塔-三视图-v3-提示词.txt",
+    "updated_at": "2026-09-29"
   },
   {
     "name": "兵营",
     "doc": "建筑/兵营.md",
-    "prompt": "Use case: stylized-concept. Create a polished game concept MODEL SHEET for 异星开拓史. Reference image is STYLE REFERENCE ONLY, not subject to reproduce. Closely match its painterly semi-realistic chunky fantasy RTS asset rendering, readable large shapes, hand-painted wood grain and restrained bevels, muted slate blue, warm oak brown, pale limestone, sparse dark red cloth, soft upper-left lighting. Clean uniform light warm gray background, absolutely NO ground, terrain, grass, paving, diorama plinth, scattered props, people for scale, UI, watermarks. Keep only subject and attached structures. A coherent designed object identical across all views, clear generous spacing. Landscape model sheet: upper left large elevated 3/4 concept view, upper right directly overhead TOP view with entrance towards bottom, lower row FRONT, RIGHT, REAR orthographic elevations at same scale and baseline. Label views only in small neat English. No extra text. These are the same building, not variants.  Subject: A fragile rear-base militia barracks, approximately 8x8 m in game footprint: low broad one-story timber longhouse, slate-blue pitched roof, thin pale plaster infill, only modest stone footing, wide double wooden entrance, small dark-red banner. A fixed spear-and-round-wood-shield rack attached under entrance eave communicates recruitment. NO fortress towers, battlements, thick stone defenses, training yard, ground, detached props or people.",
-    "image": "兵营-设定图-v1.png",
-    "status": "已保存并检查"
+    "prompt": "Use case: precise-object-edit. Asset: 兵营 for fantasy RTS 异星开拓史. Preserve the EXACT existing design in the supplied reference: silhouette, proportions, material colors and distinctive features. This is a format conversion, not a new design. Subject constraints: A fragile rear-base militia barracks, approximately 8x8 m in game footprint: low broad one-story timber longhouse, slate-blue pitched roof, thin pale plaster infill, only modest stone footing, wide double wooden entrance, small dark-red banner. A fixed spear-and-round-wood-shield rack attached under entrance eave communicates recruitment. NO fortress towers, battlements, thick stone defenses, training yard, ground, detached props or people.\nSame hand-painted semi-realistic fantasy RTS rendering, clear large forms, subtle brushwork, warm wood, slate-blue cloth/roofs, muted red accents and pale stone as in reference. Clean uniform warm light-gray background, no scenery, people for scale, ground patch, platform, terrain, extra objects, UI or watermark. Keep whole asset and all tips inside frame with comfortable margins.\nOutput ONE standalone elevated three-quarter building CONCEPT image, same angle and design as the concept panel in the original sheet. Square composition, centered large subject, no labels, inset, second view or other buildings. Only attached structural foundations and steps, no terrain. Preserve entrance and roof orientation.\n",
+    "image": "兵营-概念图-v3.png",
+    "status": "已保存并检查",
+    "legacy_image": "兵营-设定图-v1.png",
+    "images": {
+      "concept": "兵营-概念图-v3.png",
+      "turnaround": "兵营-三视图-v3.png"
+    },
+    "prompt_file": "兵营-概念图-v3-提示词.txt",
+    "turnaround_prompt_file": "兵营-三视图-v3-提示词.txt",
+    "updated_at": "2026-09-29"
   },
   {
     "name": "木墙",
     "doc": "建筑/城墙.md",
-    "prompt": "Use case: stylized-concept. Create a polished game concept MODEL SHEET for 异星开拓史. Reference image is STYLE REFERENCE ONLY, not subject to reproduce. Closely match its painterly semi-realistic chunky fantasy RTS asset rendering, readable large shapes, hand-painted wood grain and restrained bevels, muted slate blue, warm oak brown, pale limestone, sparse dark red cloth, soft upper-left lighting. Clean uniform light warm gray background, absolutely NO ground, terrain, grass, paving, diorama plinth, scattered props, people for scale, UI, watermarks. Keep only subject and attached structures. A coherent designed object identical across all views, clear generous spacing. Landscape model sheet: upper left large elevated 3/4 concept view, upper right directly overhead TOP view with entrance towards bottom, lower row FRONT, RIGHT, REAR orthographic elevations at same scale and baseline. Label views only in small neat English. No extra text. These are the same building, not variants.  Subject: One modular basic wooden palisade wall segment 4 m long and 1 m thick, a row of chunky sharpened upright logs, two horizontal binding beams on inward face, compact integrated diagonal timber braces within thickness, dark iron fasteners. No stone wall, roof, walkway, guard post, people or flags. Front is enemy-facing smooth log face, rear reveals reinforcing beams. All five views depict identical single straight segment.",
-    "image": "木墙-设定图-v1.png",
-    "status": "已保存并检查"
+    "prompt": "Use case: precise-object-edit. Asset: 木墙 for fantasy RTS 异星开拓史. Preserve the EXACT existing design in the supplied reference: silhouette, proportions, material colors and distinctive features. This is a format conversion, not a new design. Subject constraints: One modular basic wooden palisade wall segment 4 m long and 1 m thick, a row of chunky sharpened upright logs, two horizontal binding beams on inward face, compact integrated diagonal timber braces within thickness, dark iron fasteners. No stone wall, roof, walkway, guard post, people or flags. Front is enemy-facing smooth log face, rear reveals reinforcing beams. All five views depict identical single straight segment.\nSame hand-painted semi-realistic fantasy RTS rendering, clear large forms, subtle brushwork, warm wood, slate-blue cloth/roofs, muted red accents and pale stone as in reference. Clean uniform warm light-gray background, no scenery, people for scale, ground patch, platform, terrain, extra objects, UI or watermark. Keep whole asset and all tips inside frame with comfortable margins.\nOutput ONE standalone elevated three-quarter building CONCEPT image, same angle and design as the concept panel in the original sheet. Square composition, centered large subject, no labels, inset, second view or other buildings. Only attached structural foundations and steps, no terrain. Preserve entrance and roof orientation.\n",
+    "image": "木墙-概念图-v3.png",
+    "status": "已保存并检查",
+    "legacy_image": "木墙-设定图-v1.png",
+    "images": {
+      "concept": "木墙-概念图-v3.png",
+      "turnaround": "木墙-三视图-v3.png"
+    },
+    "prompt_file": "木墙-概念图-v3-提示词.txt",
+    "turnaround_prompt_file": "木墙-三视图-v3-提示词.txt",
+    "updated_at": "2026-09-29"
   },
   {
     "name": "木城门",
     "doc": "建筑/城墙.md",
-    "prompt": "Use case: stylized-concept. Create a polished game concept MODEL SHEET for 异星开拓史. Reference image is STYLE REFERENCE ONLY, not subject to reproduce. Closely match its painterly semi-realistic chunky fantasy RTS asset rendering, readable large shapes, hand-painted wood grain and restrained bevels, muted slate blue, warm oak brown, pale limestone, sparse dark red cloth, soft upper-left lighting. Clean uniform light warm gray background, absolutely NO ground, terrain, grass, paving, diorama plinth, scattered props, people for scale, UI, watermarks. Keep only subject and attached structures. A coherent designed object identical across all views, clear generous spacing. Landscape model sheet: upper left large elevated 3/4 concept view, upper right directly overhead TOP view with entrance towards bottom, lower row FRONT, RIGHT, REAR orthographic elevations at same scale and baseline. Label views only in small neat English. No extra text. These are the same building, not variants.  Subject: A basic wooden palisade gate replacing a 4m-long 1m-thick wall segment. Two stout squared oak gateposts and a plain timber lintel, two closed wooden door leaves with iron strap hinges and diagonal back braces, spike tips matching basic log palisade. No roof, stone fortifications, tower, machinery, weapons, figures. Same CLOSED gate in all five views, recognizable seam and hinges; design small simple settlement gate.",
-    "image": "木城门-设定图-v1.png",
-    "status": "已保存并检查"
+    "prompt": "Use case: precise-object-edit. Asset: 木城门 for fantasy RTS 异星开拓史. Preserve the EXACT existing design in the supplied reference: silhouette, proportions, material colors and distinctive features. This is a format conversion, not a new design. Subject constraints: A basic wooden palisade gate replacing a 4m-long 1m-thick wall segment. Two stout squared oak gateposts and a plain timber lintel, two closed wooden door leaves with iron strap hinges and diagonal back braces, spike tips matching basic log palisade. No roof, stone fortifications, tower, machinery, weapons, figures. Same CLOSED gate in all five views, recognizable seam and hinges; design small simple settlement gate.\nSame hand-painted semi-realistic fantasy RTS rendering, clear large forms, subtle brushwork, warm wood, slate-blue cloth/roofs, muted red accents and pale stone as in reference. Clean uniform warm light-gray background, no scenery, people for scale, ground patch, platform, terrain, extra objects, UI or watermark. Keep whole asset and all tips inside frame with comfortable margins.\nOutput ONE standalone elevated three-quarter building CONCEPT image, same angle and design as the concept panel in the original sheet. Square composition, centered large subject, no labels, inset, second view or other buildings. Only attached structural foundations and steps, no terrain. Preserve entrance and roof orientation.\n",
+    "image": "木城门-概念图-v3.png",
+    "status": "已保存并检查",
+    "legacy_image": "木城门-设定图-v1.png",
+    "images": {
+      "concept": "木城门-概念图-v3.png",
+      "turnaround": "木城门-三视图-v3.png"
+    },
+    "prompt_file": "木城门-概念图-v3-提示词.txt",
+    "turnaround_prompt_file": "木城门-三视图-v3-提示词.txt",
+    "updated_at": "2026-09-29"
   },
   {
     "name": "民居木屋",
     "doc": "建筑/民居.md",
-    "prompt": "Use case: stylized-concept. Create a polished game concept MODEL SHEET for 异星开拓史. Reference image is STYLE REFERENCE ONLY, not subject to reproduce. Closely match its painterly semi-realistic chunky fantasy RTS asset rendering, readable large shapes, hand-painted wood grain and restrained bevels, muted slate blue, warm oak brown, pale limestone, sparse dark red cloth, soft upper-left lighting. Clean uniform light warm gray background, absolutely NO ground, terrain, grass, paving, diorama plinth, scattered props, people for scale, UI, watermarks. Keep only subject and attached structures. A coherent designed object identical across all views, clear generous spacing. Landscape model sheet: upper left large elevated 3/4 concept view, upper right directly overhead TOP view with entrance towards bottom, lower row FRONT, RIGHT, REAR orthographic elevations at same scale and baseline. Label views only in small neat English. No extra text. These are the same building, not variants.  Subject: Level 1 residence WOODEN HUT, compact about 4x4m footprint: humble one-story warm timber plank cabin, rough wooden shingle pitched roof in desaturated brown, low stone footing, single front door, two small shuttered windows, tiny attached entrance step. Simple inhabited silhouette, no defenses, no flags, no luxurious decor. Palette belongs to reference town even with predominantly wooden construction.",
-    "image": "民居木屋-设定图-v2.png",
-    "status": "已保存并检查（v2 修正背面屋脊）",
-    "revision_prompt": "民居木屋-提示词-v2.txt"
+    "prompt": "Use case: precise-object-edit. Asset: 民居木屋 for fantasy RTS 异星开拓史. Preserve the EXACT existing design in the supplied reference: silhouette, proportions, material colors and distinctive features. This is a format conversion, not a new design. Subject constraints: Level 1 residence WOODEN HUT, compact about 4x4m footprint: humble one-story warm timber plank cabin, rough wooden shingle pitched roof in desaturated brown, low stone footing, single front door, two small shuttered windows, tiny attached entrance step. Simple inhabited silhouette, no defenses, no flags, no luxurious decor. Palette belongs to reference town even with predominantly wooden construction.\nSame hand-painted semi-realistic fantasy RTS rendering, clear large forms, subtle brushwork, warm wood, slate-blue cloth/roofs, muted red accents and pale stone as in reference. Clean uniform warm light-gray background, no scenery, people for scale, ground patch, platform, terrain, extra objects, UI or watermark. Keep whole asset and all tips inside frame with comfortable margins.\nOutput ONE standalone elevated three-quarter building CONCEPT image, same angle and design as the concept panel in the original sheet. Square composition, centered large subject, no labels, inset, second view or other buildings. Only attached structural foundations and steps, no terrain. Preserve entrance and roof orientation.\n",
+    "image": "民居木屋-概念图-v3.png",
+    "status": "已保存并检查",
+    "revision_prompt": "民居木屋-提示词-v2.txt",
+    "legacy_image": "民居木屋-设定图-v2.png",
+    "images": {
+      "concept": "民居木屋-概念图-v3.png",
+      "turnaround": "民居木屋-三视图-v3.png"
+    },
+    "prompt_file": "民居木屋-概念图-v3-提示词.txt",
+    "turnaround_prompt_file": "民居木屋-三视图-v3-提示词.txt",
+    "updated_at": "2026-09-29"
   },
   {
     "name": "民居瓦房",
     "doc": "建筑/民居.md",
-    "prompt": "Use case: stylized-concept. Create a polished game concept MODEL SHEET for 异星开拓史. Reference image is STYLE REFERENCE ONLY, not subject to reproduce. Closely match its painterly semi-realistic chunky fantasy RTS asset rendering, readable large shapes, hand-painted wood grain and restrained bevels, muted slate blue, warm oak brown, pale limestone, sparse dark red cloth, soft upper-left lighting. Clean uniform light warm gray background, absolutely NO ground, terrain, grass, paving, diorama plinth, scattered props, people for scale, UI, watermarks. Keep only subject and attached structures. A coherent designed object identical across all views, clear generous spacing. Landscape model sheet: upper left large elevated 3/4 concept view, upper right directly overhead TOP view with entrance towards bottom, lower row FRONT, RIGHT, REAR orthographic elevations at same scale and baseline. Label views only in small neat English. No extra text. These are the same building, not variants.  Subject: Level 2 residence TILE-ROOF HOUSE, compact same about 4x4m footprint as wooden hut: tidy modest one-story half-timber and pale plaster cottage, gray-blue overlapping tiled gable roof, compact pale stone chimney, centered front wood door and two modest windows, low stone footing and one attached step. More comfortable than wooden hut, substantially simpler and smaller than town hall. No battlements, towers, flags, yard.",
-    "image": "民居瓦房-设定图-v1.png",
-    "status": "已保存并检查"
+    "prompt": "Use case: precise-object-edit. Asset: 民居瓦房 for fantasy RTS 异星开拓史. Preserve the EXACT existing design in the supplied reference: silhouette, proportions, material colors and distinctive features. This is a format conversion, not a new design. Subject constraints: Level 2 residence TILE-ROOF HOUSE, compact same about 4x4m footprint as wooden hut: tidy modest one-story half-timber and pale plaster cottage, gray-blue overlapping tiled gable roof, compact pale stone chimney, centered front wood door and two modest windows, low stone footing and one attached step. More comfortable than wooden hut, substantially simpler and smaller than town hall. No battlements, towers, flags, yard.\nSame hand-painted semi-realistic fantasy RTS rendering, clear large forms, subtle brushwork, warm wood, slate-blue cloth/roofs, muted red accents and pale stone as in reference. Clean uniform warm light-gray background, no scenery, people for scale, ground patch, platform, terrain, extra objects, UI or watermark. Keep whole asset and all tips inside frame with comfortable margins.\nOutput ONE standalone elevated three-quarter building CONCEPT image, same angle and design as the concept panel in the original sheet. Square composition, centered large subject, no labels, inset, second view or other buildings. Only attached structural foundations and steps, no terrain. Preserve entrance and roof orientation.\n",
+    "image": "民居瓦房-概念图-v3.png",
+    "status": "已保存并检查",
+    "legacy_image": "民居瓦房-设定图-v1.png",
+    "images": {
+      "concept": "民居瓦房-概念图-v3.png",
+      "turnaround": "民居瓦房-三视图-v3.png"
+    },
+    "prompt_file": "民居瓦房-概念图-v3-提示词.txt",
+    "turnaround_prompt_file": "民居瓦房-三视图-v3-提示词.txt",
+    "updated_at": "2026-09-29"
   },
   {
     "name": "民居公寓",
@@ -81,11 +137,18 @@
   {
     "name": "古塞奇尤",
     "doc": "单位/古塞奇尤.md",
-    "prompt": "Use case: precise-object-edit / stylized-concept.\nEdit the provided 古塞奇尤 character concept sheet into a BLONDE FEMALE KNIGHT appearance, while retaining her role as a magic caster and acting lord. This explicitly replaces the brown-haired cloth-coated mage design.\nPreserve: the painterly semi-realistic fantasy RTS art style, clear broad forms and brushwork, restrained proportions, warm light gray plain background, landscape composition with large full-body CONCEPT on left followed by smaller FRONT, RIGHT and REAR full-body neutral views aligned at the same height. Same woman and identical armor, hair and equipment across every view. Maintain project slate blue, muted dark red, ivory and warm brown supporting colors.\nNew character design: young adult human woman with unmistakably GOLDEN BLONDE hair, a simple half-up arrangement with long golden hair flowing down her upper back; noble, brave, composed female knight presence, clear expressive face. Practical fitted silvery steel knight armor: closed smooth breastplate with a central ridge and anatomically neutral shape, articulated shoulder pauldrons, segmented elbow and forearm armor, leather belt, articulated plate tassets protecting hips over a short slate-blue split tabard, steel knee guards and greaves over sturdy boots. Lightly weathered metal, broad readable planes, restrained silver trim, small modest heraldic brooch, dark-red cape hanging to around the knees, arranged naturally so the silhouette remains readable in the rear view. Armor is elegant and substantial, not bulky, not a cloth mage robe; female proportions but no sculpted breast cups, exposed midriff or high heels. No helmet so blonde hair is clearly readable.\nMagic identity: in CONCEPT she confidently raises her right hand to cast pale blue-white branching lightning, short arcs beside fingers. Left hand relaxed. No sword, shield, staff, firearm or new weapon. On FRONT RIGHT REAR use neutral relaxed hands and NO lightning so armor and clothing can be inspected. No detached props, no spellbook at belt. Her armor is visual direction, not a change to gameplay stats.\nText: only small labels \"CONCEPT\", \"FRONT\", \"RIGHT\", \"REAR\".\nConstraints: full head and feet visible, consistent hair color and outfit in all views. Pure warm gray background, no scenery, no ground, no base, no UI, stats or watermark. No anime, no photorealism, no chibi, no oversized crown, no angel wings, no extra people. Strongly recognizable blonde knight silhouette who casts magic.",
-    "image": "古塞奇尤-设定图-v2.png",
-    "status": "v2 已保存并检查；金发女骑士造型待用户确认",
-    "reference_image": "古塞奇尤-设定图-v1.png",
-    "prompt_file": "古塞奇尤-提示词-v2.txt",
-    "updated_at": "2026-09-29"
+    "prompt": "Use case: precise-object-edit. Asset: standalone hero concept for 古塞奇尤 revision v5.\nInput image: v3 character sheet. Restore this exact v3 woman's face and facial proportions, rather than the later v4 face: retain the same v3 eyes, nose, lips, cheekbones, noble confident expression. Preserve her distinctive v3 heroic armor, silver/ivory with gold inlay, asymmetric large ray pauldron on her LEFT shoulder, high ivory/navy collar, crimson-lined ivory mantle and blue casting vambraces.\nRedesign ONLY the hairstyle: sophisticated simple golden-blonde straight LONG BOB, ends between jaw and shoulders but clear of the high collar, elegant side part and one broad swept fringe, hair tucked behind ears. Compact sculptural silhouette, 3-4 large contiguous hair masses, subtle bevelled ends, no individual flying wisps. No ponytail, braids, bun, curls, tiara, hair jewelry, or long loose mane. A confident knight commander haircut, refined and flattering, feasible as simple game hair geometry.\nOutput ONE full-body portrait 2:3 concept illustration. Commanding three-quarter standing pose, right hand casting restrained blue-white branching lightning, left arm relaxed, feet grounded. Hair remains compact. Preserve v3's female identity, heroic stance, proportions, layered knight outfit, sweeping mantle and gold lightning heraldry. Do not add swords, staffs, shields or new lore.\nWarm light gray plain background. Same painterly semi-realistic fantasy RTS style, broad readable forms and material brushwork. All head, boots, cloak tips and spell visible within generous margins. No other figure, turnaround, inset, lettering, scenery or UI. This is a single CONCEPT image only, not a mixed sheet.\n",
+    "image": "古塞奇尤-概念图-v5.png",
+    "status": "已保存并检查",
+    "reference_image": "古塞奇尤-设定图-v3.png",
+    "prompt_file": "古塞奇尤-概念图-提示词-v5.txt",
+    "updated_at": "2026-09-29",
+    "images": {
+      "concept": "古塞奇尤-概念图-v5.png",
+      "turnaround": "古塞奇尤-Apose三视图-v5.png"
+    },
+    "turnaround_prompt_file": "古塞奇尤-Apose三视图-提示词-v5.txt",
+    "turnaround_reference_image": "古塞奇尤-概念图-v4.png",
+    "legacy_image": "古塞奇尤-概念图-v4.png"
   }
 ]
