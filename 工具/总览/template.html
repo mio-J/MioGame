@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>设计总览</title>
+<style>
+:root {
+  --bg: #f6f4ef; --panel: #ffffff; --ink: #24211c; --muted: #7a7466; --line: #e4dfd3;
+  --accent: #8a5a2b; --ok: #3f7d4e; --prop: #b9822a; --tbd: #a5a09a; --mix: #6a7fb0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b1a17; --panel: #25231f; --ink: #ece8de; --muted: #9c9686; --line: #3a372f;
+    --accent: #d9a566; --ok: #6bb47d; --prop: #d9a04a; --tbd: #7a766f; --mix: #8fa6d8;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1b1a17; --panel: #25231f; --ink: #ece8de; --muted: #9c9686; --line: #3a372f;
+  --accent: #d9a566; --ok: #6bb47d; --prop: #d9a04a; --tbd: #7a766f; --mix: #8fa6d8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 14px/1.6 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 20px 16px 60px; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+.sub { color: var(--muted); margin-bottom: 16px; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+.tabs, .views { display: flex; gap: 4px; }
+button { font: inherit; color: inherit; background: var(--panel); border: 1px solid var(--line);
+  padding: 5px 14px; border-radius: 6px; cursor: pointer; }
+button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+input[type=search] { font: inherit; color: inherit; background: var(--panel); border: 1px solid var(--line);
+  padding: 5px 10px; border-radius: 6px; min-width: 200px; }
+.legend { display: flex; gap: 12px; color: var(--muted); font-size: 12px; margin-left: auto; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.confirmed { background: var(--ok); } .proposal { background: var(--prop); }
+.tbd { background: var(--tbd); } .mixed { background: var(--mix); } .unknown { background: var(--tbd); }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; min-width: 130px; }
+thead th { position: sticky; top: 0; background: var(--panel); z-index: 1; }
+th.row, td.row { position: sticky; left: 0; background: var(--panel); min-width: 96px; color: var(--muted); z-index: 2; }
+th .id { display: block; color: var(--muted); font-weight: 400; font-size: 12px; }
+td.empty { color: var(--tbd); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+.card h3 { margin: 0; font-size: 16px; }
+.card .meta { color: var(--muted); font-size: 12px; margin: 2px 0 8px; }
+.card .doc { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+.card dl { margin: 0; display: grid; grid-template-columns: 96px 1fr; gap: 3px 10px; }
+.card dt { color: var(--muted); } .card dd { margin: 0; }
+.note { color: var(--muted); font-size: 12px; }
+.empty-msg { padding: 30px; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>设计总览</h1>
+  <div class="sub">数据来自 项目文档/设计文档 中的属性表，文档改动后重新运行 generate_overview.py 即可更新。</div>
+  <div class="bar">
+    <div class="tabs" id="tabs"></div>
+    <div class="views" id="views"></div>
+    <input type="search" id="q" placeholder="搜索名称或属性内容">
+    <div class="legend">
+      <span><i class="dot confirmed"></i>已确定</span>
+      <span><i class="dot proposal"></i>设计提案</span>
+      <span><i class="dot mixed"></i>部分确定</span>
+      <span><i class="dot tbd"></i>待定</span>
+    </div>
+  </div>
+  <div id="out"></div>
+</div>
+<script>
+const DATA = __DATA__;
+const cats = DATA.cats.filter(c => DATA.entries.some(e => e.category === c));
+let cat = cats[0], view = "matrix", query = "";
+try { cat = localStorage.getItem("ov-cat") || cat; view = localStorage.getItem("ov-view") || view; } catch (e) {}
+if (!cats.includes(cat)) cat = cats[0];
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cell = r => r ? `<i class="dot ${r.status}"></i>${esc(r.value)}${r.note && r.status !== "confirmed" && r.status !== "proposal" && r.status !== "tbd" ? "" : ""}` : "";
+
+function matches(e) {
+  if (!query) return true;
+  const hay = [e.name, e.id, ...Object.values(e.canon).map(r => r.name + r.value), ...e.others.map(r => r.name + r.value)].join(" ");
+  return hay.toLowerCase().includes(query.toLowerCase());
+}
+
+function renderMatrix(list) {
+  const rows = DATA.canon.filter(k => list.some(e => e.canon[k]));
+  let h = '<div class="scroll"><table><thead><tr><th class="row"></th>';
+  for (const e of list) h += `<th>${esc(e.name)}<span class="id">${esc(e.id)} · ${esc(e.version)}</span></th>`;
+  h += "</tr></thead><tbody>";
+  for (const k of rows) {
+    h += `<tr><td class="row">${k}</td>`;
+    for (const e of list) {
+      const r = e.canon[k];
+      h += r ? `<td>${cell(r)}</td>` : '<td class="empty">—</td>';
+    }
+    h += "</tr>";
+  }
+  h += "</tbody></table></div>";
+  return h;
+}
+
+function renderCards(list) {
+  return '<div class="cards">' + list.map(e => {
+    const all = [];
+    for (const k of DATA.canon) if (e.canon[k]) all.push([e.canon[k].name, e.canon[k]]);
+    for (const r of e.others) all.push([r.name, r]);
+    return `<div class="card"><h3>${esc(e.name)}</h3>
+      <div class="meta">${esc(e.id)} · ${esc(e.version)} · ${esc(e.updated)}</div>
+      <div class="doc">${esc(e.docStatus)}</div>
+      <dl>${all.map(([n, r]) => `<dt>${esc(n)}</dt><dd><i class="dot ${r.status}"></i>${esc(r.value)}</dd>`).join("")}</dl>
+      <div class="doc" style="margin:8px 0 0">${esc(e.path)}</div></div>`;
+  }).join("") + "</div>";
+}
+
+function render() {
+  const tabs = document.getElementById("tabs");
+  tabs.innerHTML = cats.map(c => `<button class="${c === cat ? "on" : ""}" data-c="${c}">${c}（${DATA.entries.filter(e => e.category === c).length}）</button>`).join("");
+  const views = document.getElementById("views");
+  views.innerHTML = [["matrix", "对比表"], ["cards", "卡片"]].map(([v, n]) => `<button class="${v === view ? "on" : ""}" data-v="${v}">${n}</button>`).join("");
+  const list = DATA.entries.filter(e => e.category === cat && matches(e));
+  document.getElementById("out").innerHTML = list.length ? (view === "matrix" ? renderMatrix(list) : renderCards(list)) : '<div class="empty-msg">没有匹配的条目</div>';
+}
+
+document.addEventListener("click", ev => {
+  const b = ev.target.closest("button");
+  if (!b) return;
+  if (b.dataset.c) cat = b.dataset.c;
+  if (b.dataset.v) view = b.dataset.v;
+  try { localStorage.setItem("ov-cat", cat); localStorage.setItem("ov-view", view); } catch (e) {}
+  render();
+});
+document.getElementById("q").addEventListener("input", ev => { query = ev.target.value; render(); });
+render();
+</script>
+</body>
+</html>
