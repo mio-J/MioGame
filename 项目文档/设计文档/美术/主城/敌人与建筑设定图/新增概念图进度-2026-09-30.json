@@ -135,6 +135,86 @@
       "prompt": "火枪手-概念图-v1-提示词.txt",
       "status": "generated_saved",
       "doc": "单位/火枪手.md"
+    },
+    "牧师": {
+      "image": "牧师-概念图-v1.png",
+      "prompt": "牧师-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/牧师.md"
+    },
+    "圣堂刺客": {
+      "image": "圣堂刺客-概念图-v1.png",
+      "prompt": "圣堂刺客-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/圣堂刺客.md"
+    },
+    "圣骑士": {
+      "image": "圣骑士-概念图-v1.png",
+      "prompt": "圣骑士-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/圣骑士.md"
+    },
+    "骑士": {
+      "image": "骑士-概念图-v2.png",
+      "prompt": "骑士-概念图-v2-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/骑士.md",
+      "note": "按用户反馈强化厚重感：壮实战马、完整人马板甲、短而下垂的布料，去除长披风与飘旗。仍保留快速近战定位；骑马与骑枪为待确认的外观提案。"
+    },
+    "法师": {
+      "image": "法师-概念图-v1.png",
+      "prompt": "法师-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/法师.md"
+    },
+    "大主教": {
+      "image": "大主教-概念图-v1.png",
+      "prompt": "大主教-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/大主教.md"
+    },
+    "先知": {
+      "image": "先知-概念图-v1.png",
+      "prompt": "先知-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/先知.md"
+    },
+    "防御术士": {
+      "image": "防御术士-概念图-v1.png",
+      "prompt": "防御术士-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/防御术士.md"
+    },
+    "星术士": {
+      "image": "星术士-概念图-v1.png",
+      "prompt": "星术士-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/星术士.md"
+    },
+    "召唤魔像": {
+      "image": "召唤魔像-概念图-v1.png",
+      "prompt": "召唤魔像-概念图-v1-提示词.txt",
+      "status": "generated_saved",
+      "doc": "单位/星术士.md"
+    },
+    "绿皮弓手": {
+      "image": "绿皮弓手-概念图-v2.png",
+      "prompt": "绿皮弓手-概念图-v2-提示词.txt",
+      "status": "generated_saved",
+      "doc": "敌人/绿皮弓手.md",
+      "note": "按用户反馈减少英俊游侠感：驼背、凶陋面部、稀乱头发、破布与粗木弓，突出粗陋的后排杂兵形象。"
+    },
+    "破咒小子": {
+      "image": "破咒小子-概念图-v3.png",
+      "prompt": "破咒小子-概念图-v3-提示词.txt",
+      "status": "generated_saved",
+      "doc": "敌人/破咒小子.md",
+      "note": "按用户反馈由厚重铁甲改为裸肤符文与阴沉气质：收窄躯干、佝偻姿态、皮下暗紫符文与小型近战棍棒。魔法免疫与近战定位保留；原有生命值、护甲等数值仍是玩法提案，本次未调整。"
     }
-  }
+  },
+  "status": "concept_batch_complete",
+  "completed_count": 34,
+  "remaining_concepts": [],
+  "next_scope": "多视图后续补充；本批造型为美术提案待确认",
+  "verification": "34 个对象的 PNG、非空提示词、文档嵌图与索引链接检查通过"
 }
