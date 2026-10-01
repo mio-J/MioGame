@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-01",
+  "tool": "built-in imagegen",
+  "status": "18组全部保存并检查；美术参考",
+  "assets": [
+    {
+      "name": "凝霜塔",
+      "concept": "凝霜塔-概念图-v1.png",
+      "turnaround": "凝霜塔-三视图-v1.png",
+      "prompt_file": "凝霜塔-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "火炮塔",
+      "concept": "火炮塔-概念图-v1.png",
+      "turnaround": "火炮塔-三视图-v2.png",
+      "prompt_file": "火炮塔-三视图-v2-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": "v2修正炮尾投影"
+    },
+    {
+      "name": "雷环塔",
+      "concept": "雷环塔-概念图-v1.png",
+      "turnaround": "雷环塔-三视图-v1.png",
+      "prompt_file": "雷环塔-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "缚灵塔",
+      "concept": "缚灵塔-概念图-v1.png",
+      "turnaround": "缚灵塔-三视图-v1.png",
+      "prompt_file": "缚灵塔-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "裁决",
+      "concept": "裁决-概念图-v1.png",
+      "turnaround": "裁决-三视图-v1.png",
+      "prompt_file": "裁决-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "曙光",
+      "concept": "曙光-概念图-v3.png",
+      "turnaround": "曙光-三视图-v3.png",
+      "prompt_file": "曙光-三视图-v3-提示词.txt",
+      "status": "概念厚重方向已认可；三视图已生成并检查",
+      "notes": "正面以炮口轴线为准"
+    },
+    {
+      "name": "法师营地",
+      "concept": "法师营地-概念图-v1.png",
+      "turnaround": "法师营地-三视图-v1.png",
+      "prompt_file": "法师营地-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "研究院",
+      "concept": "研究院-概念图-v1.png",
+      "turnaround": "研究院-三视图-v1.png",
+      "prompt_file": "研究院-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "星象殿",
+      "concept": "星象殿-概念图-v2.png",
+      "turnaround": "星象殿-三视图-v2.png",
+      "prompt_file": "星象殿-三视图-v2-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": "v2移除植被"
+    },
+    {
+      "name": "圣堂",
+      "concept": "圣堂-概念图-v1.png",
+      "turnaround": "圣堂-三视图-v1.png",
+      "prompt_file": "圣堂-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "炼钢厂",
+      "concept": "炼钢厂-概念图-v1.png",
+      "turnaround": "炼钢厂-三视图-v1.png",
+      "prompt_file": "炼钢厂-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "采矿场",
+      "concept": "采矿场-概念图-v1.png",
+      "turnaround": "采矿场-三视图-v1.png",
+      "prompt_file": "采矿场-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "煤矿",
+      "concept": "煤矿-概念图-v1.png",
+      "turnaround": "煤矿-三视图-v1.png",
+      "prompt_file": "煤矿-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "油井",
+      "concept": "油井-概念图-v1.png",
+      "turnaround": "油井-三视图-v1.png",
+      "prompt_file": "油井-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "海上石油平台",
+      "concept": "海上石油平台-概念图-v1.png",
+      "turnaround": "海上石油平台-三视图-v3.png",
+      "prompt_file": "海上石油平台-三视图-v3-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": "v3修正侧面重复起重机"
+    },
+    {
+      "name": "太阳能发电站",
+      "concept": "太阳能发电站-概念图-v5.png",
+      "turnaround": "太阳能发电站-三视图-v5.png",
+      "prompt_file": "太阳能发电站-三视图-v5-提示词.txt",
+      "status": "v5 方向已获用户认可，暂定采用",
+      "notes": "v2修正面板背板"
+    },
+    {
+      "name": "电影院",
+      "concept": "电影院-概念图-v1.png",
+      "turnaround": "电影院-三视图-v1.png",
+      "prompt_file": "电影院-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    },
+    {
+      "name": "市政厅",
+      "concept": "市政厅-概念图-v1.png",
+      "turnaround": "市政厅-三视图-v1.png",
+      "prompt_file": "市政厅-三视图-v1-提示词.txt",
+      "status": "已保存并检查（美术参考）",
+      "notes": ""
+    }
+  ]
+}
