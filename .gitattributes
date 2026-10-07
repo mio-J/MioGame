@@ -1,0 +1,11 @@
+# 统一使用 LF 换行，避免 Windows/Mac 之间出现仅换行符不同的"修改"
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.pdf binary
+*.glb binary
+*.fbx binary
