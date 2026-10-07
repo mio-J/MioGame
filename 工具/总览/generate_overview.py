@@ -155,7 +155,7 @@ def build():
     """现读一遍文档，返回 (页面 HTML, 条目列表)。服务器每次刷新都会调用它。"""
     data = []
     for folder, category in CATEGORIES:
-        for path in sorted(glob.glob(os.path.join(DOCS, folder, "*.md"))):
+        for path in sorted(glob.glob(os.path.join(DOCS, folder, "**", "*.md"), recursive=True)):
             data.extend(parse_doc(path, category))
     data.sort(key=lambda e: (e["category"], e["id"], e["name"]))
 
