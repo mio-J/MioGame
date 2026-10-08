@@ -1,0 +1,143 @@
+{
+  "status": "unreviewed_counterfactual_not_playtest",
+  "limitations": [
+    "同一固定采购策略；不是优化后的玩家策略",
+    "商业消费池保持40；无税收增益；未定义候选规则的增益分配，不能写入正文",
+    "沿用原账本输入的英雄等级、清营奖励和未补齐生产前置；不证明可通关"
+  ],
+  "comparison": [
+    {
+      "route": "经济稳守",
+      "policy": "current",
+      "duration_seconds": 3400,
+      "final_gold": 768233.17,
+      "final_net_per_minute": 28144,
+      "main3_order_second": 2017,
+      "town_level_first_seconds": {
+        "1": 0,
+        "2": 197,
+        "3": 507,
+        "4": 1024,
+        "5": 1348,
+        "6": 2292
+      },
+      "unfinished_order_count": 0,
+      "gold_ever_negative": false
+    },
+    {
+      "route": "经济稳守",
+      "policy": "diminishing_candidate",
+      "duration_seconds": 3400,
+      "final_gold": 226688.17,
+      "final_net_per_minute": 10744,
+      "main3_order_second": 2017,
+      "town_level_first_seconds": {
+        "1": 0,
+        "2": 197,
+        "3": 507,
+        "4": 1024,
+        "5": 1348,
+        "6": 2292
+      },
+      "unfinished_order_count": 0,
+      "gold_ever_negative": false
+    },
+    {
+      "route": "科技扩矿",
+      "policy": "current",
+      "duration_seconds": 3400,
+      "final_gold": 738205.67,
+      "final_net_per_minute": 28044,
+      "main3_order_second": 1800,
+      "town_level_first_seconds": {
+        "1": 0,
+        "2": 197,
+        "3": 507,
+        "4": 915,
+        "5": 1328,
+        "6": 2291
+      },
+      "unfinished_order_count": 0,
+      "gold_ever_negative": false
+    },
+    {
+      "route": "科技扩矿",
+      "policy": "diminishing_candidate",
+      "duration_seconds": 3400,
+      "final_gold": 206103.67,
+      "final_net_per_minute": 10644,
+      "main3_order_second": 1800,
+      "town_level_first_seconds": {
+        "1": 0,
+        "2": 197,
+        "3": 507,
+        "4": 915,
+        "5": 1328,
+        "6": 2291
+      },
+      "unfinished_order_count": 0,
+      "gold_ever_negative": false
+    },
+    {
+      "route": "魔法远征",
+      "policy": "current",
+      "duration_seconds": 3400,
+      "final_gold": 1040443.93,
+      "final_net_per_minute": 34144,
+      "main3_order_second": 1800,
+      "town_level_first_seconds": {
+        "1": 0,
+        "2": 197,
+        "3": 525,
+        "4": 917,
+        "5": 1390,
+        "6": 2176
+      },
+      "unfinished_order_count": 0,
+      "gold_ever_negative": false
+    },
+    {
+      "route": "魔法远征",
+      "policy": "diminishing_candidate",
+      "duration_seconds": 3400,
+      "final_gold": 487544.43,
+      "final_net_per_minute": 16744,
+      "main3_order_second": 1800,
+      "town_level_first_seconds": {
+        "1": 0,
+        "2": 197,
+        "3": 525,
+        "4": 917,
+        "5": 1390,
+        "6": 2176
+      },
+      "unfinished_order_count": 0,
+      "gold_ever_negative": false
+    }
+  ],
+  "legal_camp_coordinate_example": {
+    "positions": [
+      [
+        350,
+        0
+      ],
+      [
+        450,
+        100
+      ],
+      [
+        550,
+        0
+      ],
+      [
+        450,
+        -100
+      ]
+    ],
+    "straight_route_m": 1235.24,
+    "assumed_path_factor": 1.25,
+    "walk_seconds_at_3mps": 514.68,
+    "combat_lower_bound_seconds": 72,
+    "navigation_verified": false
+  }
+}

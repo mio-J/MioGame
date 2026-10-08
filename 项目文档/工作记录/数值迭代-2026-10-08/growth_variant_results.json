@@ -1,0 +1,933 @@
+{
+  "status": "budget_and_clock_checks_passed_only",
+  "baseline": {
+    "events": [
+      {
+        "stage": 1,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 180,
+        "budget": 6,
+        "composition": {
+          "green": 6
+        }
+      },
+      {
+        "stage": 1,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 270,
+        "budget": 9,
+        "composition": {
+          "archer": 1,
+          "green": 7
+        }
+      },
+      {
+        "stage": 1,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 360,
+        "budget": 12,
+        "composition": {
+          "archer": 2,
+          "green": 8
+        }
+      },
+      {
+        "stage": 1,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 430,
+        "budget": 16,
+        "composition": {
+          "archer": 2,
+          "green": 12
+        }
+      },
+      {
+        "stage": 2,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 690,
+        "budget": 12,
+        "composition": {
+          "iron": 1,
+          "archer": 1,
+          "green": 6
+        }
+      },
+      {
+        "stage": 2,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 780,
+        "budget": 16,
+        "composition": {
+          "spore": 1,
+          "archer": 3,
+          "green": 7
+        }
+      },
+      {
+        "stage": 2,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 870,
+        "budget": 20,
+        "composition": {
+          "spore": 1,
+          "archer": 2,
+          "javelin": 1,
+          "climber": 1,
+          "green": 7
+        }
+      },
+      {
+        "stage": 2,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 940,
+        "budget": 36,
+        "composition": {
+          "iron": 2,
+          "spore": 2,
+          "javelin": 2,
+          "archer": 2,
+          "green": 12
+        }
+      },
+      {
+        "stage": 3,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 1210,
+        "budget": 20,
+        "composition": {
+          "immune": 1,
+          "boar": 1,
+          "archer": 2,
+          "green": 7
+        }
+      },
+      {
+        "stage": 3,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 1300,
+        "budget": 26,
+        "composition": {
+          "immune": 2,
+          "iron": 1,
+          "climber": 2,
+          "green": 8
+        }
+      },
+      {
+        "stage": 3,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 1390,
+        "budget": 32,
+        "composition": {
+          "immune": 2,
+          "iron": 2,
+          "javelin": 2,
+          "green": 10
+        }
+      },
+      {
+        "stage": 3,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 1460,
+        "budget": 64,
+        "composition": {
+          "giant": 1,
+          "immune": 2,
+          "iron": 2,
+          "archer": 1,
+          "spore": 1,
+          "javelin": 1,
+          "green": 22
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 1775,
+        "budget": 36,
+        "composition": {
+          "immune": 2,
+          "iron": 2,
+          "boar": 2,
+          "javelin": 2,
+          "green": 4
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 1865,
+        "budget": 44,
+        "composition": {
+          "mother": 1,
+          "iron": 3,
+          "archer": 3,
+          "climber": 2,
+          "green": 13
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 1955,
+        "budget": 52,
+        "composition": {
+          "immune": 3,
+          "boar": 3,
+          "spore": 3,
+          "javelin": 3,
+          "green": 7
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 2025,
+        "budget": 96,
+        "composition": {
+          "giant": 1,
+          "immune": 4,
+          "iron": 4,
+          "spore": 3,
+          "boar": 3,
+          "javelin": 4,
+          "archer": 3,
+          "green": 4
+        }
+      },
+      {
+        "stage": 5,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 2350,
+        "budget": 52,
+        "composition": {
+          "mother": 2,
+          "iron": 4,
+          "boar": 3,
+          "green": 7
+        }
+      },
+      {
+        "stage": 5,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 2440,
+        "budget": 64,
+        "composition": {
+          "immune": 4,
+          "boar": 4,
+          "javelin": 4,
+          "archer": 4,
+          "green": 8
+        }
+      },
+      {
+        "stage": 5,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 2530,
+        "budget": 76,
+        "composition": {
+          "mother": 3,
+          "iron": 5,
+          "climber": 4,
+          "javelin": 4,
+          "green": 11
+        }
+      },
+      {
+        "stage": 5,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 2600,
+        "budget": 132,
+        "composition": {
+          "giant": 2,
+          "immune": 4,
+          "iron": 4,
+          "mother": 2,
+          "boar": 4,
+          "javelin": 4,
+          "archer": 4,
+          "green": 10
+        }
+      },
+      {
+        "stage": 6,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 2935,
+        "budget": 72,
+        "composition": {
+          "immune": 4,
+          "iron": 4,
+          "mother": 2,
+          "boar": 4,
+          "green": 6
+        }
+      },
+      {
+        "stage": 6,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 3025,
+        "budget": 88,
+        "composition": {
+          "mother": 4,
+          "javelin": 6,
+          "archer": 6,
+          "climber": 6,
+          "green": 12
+        }
+      },
+      {
+        "stage": 6,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 3115,
+        "budget": 104,
+        "composition": {
+          "immune": 6,
+          "iron": 6,
+          "boar": 6,
+          "javelin": 6,
+          "green": 8
+        }
+      },
+      {
+        "stage": 6,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 3185,
+        "budget": 180,
+        "composition": {
+          "giant": 3,
+          "immune": 6,
+          "iron": 6,
+          "mother": 4,
+          "boar": 4,
+          "javelin": 4,
+          "archer": 4,
+          "green": 10
+        }
+      }
+    ],
+    "ordinary_spawn_log": [
+      {
+        "stage": 1,
+        "root_budget_each": 1,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          160,
+          220,
+          260,
+          320,
+          380,
+          420
+        ]
+      },
+      {
+        "stage": 2,
+        "root_budget_each": 2,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          670,
+          730,
+          770,
+          830,
+          890,
+          930
+        ]
+      },
+      {
+        "stage": 3,
+        "root_budget_each": 3,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          1190,
+          1250,
+          1290,
+          1350,
+          1410,
+          1450
+        ]
+      },
+      {
+        "stage": 4,
+        "root_budget_each": 4,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          1755,
+          1815,
+          1855,
+          1915,
+          1975,
+          2015
+        ]
+      },
+      {
+        "stage": 5,
+        "root_budget_each": 4,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          2330,
+          2390,
+          2430,
+          2490,
+          2550,
+          2590
+        ]
+      },
+      {
+        "stage": 6,
+        "root_budget_each": 4,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          2915,
+          2975,
+          3015,
+          3075,
+          3135,
+          3175
+        ]
+      }
+    ],
+    "predicted_end_seconds": 3395,
+    "checked_wave_count": 24
+  },
+  "growth": {
+    "events": [
+      {
+        "stage": 1,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 180,
+        "budget": 6,
+        "composition": {
+          "green": 6
+        }
+      },
+      {
+        "stage": 1,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 270,
+        "budget": 9,
+        "composition": {
+          "archer": 1,
+          "green": 7
+        }
+      },
+      {
+        "stage": 1,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 360,
+        "budget": 12,
+        "composition": {
+          "archer": 2,
+          "green": 8
+        }
+      },
+      {
+        "stage": 1,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 430,
+        "budget": 16,
+        "composition": {
+          "archer": 2,
+          "green": 12
+        }
+      },
+      {
+        "stage": 2,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 690,
+        "budget": 12,
+        "composition": {
+          "iron": 1,
+          "archer": 1,
+          "green": 6
+        }
+      },
+      {
+        "stage": 2,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 780,
+        "budget": 16,
+        "composition": {
+          "spore": 1,
+          "archer": 3,
+          "green": 7
+        }
+      },
+      {
+        "stage": 2,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 870,
+        "budget": 20,
+        "composition": {
+          "spore": 1,
+          "archer": 2,
+          "javelin": 1,
+          "climber": 1,
+          "green": 7
+        }
+      },
+      {
+        "stage": 2,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 940,
+        "budget": 36,
+        "composition": {
+          "iron": 2,
+          "spore": 2,
+          "javelin": 2,
+          "archer": 2,
+          "green": 12
+        }
+      },
+      {
+        "stage": 3,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 1210,
+        "budget": 20,
+        "composition": {
+          "immune": 1,
+          "boar": 1,
+          "archer": 2,
+          "green": 7
+        }
+      },
+      {
+        "stage": 3,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 1300,
+        "budget": 26,
+        "composition": {
+          "immune": 2,
+          "iron": 1,
+          "climber": 2,
+          "green": 8
+        }
+      },
+      {
+        "stage": 3,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 1390,
+        "budget": 32,
+        "composition": {
+          "immune": 2,
+          "iron": 2,
+          "javelin": 2,
+          "green": 10
+        }
+      },
+      {
+        "stage": 3,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 1460,
+        "budget": 64,
+        "composition": {
+          "giant": 1,
+          "immune": 2,
+          "iron": 2,
+          "archer": 1,
+          "spore": 1,
+          "javelin": 1,
+          "green": 22
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 1775,
+        "budget": 36,
+        "composition": {
+          "immune": 2,
+          "iron": 2,
+          "boar": 2,
+          "javelin": 2,
+          "green": 4
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 1865,
+        "budget": 44,
+        "composition": {
+          "mother": 1,
+          "iron": 3,
+          "archer": 3,
+          "climber": 2,
+          "green": 13
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 1955,
+        "budget": 52,
+        "composition": {
+          "immune": 3,
+          "boar": 3,
+          "spore": 3,
+          "javelin": 3,
+          "green": 7
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "small",
+        "local_second": 390,
+        "nominal_second": 2105,
+        "budget": 32,
+        "composition": {
+          "iron": 4,
+          "archer": 4,
+          "green": 8
+        }
+      },
+      {
+        "stage": 4,
+        "kind": "big",
+        "local_second": 550,
+        "nominal_second": 2265,
+        "budget": 96,
+        "composition": {
+          "giant": 1,
+          "immune": 4,
+          "iron": 4,
+          "spore": 3,
+          "boar": 3,
+          "javelin": 4,
+          "archer": 3,
+          "green": 4
+        }
+      },
+      {
+        "stage": 5,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 2590,
+        "budget": 52,
+        "composition": {
+          "mother": 2,
+          "iron": 4,
+          "boar": 3,
+          "green": 7
+        }
+      },
+      {
+        "stage": 5,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 2680,
+        "budget": 64,
+        "composition": {
+          "immune": 4,
+          "boar": 4,
+          "javelin": 4,
+          "archer": 4,
+          "green": 8
+        }
+      },
+      {
+        "stage": 5,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 2770,
+        "budget": 76,
+        "composition": {
+          "mother": 3,
+          "iron": 5,
+          "climber": 4,
+          "javelin": 4,
+          "green": 11
+        }
+      },
+      {
+        "stage": 5,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 2840,
+        "budget": 132,
+        "composition": {
+          "giant": 2,
+          "immune": 4,
+          "iron": 4,
+          "mother": 2,
+          "boar": 4,
+          "javelin": 4,
+          "archer": 4,
+          "green": 10
+        }
+      },
+      {
+        "stage": 6,
+        "kind": "small",
+        "local_second": 60,
+        "nominal_second": 3175,
+        "budget": 72,
+        "composition": {
+          "immune": 4,
+          "iron": 4,
+          "mother": 2,
+          "boar": 4,
+          "green": 6
+        }
+      },
+      {
+        "stage": 6,
+        "kind": "small",
+        "local_second": 150,
+        "nominal_second": 3265,
+        "budget": 88,
+        "composition": {
+          "mother": 4,
+          "javelin": 6,
+          "archer": 6,
+          "climber": 6,
+          "green": 12
+        }
+      },
+      {
+        "stage": 6,
+        "kind": "small",
+        "local_second": 240,
+        "nominal_second": 3355,
+        "budget": 104,
+        "composition": {
+          "immune": 6,
+          "iron": 6,
+          "boar": 6,
+          "javelin": 6,
+          "green": 8
+        }
+      },
+      {
+        "stage": 6,
+        "kind": "big",
+        "local_second": 310,
+        "nominal_second": 3425,
+        "budget": 180,
+        "composition": {
+          "giant": 3,
+          "immune": 6,
+          "iron": 6,
+          "mother": 4,
+          "boar": 4,
+          "javelin": 4,
+          "archer": 4,
+          "green": 10
+        }
+      }
+    ],
+    "ordinary_spawn_log": [
+      {
+        "stage": 1,
+        "root_budget_each": 1,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          160,
+          220,
+          260,
+          320,
+          380,
+          420
+        ]
+      },
+      {
+        "stage": 2,
+        "root_budget_each": 2,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          670,
+          730,
+          770,
+          830,
+          890,
+          930
+        ]
+      },
+      {
+        "stage": 3,
+        "root_budget_each": 3,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          1190,
+          1250,
+          1290,
+          1350,
+          1410,
+          1450
+        ]
+      },
+      {
+        "stage": 4,
+        "root_budget_each": 4,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300,
+          340,
+          380,
+          440,
+          480,
+          520
+        ],
+        "nominal_spawn_seconds": [
+          1755,
+          1815,
+          1855,
+          1915,
+          1975,
+          2015,
+          2055,
+          2095,
+          2155,
+          2195,
+          2235
+        ]
+      },
+      {
+        "stage": 5,
+        "root_budget_each": 4,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          2570,
+          2630,
+          2670,
+          2730,
+          2790,
+          2830
+        ]
+      },
+      {
+        "stage": 6,
+        "root_budget_each": 4,
+        "local_spawn_seconds": [
+          40,
+          100,
+          140,
+          200,
+          260,
+          300
+        ],
+        "nominal_spawn_seconds": [
+          3155,
+          3215,
+          3255,
+          3315,
+          3375,
+          3415
+        ]
+      }
+    ],
+    "predicted_end_seconds": 3635,
+    "checked_wave_count": 25
+  }
+}

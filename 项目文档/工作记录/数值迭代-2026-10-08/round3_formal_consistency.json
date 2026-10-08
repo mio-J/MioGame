@@ -1,0 +1,38 @@
+{
+  "production_upgrade_rows": [
+    {
+      "operation": "barracks2",
+      "gold": 3000,
+      "steel": 20,
+      "crystal": 0,
+      "energy_increment": 20,
+      "seconds": 40
+    },
+    {
+      "operation": "barracks3",
+      "gold": 6000,
+      "steel": 60,
+      "crystal": 0,
+      "energy_increment": 30,
+      "seconds": 60
+    },
+    {
+      "operation": "shrine2",
+      "gold": 4000,
+      "steel": 0,
+      "crystal": 20,
+      "energy_increment": 20,
+      "seconds": 40
+    },
+    {
+      "operation": "shrine3",
+      "gold": 7000,
+      "steel": 0,
+      "crystal": 40,
+      "energy_increment": 30,
+      "seconds": 60
+    }
+  ],
+  "mismatches": 0,
+  "notes": "Compared formal master table with independent numerical proposal catalog. Not engine implementation validation."
+}

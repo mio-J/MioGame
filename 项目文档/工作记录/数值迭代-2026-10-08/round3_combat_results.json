@@ -1,0 +1,4857 @@
+{
+  "method": "0.05s camp nearest-target geometry +0.1s one-dimensional lane. NOT engine or playtest. Hero camp chain every4attacks fixed phase; no cards, no random crystals, no enemy rewards assumed. Workers assumed alive and continuous repairs; soldiers omitted from home DPS.",
+  "camp_prototype": {
+    "building_hp": 300,
+    "building_armor": 0,
+    "building_attack": 0,
+    "building_xp": 0,
+    "guards": {
+      "green": 4,
+      "archer": 1
+    },
+    "coords": [
+      [
+        350,
+        0
+      ],
+      [
+        450,
+        100
+      ],
+      [
+        550,
+        0
+      ],
+      [
+        450,
+        -100
+      ]
+    ],
+    "path_multiplier": 1.25,
+    "min_city_distance": 350.0,
+    "min_pair_distance": 141.4213562373095
+  },
+  "routes": {
+    "four": {
+      "depart_sec": 657,
+      "return_sec": null,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 822.53,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.7,
+            "demolition_seconds": 6.0,
+            "seconds": 19.7,
+            "kills": [
+              {
+                "time": 6.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 9.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 13.65,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 290,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 720
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 25.0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 2,
+          "coordinate": [
+            450,
+            100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 881.46,
+          "reward_sec": 917.51,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 24.05,
+            "demolition_seconds": 12.0,
+            "seconds": 36.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 16.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 21.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 24.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 350,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 30.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 3,
+          "coordinate": [
+            550,
+            0
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 976.43,
+          "reward_sec": null,
+          "crystal": 0,
+          "combat": {
+            "failed": true,
+            "seconds": 2.35,
+            "kills": [],
+            "xp": 350
+          }
+        }
+      ],
+      "final_xp": 350,
+      "level": 4,
+      "dead_militia": 4,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": false
+    },
+    "three": {
+      "depart_sec": 657,
+      "return_sec": null,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 822.53,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.7,
+            "demolition_seconds": 6.0,
+            "seconds": 19.7,
+            "kills": [
+              {
+                "time": 6.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 9.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 13.65,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 290,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 720
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 25.0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 2,
+          "coordinate": [
+            450,
+            100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 881.46,
+          "reward_sec": 917.51,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 24.05,
+            "demolition_seconds": 12.0,
+            "seconds": 36.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 16.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 21.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 24.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 350,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 30.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 250.0,
+          "arrive_sec": 1000.84,
+          "reward_sec": null,
+          "crystal": 0,
+          "combat": {
+            "failed": true,
+            "seconds": 2.35,
+            "kills": [],
+            "xp": 350
+          }
+        }
+      ],
+      "final_xp": 350,
+      "level": 4,
+      "dead_militia": 4,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": false
+    },
+    "two_fixed50": {
+      "depart_sec": 657,
+      "return_sec": 1109.58,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 822.53,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.7,
+            "demolition_seconds": 6.0,
+            "seconds": 19.7,
+            "kills": [
+              {
+                "time": 6.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 9.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 13.65,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 290,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 720
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 25.0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 881.46,
+          "reward_sec": 917.51,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 24.05,
+            "demolition_seconds": 12.0,
+            "seconds": 36.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 16.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 21.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 24.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 350,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 30.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 350,
+      "level": 4,
+      "dead_militia": 4,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": false
+    },
+    "two_candidate65": {
+      "depart_sec": 657,
+      "return_sec": 1109.58,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 822.53,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.7,
+            "demolition_seconds": 6.0,
+            "seconds": 19.7,
+            "kills": [
+              {
+                "time": 6.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 9.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 13.65,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 290,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 720
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 25.0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 881.46,
+          "reward_sec": 917.51,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 24.05,
+            "demolition_seconds": 12.0,
+            "seconds": 36.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 16.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 21.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 24.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 350,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 30.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 350,
+      "level": 4,
+      "dead_militia": 4,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": false
+    },
+    "four_fronttank": {
+      "depart_sec": 657,
+      "return_sec": null,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 820.88,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 12.05,
+            "demolition_seconds": 6.0,
+            "seconds": 18.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.1,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 12.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 285,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 484.3
+              },
+              {
+                "hero": false,
+                "hp": 35.0
+              },
+              {
+                "hero": false,
+                "hp": 130.0
+              },
+              {
+                "hero": false,
+                "hp": 50.0
+              },
+              {
+                "hero": false,
+                "hp": 150
+              }
+            ]
+          }
+        },
+        {
+          "camp": 2,
+          "coordinate": [
+            450,
+            100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 879.81,
+          "reward_sec": 900.86,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.55,
+            "demolition_seconds": 7.5,
+            "seconds": 21.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 11.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 13.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 340,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 218.6
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 55.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 3,
+          "coordinate": [
+            550,
+            0
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 959.78,
+          "reward_sec": null,
+          "crystal": 0,
+          "combat": {
+            "failed": true,
+            "seconds": 5.4,
+            "kills": [],
+            "xp": 340
+          }
+        }
+      ],
+      "final_xp": 340,
+      "level": 4,
+      "dead_militia": 2,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "two_fronttank65": {
+      "depart_sec": 657,
+      "return_sec": 1092.93,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 820.88,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 12.05,
+            "demolition_seconds": 6.0,
+            "seconds": 18.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.1,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 12.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 285,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 484.3
+              },
+              {
+                "hero": false,
+                "hp": 35.0
+              },
+              {
+                "hero": false,
+                "hp": 130.0
+              },
+              {
+                "hero": false,
+                "hp": 50.0
+              },
+              {
+                "hero": false,
+                "hp": 150
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 879.81,
+          "reward_sec": 900.86,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.55,
+            "demolition_seconds": 7.5,
+            "seconds": 21.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 11.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 13.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 340,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 218.6
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 55.0
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 340,
+      "level": 4,
+      "dead_militia": 2,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    }
+  },
+  "s02_stages": [
+    {
+      "stage": 1,
+      "big_budget": 16,
+      "laneA": {
+        "archer": 1,
+        "green": 6
+      },
+      "laneB": {
+        "archer": 1,
+        "green": 6
+      },
+      "hero_only_laneA": true,
+      "towersA": [
+        "arrow",
+        "arrow",
+        "frost"
+      ],
+      "towersB": [
+        "arrow",
+        "arrow"
+      ],
+      "conditional_results": [
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 73.5,
+          "big_lineage_clear_sec": 73.5,
+          "after_big_start_sec": 73.5,
+          "wall_hp": 2000,
+          "minimum_wall_hp": 1986.7,
+          "damage_received": 56.7,
+          "repair_gold": 14.2
+        },
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 95.0,
+          "big_lineage_clear_sec": 95.0,
+          "after_big_start_sec": 95.0,
+          "wall_hp": 1993.3,
+          "minimum_wall_hp": 1966.7,
+          "damage_received": 890.0,
+          "repair_gold": 222.5
+        }
+      ],
+      "base_normal_count": 6,
+      "normal_point_budget": 6,
+      "near_xp_from_all_home_roots_if_present": 245
+    },
+    {
+      "stage": 2,
+      "big_budget": 36,
+      "laneA": {
+        "iron": 1,
+        "spore": 1,
+        "javelin": 1,
+        "archer": 1,
+        "green": 6
+      },
+      "laneB": {
+        "iron": 1,
+        "spore": 1,
+        "javelin": 1,
+        "archer": 1,
+        "green": 6
+      },
+      "hero_only_laneA": true,
+      "towersA": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "frost"
+      ],
+      "towersB": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "frost"
+      ],
+      "conditional_results": [
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 76.0,
+          "big_lineage_clear_sec": 76.0,
+          "after_big_start_sec": 76.0,
+          "wall_hp": 2000,
+          "minimum_wall_hp": 1953.3,
+          "damage_received": 453.3,
+          "repair_gold": 113.3
+        },
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 91.0,
+          "big_lineage_clear_sec": 91.0,
+          "after_big_start_sec": 91.0,
+          "wall_hp": 1646.7,
+          "minimum_wall_hp": 1510.0,
+          "damage_received": 1490.0,
+          "repair_gold": 372.5
+        }
+      ],
+      "base_normal_count": 6,
+      "normal_point_budget": 12,
+      "near_xp_from_all_home_roots_if_present": 480
+    },
+    {
+      "stage": 3,
+      "big_budget": 64,
+      "laneA": {
+        "giant": 1,
+        "javelin": 1,
+        "green": 11
+      },
+      "laneB": {
+        "immune": 2,
+        "iron": 2,
+        "spore": 1,
+        "archer": 1,
+        "green": 11
+      },
+      "hero_only_laneA": true,
+      "towersA": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "frost",
+        "frost",
+        "ring"
+      ],
+      "towersB": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "frost",
+        "frost"
+      ],
+      "conditional_results": [
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 106.1,
+          "big_lineage_clear_sec": 106.1,
+          "after_big_start_sec": 106.1,
+          "wall_hp": 2000,
+          "minimum_wall_hp": 1946.7,
+          "damage_received": 453.3,
+          "repair_gold": 113.3
+        },
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 105.5,
+          "big_lineage_clear_sec": 105.5,
+          "after_big_start_sec": 105.5,
+          "wall_hp": 786.7,
+          "minimum_wall_hp": 680.0,
+          "damage_received": 3080.0,
+          "repair_gold": 770.0
+        }
+      ],
+      "base_normal_count": 6,
+      "normal_point_budget": 18,
+      "near_xp_from_all_home_roots_if_present": 800
+    },
+    {
+      "stage": 4,
+      "big_budget": 96,
+      "laneA": {
+        "giant": 1,
+        "immune": 2,
+        "iron": 2,
+        "spore": 1,
+        "javelin": 2,
+        "archer": 2,
+        "green": 1
+      },
+      "laneB": {
+        "boar": 3,
+        "immune": 2,
+        "iron": 2,
+        "spore": 2,
+        "javelin": 2,
+        "archer": 1,
+        "green": 3
+      },
+      "hero_only_laneA": true,
+      "towersA": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "frost",
+        "frost",
+        "ring"
+      ],
+      "towersB": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "frost",
+        "frost"
+      ],
+      "conditional_results": [
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 104.6,
+          "big_lineage_clear_sec": 104.6,
+          "after_big_start_sec": 104.6,
+          "wall_hp": 1973.3,
+          "minimum_wall_hp": 1916.7,
+          "damage_received": 796.7,
+          "repair_gold": 199.2
+        },
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 88.1,
+          "big_lineage_clear_sec": 88.1,
+          "after_big_start_sec": 88.1,
+          "wall_hp": 2000,
+          "minimum_wall_hp": 1930.0,
+          "damage_received": 933.3,
+          "repair_gold": 233.3
+        }
+      ],
+      "base_normal_count": 6,
+      "normal_point_budget": 24,
+      "near_xp_from_all_home_roots_if_present": 1260
+    },
+    {
+      "stage": 5,
+      "big_budget": 132,
+      "laneA": {
+        "giant": 1,
+        "mother": 1,
+        "boar": 2,
+        "immune": 2,
+        "iron": 2,
+        "javelin": 2,
+        "archer": 2,
+        "green": 5
+      },
+      "laneB": {
+        "giant": 1,
+        "mother": 1,
+        "boar": 2,
+        "immune": 2,
+        "iron": 2,
+        "javelin": 2,
+        "archer": 2,
+        "green": 5
+      },
+      "hero_only_laneA": true,
+      "towersA": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "frost",
+        "frost",
+        "ring",
+        "storm",
+        "cannon"
+      ],
+      "towersB": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "double",
+        "double",
+        "frost",
+        "frost",
+        "cannon"
+      ],
+      "conditional_results": [
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 100.6,
+          "big_lineage_clear_sec": 100.6,
+          "after_big_start_sec": 100.6,
+          "wall_hp": 2000,
+          "minimum_wall_hp": 1944.7,
+          "damage_received": 470.0,
+          "repair_gold": 117.5
+        },
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 103.1,
+          "big_lineage_clear_sec": 103.1,
+          "after_big_start_sec": 103.1,
+          "wall_hp": 2000,
+          "minimum_wall_hp": 1892.0,
+          "damage_received": 772.7,
+          "repair_gold": 193.2
+        }
+      ],
+      "base_normal_count": 6,
+      "normal_point_budget": 24,
+      "near_xp_from_all_home_roots_if_present": 1740
+    },
+    {
+      "stage": 6,
+      "big_budget": 180,
+      "laneA": {
+        "giant": 2,
+        "mother": 1,
+        "boar": 2,
+        "immune": 3,
+        "iron": 3,
+        "javelin": 1,
+        "archer": 3,
+        "green": 4
+      },
+      "laneB": {
+        "giant": 1,
+        "mother": 3,
+        "boar": 2,
+        "immune": 3,
+        "iron": 3,
+        "javelin": 3,
+        "archer": 1,
+        "green": 6
+      },
+      "hero_only_laneA": true,
+      "towersA": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "frost",
+        "frost",
+        "ring",
+        "storm",
+        "cannon",
+        "cannon"
+      ],
+      "towersB": [
+        "arrow",
+        "arrow",
+        "arrow",
+        "arrow",
+        "double",
+        "double",
+        "frost",
+        "frost",
+        "cannon"
+      ],
+      "conditional_results": [
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 112.1,
+          "big_lineage_clear_sec": 112.1,
+          "after_big_start_sec": 112.1,
+          "wall_hp": 1963.3,
+          "minimum_wall_hp": 1946.7,
+          "damage_received": 713.3,
+          "repair_gold": 178.3
+        },
+        {
+          "cleared": true,
+          "climber_bypass_unresolved": 0,
+          "clear_sec": 113.6,
+          "big_lineage_clear_sec": 113.6,
+          "after_big_start_sec": 113.6,
+          "wall_hp": 1402.0,
+          "minimum_wall_hp": 1324.0,
+          "damage_received": 2466.0,
+          "repair_gold": 616.5
+        }
+      ],
+      "base_normal_count": 6,
+      "normal_point_budget": 24,
+      "near_xp_from_all_home_roots_if_present": 2340
+    }
+  ],
+  "s02_full_stage_pressure": [
+    {
+      "stage": 1,
+      "normal_all_laneB": true,
+      "A": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 383.5,
+        "big_lineage_clear_sec": 383.5,
+        "after_big_start_sec": 73.5,
+        "wall_hp": 2000,
+        "minimum_wall_hp": 1980.0,
+        "damage_received": 293.3,
+        "repair_gold": 73.3
+      },
+      "B": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 405.0,
+        "big_lineage_clear_sec": 405.0,
+        "after_big_start_sec": 95.0,
+        "wall_hp": 1993.3,
+        "minimum_wall_hp": 1966.7,
+        "damage_received": 2660.0,
+        "repair_gold": 665.0
+      },
+      "total_root_budget": 49
+    },
+    {
+      "stage": 2,
+      "normal_all_laneB": true,
+      "A": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 387.5,
+        "big_lineage_clear_sec": 387.5,
+        "after_big_start_sec": 77.5,
+        "wall_hp": 2000,
+        "minimum_wall_hp": 1953.3,
+        "damage_received": 850.0,
+        "repair_gold": 212.5
+      },
+      "B": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 401.0,
+        "big_lineage_clear_sec": 401.0,
+        "after_big_start_sec": 91.0,
+        "wall_hp": 1646.7,
+        "minimum_wall_hp": 1503.3,
+        "damage_received": 2873.3,
+        "repair_gold": 718.3
+      },
+      "total_root_budget": 96
+    },
+    {
+      "stage": 3,
+      "normal_all_laneB": true,
+      "A": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 416.1,
+        "big_lineage_clear_sec": 416.1,
+        "after_big_start_sec": 106.1,
+        "wall_hp": 2000,
+        "minimum_wall_hp": 1853.3,
+        "damage_received": 1200.0,
+        "repair_gold": 300.0
+      },
+      "B": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 415.5,
+        "big_lineage_clear_sec": 415.5,
+        "after_big_start_sec": 105.5,
+        "wall_hp": 773.3,
+        "minimum_wall_hp": 666.7,
+        "damage_received": 5373.3,
+        "repair_gold": 1343.3
+      },
+      "total_root_budget": 160
+    },
+    {
+      "stage": 4,
+      "normal_all_laneB": true,
+      "A": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 414.6,
+        "big_lineage_clear_sec": 414.6,
+        "after_big_start_sec": 104.6,
+        "wall_hp": 1973.3,
+        "minimum_wall_hp": 1813.3,
+        "damage_received": 1850.7,
+        "repair_gold": 462.7
+      },
+      "B": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 405.1,
+        "big_lineage_clear_sec": 405.1,
+        "after_big_start_sec": 95.1,
+        "wall_hp": 1083.3,
+        "minimum_wall_hp": 1016.7,
+        "damage_received": 6233.3,
+        "repair_gold": 1558.3
+      },
+      "total_root_budget": 252
+    },
+    {
+      "stage": 5,
+      "normal_all_laneB": true,
+      "A": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 410.1,
+        "big_lineage_clear_sec": 410.1,
+        "after_big_start_sec": 100.1,
+        "wall_hp": 1990.0,
+        "minimum_wall_hp": 1828.7,
+        "damage_received": 1544.0,
+        "repair_gold": 386.0
+      },
+      "B": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 413.1,
+        "big_lineage_clear_sec": 413.1,
+        "after_big_start_sec": 103.1,
+        "wall_hp": 2000,
+        "minimum_wall_hp": 1630.7,
+        "damage_received": 2524.7,
+        "repair_gold": 631.2
+      },
+      "total_root_budget": 348
+    },
+    {
+      "stage": 6,
+      "normal_all_laneB": true,
+      "A": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 422.1,
+        "big_lineage_clear_sec": 422.1,
+        "after_big_start_sec": 112.1,
+        "wall_hp": 1963.3,
+        "minimum_wall_hp": 1798.7,
+        "damage_received": 1868.7,
+        "repair_gold": 467.2
+      },
+      "B": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 423.6,
+        "big_lineage_clear_sec": 423.6,
+        "after_big_start_sec": 113.6,
+        "wall_hp": 1367.3,
+        "minimum_wall_hp": 1134.7,
+        "damage_received": 6117.3,
+        "repair_gold": 1529.3
+      },
+      "total_root_budget": 468
+    }
+  ],
+  "s02_growth_full_stage4": {
+    "normal_times": [
+      40,
+      100,
+      140,
+      200,
+      260,
+      300,
+      340,
+      380,
+      440,
+      480,
+      520
+    ],
+    "A": {
+      "cleared": true,
+      "climber_bypass_unresolved": 0,
+      "clear_sec": 654.6,
+      "big_lineage_clear_sec": 654.6,
+      "after_big_start_sec": 104.6,
+      "wall_hp": 1973.3,
+      "minimum_wall_hp": 1813.3,
+      "damage_received": 2004.0,
+      "repair_gold": 501.0
+    },
+    "B": {
+      "cleared": true,
+      "climber_bypass_unresolved": 0,
+      "clear_sec": 638.1,
+      "big_lineage_clear_sec": 638.1,
+      "after_big_start_sec": 88.1,
+      "wall_hp": 2000,
+      "minimum_wall_hp": 1080.0,
+      "damage_received": 5466.7,
+      "repair_gold": 1366.7
+    },
+    "total_root_budget": 304
+  },
+  "conditional_clock_rederived": {
+    "S02": {
+      "stages": [
+        {
+          "stage": 1,
+          "start_sec": 120,
+          "big_spawn_sec": 430,
+          "big_lineage_clear_sec": 525.0,
+          "local_lineage_clear_sec": 405.0,
+          "after_big_start_sec": 95.0
+        },
+        {
+          "stage": 2,
+          "start_sec": 615.0,
+          "big_spawn_sec": 925.0,
+          "big_lineage_clear_sec": 1016.0,
+          "local_lineage_clear_sec": 401.0,
+          "after_big_start_sec": 91.0
+        },
+        {
+          "stage": 3,
+          "start_sec": 1106.0,
+          "big_spawn_sec": 1416.0,
+          "big_lineage_clear_sec": 1522.1,
+          "local_lineage_clear_sec": 416.1,
+          "after_big_start_sec": 106.1
+        },
+        {
+          "stage": 4,
+          "start_sec": 1612.1,
+          "big_spawn_sec": 1922.1,
+          "big_lineage_clear_sec": 2026.7,
+          "local_lineage_clear_sec": 414.6,
+          "after_big_start_sec": 104.6
+        },
+        {
+          "stage": 5,
+          "start_sec": 2116.7,
+          "big_spawn_sec": 2426.7,
+          "big_lineage_clear_sec": 2529.8,
+          "local_lineage_clear_sec": 413.1,
+          "after_big_start_sec": 103.1
+        },
+        {
+          "stage": 6,
+          "start_sec": 2619.8,
+          "big_spawn_sec": 2929.8,
+          "big_lineage_clear_sec": 3043.4,
+          "local_lineage_clear_sec": 423.6,
+          "after_big_start_sec": 113.6
+        }
+      ],
+      "finish_sec": 3043.4,
+      "not_same_as_economy_nominal_clock": true
+    },
+    "S02-G": {
+      "stages": [
+        {
+          "stage": 1,
+          "start_sec": 120,
+          "big_spawn_sec": 430,
+          "big_lineage_clear_sec": 525.0,
+          "local_lineage_clear_sec": 405.0,
+          "after_big_start_sec": 95.0
+        },
+        {
+          "stage": 2,
+          "start_sec": 615.0,
+          "big_spawn_sec": 925.0,
+          "big_lineage_clear_sec": 1016.0,
+          "local_lineage_clear_sec": 401.0,
+          "after_big_start_sec": 91.0
+        },
+        {
+          "stage": 3,
+          "start_sec": 1106.0,
+          "big_spawn_sec": 1416.0,
+          "big_lineage_clear_sec": 1522.1,
+          "local_lineage_clear_sec": 416.1,
+          "after_big_start_sec": 106.1
+        },
+        {
+          "stage": 4,
+          "start_sec": 1612.1,
+          "big_spawn_sec": 2162.1,
+          "big_lineage_clear_sec": 2266.7,
+          "local_lineage_clear_sec": 654.6,
+          "after_big_start_sec": 104.6
+        },
+        {
+          "stage": 5,
+          "start_sec": 2356.7,
+          "big_spawn_sec": 2666.7,
+          "big_lineage_clear_sec": 2769.8,
+          "local_lineage_clear_sec": 413.1,
+          "after_big_start_sec": 103.1
+        },
+        {
+          "stage": 6,
+          "start_sec": 2859.8,
+          "big_spawn_sec": 3169.8,
+          "big_lineage_clear_sec": 3283.4,
+          "local_lineage_clear_sec": 423.6,
+          "after_big_start_sec": 113.6
+        }
+      ],
+      "finish_sec": 3283.4,
+      "not_same_as_economy_nominal_clock": true
+    }
+  },
+  "s01_home_hero_absent": {
+    "1": {
+      "A": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 79.0,
+        "big_lineage_clear_sec": 79.0,
+        "after_big_start_sec": 79.0,
+        "wall_hp": 2000,
+        "minimum_wall_hp": 1986.7,
+        "damage_received": 320.0,
+        "repair_gold": 80.0
+      },
+      "B": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 95.0,
+        "big_lineage_clear_sec": 95.0,
+        "after_big_start_sec": 95.0,
+        "wall_hp": 1993.3,
+        "minimum_wall_hp": 1966.7,
+        "damage_received": 890.0,
+        "repair_gold": 222.5
+      }
+    },
+    "2": {
+      "A": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 91.0,
+        "big_lineage_clear_sec": 91.0,
+        "after_big_start_sec": 91.0,
+        "wall_hp": 1646.7,
+        "minimum_wall_hp": 1510.0,
+        "damage_received": 1490.0,
+        "repair_gold": 372.5
+      },
+      "B": {
+        "cleared": true,
+        "climber_bypass_unresolved": 0,
+        "clear_sec": 91.0,
+        "big_lineage_clear_sec": 91.0,
+        "after_big_start_sec": 91.0,
+        "wall_hp": 1646.7,
+        "minimum_wall_hp": 1510.0,
+        "damage_received": 1490.0,
+        "repair_gold": 372.5
+      }
+    }
+  },
+  "s01_low_crystal_final": {
+    "A": {
+      "cleared": true,
+      "climber_bypass_unresolved": 0,
+      "clear_sec": 104.6,
+      "big_lineage_clear_sec": 104.6,
+      "after_big_start_sec": 104.6,
+      "wall_hp": 1973.3,
+      "minimum_wall_hp": 1946.7,
+      "damage_received": 280.0,
+      "repair_gold": 70.0
+    },
+    "B": {
+      "cleared": true,
+      "climber_bypass_unresolved": 0,
+      "clear_sec": 90.5,
+      "big_lineage_clear_sec": 90.5,
+      "after_big_start_sec": 90.5,
+      "wall_hp": 1810.0,
+      "minimum_wall_hp": 1720.0,
+      "damage_received": 1513.3,
+      "repair_gold": 378.3
+    }
+  },
+  "growth_addition": {
+    "extra_small": {
+      "iron": 4,
+      "archer": 4,
+      "green": 8
+    },
+    "extra_small_points": 32,
+    "extra_normals": 5,
+    "extra_normal_points": 20,
+    "extra_root_pressure": 52,
+    "extra_possible_nearby_xp": 260,
+    "extra_minutes": 4,
+    "no_random_material_credit": true,
+    "lane_no_hero": {
+      "cleared": true,
+      "climber_bypass_unresolved": 0,
+      "clear_sec": 74.2,
+      "big_lineage_clear_sec": 74.2,
+      "after_big_start_sec": 74.2,
+      "wall_hp": 2000,
+      "minimum_wall_hp": 1990.0,
+      "damage_received": 40.0,
+      "repair_gold": 10.0
+    }
+  },
+  "camp_chain_phase_sensitivity": [
+    {
+      "failed": false,
+      "guard_seconds": 13.7,
+      "demolition_seconds": 6.0,
+      "seconds": 19.7,
+      "kills": [
+        {
+          "time": 6.4,
+          "kind": "green",
+          "owner": "militia",
+          "xp": 5,
+          "hero_level": 4
+        },
+        {
+          "time": 7.5,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 9.4,
+          "kind": "green",
+          "owner": "militia",
+          "xp": 5,
+          "hero_level": 4
+        },
+        {
+          "time": 10.5,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 13.65,
+          "kind": "archer",
+          "owner": "hero",
+          "xp": 20,
+          "hero_level": 4
+        }
+      ],
+      "xp": 290,
+      "hero_level": 4,
+      "survivors": [
+        {
+          "hero": true,
+          "hp": 720
+        },
+        {
+          "hero": false,
+          "hp": 0
+        },
+        {
+          "hero": false,
+          "hp": 25.0
+        },
+        {
+          "hero": false,
+          "hp": 10.0
+        },
+        {
+          "hero": false,
+          "hp": 10.0
+        }
+      ]
+    },
+    {
+      "failed": false,
+      "guard_seconds": 12.6,
+      "demolition_seconds": 7.5,
+      "seconds": 20.1,
+      "kills": [
+        {
+          "time": 6.4,
+          "kind": "green",
+          "owner": "militia",
+          "xp": 5,
+          "hero_level": 4
+        },
+        {
+          "time": 7.5,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 9.0,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 9.4,
+          "kind": "green",
+          "owner": "militia",
+          "xp": 5,
+          "hero_level": 4
+        },
+        {
+          "time": 12.55,
+          "kind": "archer",
+          "owner": "hero",
+          "xp": 20,
+          "hero_level": 4
+        }
+      ],
+      "xp": 290,
+      "hero_level": 4,
+      "survivors": [
+        {
+          "hero": true,
+          "hp": 720
+        },
+        {
+          "hero": false,
+          "hp": 0
+        },
+        {
+          "hero": false,
+          "hp": 40.0
+        },
+        {
+          "hero": false,
+          "hp": 0
+        },
+        {
+          "hero": false,
+          "hp": 30.0
+        }
+      ]
+    },
+    {
+      "failed": false,
+      "guard_seconds": 12.6,
+      "demolition_seconds": 7.5,
+      "seconds": 20.1,
+      "kills": [
+        {
+          "time": 6.4,
+          "kind": "green",
+          "owner": "militia",
+          "xp": 5,
+          "hero_level": 4
+        },
+        {
+          "time": 7.5,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 9.0,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 9.4,
+          "kind": "green",
+          "owner": "militia",
+          "xp": 5,
+          "hero_level": 4
+        },
+        {
+          "time": 12.55,
+          "kind": "archer",
+          "owner": "hero",
+          "xp": 20,
+          "hero_level": 4
+        }
+      ],
+      "xp": 290,
+      "hero_level": 4,
+      "survivors": [
+        {
+          "hero": true,
+          "hp": 720
+        },
+        {
+          "hero": false,
+          "hp": 0
+        },
+        {
+          "hero": false,
+          "hp": 40.0
+        },
+        {
+          "hero": false,
+          "hp": 0
+        },
+        {
+          "hero": false,
+          "hp": 30.0
+        }
+      ]
+    },
+    {
+      "failed": false,
+      "guard_seconds": 11.25,
+      "demolition_seconds": 6.0,
+      "seconds": 17.25,
+      "kills": [
+        {
+          "time": 6.0,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 6.0,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 7.5,
+          "kind": "green",
+          "owner": "hero",
+          "xp": 10,
+          "hero_level": 4
+        },
+        {
+          "time": 8.05,
+          "kind": "green",
+          "owner": "militia",
+          "xp": 5,
+          "hero_level": 4
+        },
+        {
+          "time": 11.2,
+          "kind": "archer",
+          "owner": "hero",
+          "xp": 20,
+          "hero_level": 4
+        }
+      ],
+      "xp": 295,
+      "hero_level": 4,
+      "survivors": [
+        {
+          "hero": true,
+          "hp": 720
+        },
+        {
+          "hero": false,
+          "hp": 0
+        },
+        {
+          "hero": false,
+          "hp": 75.0
+        },
+        {
+          "hero": false,
+          "hp": 15.0
+        },
+        {
+          "hero": false,
+          "hp": 50.0
+        }
+      ]
+    }
+  ],
+  "camp_initial_xp_sensitivity": {
+    "255": {
+      "depart_sec": 657,
+      "return_sec": null,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 820.88,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 12.05,
+            "demolition_seconds": 6.0,
+            "seconds": 18.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.1,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 12.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 300,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 484.3
+              },
+              {
+                "hero": false,
+                "hp": 35.0
+              },
+              {
+                "hero": false,
+                "hp": 130.0
+              },
+              {
+                "hero": false,
+                "hp": 50.0
+              },
+              {
+                "hero": false,
+                "hp": 150
+              }
+            ]
+          }
+        },
+        {
+          "camp": 2,
+          "coordinate": [
+            450,
+            100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 879.81,
+          "reward_sec": 900.86,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.55,
+            "demolition_seconds": 7.5,
+            "seconds": 21.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 11.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 13.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 355,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 218.6
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 55.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 3,
+          "coordinate": [
+            550,
+            0
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 959.78,
+          "reward_sec": null,
+          "crystal": 0,
+          "combat": {
+            "failed": true,
+            "seconds": 5.4,
+            "kills": [],
+            "xp": 355
+          }
+        }
+      ],
+      "final_xp": 355,
+      "level": 4,
+      "dead_militia": 2,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "260": {
+      "depart_sec": 657,
+      "return_sec": null,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 820.88,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 12.05,
+            "demolition_seconds": 6.0,
+            "seconds": 18.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.1,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 12.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 305,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 484.3
+              },
+              {
+                "hero": false,
+                "hp": 35.0
+              },
+              {
+                "hero": false,
+                "hp": 130.0
+              },
+              {
+                "hero": false,
+                "hp": 50.0
+              },
+              {
+                "hero": false,
+                "hp": 150
+              }
+            ]
+          }
+        },
+        {
+          "camp": 2,
+          "coordinate": [
+            450,
+            100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 879.81,
+          "reward_sec": 900.86,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.55,
+            "demolition_seconds": 7.5,
+            "seconds": 21.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 11.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 13.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 5
+              }
+            ],
+            "xp": 360,
+            "hero_level": 5,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 760
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 55.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 3,
+          "coordinate": [
+            550,
+            0
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 959.78,
+          "reward_sec": 986.83,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 18.05,
+            "demolition_seconds": 9.0,
+            "seconds": 27.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 11.5,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 5
+              },
+              {
+                "time": 15.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 18.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 5
+              }
+            ],
+            "xp": 415,
+            "hero_level": 5,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 202.9
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 1045.76,
+          "reward_sec": null,
+          "crystal": 0,
+          "combat": {
+            "failed": true,
+            "seconds": 3.9000000000000004,
+            "kills": [],
+            "xp": 415
+          }
+        }
+      ],
+      "final_xp": 415,
+      "level": 5,
+      "dead_militia": 3,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "300": {
+      "depart_sec": 657,
+      "return_sec": null,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 820.88,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 12.05,
+            "demolition_seconds": 6.0,
+            "seconds": 18.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.1,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 12.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 345,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 484.3
+              },
+              {
+                "hero": false,
+                "hp": 35.0
+              },
+              {
+                "hero": false,
+                "hp": 130.0
+              },
+              {
+                "hero": false,
+                "hp": 50.0
+              },
+              {
+                "hero": false,
+                "hp": 150
+              }
+            ]
+          }
+        },
+        {
+          "camp": 2,
+          "coordinate": [
+            450,
+            100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 879.81,
+          "reward_sec": 900.86,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.55,
+            "demolition_seconds": 7.5,
+            "seconds": 21.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 11.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 5
+              },
+              {
+                "time": 13.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 5
+              }
+            ],
+            "xp": 400,
+            "hero_level": 5,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 760
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 55.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 3,
+          "coordinate": [
+            550,
+            0
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 959.78,
+          "reward_sec": 986.83,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 18.05,
+            "demolition_seconds": 9.0,
+            "seconds": 27.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 11.5,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 5
+              },
+              {
+                "time": 15.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 18.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 5
+              }
+            ],
+            "xp": 455,
+            "hero_level": 5,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 202.9
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 10.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 1045.76,
+          "reward_sec": null,
+          "crystal": 0,
+          "combat": {
+            "failed": true,
+            "seconds": 3.9000000000000004,
+            "kills": [],
+            "xp": 455
+          }
+        }
+      ],
+      "final_xp": 455,
+      "level": 5,
+      "dead_militia": 3,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "360": {
+      "depart_sec": 657,
+      "return_sec": null,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 819.23,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 11.9,
+            "demolition_seconds": 4.5,
+            "seconds": 16.4,
+            "kills": [
+              {
+                "time": 4.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 5
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 5
+              },
+              {
+                "time": 9.9,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 5
+              },
+              {
+                "time": 11.85,
+                "kind": "archer",
+                "owner": "militia",
+                "xp": 10,
+                "hero_level": 5
+              }
+            ],
+            "xp": 395,
+            "hero_level": 5,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 541.4
+              },
+              {
+                "hero": false,
+                "hp": 50.0
+              },
+              {
+                "hero": false,
+                "hp": 130.0
+              },
+              {
+                "hero": false,
+                "hp": 50.0
+              },
+              {
+                "hero": false,
+                "hp": 135.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 2,
+          "coordinate": [
+            450,
+            100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 878.16,
+          "reward_sec": 899.21,
+          "crystal": 50,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.55,
+            "demolition_seconds": 7.5,
+            "seconds": 21.05,
+            "kills": [
+              {
+                "time": 4.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 5
+              },
+              {
+                "time": 13.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 5
+              }
+            ],
+            "xp": 455,
+            "hero_level": 5,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 292.9
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 35.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 55.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 3,
+          "coordinate": [
+            550,
+            0
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 958.13,
+          "reward_sec": null,
+          "crystal": 0,
+          "combat": {
+            "failed": true,
+            "seconds": 6.95,
+            "kills": [],
+            "xp": 455
+          }
+        }
+      ],
+      "final_xp": 455,
+      "level": 5,
+      "dead_militia": 2,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    }
+  },
+  "teaching_guard_variants": {
+    "four_guard_armor3": {
+      "depart_sec": 657,
+      "return_sec": 1092.93,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 820.88,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 12.05,
+            "demolition_seconds": 6.0,
+            "seconds": 18.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.1,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 12.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 285,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 484.3
+              },
+              {
+                "hero": false,
+                "hp": 45.5
+              },
+              {
+                "hero": false,
+                "hp": 131.8
+              },
+              {
+                "hero": false,
+                "hp": 59.1
+              },
+              {
+                "hero": false,
+                "hp": 150
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 879.81,
+          "reward_sec": 900.86,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.55,
+            "demolition_seconds": 7.5,
+            "seconds": 21.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 9.95,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 11.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 13.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 335,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 218.6
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 40.9
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 81.8
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 335,
+      "level": 4,
+      "dead_militia": 2,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "three_green_four_militia": {
+      "depart_sec": 657,
+      "return_sec": 1089.03,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 819.38,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 285,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 582.9
+              },
+              {
+                "hero": false,
+                "hp": 50.0
+              },
+              {
+                "hero": false,
+                "hp": 150
+              },
+              {
+                "hero": false,
+                "hp": 70.0
+              },
+              {
+                "hero": false,
+                "hp": 120.0
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 878.31,
+          "reward_sec": 896.96,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 11.15,
+            "demolition_seconds": 7.5,
+            "seconds": 18.65,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 9.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 11.1,
+                "kind": "archer",
+                "owner": "militia",
+                "xp": 10,
+                "hero_level": 4
+              }
+            ],
+            "xp": 325,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 445.7
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 90.0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 90.0
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 325,
+      "level": 4,
+      "dead_militia": 2,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "three_green_four_armored": {
+      "depart_sec": 657,
+      "return_sec": 1086.93,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 819.38,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 285,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 582.9
+              },
+              {
+                "hero": false,
+                "hp": 59.1
+              },
+              {
+                "hero": false,
+                "hp": 150
+              },
+              {
+                "hero": false,
+                "hp": 77.3
+              },
+              {
+                "hero": false,
+                "hp": 122.7
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 878.31,
+          "reward_sec": 894.86,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.45,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 330,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 445.7
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 113.6
+              },
+              {
+                "hero": false,
+                "hp": 4.5
+              },
+              {
+                "hero": false,
+                "hp": 95.5
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 330,
+      "level": 4,
+      "dead_militia": 1,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "three_green_two_armored": {
+      "depart_sec": 657,
+      "return_sec": 1101.93,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 823.88,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 13.55,
+            "demolition_seconds": 7.5,
+            "seconds": 21.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 13.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 285,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 484.3
+              },
+              {
+                "hero": false,
+                "hp": 31.8
+              },
+              {
+                "hero": false,
+                "hp": 131.8
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 882.81,
+          "reward_sec": 909.86,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 15.05,
+            "demolition_seconds": 12.0,
+            "seconds": 27.05,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 11.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 15.0,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 330,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 218.6
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 0
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 330,
+      "level": 4,
+      "dead_militia": 2,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    }
+  },
+  "independent_camp_squad": {
+    "completed": 0,
+    "failed_camp": 1,
+    "failed_second": 16.05,
+    "remaining_hp": [
+      0,
+      0,
+      0,
+      0,
+      180
+    ],
+    "events": []
+  },
+  "independent_camp_squad_two_priests": {
+    "completed": 10,
+    "events": [
+      {
+        "camp": 1,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 2,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 3,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 4,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 5,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 6,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 7,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 8,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 9,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      },
+      {
+        "camp": 10,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 60,
+        "hero_xp": 0
+      }
+    ],
+    "conditions": "every camp4green+1archer; during travel within8m priest, line formation; upgrade/armour before new recruitment paid by economy"
+  },
+  "independent_camp_squad_30s_heal": {
+    "completed": 10,
+    "events": [
+      {
+        "camp": 1,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 2,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 3,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 4,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 5,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 6,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 7,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 8,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 9,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      },
+      {
+        "camp": 10,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 30,
+        "hero_xp": 0
+      }
+    ],
+    "conditions": "every camp4green+1archer; during travel within8m priest, line formation; upgrade/armour before new recruitment paid by economy"
+  },
+  "independent_camp_squad_20s_heal": {
+    "completed": 1,
+    "failed_camp": 2,
+    "failed_second": 19.55,
+    "remaining_hp": [
+      0,
+      0,
+      0,
+      0,
+      180,
+      180
+    ],
+    "events": [
+      {
+        "camp": 1,
+        "guard_seconds": 20.5,
+        "demolition_seconds": 7.5,
+        "hp_before_travel_heal": [
+          8.2,
+          35.5,
+          51.8,
+          21.8,
+          180,
+          180
+        ],
+        "hp_after_travel_heal": [
+          158.2,
+          155.5,
+          141.8,
+          141.8,
+          180,
+          180
+        ],
+        "travel_heal_seconds": 20,
+        "hero_xp": 0
+      }
+    ]
+  },
+  "s02_minimal_550_final": {
+    "A": {
+      "cleared": true,
+      "climber_bypass_unresolved": 0,
+      "clear_sec": 112.1,
+      "big_lineage_clear_sec": 112.1,
+      "after_big_start_sec": 112.1,
+      "wall_hp": 1963.3,
+      "minimum_wall_hp": 1946.7,
+      "damage_received": 713.3,
+      "repair_gold": 178.3
+    },
+    "B": {
+      "cleared": true,
+      "climber_bypass_unresolved": 0,
+      "clear_sec": 113.6,
+      "big_lineage_clear_sec": 113.6,
+      "after_big_start_sec": 113.6,
+      "wall_hp": 1402.0,
+      "minimum_wall_hp": 1324.0,
+      "damage_received": 2466.0,
+      "repair_gold": 616.5
+    }
+  },
+  "s02_cost_cumulative": [
+    {
+      "stage": 1,
+      "owned": {
+        "arrow": 4,
+        "frost": 1,
+        "ring": 0,
+        "storm": 0,
+        "double": 0,
+        "cannon": 0
+      },
+      "active": {
+        "arrow": 4,
+        "frost": 1,
+        "ring": 0,
+        "storm": 0,
+        "double": 0,
+        "cannon": 0
+      },
+      "spare_arrows": 0,
+      "tower_count": 5,
+      "tower_gold": 13200,
+      "tower_maintenance": 1060,
+      "tower_energy": 0,
+      "tower_crystal": 0,
+      "tower_iron": 0,
+      "not_included": "research centres magic400crystal+tech100iron, army20, barracks upgrades, shrine40, priests10, alchemy25 upfront/75 quota, wall repair, energy producers"
+    },
+    {
+      "stage": 2,
+      "owned": {
+        "arrow": 6,
+        "frost": 2,
+        "ring": 0,
+        "storm": 0,
+        "double": 0,
+        "cannon": 0
+      },
+      "active": {
+        "arrow": 6,
+        "frost": 2,
+        "ring": 0,
+        "storm": 0,
+        "double": 0,
+        "cannon": 0
+      },
+      "spare_arrows": 0,
+      "tower_count": 8,
+      "tower_gold": 21600,
+      "tower_maintenance": 1720,
+      "tower_energy": 0,
+      "tower_crystal": 0,
+      "tower_iron": 0,
+      "not_included": "research centres magic400crystal+tech100iron, army20, barracks upgrades, shrine40, priests10, alchemy25 upfront/75 quota, wall repair, energy producers"
+    },
+    {
+      "stage": 3,
+      "owned": {
+        "arrow": 8,
+        "frost": 4,
+        "ring": 1,
+        "storm": 0,
+        "double": 0,
+        "cannon": 0
+      },
+      "active": {
+        "arrow": 8,
+        "frost": 4,
+        "ring": 1,
+        "storm": 0,
+        "double": 0,
+        "cannon": 0
+      },
+      "spare_arrows": 0,
+      "tower_count": 13,
+      "tower_gold": 38400,
+      "tower_maintenance": 3040,
+      "tower_energy": 50,
+      "tower_crystal": 30,
+      "tower_iron": 0,
+      "not_included": "research centres magic400crystal+tech100iron, army20, barracks upgrades, shrine40, priests10, alchemy25 upfront/75 quota, wall repair, energy producers"
+    },
+    {
+      "stage": 4,
+      "owned": {
+        "arrow": 10,
+        "frost": 4,
+        "ring": 1,
+        "storm": 0,
+        "double": 0,
+        "cannon": 0
+      },
+      "active": {
+        "arrow": 10,
+        "frost": 4,
+        "ring": 1,
+        "storm": 0,
+        "double": 0,
+        "cannon": 0
+      },
+      "spare_arrows": 0,
+      "tower_count": 15,
+      "tower_gold": 43200,
+      "tower_maintenance": 3440,
+      "tower_energy": 50,
+      "tower_crystal": 30,
+      "tower_iron": 0,
+      "not_included": "research centres magic400crystal+tech100iron, army20, barracks upgrades, shrine40, priests10, alchemy25 upfront/75 quota, wall repair, energy producers"
+    },
+    {
+      "stage": 5,
+      "owned": {
+        "arrow": 10,
+        "frost": 4,
+        "ring": 1,
+        "storm": 1,
+        "double": 2,
+        "cannon": 2
+      },
+      "active": {
+        "arrow": 9,
+        "frost": 4,
+        "ring": 1,
+        "storm": 1,
+        "double": 2,
+        "cannon": 2
+      },
+      "spare_arrows": 1,
+      "tower_count": 20,
+      "tower_gold": 73000,
+      "tower_maintenance": 5640,
+      "tower_energy": 350,
+      "tower_crystal": 100,
+      "tower_iron": 200,
+      "not_included": "research centres magic400crystal+tech100iron, army20, barracks upgrades, shrine40, priests10, alchemy25 upfront/75 quota, wall repair, energy producers"
+    },
+    {
+      "stage": 6,
+      "owned": {
+        "arrow": 10,
+        "frost": 4,
+        "ring": 1,
+        "storm": 1,
+        "double": 2,
+        "cannon": 3
+      },
+      "active": {
+        "arrow": 9,
+        "frost": 4,
+        "ring": 1,
+        "storm": 1,
+        "double": 2,
+        "cannon": 3
+      },
+      "spare_arrows": 1,
+      "tower_count": 21,
+      "tower_gold": 78600,
+      "tower_maintenance": 6040,
+      "tower_energy": 400,
+      "tower_crystal": 100,
+      "tower_iron": 260,
+      "not_included": "research centres magic400crystal+tech100iron, army20, barracks upgrades, shrine40, priests10, alchemy25 upfront/75 quota, wall repair, energy producers"
+    }
+  ],
+  "camp_coverage_sensitivity": {
+    "0.6": {
+      "depart_sec": 657,
+      "return_sec": 1086.93,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 819.38,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 3
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 3
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 3
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 3
+              }
+            ],
+            "xp": 189,
+            "hero_level": 3,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 542.9
+              },
+              {
+                "hero": false,
+                "hp": 59.1
+              },
+              {
+                "hero": false,
+                "hp": 150
+              },
+              {
+                "hero": false,
+                "hp": 77.3
+              },
+              {
+                "hero": false,
+                "hp": 122.7
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 878.31,
+          "reward_sec": 894.86,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 3
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 3
+              },
+              {
+                "time": 8.45,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 3
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 3
+              }
+            ],
+            "xp": 234,
+            "hero_level": 3,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 405.7
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 113.6
+              },
+              {
+                "hero": false,
+                "hp": 4.5
+              },
+              {
+                "hero": false,
+                "hp": 95.5
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 234,
+      "level": 3,
+      "dead_militia": 1,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "0.75": {
+      "depart_sec": 657,
+      "return_sec": 1086.93,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 819.38,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 3
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 3
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 3
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 3
+              }
+            ],
+            "xp": 225,
+            "hero_level": 3,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 542.9
+              },
+              {
+                "hero": false,
+                "hp": 59.1
+              },
+              {
+                "hero": false,
+                "hp": 150
+              },
+              {
+                "hero": false,
+                "hp": 77.3
+              },
+              {
+                "hero": false,
+                "hp": 122.7
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 878.31,
+          "reward_sec": 894.86,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 3
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.45,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 270,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 720
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 113.6
+              },
+              {
+                "hero": false,
+                "hp": 4.5
+              },
+              {
+                "hero": false,
+                "hp": 95.5
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 270,
+      "level": 4,
+      "dead_militia": 1,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    },
+    "1.0": {
+      "depart_sec": 657,
+      "return_sec": 1086.93,
+      "events": [
+        {
+          "camp": 1,
+          "coordinate": [
+            350,
+            0
+          ],
+          "path_candidate_m": 437.5,
+          "arrive_sec": 802.83,
+          "reward_sec": 819.38,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.4,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 285,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 582.9
+              },
+              {
+                "hero": false,
+                "hp": 59.1
+              },
+              {
+                "hero": false,
+                "hp": 150
+              },
+              {
+                "hero": false,
+                "hp": 77.3
+              },
+              {
+                "hero": false,
+                "hp": 122.7
+              }
+            ]
+          }
+        },
+        {
+          "camp": 4,
+          "coordinate": [
+            450,
+            -100
+          ],
+          "path_candidate_m": 176.78,
+          "arrive_sec": 878.31,
+          "reward_sec": 894.86,
+          "crystal": 65,
+          "combat": {
+            "failed": false,
+            "guard_seconds": 10.55,
+            "demolition_seconds": 6.0,
+            "seconds": 16.55,
+            "kills": [
+              {
+                "time": 6.0,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 7.5,
+                "kind": "green",
+                "owner": "hero",
+                "xp": 10,
+                "hero_level": 4
+              },
+              {
+                "time": 8.45,
+                "kind": "green",
+                "owner": "militia",
+                "xp": 5,
+                "hero_level": 4
+              },
+              {
+                "time": 10.5,
+                "kind": "archer",
+                "owner": "hero",
+                "xp": 20,
+                "hero_level": 4
+              }
+            ],
+            "xp": 330,
+            "hero_level": 4,
+            "survivors": [
+              {
+                "hero": true,
+                "hp": 445.7
+              },
+              {
+                "hero": false,
+                "hp": 0
+              },
+              {
+                "hero": false,
+                "hp": 113.6
+              },
+              {
+                "hero": false,
+                "hp": 4.5
+              },
+              {
+                "hero": false,
+                "hp": 95.5
+              }
+            ]
+          }
+        }
+      ],
+      "final_xp": 330,
+      "level": 4,
+      "dead_militia": 1,
+      "source": "path multiplier1.25 geometric candidate, not navmesh; sequential HP; phase0 chains",
+      "fronttank": true
+    }
+  },
+  "s01_return_normal": {
+    "spawn_second": 1130,
+    "hero_return_second": 1092.93,
+    "near_xp": 15,
+    "all_clear_second": 1196.0,
+    "model": {
+      "cleared": true,
+      "climber_bypass_unresolved": 0,
+      "clear_sec": 66.0,
+      "big_lineage_clear_sec": 66.0,
+      "after_big_start_sec": 66.0,
+      "wall_hp": 2000,
+      "minimum_wall_hp": 2000.0,
+      "damage_received": 0.0,
+      "repair_gold": 0.0
+    },
+    "level_after_first": 4,
+    "level_after_second": 5
+  }
+}

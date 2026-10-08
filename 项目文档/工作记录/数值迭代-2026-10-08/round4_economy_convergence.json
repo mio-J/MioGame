@@ -1,0 +1,18 @@
+{
+  "scenario": "经济稳守工业延住宅保险",
+  "before_event_count": 244,
+  "after_event_count": 244,
+  "all_asset_and_worker_events_identical": true,
+  "completion_time_differences": [],
+  "before_events_sha256": "9d573df43bc289a40e166693197dec57a7ea3f33042f9cd542283803577a7e04",
+  "after_events_sha256": "9d573df43bc289a40e166693197dec57a7ea3f33042f9cd542283803577a7e04",
+  "combat_input_snapshot_sha_matches": true,
+  "repair_feedback_total": 5958.67,
+  "repair_debit_total": 5958.67,
+  "repair_failed_events": 0,
+  "cash_ever_negative": false,
+  "scope": "conditional synthetic event/repair fixed point only; not random map, engine navigation or player validation",
+  "actual_enemy_losses": [],
+  "external_shocks": "1200 house10 residents;1560 A2+2militia handled, completed refund0",
+  "conditional_purchase_repair_converged": true
+}

@@ -1,0 +1,130 @@
+{
+  "S01魔法": {
+    "configuration": "S01-L candidate only: two camps65, original heroLv5 gate, reached after returning home; not adopted formal",
+    "camps": [
+      {
+        "id": 1,
+        "pos": [
+          350,
+          0
+        ],
+        "clear_second": 820.88,
+        "crystal": 65,
+        "guard_points": 6,
+        "teaching_candidate": true
+      },
+      {
+        "id": 4,
+        "pos": [
+          450,
+          -100
+        ],
+        "clear_second": 900.86,
+        "crystal": 65,
+        "guard_points": 6,
+        "teaching_candidate": true
+      }
+    ],
+    "xp_events": [
+      {
+        "second": 510,
+        "xp": 240,
+        "source": "stage1 full nearby coverage conditional; 48 root points*5"
+      },
+      {
+        "second": 808.83,
+        "xp": 10,
+        "source": "camp1 green hero"
+      },
+      {
+        "second": 811.23,
+        "xp": 5,
+        "source": "camp1 green militia"
+      },
+      {
+        "second": 811.23,
+        "xp": 5,
+        "source": "camp1 green militia"
+      },
+      {
+        "second": 812.93,
+        "xp": 5,
+        "source": "camp1 green militia"
+      },
+      {
+        "second": 814.83,
+        "xp": 20,
+        "source": "camp1 archer hero"
+      },
+      {
+        "second": 885.81,
+        "xp": 10,
+        "source": "camp4 green hero"
+      },
+      {
+        "second": 890.31,
+        "xp": 10,
+        "source": "camp4 green hero"
+      },
+      {
+        "second": 890.31,
+        "xp": 10,
+        "source": "camp4 green hero"
+      },
+      {
+        "second": 891.21,
+        "xp": 5,
+        "source": "camp4 green militia"
+      },
+      {
+        "second": 893.31,
+        "xp": 20,
+        "source": "camp4 archer hero"
+      },
+      {
+        "second": 1196.0,
+        "xp": 15,
+        "source": "first stage3 normal3green; home hero15m, three nearby allykills; candidate lane clock"
+      },
+      {
+        "second": 1256.0,
+        "xp": 15,
+        "source": "second stage3 normal3green; home hero15m, three nearby allykills; candidate lane clock"
+      }
+    ],
+    "absences": [
+      [
+        657,
+        1092.93
+      ]
+    ],
+    "losses": [
+      {
+        "second": 900.86,
+        "type": "militia",
+        "count": 2,
+        "replacement_gold": 2400
+      }
+    ],
+    "hero_home_return_hp": 218.6,
+    "base_190_route_not_closed": true
+  },
+  "经济稳守": {
+    "camps": [],
+    "xp_events": [],
+    "absences": [],
+    "camp_schedule_status": "not validated; not assumed to collect crystals"
+  },
+  "科技扩矿": {
+    "camps": [],
+    "xp_events": [],
+    "absences": [],
+    "camp_schedule_status": "not validated; not assumed to collect crystals"
+  },
+  "魔法远征": {
+    "camps": [],
+    "xp_events": [],
+    "absences": [],
+    "camp_schedule_status": "not validated; 500/680 cumulative crystal remains conditional, cannot claim hero simultaneously at home"
+  }
+}

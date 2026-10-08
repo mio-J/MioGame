@@ -1,0 +1,1778 @@
+{
+  "actual_game_implementation_mask_verified": false,
+  "checked_masks": 64,
+  "valid_masks": 1,
+  "catalog": {
+    "夜市灯火": {
+      "unlock_town_level": 2,
+      "max_rank": 1
+    },
+    "招兵买马": {
+      "unlock_town_level": 2,
+      "max_rank": 2
+    },
+    "旧房翻新": {
+      "unlock_town_level": 2,
+      "max_rank": 1
+    },
+    "公共建筑扩建": {
+      "unlock_town_level": 3,
+      "max_rank": 1
+    },
+    "集市繁荣": {
+      "unlock_town_level": 3,
+      "max_rank": 1
+    },
+    "警钟": {
+      "unlock_town_level": 2,
+      "max_rank": 1
+    }
+  },
+  "full_pool": {
+    "implemented_cards": [
+      "夜市灯火",
+      "招兵买马",
+      "旧房翻新",
+      "公共建筑扩建",
+      "集市繁荣",
+      "警钟"
+    ],
+    "release_pool_valid": true,
+    "states": 455,
+    "full_histories": 936,
+    "minimum_distinct_by_level": {
+      "2": 4,
+      "3": 5,
+      "4": 4,
+      "5": 3,
+      "6": 2
+    },
+    "first_failure": null
+  },
+  "without_alarm": {
+    "implemented_cards": [
+      "夜市灯火",
+      "招兵买马",
+      "旧房翻新",
+      "公共建筑扩建",
+      "集市繁荣"
+    ],
+    "release_pool_valid": false,
+    "states": 189,
+    "full_histories": 240,
+    "minimum_distinct_by_level": {
+      "2": 3,
+      "3": 4,
+      "4": 3,
+      "5": 2,
+      "6": 1
+    },
+    "first_failure": {
+      "town_level": 6,
+      "history": [
+        "夜市灯火",
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "eligible": [
+        "招兵买马"
+      ]
+    }
+  },
+  "results": [
+    {
+      "implemented_cards": [],
+      "release_pool_valid": false,
+      "states": 1,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 0,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": []
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火"
+      ],
+      "release_pool_valid": false,
+      "states": 2,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 0,
+        "4": null,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "夜市灯火"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马"
+      ],
+      "release_pool_valid": false,
+      "states": 3,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马"
+      ],
+      "release_pool_valid": false,
+      "states": 9,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 3,
+        "history": [
+          "夜市灯火"
+        ],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "旧房翻新"
+      ],
+      "release_pool_valid": false,
+      "states": 2,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 0,
+        "4": null,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "旧房翻新"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "旧房翻新"
+      ],
+      "release_pool_valid": false,
+      "states": 5,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 3,
+        "history": [
+          "夜市灯火"
+        ],
+        "eligible": [
+          "旧房翻新"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "旧房翻新"
+      ],
+      "release_pool_valid": false,
+      "states": 9,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "招兵买马",
+          "招兵买马"
+        ],
+        "eligible": [
+          "旧房翻新"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "旧房翻新"
+      ],
+      "release_pool_valid": false,
+      "states": 35,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马"
+        ],
+        "eligible": [
+          "旧房翻新"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "公共建筑扩建"
+      ],
+      "release_pool_valid": false,
+      "states": 1,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 0,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": []
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "公共建筑扩建"
+      ],
+      "release_pool_valid": false,
+      "states": 3,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "夜市灯火"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "公共建筑扩建"
+      ],
+      "release_pool_valid": false,
+      "states": 6,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "公共建筑扩建"
+      ],
+      "release_pool_valid": false,
+      "states": 26,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马"
+        ],
+        "eligible": [
+          "公共建筑扩建"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "旧房翻新",
+        "公共建筑扩建"
+      ],
+      "release_pool_valid": false,
+      "states": 3,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "旧房翻新"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "旧房翻新",
+        "公共建筑扩建"
+      ],
+      "release_pool_valid": false,
+      "states": 11,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "夜市灯火",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "公共建筑扩建"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "旧房翻新",
+        "公共建筑扩建"
+      ],
+      "release_pool_valid": false,
+      "states": 26,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "公共建筑扩建"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "旧房翻新",
+        "公共建筑扩建"
+      ],
+      "release_pool_valid": false,
+      "states": 88,
+      "full_histories": 48,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "公共建筑扩建"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 1,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 0,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": []
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 3,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "夜市灯火"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 6,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 26,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马"
+        ],
+        "eligible": [
+          "集市繁荣"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "旧房翻新",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 3,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "旧房翻新"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "旧房翻新",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 11,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "夜市灯火",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "集市繁荣"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "旧房翻新",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 26,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "集市繁荣"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "旧房翻新",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 88,
+      "full_histories": 48,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "集市繁荣"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 1,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 0,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": []
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 6,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "夜市灯火"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 17,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 65,
+      "full_histories": 36,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "集市繁荣"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 6,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "旧房翻新"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 33,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "夜市灯火",
+          "旧房翻新",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "集市繁荣"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 65,
+      "full_histories": 36,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "集市繁荣"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣"
+      ],
+      "release_pool_valid": false,
+      "states": 189,
+      "full_histories": 240,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 4,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "旧房翻新",
+          "公共建筑扩建",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 2,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 0,
+        "4": null,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 5,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 3,
+        "history": [
+          "夜市灯火"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 9,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "招兵买马",
+          "招兵买马"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 35,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "旧房翻新",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 5,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 3,
+        "history": [
+          "旧房翻新"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "旧房翻新",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 16,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "夜市灯火",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "旧房翻新",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 35,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "旧房翻新",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 111,
+      "full_histories": 60,
+      "minimum_distinct_by_level": {
+        "2": 4,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "公共建筑扩建",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 3,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "公共建筑扩建",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 11,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "夜市灯火",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "公共建筑扩建",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 26,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "公共建筑扩建",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 88,
+      "full_histories": 48,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "旧房翻新",
+        "公共建筑扩建",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 11,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "旧房翻新",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "旧房翻新",
+        "公共建筑扩建",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 49,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "夜市灯火",
+          "旧房翻新",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "旧房翻新",
+        "公共建筑扩建",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 88,
+      "full_histories": 48,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新",
+          "公共建筑扩建"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "旧房翻新",
+        "公共建筑扩建",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 240,
+      "full_histories": 300,
+      "minimum_distinct_by_level": {
+        "2": 4,
+        "3": 4,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "旧房翻新",
+          "公共建筑扩建",
+          "警钟"
+        ],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 3,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": null,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 11,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "夜市灯火",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 26,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 88,
+      "full_histories": 48,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "招兵买马",
+          "招兵买马",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "旧房翻新",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 11,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 4,
+        "history": [
+          "旧房翻新",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "旧房翻新",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 49,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "夜市灯火",
+          "旧房翻新",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "旧房翻新",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 88,
+      "full_histories": 48,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "旧房翻新",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "旧房翻新",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 240,
+      "full_histories": 300,
+      "minimum_distinct_by_level": {
+        "2": 4,
+        "3": 4,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "旧房翻新",
+          "集市繁荣",
+          "警钟"
+        ],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "公共建筑扩建",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 6,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 1,
+        "3": 2,
+        "4": 1,
+        "5": 0,
+        "6": null
+      },
+      "first_failure": {
+        "town_level": 2,
+        "history": [],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "公共建筑扩建",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 33,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "夜市灯火",
+          "公共建筑扩建",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "公共建筑扩建",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 65,
+      "full_histories": 36,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "招兵买马",
+          "招兵买马",
+          "公共建筑扩建",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "公共建筑扩建",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 189,
+      "full_histories": 240,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 4,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "公共建筑扩建",
+          "集市繁荣",
+          "警钟"
+        ],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 33,
+      "full_histories": 0,
+      "minimum_distinct_by_level": {
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 0
+      },
+      "first_failure": {
+        "town_level": 5,
+        "history": [
+          "旧房翻新",
+          "公共建筑扩建",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 124,
+      "full_histories": 72,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 4,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "夜市灯火",
+          "旧房翻新",
+          "公共建筑扩建",
+          "集市繁荣"
+        ],
+        "eligible": [
+          "警钟"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "招兵买马",
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": false,
+      "states": 189,
+      "full_histories": 240,
+      "minimum_distinct_by_level": {
+        "2": 3,
+        "3": 4,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "first_failure": {
+        "town_level": 6,
+        "history": [
+          "旧房翻新",
+          "公共建筑扩建",
+          "集市繁荣",
+          "警钟"
+        ],
+        "eligible": [
+          "招兵买马"
+        ]
+      }
+    },
+    {
+      "implemented_cards": [
+        "夜市灯火",
+        "招兵买马",
+        "旧房翻新",
+        "公共建筑扩建",
+        "集市繁荣",
+        "警钟"
+      ],
+      "release_pool_valid": true,
+      "states": 455,
+      "full_histories": 936,
+      "minimum_distinct_by_level": {
+        "2": 4,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 2
+      },
+      "first_failure": null
+    }
+  ],
+  "limitations": "All dependencies assumed implemented and unlocked as configured; actual runtime, save loading, effect functionality and further exclusions require separate QA."
+}

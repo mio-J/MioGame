@@ -1,0 +1,171 @@
+{
+  "rule": "Only ordinary shops within12m of market get20m service instead18m; market self remains15m. No virtual customers.",
+  "engine_test": false,
+  "fixtures": {
+    "new_unserved_street": {
+      "before": {
+        "incomes_per_min": {
+          "bread": 0.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 0.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "after": {
+        "incomes_per_min": {
+          "bread": 240.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 240.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "city_net_delta_per_min": 240.0
+    },
+    "already_served_same_shop": {
+      "before": {
+        "incomes_per_min": {
+          "bread": 240.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 240.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "after": {
+        "incomes_per_min": {
+          "bread": 240.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 240.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "city_net_delta_per_min": 0.0
+    },
+    "already_saturated_street": {
+      "before": {
+        "incomes_per_min": {
+          "bread": 0.0,
+          "grocery": 200.0,
+          "market": 200.0,
+          "tavern": 400.0
+        },
+        "total_per_min": 800.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "after": {
+        "incomes_per_min": {
+          "bread": 160.0,
+          "grocery": 160.0,
+          "market": 160.0,
+          "tavern": 320.0
+        },
+        "total_per_min": 800.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "city_net_delta_per_min": 0.0
+    },
+    "tax_space_exhausted": {
+      "before": {
+        "incomes_per_min": {
+          "bread": 0.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 0.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 0.0
+      },
+      "after": {
+        "incomes_per_min": {
+          "bread": 0.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 0.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 0.0
+      },
+      "city_net_delta_per_min": 0.0
+    },
+    "same_kind_duplicate": {
+      "before": {
+        "incomes_per_min": {
+          "bread": 0.0,
+          "grocery": 0.0,
+          "market": 0.0,
+          "bread2": 240.0
+        },
+        "total_per_min": 240.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "after": {
+        "incomes_per_min": {
+          "bread": 120.0,
+          "grocery": 0.0,
+          "market": 0.0,
+          "bread2": 120.0
+        },
+        "total_per_min": 240.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "city_net_delta_per_min": 0.0
+    },
+    "recruit_reservation": {
+      "before": {
+        "incomes_per_min": {
+          "bread": 0.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 0.0,
+        "actual_free_customers": 16,
+        "pool_ceiling": 640.0
+      },
+      "after": {
+        "incomes_per_min": {
+          "bread": 192.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 192.0,
+        "actual_free_customers": 16,
+        "pool_ceiling": 640.0
+      },
+      "city_net_delta_per_min": 192.0
+    },
+    "market_own_radius_unchanged": {
+      "before": {
+        "incomes_per_min": {
+          "bread": 0.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 0.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "after": {
+        "incomes_per_min": {
+          "bread": 0.0,
+          "grocery": 0.0,
+          "market": 0.0
+        },
+        "total_per_min": 0.0,
+        "actual_free_customers": 20,
+        "pool_ceiling": 800.0
+      },
+      "city_net_delta_per_min": 0.0
+    }
+  }
+}

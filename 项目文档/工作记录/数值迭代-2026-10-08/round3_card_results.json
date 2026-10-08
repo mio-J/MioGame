@@ -1,0 +1,84 @@
+{
+  "status": "slice_levels_2_to_5_choices_valid_not_playtest",
+  "economic_cards": {
+    "夜市灯火": {
+      "unlock_town_level": 2,
+      "max_rank": 1
+    },
+    "招兵买马": {
+      "unlock_town_level": 2,
+      "max_rank": 2
+    },
+    "旧房翻新": {
+      "unlock_town_level": 2,
+      "max_rank": 1
+    },
+    "公共建筑扩建": {
+      "unlock_town_level": 3,
+      "max_rank": 1
+    },
+    "集市繁荣": {
+      "unlock_town_level": 3,
+      "max_rank": 1
+    }
+  },
+  "dependency_rule": "implemented in slice and unlocked; not-yet-built dependencies shown as pending",
+  "minimum_distinct_eligible_by_level": {
+    "2": 3,
+    "3": 4,
+    "4": 3,
+    "5": 2
+  },
+  "checked_choice_states": 63,
+  "complete_choice_sequences": 126,
+  "level6_minimum_eligible": 1,
+  "level6_supported": false,
+  "battle_pool": [
+    "穿云箭",
+    "跳弹",
+    "破甲",
+    "斩杀线",
+    "碎冰",
+    "凝滞",
+    "阴阳轮转",
+    "瓮中捉鳖",
+    "代理领主之旗",
+    "结阵",
+    "老兵",
+    "归营疗养",
+    "火力渐强",
+    "塔下驻军",
+    "不屈"
+  ],
+  "synergies": [
+    [
+      "穿云箭",
+      "跳弹"
+    ],
+    [
+      "破甲",
+      "斩杀线"
+    ],
+    [
+      "碎冰",
+      "凝滞"
+    ],
+    [
+      "阴阳轮转",
+      "瓮中捉鳖"
+    ],
+    [
+      "代理领主之旗",
+      "结阵"
+    ],
+    [
+      "老兵",
+      "归营疗养"
+    ]
+  ],
+  "limitations": [
+    "all configured dependencies assumed implemented; real candidate filtering must rerun after scope changes",
+    "six synergy pairs are proposed content, not proven actual implementation or fun",
+    "S02 town level6 not required by first-slice route; if enabled, reward pool must be validated separately"
+  ]
+}

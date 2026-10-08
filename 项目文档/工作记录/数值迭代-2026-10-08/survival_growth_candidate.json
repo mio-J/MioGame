@@ -1,0 +1,282 @@
+{
+  "threat_points": {
+    "green": 1,
+    "archer": 2,
+    "spore": 3,
+    "climber": 3,
+    "javelin": 3,
+    "immune": 4,
+    "iron": 4,
+    "boar": 5,
+    "mother": 7,
+    "giant": 18
+  },
+  "stages": [
+    [
+      {
+        "green": 6
+      },
+      {
+        "archer": 1,
+        "green": 7
+      },
+      {
+        "archer": 2,
+        "green": 8
+      },
+      {
+        "archer": 2,
+        "green": 12
+      }
+    ],
+    [
+      {
+        "iron": 1,
+        "archer": 1,
+        "green": 6
+      },
+      {
+        "spore": 1,
+        "archer": 3,
+        "green": 7
+      },
+      {
+        "spore": 1,
+        "archer": 2,
+        "javelin": 1,
+        "climber": 1,
+        "green": 7
+      },
+      {
+        "iron": 2,
+        "spore": 2,
+        "javelin": 2,
+        "archer": 2,
+        "green": 12
+      }
+    ],
+    [
+      {
+        "immune": 1,
+        "boar": 1,
+        "archer": 2,
+        "green": 7
+      },
+      {
+        "immune": 2,
+        "iron": 1,
+        "climber": 2,
+        "green": 8
+      },
+      {
+        "immune": 2,
+        "iron": 2,
+        "javelin": 2,
+        "green": 10
+      },
+      {
+        "giant": 1,
+        "immune": 2,
+        "iron": 2,
+        "archer": 1,
+        "spore": 1,
+        "javelin": 1,
+        "green": 22
+      }
+    ],
+    [
+      {
+        "immune": 2,
+        "iron": 2,
+        "boar": 2,
+        "javelin": 2,
+        "green": 4
+      },
+      {
+        "mother": 1,
+        "iron": 3,
+        "archer": 3,
+        "climber": 2,
+        "green": 13
+      },
+      {
+        "immune": 3,
+        "boar": 3,
+        "spore": 3,
+        "javelin": 3,
+        "green": 7
+      },
+      {
+        "iron": 4,
+        "archer": 4,
+        "green": 8
+      },
+      {
+        "giant": 1,
+        "immune": 4,
+        "iron": 4,
+        "spore": 3,
+        "boar": 3,
+        "javelin": 4,
+        "archer": 3,
+        "green": 4
+      }
+    ],
+    [
+      {
+        "mother": 2,
+        "iron": 4,
+        "boar": 3,
+        "green": 7
+      },
+      {
+        "immune": 4,
+        "boar": 4,
+        "javelin": 4,
+        "archer": 4,
+        "green": 8
+      },
+      {
+        "mother": 3,
+        "iron": 5,
+        "climber": 4,
+        "javelin": 4,
+        "green": 11
+      },
+      {
+        "giant": 2,
+        "immune": 4,
+        "iron": 4,
+        "mother": 2,
+        "boar": 4,
+        "javelin": 4,
+        "archer": 4,
+        "green": 10
+      }
+    ],
+    [
+      {
+        "immune": 4,
+        "iron": 4,
+        "mother": 2,
+        "boar": 4,
+        "green": 6
+      },
+      {
+        "mother": 4,
+        "javelin": 6,
+        "archer": 6,
+        "climber": 6,
+        "green": 12
+      },
+      {
+        "immune": 6,
+        "iron": 6,
+        "boar": 6,
+        "javelin": 6,
+        "green": 8
+      },
+      {
+        "giant": 3,
+        "immune": 6,
+        "iron": 6,
+        "mother": 4,
+        "boar": 4,
+        "javelin": 4,
+        "archer": 4,
+        "green": 10
+      }
+    ]
+  ],
+  "s01_clock": [
+    60,
+    140,
+    220,
+    280
+  ],
+  "initial_prepare": 120,
+  "rest": 90,
+  "normal_interval": 40,
+  "small_normal_clock_pause_seconds": 20,
+  "same_tick_priority": "concentrated_before_normal",
+  "normal_nominal_count_per_stage": {
+    "S01": 5,
+    "S02": 6
+  },
+  "camp_guard_s01": {
+    "green": 4,
+    "archer": 1
+  },
+  "camp_reward_modes": {
+    "S01": {
+      "mode": "fixed_crystal",
+      "amount": 50
+    },
+    "S02": {
+      "mode": "choose_crystal_or_steel",
+      "steel_multiplier": 2
+    }
+  },
+  "config_id": "S02-G",
+  "status": "isolated_experiment_not_default_not_passed",
+  "base_config": "survival_config.json",
+  "s02_stage_clocks": [
+    [
+      60,
+      150,
+      240,
+      310
+    ],
+    [
+      60,
+      150,
+      240,
+      310
+    ],
+    [
+      60,
+      150,
+      240,
+      310
+    ],
+    [
+      60,
+      150,
+      240,
+      390,
+      550
+    ],
+    [
+      60,
+      150,
+      240,
+      310
+    ],
+    [
+      60,
+      150,
+      240,
+      310
+    ]
+  ],
+  "stage4_extra_spawn_batches": [
+    {
+      "relative_second": 0,
+      "composition": {
+        "iron": 4,
+        "green": 8
+      }
+    },
+    {
+      "relative_second": 4,
+      "composition": {
+        "archer": 4
+      }
+    }
+  ],
+  "limitations": [
+    "仅验证威胁预算与名义时钟，未验证阵容生产前置、战损、地图与经验",
+    "清场时长沿用旧预测；新增小波及延长普通投放必须另行模拟",
+    "经济3640秒延长候选不是新增压力已计入的完整通关账"
+  ]
+}

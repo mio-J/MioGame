@@ -1,0 +1,90 @@
+{
+  "method": "SHA of actual completion events; matching wave clock and every repair payment second",
+  "engine_navigation_test": false,
+  "scenarios": {
+    "经济稳守工业": {
+      "same_completion_input": true,
+      "clock_matches_feedback": true,
+      "per_second_repair_fee_difference": 0,
+      "paid_repair_sum": 0,
+      "combat_repair_sum": 0,
+      "six_phase_condition_clear": false,
+      "stop_second": 261.4,
+      "coupling_fixed_point": true,
+      "actual_enemy_losses_reconciled": false,
+      "map_scope": "finite synthetic map only, actor navigation/foundations unverified"
+    },
+    "经济稳守住房": {
+      "same_completion_input": true,
+      "clock_matches_feedback": true,
+      "per_second_repair_fee_difference": 0,
+      "paid_repair_sum": 0,
+      "combat_repair_sum": 0,
+      "six_phase_condition_clear": false,
+      "stop_second": 261.4,
+      "coupling_fixed_point": true,
+      "actual_enemy_losses_reconciled": false,
+      "map_scope": "finite synthetic map only, actor navigation/foundations unverified"
+    },
+    "科技扩矿工业": {
+      "same_completion_input": true,
+      "clock_matches_feedback": true,
+      "per_second_repair_fee_difference": 0,
+      "paid_repair_sum": 0,
+      "combat_repair_sum": 0,
+      "six_phase_condition_clear": false,
+      "stop_second": 261.4,
+      "coupling_fixed_point": true,
+      "actual_enemy_losses_reconciled": false,
+      "map_scope": "finite synthetic map only, actor navigation/foundations unverified"
+    },
+    "科技扩矿住房": {
+      "same_completion_input": true,
+      "clock_matches_feedback": true,
+      "per_second_repair_fee_difference": 0,
+      "paid_repair_sum": 0,
+      "combat_repair_sum": 0,
+      "six_phase_condition_clear": false,
+      "stop_second": 261.4,
+      "coupling_fixed_point": true,
+      "actual_enemy_losses_reconciled": false,
+      "map_scope": "finite synthetic map only, actor navigation/foundations unverified"
+    },
+    "经济稳守工业保险": {
+      "same_completion_input": true,
+      "clock_matches_feedback": true,
+      "per_second_repair_fee_difference": 0.0,
+      "paid_repair_sum": 3502.5,
+      "combat_repair_sum": 3502.5,
+      "six_phase_condition_clear": false,
+      "stop_second": 1798.2,
+      "coupling_fixed_point": true,
+      "actual_enemy_losses_reconciled": false,
+      "map_scope": "finite synthetic map only, actor navigation/foundations unverified"
+    },
+    "经济稳守工业延住宅保险": {
+      "same_completion_input": true,
+      "clock_matches_feedback": true,
+      "per_second_repair_fee_difference": 0.0,
+      "paid_repair_sum": 5958.67,
+      "combat_repair_sum": 5958.67,
+      "six_phase_condition_clear": true,
+      "stop_second": 2997.5,
+      "coupling_fixed_point": true,
+      "actual_enemy_losses_reconciled": true,
+      "map_scope": "finite synthetic map only, actor navigation/foundations unverified"
+    },
+    "魔法未验证营地反例": {
+      "same_completion_input": true,
+      "clock_matches_feedback": true,
+      "per_second_repair_fee_difference": 0,
+      "paid_repair_sum": 0,
+      "combat_repair_sum": 0,
+      "six_phase_condition_clear": false,
+      "stop_second": 261.4,
+      "coupling_fixed_point": true,
+      "actual_enemy_losses_reconciled": false,
+      "map_scope": "finite synthetic map only, actor navigation/foundations unverified"
+    }
+  }
+}

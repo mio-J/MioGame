@@ -1,0 +1,169 @@
+{
+  "catalog": {
+    "barracks2": [
+      3000,
+      20,
+      0,
+      20,
+      40,
+      0,
+      0,
+      1,
+      4
+    ],
+    "barracks3": [
+      6000,
+      60,
+      0,
+      30,
+      60,
+      0,
+      0,
+      1,
+      4
+    ],
+    "shrine2": [
+      4000,
+      0,
+      20,
+      20,
+      40,
+      0,
+      0,
+      1,
+      4
+    ],
+    "shrine3": [
+      7000,
+      0,
+      40,
+      30,
+      60,
+      0,
+      0,
+      1,
+      4
+    ],
+    "gun_unlock": [
+      1200,
+      10,
+      0,
+      0,
+      30,
+      0,
+      0,
+      1,
+      0
+    ],
+    "assassin_unlock": [
+      2000,
+      0,
+      15,
+      0,
+      40,
+      0,
+      0,
+      1,
+      0
+    ],
+    "alchemy": [
+      5000,
+      0,
+      25,
+      50,
+      30,
+      300,
+      0,
+      1,
+      6
+    ],
+    "stage_worker": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  "map": {
+    "mines": [
+      [
+        120,
+        0
+      ],
+      [
+        180,
+        0
+      ],
+      [
+        350,
+        200
+      ],
+      [
+        260,
+        -30
+      ],
+      [
+        400,
+        10
+      ],
+      [
+        480,
+        -10
+      ]
+    ],
+    "camps": [
+      [
+        350,
+        0
+      ],
+      [
+        450,
+        100
+      ],
+      [
+        550,
+        0
+      ],
+      [
+        450,
+        -100
+      ]
+    ]
+  },
+  "queue_rule": "same facility upgrade/unlock/recruit exclusive; upgrade self-research; additive energy",
+  "upgrade_prerequisites": {
+    "barracks2": "research2+barracks1",
+    "barracks3": "research3+barracks2",
+    "shrine2": "magic2+shrine1",
+    "shrine3": "magic3+shrine2"
+  },
+  "existing_base_energy": {
+    "barracks": 0,
+    "shrine": 50
+  },
+  "status": "candidate_not_formal",
+  "teaching_experiments": {
+    "S01-L_Lv4": {
+      "magic2_xp_gate": 240,
+      "camp_crystal_each": 65,
+      "scope": "independent teaching experiment only",
+      "default_magic2_xp_gate_preserved": 360,
+      "grant_level_or_xp": false,
+      "requests_at_real_preconditions": true
+    }
+  },
+  "magic3_material_experiment": {
+    "old_crystal": 300,
+    "candidate_crystal": 200,
+    "gold_preserved": 16000,
+    "incremental_energy_preserved": 200,
+    "seconds_preserved": 60,
+    "hero_xp_gate_preserved": 1260,
+    "status": "candidate_only_not_formal"
+  }
+}

@@ -1,0 +1,487 @@
+[
+  {
+    "file": "项目文档\\设计文档\\核心玩法循环.md",
+    "version": "v0.14",
+    "sha256": "FD34012B27DCB995923026274D791AF4A729E009EFEC689AE2343A798518B60A"
+  },
+  {
+    "file": "项目文档\\设计文档\\世界观与角色.md",
+    "version": "v0.2",
+    "sha256": "DB0DC569A654AF8FE861D9811EBA17E7DAA5E3DC1AEAA512A3A4EB9C564F9E80"
+  },
+  {
+    "file": "项目文档\\设计文档\\项目总览.md",
+    "version": "v0.3",
+    "sha256": "3B98A3C34C1ADD87F71FE91DB8EFB2BE2E9A7D158C53A36B804B301D4C62B178"
+  },
+  {
+    "file": "项目文档\\设计文档\\游戏模式与关卡.md",
+    "version": "v0.10",
+    "sha256": "C175584A525531B243538246C14F16FDB761E6EA24CDC24B91E61AE0A2975097"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\大主教.md",
+    "version": "v0.1",
+    "sha256": "0C65BF2F9D93198D59FE49E6CCEAA144BAA9148D9D9DF86B2ED225EA5C216822"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\法师.md",
+    "version": "v0.3",
+    "sha256": "B0F812358D245F080CAF8302CE521899025538D151AB5F1B84350E719164894E"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\防御术士.md",
+    "version": "v0.5",
+    "sha256": "21C089F0BA03677F9760B67A6EFB1C87EA3DBC4DD0F2E1C317947275BEEE7AD0"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\古塞奇尤.md",
+    "version": "v1.0",
+    "sha256": "45E82FF924AEA24810F63FAA73BCB577F64262F04BA75DD4C4D46AA76D008310"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\火枪手.md",
+    "version": "v0.3",
+    "sha256": "6B8CDCC92706F99A4CE0B918445FD673D969C750743C2C2503B3A447DAB2D812"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\开拓者.md",
+    "version": "v0.2",
+    "sha256": "2197569B7BD1D78A33057E15194FC1AC8EFA4C3D2E2767D1381BDFF25972DC9E"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\民兵.md",
+    "version": "v0.2",
+    "sha256": "192ACF43A47789ABD99B02C1BD14968256918C92E3EF8527063FCAE9A090215E"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\牧师.md",
+    "version": "v0.2",
+    "sha256": "D9BE8449187FA8D5BFBD7F9A9233F317CDAC92DB8874AB606BB3671E15D00093"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\骑士.md",
+    "version": "v0.3",
+    "sha256": "E6737E35FDD3EA5DE23A9AF48F956A35BAFCA518B055275AC7C6AC4817780D30"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\圣骑士.md",
+    "version": "v0.3",
+    "sha256": "D25AFABD5C3718AB2D47A9B2CFB678FB1FFC41428D23482C15479AC3C31A9A81"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\圣堂刺客.md",
+    "version": "v0.4",
+    "sha256": "5DC71847FFD55FFAAADD07F83A8004341FEB3B2C7EADDA30B6CB277020AC752B"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\曙光号.md",
+    "version": "v0.1",
+    "sha256": "4D1D0A079E8EAAA5973817A17556DF60553878F405B8261C9C02432E1DAE6CA8"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\无人机.md",
+    "version": "v0.3",
+    "sha256": "5430B4E9A54506E700AF33D1BB6BFA9251DCBD15E5D39D190A71466CE790D96F"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\先知.md",
+    "version": "v0.1",
+    "sha256": "AB605CBEB194A241BE11346D9B1194E0934ABAA8A5AE2BFE384970F567DA4893"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\星术士.md",
+    "version": "v0.1",
+    "sha256": "9D62E51FE493E564E8ACB5705207EB07D731176FD16FE789BA732480684F88E2"
+  },
+  {
+    "file": "项目文档\\设计文档\\单位\\运输舰.md",
+    "version": "v0.1",
+    "sha256": "041BA6D2F2B2B45561EAFDC4E40AEC1514362AE19265D5EC2CC3723A6FBABD0D"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\兵营.md",
+    "version": "v0.3",
+    "sha256": "7A2E988A24CF1AB9AFDD35FDDFDABD3BECD072A16FA98ED7446FD7322D8D3C24"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\裁决.md",
+    "version": "v0.4",
+    "sha256": "BDE98D876E8B63320601A437E0DCAB6F6B662118C65C7E7BF5CB7982690B3A56"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\城墙.md",
+    "version": "v0.3",
+    "sha256": "42A8449E02182731BCEF5C83AD6AC1179D72A04F0782F8BBDFB5F10CF08B7D99"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\传送阵.md",
+    "version": "v0.2",
+    "sha256": "75AC904C1CEF0D5B82CA14660B986219FA2265E2135C2E7CF8096E35BE2EDD40"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\法师营地.md",
+    "version": "v0.2",
+    "sha256": "999FEFD1948C5F5940859C703D2BA2B9C3CE031835F9C24BDB964D5045713858"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\风暴尖塔.md",
+    "version": "v0.2",
+    "sha256": "46CAE329B28FD0D81A90AE6E104C5558698E56B10E2DF860A5FC384BE7698805"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\腐蚀塔.md",
+    "version": "v0.3",
+    "sha256": "FE7DE62FC4C4D016B1BAD4054255CC274CDFC5EDDF12C06DFAE229EEE05A9FF3"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\缚灵塔.md",
+    "version": "v0.2",
+    "sha256": "0D2BBD9F4A067818078898534EAF3D4B290DEC0A74117EAEFFCA2E87DE3DF08C"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\钢雨.md",
+    "version": "v0.3",
+    "sha256": "513A42F865B87EC7420867B57CED1EA8E1F37A0FA0A6C64A472BC267339129A6"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\核弹发射井.md",
+    "version": "v0.3",
+    "sha256": "9CBBD5A5D37105CE7A0892CCE35DE795E031BCD4CDB0B0ABF6678E1E6A0B0AD7"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\火炮塔.md",
+    "version": "v0.2",
+    "sha256": "4FEA97C7F18C507D756E800B44A85642EF75D141112EB92E0F2E50342A5CF6D5"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\箭塔.md",
+    "version": "v0.4",
+    "sha256": "AE883500A22F0894CD5FBDA409A2CD080B44B3FA25337FA8ED99FF38B5D2F231"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\雷环塔.md",
+    "version": "v0.3",
+    "sha256": "AE532D7939D6423153BC4D4EAB39E38CE53D650C66DA6FA05909D9264422B28C"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\灵魂熔炉.md",
+    "version": "v0.2",
+    "sha256": "4721BD866995CCD261A5A81037FBECF3ED052914A6690F579FC2E2C38013647E"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\魔导护盾器.md",
+    "version": "v0.4",
+    "sha256": "0257D64B299D6FF385E8C5A635CB43AA318F76330E1174FF091E400FEF270B19"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\凝霜塔.md",
+    "version": "v0.3",
+    "sha256": "86C05CA085B80E9E15A91D022646EB5D89E59C33514C9E90E3FD51A003A4B60A"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\哨塔.md",
+    "version": "v0.7",
+    "sha256": "228B8FD0C6EB6E751EFE928D2032E8C75B8F8EFF935CF7FB2FB57A50D616E3E9"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\圣堂.md",
+    "version": "v0.6",
+    "sha256": "44B0FA370C7213A625694AC9A536E852B0FBA816F8CB50B162F0BD07A38BE6AA"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\曙光.md",
+    "version": "v0.2",
+    "sha256": "08AB2411EC7A167B9F3D0C5A9FE30C7ECCAE5B97B9F1CB974C803D47E4BD3CD4"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\双重箭塔.md",
+    "version": "v0.3",
+    "sha256": "6CF4B11298F34603B1A595DE832ADB08A6F0E593DEC7007C125EDD3E1CB82991"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\无人机坞.md",
+    "version": "v0.6",
+    "sha256": "AC2C4063FB0DF76F87919C6D4E5049147874DDE34D3DA8EEB42E9C23ACEC1B6F"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\星象殿.md",
+    "version": "v0.4",
+    "sha256": "5BD6ACEA3E97273DB39B1F49387569868C1CF827D14E49914532EEC92D3F1F9B"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\研究院.md",
+    "version": "v0.2",
+    "sha256": "709D30BEC549BA13D72184472B8283FD75E43F93C404F9A71D1BFAF783FE1ACE"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\军事建筑\\造船厂.md",
+    "version": "v0.2",
+    "sha256": "EA140B54FFDF22EE2AE6529BD98F723D18CC886E0E6300D179254322FFB9553C"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\百货公司.md",
+    "version": "v0.1",
+    "sha256": "6776D0B0B9F22463AB6FCF7B67DCEF69FF63411ECF97E42BFA9EE3C447D058EA"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\采矿场.md",
+    "version": "v0.2",
+    "sha256": "38C10091DDCACBF5889D4CFADE5A4004F29559E25CF4BD57FAD87F1A27BCCBF5"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\电器行.md",
+    "version": "v0.1",
+    "sha256": "58DAFD98F904B42B1C37755406CA533810C58695F26D1F9481A5F1D6360A0507"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\电影院.md",
+    "version": "v0.4",
+    "sha256": "C230F17D2DEAC8C48FA0214A5BF9845043E667C6DF2621519E0B4E355B254B2E"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\海上石油平台.md",
+    "version": "v0.1",
+    "sha256": "D730278BB4A7E15833EE7A0827070F59627040D90FD73947DE2D6BC185118836"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\集市.md",
+    "version": "v0.1",
+    "sha256": "B06C62BCE094824795A4CBF3022723B85A33FA04F0041D829436822DB37B91D6"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\酒馆.md",
+    "version": "v0.1",
+    "sha256": "7C2C5763353E1E1F89B5007D992706CB4B0471BBABC024A6527902A266042E0E"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\炼钢厂.md",
+    "version": "v0.5",
+    "sha256": "7A9F5D3A12FCF0A7B717FD8036D66A2D19CA00F17A60E4F4A60ADC306E3423AD"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\炼金坊.md",
+    "version": "v0.2",
+    "sha256": "9B414FE3C883D483F163EC423741599873943DCC3779B8D07A5E63258D388702"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\旅馆.md",
+    "version": "v0.1",
+    "sha256": "DAD3F1D163ACE2D25E780B2D5F6BCF5FC2A111391BBFC75AF2D23413FE6874E1"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\煤矿.md",
+    "version": "v0.1",
+    "sha256": "64E44EA0670A81A865312FC5DAF7E7E591DE7985B24090F36060BFE767451743"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\面包房.md",
+    "version": "v0.1",
+    "sha256": "1AE593F070866019775667DF5F0095967E160E6C140844FDBDA2E3D981A93CC4"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\民居.md",
+    "version": "v0.7",
+    "sha256": "36356F1550E964E74C69CF9CBA9F5A42AC7823125AE20A93E3FBC559B43AABEB"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\魔导器专卖店.md",
+    "version": "v0.1",
+    "sha256": "FCF68B4704D113D17DC9FC34CD9CAC75422850C66C20B1984E0ED42311C13FA7"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\市政厅.md",
+    "version": "v0.4",
+    "sha256": "8BB66019B7BAC5C78D7A62A28796977BEF9011DBD0BCF84929F0301EA95815CE"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\太阳能发电站.md",
+    "version": "v0.1",
+    "sha256": "EB239DD2C5DB20094611E6DA6EB3B5C2BC937EB69CB438EA247A32C17E3DC90C"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\铁匠铺.md",
+    "version": "v0.1",
+    "sha256": "9276B25F83E7448132E49092321516C7485C34B514AC18128229F6E1BFAFBCE4"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\药水铺.md",
+    "version": "v0.1",
+    "sha256": "DD3FCB220E27EF472570C063A43B94DAA756165A1A2207F58FED15CF61DECED2"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\油井.md",
+    "version": "v0.1",
+    "sha256": "E76387E87DBE0D92515E6C00B5709AAF5EC49094B21D19364262934765E7632E"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\杂货铺.md",
+    "version": "v0.1",
+    "sha256": "1C45BAEEB101E4AC7F83FF5CFE0219AD2574DBAE2155EC5CA1A24C0E7FDC430A"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\主城设计.md",
+    "version": "v0.8",
+    "sha256": "4A973C64D353E05F6C2A691D2448F7BD3E7FD0E37BFA63754A8450F2C1DB673F"
+  },
+  {
+    "file": "项目文档\\设计文档\\建筑\\经营建筑\\主角雕像.md",
+    "version": "v0.1",
+    "sha256": "E1FC68F76927DD62C15BE369C868C2D9298662F84832D91F18319026663EF23E"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\孢囊怪.md",
+    "version": "v0.3",
+    "sha256": "8D0DCF6DA252C64C0896BC800D654FBD3447C936B10B1CB90E8DC259203F300A"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\巨怪.md",
+    "version": "v0.2",
+    "sha256": "384313950EA3693A95C2BFD3F747F6D08C631917F5B2F1CB27BA02CD3598A438"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\绿皮弓手.md",
+    "version": "v0.2",
+    "sha256": "E3A32D072003AC58A7A086FC9166E061F205D038414D44772C043B10BA685A0B"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\攀墙鬼.md",
+    "version": "v0.3",
+    "sha256": "AD30C9F87446C412554655102DB6B000ED0E2B2C88CDD155EE8FB937DF212FBA"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\破咒小子.md",
+    "version": "v0.3",
+    "sha256": "BA90EFA82C9D4CA966E2B05BE562FF608F28EAD94A002F5AF501BADD66D716F3"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\普通绿皮.md",
+    "version": "v0.4",
+    "sha256": "7F21BCC2F7C0D265005D71D47CCA114027DB178A47321B0BF4A3B22201125709"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\铁皮绿皮.md",
+    "version": "v0.3",
+    "sha256": "2DE57E4E9BE25F6297011E8E337CEA95C9ACEAC85C1AA4D91A8456BE533FC2C0"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\投矛绿皮.md",
+    "version": "v0.3",
+    "sha256": "C55431565813F83871358B8722F52B02244764E09CE32AA60BF02A07717E8E86"
+  },
+  {
+    "file": "项目文档\\设计文档\\敌人\\野猪骑手.md",
+    "version": "v0.2",
+    "sha256": "91F0779C0BC20D6AAD109A9D5CD241C850B99BD5CF96D395A7B5B34C06EF88C0"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\标签.md",
+    "version": "v0.4",
+    "sha256": "EBE9580F717E3227DDFBF3839E1848F4254CB00741AB2200699AB035C7F8D91A"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\成本体系.md",
+    "version": "v0.6",
+    "sha256": "369AF94A437827A1251884A458603C750F6C0391CA6993AE3AA8DC09DA3D541F"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\城市形成.md",
+    "version": "v0.3",
+    "sha256": "B23D32CE50A25DEA82FE7C7F3A9C9FA35FCD1553F0BD86537F285EA5D2EAFA3B"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\城镇经营.md",
+    "version": "v0.2",
+    "sha256": "686AF8D9004B32E81CEF55887E455C5EB07EC0C5B3ACC6A67CD63DE43DC8D62A"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\出怪系统.md",
+    "version": "v0.8",
+    "sha256": "9292CCE2C4317F97C428C55639B77ECEE2A06E92C06D3CB0527702F4960D07C3"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\单位行为与警戒规则.md",
+    "version": "v0.3",
+    "sha256": "06457B68B8390252F4CA91C467074F64C4C3E966FD8B950AFDE88129A7894DC9"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\地图与资源点.md",
+    "version": "v0.3",
+    "sha256": "C116EAE827267FEFB06075737648E524FFE1915A6B6194E43091630CF0E4AA3B"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\建造与修理.md",
+    "version": "v0.8",
+    "sha256": "F07E3EADE898EC72BB38A26CA339D0D51F03F45BE258DC4DA67433F96EAD57F4"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\距离与移动速度标准.md",
+    "version": "v0.1",
+    "sha256": "326A4A972258D50C98BC3D2FC53C3DDAE70BA48394B236FCA47318D3AF29DFF3"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\科技系统.md",
+    "version": "v0.9",
+    "sha256": "F1E882493339E0FFC7BFD119A0F6ED1AA749898BEA60052C8BB7D37B27196EBB"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\能源体系.md",
+    "version": "v0.6",
+    "sha256": "9870F4B8E9F25B332F2D4EC58472C931E26D1CEFED557837B8C3AE3A934EC108"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\任务系统.md",
+    "version": "v0.2",
+    "sha256": "63D4BCEFA7B5DCB37ED2C822CE5DFC3DBC0F2049D79088615450123287FFAD8B"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\随机增益.md",
+    "version": "v0.7",
+    "sha256": "EF4478EAA86995914B71DA8E881BBBCD64504258F58C8D727ABADA3E346F75E9"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\战斗与护甲规则.md",
+    "version": "v0.2",
+    "sha256": "8229786BAAD31CE6DFC42AF037D62188C32517E6F7911B0EDF3492A9F5B06C17"
+  },
+  {
+    "file": "项目文档\\设计文档\\系统\\昼夜系统.md",
+    "version": "v0.2",
+    "sha256": "7910C60312AFFF111D8B5ADE760739437D93AF9068EC33043F2852109FFF663B"
+  },
+  {
+    "file": "项目文档\\设计文档\\美术\\建筑美术出图规范.md",
+    "version": "v0.2",
+    "sha256": "D45B9A5E5BFAB21CE929DF1483253806FAC9DA27AE5B6C953D2B487948F6045C"
+  },
+  {
+    "file": "项目文档\\设计文档\\美术\\主城\\图稿说明.md",
+    "version": "",
+    "sha256": "281141D0319682777D777D08D022D51C98CB65AE15394EBDE5D37AD8B36084EA"
+  },
+  {
+    "file": "项目文档\\设计文档\\美术\\主城\\UI样品说明.md",
+    "version": "",
+    "sha256": "E58C71D64C2C812AD0A7C1AA482FCF6A2A6332A846899C7710EB83522FFD95A0"
+  },
+  {
+    "file": "项目文档\\设计文档\\美术\\主城\\敌人与建筑设定图\\单位强度视觉分层提案.md",
+    "version": "",
+    "sha256": "8B6F6E3299AE50E47AA3D3BB4AC09D482B6B148137094B31E05F58E51AA3C14D"
+  },
+  {
+    "file": "项目文档\\设计文档\\美术\\主城\\敌人与建筑设定图\\设定图索引.md",
+    "version": "",
+    "sha256": "DE4115AA77FE149A35E24402FF98571EFBE4696B3D0300B6C979BD5593CBA23F"
+  },
+  {
+    "file": "项目文档\\设计文档\\美术\\资源点\\资源点概念稿索引.md",
+    "version": "",
+    "sha256": "69EDAD0FFE417A5BF11406156D75EDC7BAF8657C3E50E01584981D2F25B347DD"
+  },
+  {
+    "file": "项目文档\\设计文档\\美术\\资源点\\资源点建模说明.md",
+    "version": "",
+    "sha256": "D8F0C37D9877AC49902FAEA7F9401806288F804DC40707208CBB1DC4FF64B51C"
+  }
+]

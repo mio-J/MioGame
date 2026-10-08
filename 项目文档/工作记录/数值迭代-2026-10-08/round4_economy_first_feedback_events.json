@@ -1,0 +1,7674 @@
+{
+  "经济稳守工业": {
+    "events": [
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker1",
+        "kind": "worker",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker2",
+        "kind": "worker",
+        "lane": "B",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "hero_present",
+        "id": "hero",
+        "kind": "hero",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "second": 0,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H1",
+        "until_second": 29,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 9
+      },
+      {
+        "second": 29,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H1",
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 56,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A1",
+        "until_second": 83,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          -12
+        ],
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 83,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A1",
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 83,
+        "id": "A1",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -18,
+          0
+        ],
+        "order_second": 56,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 7,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 120,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H2",
+        "until_second": 147,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 147,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H2",
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 155,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "A2",
+        "until_second": 197,
+        "kind": "tower",
+        "from_pos": [
+          -6,
+          -12
+        ],
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 197,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "A2",
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 197,
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 155,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 22,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 201,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C1",
+        "until_second": 253,
+        "kind": "coal",
+        "from_pos": [
+          36,
+          0
+        ],
+        "pos": [
+          80,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 240,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H3",
+        "until_second": 271,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          0
+        ],
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 11
+      }
+    ],
+    "hero_absences": [],
+    "notes": [
+      "fixed combat clock is an input pass, not a closed fixed point",
+      "controlled 20min house /26min tower+two troops losses preserved; completed buildings refund0",
+      "old fixed repair600 removed; actual combat repair fees required, missing fees not counted as included",
+      "enemy damage, repaired HP and garrison behavior must be fed back by combat model",
+      "phase balances use floor-second conservative snapshots; completions compare to exact float wave time"
+    ],
+    "initial_workers": 2,
+    "initial_towers": 0,
+    "initial_walls": 0,
+    "repair_policy": "available_workers",
+    "repair_targets": "walls_only",
+    "clock_input": {
+      "big_seconds": [],
+      "end_second": 247.5
+    },
+    "economic_event_source": "actual purchase completion seconds, zero future towers"
+  },
+  "经济稳守住房": {
+    "events": [
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker1",
+        "kind": "worker",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker2",
+        "kind": "worker",
+        "lane": "B",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "hero_present",
+        "id": "hero",
+        "kind": "hero",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "second": 0,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H1",
+        "until_second": 29,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 9
+      },
+      {
+        "second": 29,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H1",
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 56,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A1",
+        "until_second": 83,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          -12
+        ],
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 83,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A1",
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 83,
+        "id": "A1",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -18,
+          0
+        ],
+        "order_second": 56,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 7,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 120,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H2",
+        "until_second": 147,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 147,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H2",
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 155,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "A2",
+        "until_second": 197,
+        "kind": "tower",
+        "from_pos": [
+          -6,
+          -12
+        ],
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 197,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "A2",
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 197,
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 155,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 22,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 201,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C1",
+        "until_second": 253,
+        "kind": "coal",
+        "from_pos": [
+          36,
+          0
+        ],
+        "pos": [
+          80,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 240,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H3",
+        "until_second": 271,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          0
+        ],
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 11
+      }
+    ],
+    "hero_absences": [],
+    "notes": [
+      "fixed combat clock is an input pass, not a closed fixed point",
+      "controlled 20min house /26min tower+two troops losses preserved; completed buildings refund0",
+      "old fixed repair600 removed; actual combat repair fees required, missing fees not counted as included",
+      "enemy damage, repaired HP and garrison behavior must be fed back by combat model",
+      "phase balances use floor-second conservative snapshots; completions compare to exact float wave time"
+    ],
+    "initial_workers": 2,
+    "initial_towers": 0,
+    "initial_walls": 0,
+    "repair_policy": "available_workers",
+    "repair_targets": "walls_only",
+    "clock_input": {
+      "big_seconds": [],
+      "end_second": 247.5
+    },
+    "economic_event_source": "actual purchase completion seconds, zero future towers"
+  },
+  "科技扩矿工业": {
+    "events": [
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker1",
+        "kind": "worker",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker2",
+        "kind": "worker",
+        "lane": "B",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "hero_present",
+        "id": "hero",
+        "kind": "hero",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "second": 0,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H1",
+        "until_second": 29,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 9
+      },
+      {
+        "second": 29,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H1",
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 56,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A1",
+        "until_second": 83,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          -12
+        ],
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 83,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A1",
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 83,
+        "id": "A1",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -18,
+          0
+        ],
+        "order_second": 56,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 7,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 120,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H2",
+        "until_second": 147,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 147,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H2",
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 155,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "A2",
+        "until_second": 197,
+        "kind": "tower",
+        "from_pos": [
+          -6,
+          -12
+        ],
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 197,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "A2",
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 197,
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 155,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 22,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 201,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C1",
+        "until_second": 253,
+        "kind": "coal",
+        "from_pos": [
+          36,
+          0
+        ],
+        "pos": [
+          80,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 240,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H3",
+        "until_second": 271,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          0
+        ],
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 11
+      }
+    ],
+    "hero_absences": [],
+    "notes": [
+      "fixed combat clock is an input pass, not a closed fixed point",
+      "controlled 20min house /26min tower+two troops losses preserved; completed buildings refund0",
+      "old fixed repair600 removed; actual combat repair fees required, missing fees not counted as included",
+      "enemy damage, repaired HP and garrison behavior must be fed back by combat model",
+      "phase balances use floor-second conservative snapshots; completions compare to exact float wave time"
+    ],
+    "initial_workers": 2,
+    "initial_towers": 0,
+    "initial_walls": 0,
+    "repair_policy": "available_workers",
+    "repair_targets": "walls_only",
+    "clock_input": {
+      "big_seconds": [],
+      "end_second": 247.5
+    },
+    "economic_event_source": "actual purchase completion seconds, zero future towers"
+  },
+  "科技扩矿住房": {
+    "events": [
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker1",
+        "kind": "worker",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker2",
+        "kind": "worker",
+        "lane": "B",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "hero_present",
+        "id": "hero",
+        "kind": "hero",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "second": 0,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H1",
+        "until_second": 29,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 9
+      },
+      {
+        "second": 29,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H1",
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 56,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A1",
+        "until_second": 83,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          -12
+        ],
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 83,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A1",
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 83,
+        "id": "A1",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -18,
+          0
+        ],
+        "order_second": 56,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 7,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 120,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H2",
+        "until_second": 147,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 147,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H2",
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 155,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "A2",
+        "until_second": 197,
+        "kind": "tower",
+        "from_pos": [
+          -6,
+          -12
+        ],
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 197,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "A2",
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 197,
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 155,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 22,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 201,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C1",
+        "until_second": 253,
+        "kind": "coal",
+        "from_pos": [
+          36,
+          0
+        ],
+        "pos": [
+          80,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 240,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H3",
+        "until_second": 271,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          0
+        ],
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 11
+      }
+    ],
+    "hero_absences": [],
+    "notes": [
+      "fixed combat clock is an input pass, not a closed fixed point",
+      "controlled 20min house /26min tower+two troops losses preserved; completed buildings refund0",
+      "old fixed repair600 removed; actual combat repair fees required, missing fees not counted as included",
+      "enemy damage, repaired HP and garrison behavior must be fed back by combat model",
+      "phase balances use floor-second conservative snapshots; completions compare to exact float wave time"
+    ],
+    "initial_workers": 2,
+    "initial_towers": 0,
+    "initial_walls": 0,
+    "repair_policy": "available_workers",
+    "repair_targets": "walls_only",
+    "clock_input": {
+      "big_seconds": [],
+      "end_second": 247.5
+    },
+    "economic_event_source": "actual purchase completion seconds, zero future towers"
+  },
+  "经济稳守工业保险": {
+    "events": [
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker1",
+        "kind": "worker",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker2",
+        "kind": "worker",
+        "lane": "B",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "hero_present",
+        "id": "hero",
+        "kind": "hero",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "second": 0,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H1",
+        "until_second": 29,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 9
+      },
+      {
+        "second": 29,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H1",
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 56,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A1",
+        "until_second": 83,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          -12
+        ],
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 83,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A1",
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 83,
+        "id": "A1",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -18,
+          0
+        ],
+        "order_second": 56,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 7,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 90,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "W1",
+        "until_second": 124,
+        "kind": "wall",
+        "from_pos": [
+          -18,
+          0
+        ],
+        "pos": [
+          -20,
+          6
+        ],
+        "lane": "A",
+        "walk_seconds": 4
+      },
+      {
+        "second": 120,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "W4",
+        "until_second": 169,
+        "kind": "wall",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          36,
+          6
+        ],
+        "lane": "B",
+        "walk_seconds": 19
+      },
+      {
+        "second": 124,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "W1",
+        "pos": [
+          -20,
+          6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 124,
+        "id": "W1",
+        "kind": "wall",
+        "lane": "A",
+        "pos": [
+          -20,
+          6
+        ],
+        "order_second": 90,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 4,
+        "build_seconds": 30,
+        "type": "wall_complete",
+        "hp": 2000,
+        "armor": 15
+      },
+      {
+        "second": 150,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A2",
+        "until_second": 199,
+        "kind": "tower",
+        "from_pos": [
+          -20,
+          6
+        ],
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 29
+      },
+      {
+        "second": 169,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "W4",
+        "pos": [
+          36,
+          6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 169,
+        "id": "W4",
+        "kind": "wall",
+        "lane": "B",
+        "pos": [
+          36,
+          6
+        ],
+        "order_second": 120,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 19,
+        "build_seconds": 30,
+        "type": "wall_complete",
+        "hp": 2000,
+        "armor": 15
+      },
+      {
+        "second": 199,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A2",
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 199,
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 150,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 29,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 213,
+        "id": "repair2",
+        "kind": "worker",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 180,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "worker_complete",
+        "role": "repair_only",
+        "recruit_complete_second": 195,
+        "travel_seconds": 18,
+        "excluded_from_construction_pool": true
+      },
+      {
+        "second": 234,
+        "id": "repair1",
+        "kind": "worker",
+        "lane": "A",
+        "pos": [
+          -18,
+          0
+        ],
+        "order_second": 210,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "worker_complete",
+        "role": "repair_only",
+        "recruit_complete_second": 225,
+        "travel_seconds": 9,
+        "excluded_from_construction_pool": true
+      },
+      {
+        "second": 244,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "B1",
+        "until_second": 292,
+        "kind": "bread",
+        "from_pos": [
+          36,
+          0
+        ],
+        "pos": [
+          -6,
+          -18
+        ],
+        "lane": "A",
+        "walk_seconds": 23
+      },
+      {
+        "second": 292,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "B1",
+        "pos": [
+          -6,
+          -18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 306,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H2",
+        "until_second": 329,
+        "kind": "house",
+        "from_pos": [
+          -6,
+          -18
+        ],
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 329,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H2",
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 360,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "G1",
+        "until_second": 390,
+        "kind": "grocery",
+        "from_pos": [
+          -6,
+          -12
+        ],
+        "pos": [
+          0,
+          -18
+        ],
+        "lane": "A",
+        "walk_seconds": 5
+      },
+      {
+        "second": 390,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "G1",
+        "pos": [
+          0,
+          -18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 395,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A3",
+        "until_second": 432,
+        "kind": "tower",
+        "from_pos": [
+          0,
+          -18
+        ],
+        "pos": [
+          -24,
+          6
+        ],
+        "lane": "A",
+        "walk_seconds": 17
+      },
+      {
+        "second": 429,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "A4",
+        "until_second": 452,
+        "kind": "tower",
+        "from_pos": [
+          36,
+          6
+        ],
+        "pos": [
+          42,
+          6
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 432,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A3",
+        "pos": [
+          -24,
+          6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 432,
+        "id": "A3",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -24,
+          6
+        ],
+        "order_second": 395,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 17,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 452,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "A4",
+        "pos": [
+          42,
+          6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 452,
+        "id": "A4",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          42,
+          6
+        ],
+        "order_second": 429,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 3,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 468,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H3",
+        "until_second": 503,
+        "kind": "house",
+        "from_pos": [
+          -24,
+          6
+        ],
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 15
+      },
+      {
+        "second": 499,
+        "id": "worker3",
+        "kind": "worker_unit",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "order_second": 484,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "worker_complete",
+        "role": "construction_only"
+      },
+      {
+        "second": 503,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H3",
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 529,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H4",
+        "until_second": 556,
+        "kind": "house",
+        "from_pos": [
+          0,
+          -12
+        ],
+        "pos": [
+          -12,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 556,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H4",
+        "pos": [
+          -12,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 562,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C1",
+        "until_second": 612,
+        "kind": "coal",
+        "from_pos": [
+          42,
+          6
+        ],
+        "pos": [
+          80,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 20
+      },
+      {
+        "second": 572,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "W2",
+        "until_second": 609,
+        "kind": "wall",
+        "from_pos": [
+          -12,
+          -6
+        ],
+        "pos": [
+          -16,
+          6
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 598,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "M1",
+        "until_second": 688,
+        "kind": "mine",
+        "from_pos": [
+          0,
+          0
+        ],
+        "pos": [
+          120,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 60
+      },
+      {
+        "second": 609,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "W2",
+        "pos": [
+          -16,
+          6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 609,
+        "id": "W2",
+        "kind": "wall",
+        "lane": "A",
+        "pos": [
+          -16,
+          6
+        ],
+        "order_second": 572,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 7,
+        "build_seconds": 30,
+        "type": "wall_complete",
+        "hp": 2000,
+        "armor": 15
+      },
+      {
+        "second": 609,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "W3",
+        "until_second": 641,
+        "kind": "wall",
+        "from_pos": [
+          -16,
+          6
+        ],
+        "pos": [
+          -12,
+          6
+        ],
+        "lane": "A",
+        "walk_seconds": 2
+      },
+      {
+        "second": 612,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "C1",
+        "pos": [
+          80,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 618,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "Q1",
+        "until_second": 652,
+        "kind": "sentry",
+        "from_pos": [
+          80,
+          0
+        ],
+        "pos": [
+          42,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 19
+      },
+      {
+        "second": 641,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "W3",
+        "pos": [
+          -12,
+          6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 641,
+        "id": "W3",
+        "kind": "wall",
+        "lane": "A",
+        "pos": [
+          -12,
+          6
+        ],
+        "order_second": 609,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 2,
+        "build_seconds": 30,
+        "type": "wall_complete",
+        "hp": 2000,
+        "armor": 15
+      },
+      {
+        "second": 641,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "R1",
+        "until_second": 681,
+        "kind": "barracks",
+        "from_pos": [
+          -12,
+          6
+        ],
+        "pos": [
+          -18,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 10
+      },
+      {
+        "second": 652,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "Q1",
+        "pos": [
+          42,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 652,
+        "id": "Q1",
+        "kind": "sentry",
+        "lane": "B",
+        "pos": [
+          42,
+          0
+        ],
+        "order_second": 618,
+        "purchase_gold": 1600,
+        "purchase_iron": 0,
+        "walk_seconds": 19,
+        "build_seconds": 15,
+        "type": "tower_complete"
+      },
+      {
+        "second": 665,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "T1",
+        "until_second": 703,
+        "kind": "tavern",
+        "from_pos": [
+          42,
+          0
+        ],
+        "pos": [
+          24,
+          -18
+        ],
+        "lane": "B",
+        "walk_seconds": 13
+      },
+      {
+        "second": 681,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "R1",
+        "pos": [
+          -18,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 688,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "M1",
+        "pos": [
+          120,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 696,
+        "id": "m480_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 681,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 703,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "T1",
+        "pos": [
+          24,
+          -18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 710,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H5",
+        "until_second": 737,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          -12
+        ],
+        "pos": [
+          -6,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 711,
+        "id": "m480_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 696,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 737,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H5",
+        "pos": [
+          -6,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 737,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "C2",
+        "until_second": 782,
+        "kind": "coal",
+        "from_pos": [
+          120,
+          0
+        ],
+        "pos": [
+          150,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 15
+      },
+      {
+        "second": 762,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "S1",
+        "until_second": 809,
+        "kind": "smith",
+        "from_pos": [
+          24,
+          -18
+        ],
+        "pos": [
+          48,
+          6
+        ],
+        "lane": "B",
+        "walk_seconds": 17
+      },
+      {
+        "second": 782,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "C2",
+        "pos": [
+          150,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 784,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "M2",
+        "until_second": 829,
+        "kind": "mine",
+        "from_pos": [
+          150,
+          0
+        ],
+        "pos": [
+          180,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 15
+      },
+      {
+        "second": 807,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H6",
+        "until_second": 830,
+        "kind": "house",
+        "from_pos": [
+          -6,
+          -6
+        ],
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 809,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "S1",
+        "pos": [
+          48,
+          6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 829,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "M2",
+        "pos": [
+          180,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 830,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H6",
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 833,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "Z1",
+        "until_second": 858,
+        "kind": "frost",
+        "from_pos": [
+          48,
+          6
+        ],
+        "pos": [
+          42,
+          12
+        ],
+        "lane": "B",
+        "walk_seconds": 5
+      },
+      {
+        "second": 857,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "extraFrost0",
+        "until_second": 892,
+        "kind": "frost",
+        "from_pos": [
+          0,
+          -6
+        ],
+        "pos": [
+          -18,
+          18
+        ],
+        "lane": "A",
+        "walk_seconds": 15
+      },
+      {
+        "second": 858,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "Z1",
+        "pos": [
+          42,
+          12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 858,
+        "id": "Z1",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          42,
+          12
+        ],
+        "order_second": 833,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 5,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 880,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H7",
+        "until_second": 917,
+        "kind": "house",
+        "from_pos": [
+          42,
+          12
+        ],
+        "pos": [
+          18,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 17
+      },
+      {
+        "second": 892,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "extraFrost0",
+        "pos": [
+          -18,
+          18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 892,
+        "id": "extraFrost0",
+        "kind": "frost",
+        "lane": "A",
+        "pos": [
+          -18,
+          18
+        ],
+        "order_second": 857,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 15,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 911,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H8",
+        "until_second": 957,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          18
+        ],
+        "pos": [
+          24,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 26
+      },
+      {
+        "second": 915,
+        "id": "m900_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 900,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 917,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H7",
+        "pos": [
+          18,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 933,
+        "id": "m900_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 918,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 957,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H8",
+        "pos": [
+          24,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 960,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H9",
+        "until_second": 983,
+        "kind": "house",
+        "from_pos": [
+          24,
+          -12
+        ],
+        "pos": [
+          30,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 973,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "P1",
+        "until_second": 1008,
+        "kind": "potion",
+        "from_pos": [
+          18,
+          -12
+        ],
+        "pos": [
+          12,
+          -18
+        ],
+        "lane": "B",
+        "walk_seconds": 5
+      },
+      {
+        "second": 983,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H9",
+        "pos": [
+          30,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1008,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "P1",
+        "pos": [
+          12,
+          -18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1010,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "TEC",
+        "until_second": 1062,
+        "kind": "research",
+        "from_pos": [
+          12,
+          -18
+        ],
+        "pos": [
+          6,
+          -40
+        ],
+        "lane": "A",
+        "walk_seconds": 12
+      },
+      {
+        "second": 1062,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "TEC",
+        "pos": [
+          6,
+          -40
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1062,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "L1",
+        "until_second": 1119,
+        "kind": "double",
+        "from_pos": [
+          30,
+          -12
+        ],
+        "pos": [
+          -18,
+          12
+        ],
+        "lane": "A",
+        "walk_seconds": 27
+      },
+      {
+        "second": 1080,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H10",
+        "until_second": 1119,
+        "kind": "house",
+        "from_pos": [
+          6,
+          -40
+        ],
+        "pos": [
+          18,
+          -6
+        ],
+        "lane": "B",
+        "walk_seconds": 19
+      },
+      {
+        "second": 1080,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "K1",
+        "until_second": 1198,
+        "kind": "market",
+        "from_pos": [
+          180,
+          0
+        ],
+        "pos": [
+          6,
+          -18
+        ],
+        "lane": "A",
+        "walk_seconds": 88
+      },
+      {
+        "second": 1095,
+        "id": "worker4",
+        "kind": "worker_unit",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "order_second": 1080,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "worker_complete",
+        "role": "construction_only"
+      },
+      {
+        "second": 1095,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraArrow0",
+        "until_second": 1133,
+        "kind": "tower",
+        "from_pos": [
+          0,
+          0
+        ],
+        "pos": [
+          -18,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 18
+      },
+      {
+        "second": 1119,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "L1",
+        "pos": [
+          -18,
+          12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1119,
+        "id": "L1",
+        "kind": "double",
+        "lane": "A",
+        "pos": [
+          -18,
+          12
+        ],
+        "order_second": 1062,
+        "purchase_gold": 4800,
+        "purchase_iron": 40,
+        "walk_seconds": 27,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1119,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H10",
+        "pos": [
+          18,
+          -6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1122,
+        "id": "gun0",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1102,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1132,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "J1",
+        "until_second": 1240,
+        "kind": "mill",
+        "from_pos": [
+          18,
+          -6
+        ],
+        "pos": [
+          150,
+          18
+        ],
+        "lane": "B",
+        "walk_seconds": 68
+      },
+      {
+        "second": 1133,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraArrow0",
+        "pos": [
+          -18,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1133,
+        "id": "extraArrow0",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -18,
+          30
+        ],
+        "order_second": 1095,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 18,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1142,
+        "id": "gun1",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1122,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1162,
+        "id": "gun2",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1142,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1170,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "F1",
+        "until_second": 1241,
+        "kind": "cinema",
+        "from_pos": [
+          -18,
+          12
+        ],
+        "pos": [
+          6,
+          -32
+        ],
+        "lane": "A",
+        "walk_seconds": 26
+      },
+      {
+        "second": 1198,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "K1",
+        "pos": [
+          6,
+          -18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1198,
+        "id": "gun3",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1178,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1200,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "H11",
+        "until_second": 1231,
+        "kind": "house",
+        "from_pos": [
+          6,
+          -18
+        ],
+        "pos": [
+          24,
+          -6
+        ],
+        "lane": "B",
+        "walk_seconds": 11
+      },
+      {
+        "second": 1224,
+        "id": "gun4",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1204,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1227,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "O1",
+        "until_second": 1372,
+        "kind": "oil",
+        "from_pos": [
+          -18,
+          30
+        ],
+        "pos": [
+          210,
+          20
+        ],
+        "lane": "B",
+        "walk_seconds": 115
+      },
+      {
+        "second": 1231,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "H11",
+        "pos": [
+          24,
+          -6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1240,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "J1",
+        "pos": [
+          150,
+          18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1241,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "F1",
+        "pos": [
+          6,
+          -32
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1257,
+        "id": "gun5",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1237,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1259,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "H6",
+        "until_second": 1291,
+        "kind": "house",
+        "from_pos": [
+          24,
+          -6
+        ],
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 12
+      },
+      {
+        "second": 1280,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "extraArrow1",
+        "until_second": 1333,
+        "kind": "tower",
+        "from_pos": [
+          6,
+          -32
+        ],
+        "pos": [
+          -12,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 33
+      },
+      {
+        "second": 1289,
+        "id": "gun6",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1269,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1291,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "H6",
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1310,
+        "id": "gun7",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1290,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1310,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraDouble0",
+        "until_second": 1360,
+        "kind": "double",
+        "from_pos": [
+          0,
+          -6
+        ],
+        "pos": [
+          -24,
+          24
+        ],
+        "lane": "A",
+        "walk_seconds": 20
+      },
+      {
+        "second": 1331,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H12",
+        "until_second": 1413,
+        "kind": "house",
+        "from_pos": [
+          150,
+          18
+        ],
+        "pos": [
+          30,
+          -6
+        ],
+        "lane": "B",
+        "walk_seconds": 62
+      },
+      {
+        "second": 1333,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "extraArrow1",
+        "pos": [
+          -12,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1333,
+        "id": "extraArrow1",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -12,
+          30
+        ],
+        "order_second": 1280,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 33,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1349,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "U1",
+        "until_second": 1400,
+        "kind": "upgrade",
+        "from_pos": [
+          -12,
+          30
+        ],
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 21
+      },
+      {
+        "second": 1360,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraDouble0",
+        "pos": [
+          -24,
+          24
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1360,
+        "id": "extraDouble0",
+        "kind": "double",
+        "lane": "A",
+        "pos": [
+          -24,
+          24
+        ],
+        "order_second": 1310,
+        "purchase_gold": 4800,
+        "purchase_iron": 40,
+        "walk_seconds": 20,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1372,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "O1",
+        "pos": [
+          210,
+          20
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1380,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "C4",
+        "until_second": 1460,
+        "kind": "coal",
+        "from_pos": [
+          210,
+          20
+        ],
+        "pos": [
+          210,
+          -80
+        ],
+        "lane": "B",
+        "walk_seconds": 50
+      },
+      {
+        "second": 1389,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraDouble1",
+        "until_second": 1422,
+        "kind": "double",
+        "from_pos": [
+          -24,
+          24
+        ],
+        "pos": [
+          -18,
+          24
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 1400,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "U1",
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1413,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H12",
+        "pos": [
+          30,
+          -6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1422,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraDouble1",
+        "pos": [
+          -18,
+          24
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1422,
+        "id": "extraDouble1",
+        "kind": "double",
+        "lane": "A",
+        "pos": [
+          -18,
+          24
+        ],
+        "order_second": 1389,
+        "purchase_gold": 4800,
+        "purchase_iron": 40,
+        "walk_seconds": 3,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1440,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "H13",
+        "until_second": 1473,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          24
+        ],
+        "pos": [
+          6,
+          18
+        ],
+        "lane": "A",
+        "walk_seconds": 13
+      },
+      {
+        "second": 1440,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C3",
+        "until_second": 1586,
+        "kind": "coal",
+        "from_pos": [
+          30,
+          -6
+        ],
+        "pos": [
+          260,
+          20
+        ],
+        "lane": "B",
+        "walk_seconds": 116
+      },
+      {
+        "second": 1449,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "L2",
+        "until_second": 1511,
+        "kind": "cannon",
+        "from_pos": [
+          -12,
+          -12
+        ],
+        "pos": [
+          36,
+          12
+        ],
+        "lane": "B",
+        "walk_seconds": 27
+      },
+      {
+        "second": 1460,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "C4",
+        "pos": [
+          210,
+          -80
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1473,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "H13",
+        "pos": [
+          6,
+          18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1500,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraDouble2",
+        "until_second": 1540,
+        "kind": "double",
+        "from_pos": [
+          6,
+          18
+        ],
+        "pos": [
+          -12,
+          24
+        ],
+        "lane": "A",
+        "walk_seconds": 10
+      },
+      {
+        "second": 1500,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "M4",
+        "until_second": 1566,
+        "kind": "mine",
+        "from_pos": [
+          210,
+          -80
+        ],
+        "pos": [
+          260,
+          -30
+        ],
+        "lane": "B",
+        "walk_seconds": 36
+      },
+      {
+        "second": 1511,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "L2",
+        "pos": [
+          36,
+          12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1511,
+        "id": "L2",
+        "kind": "cannon",
+        "lane": "B",
+        "pos": [
+          36,
+          12
+        ],
+        "order_second": 1449,
+        "purchase_gold": 5600,
+        "purchase_iron": 60,
+        "walk_seconds": 27,
+        "build_seconds": 35,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1515,
+        "id": "m1500_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1500,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1530,
+        "id": "m1500_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1515,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1540,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraDouble2",
+        "pos": [
+          -12,
+          24
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1540,
+        "id": "extraDouble2",
+        "kind": "double",
+        "lane": "A",
+        "pos": [
+          -12,
+          24
+        ],
+        "order_second": 1500,
+        "purchase_gold": 4800,
+        "purchase_iron": 40,
+        "walk_seconds": 10,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1549,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraCannon0",
+        "until_second": 1587,
+        "kind": "cannon",
+        "from_pos": [
+          -12,
+          24
+        ],
+        "pos": [
+          -18,
+          24
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 1560,
+        "type": "tower_destroyed",
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B"
+      },
+      {
+        "second": 1560,
+        "type": "unit_loss",
+        "count": 2,
+        "kind": "militia",
+        "source": "controlled loss input, combat not predicted"
+      },
+      {
+        "second": 1560,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H14",
+        "until_second": 1593,
+        "kind": "house",
+        "from_pos": [
+          36,
+          12
+        ],
+        "pos": [
+          12,
+          18
+        ],
+        "lane": "B",
+        "walk_seconds": 13
+      },
+      {
+        "second": 1566,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "M4",
+        "pos": [
+          260,
+          -30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1566,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraFrost1",
+        "until_second": 1700,
+        "kind": "frost",
+        "from_pos": [
+          260,
+          -30
+        ],
+        "pos": [
+          42,
+          30
+        ],
+        "lane": "B",
+        "walk_seconds": 114
+      },
+      {
+        "second": 1586,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "C3",
+        "pos": [
+          260,
+          20
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1587,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraCannon0",
+        "pos": [
+          -18,
+          24
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1587,
+        "id": "extraCannon0",
+        "kind": "cannon",
+        "lane": "A",
+        "pos": [
+          -18,
+          24
+        ],
+        "order_second": 1549,
+        "purchase_gold": 5600,
+        "purchase_iron": 60,
+        "walk_seconds": 3,
+        "build_seconds": 35,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1590,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "A2",
+        "until_second": 1640,
+        "kind": "tower",
+        "from_pos": [
+          -18,
+          24
+        ],
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 30
+      },
+      {
+        "second": 1593,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H14",
+        "pos": [
+          12,
+          18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1635,
+        "id": "replacement0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1620,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1640,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "A2",
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1640,
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 1590,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 30,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1650,
+        "id": "replacement1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1635,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 2,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1700,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraFrost1",
+        "pos": [
+          42,
+          30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1700,
+        "id": "extraFrost1",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          42,
+          30
+        ],
+        "order_second": 1566,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 114,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1740,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraFrost2",
+        "until_second": 1763,
+        "kind": "frost",
+        "from_pos": [
+          42,
+          30
+        ],
+        "pos": [
+          48,
+          30
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 1763,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraFrost2",
+        "pos": [
+          48,
+          30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1763,
+        "id": "extraFrost2",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          48,
+          30
+        ],
+        "order_second": 1740,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 3,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1771,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "TEC3",
+        "until_second": 1856,
+        "kind": "research3",
+        "from_pos": [
+          36,
+          0
+        ],
+        "pos": [
+          6,
+          -40
+        ],
+        "lane": "A",
+        "walk_seconds": 25
+      },
+      {
+        "second": 1800,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "O2",
+        "until_second": 1860,
+        "kind": "oil",
+        "from_pos": [
+          260,
+          20
+        ],
+        "pos": [
+          320,
+          20
+        ],
+        "lane": "B",
+        "walk_seconds": 30
+      },
+      {
+        "second": 1856,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "TEC3",
+        "pos": [
+          6,
+          -40
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1860,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "O2",
+        "pos": [
+          320,
+          20
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1860,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "M5",
+        "until_second": 1931,
+        "kind": "mine",
+        "from_pos": [
+          320,
+          20
+        ],
+        "pos": [
+          400,
+          10
+        ],
+        "lane": "B",
+        "walk_seconds": 41
+      },
+      {
+        "second": 1931,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "M5",
+        "pos": [
+          400,
+          10
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1937,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "L3",
+        "until_second": 1996,
+        "kind": "steelrain",
+        "from_pos": [
+          12,
+          18
+        ],
+        "pos": [
+          -24,
+          12
+        ],
+        "lane": "A",
+        "walk_seconds": 19
+      },
+      {
+        "second": 1945,
+        "id": "knight0",
+        "kind": "knight",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1920,
+        "purchase_gold": 3000,
+        "purchase_iron": 12,
+        "walk_seconds": 0,
+        "build_seconds": 25,
+        "type": "unit_complete",
+        "facility_level": 3,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1975,
+        "id": "knight1",
+        "kind": "knight",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1950,
+        "purchase_gold": 3000,
+        "purchase_iron": 12,
+        "walk_seconds": 0,
+        "build_seconds": 25,
+        "type": "unit_complete",
+        "facility_level": 3,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1996,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "L3",
+        "pos": [
+          -24,
+          12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1996,
+        "id": "L3",
+        "kind": "steel",
+        "lane": "A",
+        "pos": [
+          -24,
+          12
+        ],
+        "order_second": 1937,
+        "purchase_gold": 10000,
+        "purchase_iron": 120,
+        "walk_seconds": 19,
+        "build_seconds": 40,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2005,
+        "id": "knight2",
+        "kind": "knight",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1980,
+        "purchase_gold": 3000,
+        "purchase_iron": 12,
+        "walk_seconds": 0,
+        "build_seconds": 25,
+        "type": "unit_complete",
+        "facility_level": 3,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 2035,
+        "id": "knight3",
+        "kind": "knight",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 2010,
+        "purchase_gold": 3000,
+        "purchase_iron": 12,
+        "walk_seconds": 0,
+        "build_seconds": 25,
+        "type": "unit_complete",
+        "facility_level": 3,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 2040,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "V0",
+        "until_second": 2103,
+        "kind": "solar",
+        "from_pos": [
+          6,
+          -40
+        ],
+        "pos": [
+          60,
+          -30
+        ],
+        "lane": "B",
+        "walk_seconds": 28
+      },
+      {
+        "second": 2100,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "H15",
+        "until_second": 2137,
+        "kind": "house",
+        "from_pos": [
+          48,
+          30
+        ],
+        "pos": [
+          18,
+          18
+        ],
+        "lane": "B",
+        "walk_seconds": 17
+      },
+      {
+        "second": 2103,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "V0",
+        "pos": [
+          60,
+          -30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2115,
+        "id": "m2100_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 2100,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 3,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 2130,
+        "id": "m2100_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 2115,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 3,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 2137,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "H15",
+        "pos": [
+          18,
+          18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2220,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "M6",
+        "until_second": 2292,
+        "kind": "mine",
+        "from_pos": [
+          400,
+          10
+        ],
+        "pos": [
+          480,
+          -10
+        ],
+        "lane": "B",
+        "walk_seconds": 42
+      },
+      {
+        "second": 2220,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "V1",
+        "until_second": 2259,
+        "kind": "solar",
+        "from_pos": [
+          60,
+          -30
+        ],
+        "pos": [
+          68,
+          -30
+        ],
+        "lane": "B",
+        "walk_seconds": 4
+      },
+      {
+        "second": 2259,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "V1",
+        "pos": [
+          68,
+          -30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2280,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "extraDouble3",
+        "until_second": 2321,
+        "kind": "double",
+        "from_pos": [
+          -24,
+          12
+        ],
+        "pos": [
+          -6,
+          24
+        ],
+        "lane": "A",
+        "walk_seconds": 11
+      },
+      {
+        "second": 2280,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraCorrosion0",
+        "until_second": 2323,
+        "kind": "corrosion",
+        "from_pos": [
+          18,
+          18
+        ],
+        "pos": [
+          36,
+          36
+        ],
+        "lane": "B",
+        "walk_seconds": 13
+      },
+      {
+        "second": 2280,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraSteel0",
+        "until_second": 2362,
+        "kind": "steelrain",
+        "from_pos": [
+          68,
+          -30
+        ],
+        "pos": [
+          42,
+          48
+        ],
+        "lane": "B",
+        "walk_seconds": 42
+      },
+      {
+        "second": 2292,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "M6",
+        "pos": [
+          480,
+          -10
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2321,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "extraDouble3",
+        "pos": [
+          -6,
+          24
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2321,
+        "id": "extraDouble3",
+        "kind": "double",
+        "lane": "A",
+        "pos": [
+          -6,
+          24
+        ],
+        "order_second": 2280,
+        "purchase_gold": 4800,
+        "purchase_iron": 40,
+        "walk_seconds": 11,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2323,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraCorrosion0",
+        "pos": [
+          36,
+          36
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2323,
+        "id": "extraCorrosion0",
+        "kind": "corrosion",
+        "lane": "B",
+        "pos": [
+          36,
+          36
+        ],
+        "order_second": 2280,
+        "purchase_gold": 4200,
+        "purchase_iron": 40,
+        "walk_seconds": 13,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2340,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraCannon1",
+        "until_second": 2382,
+        "kind": "cannon",
+        "from_pos": [
+          36,
+          36
+        ],
+        "pos": [
+          42,
+          24
+        ],
+        "lane": "B",
+        "walk_seconds": 7
+      },
+      {
+        "second": 2362,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraSteel0",
+        "pos": [
+          42,
+          48
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2362,
+        "id": "extraSteel0",
+        "kind": "steel",
+        "lane": "B",
+        "pos": [
+          42,
+          48
+        ],
+        "order_second": 2280,
+        "purchase_gold": 10000,
+        "purchase_iron": 120,
+        "walk_seconds": 42,
+        "build_seconds": 40,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2370,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "extraDouble4",
+        "until_second": 2403,
+        "kind": "double",
+        "from_pos": [
+          -6,
+          24
+        ],
+        "pos": [
+          0,
+          24
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 2382,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraCannon1",
+        "pos": [
+          42,
+          24
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2382,
+        "id": "extraCannon1",
+        "kind": "cannon",
+        "lane": "B",
+        "pos": [
+          42,
+          24
+        ],
+        "order_second": 2340,
+        "purchase_gold": 5600,
+        "purchase_iron": 60,
+        "walk_seconds": 7,
+        "build_seconds": 35,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2400,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "U2",
+        "until_second": 2460,
+        "kind": "upgrade",
+        "from_pos": [
+          42,
+          24
+        ],
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 30
+      },
+      {
+        "second": 2400,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "U3",
+        "until_second": 2467,
+        "kind": "upgrade",
+        "from_pos": [
+          42,
+          48
+        ],
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 37
+      },
+      {
+        "second": 2400,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "U4",
+        "until_second": 2677,
+        "kind": "upgrade",
+        "from_pos": [
+          480,
+          -10
+        ],
+        "pos": [
+          -12,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 247
+      },
+      {
+        "second": 2403,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "extraDouble4",
+        "pos": [
+          0,
+          24
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2403,
+        "id": "extraDouble4",
+        "kind": "double",
+        "lane": "A",
+        "pos": [
+          0,
+          24
+        ],
+        "order_second": 2370,
+        "purchase_gold": 4800,
+        "purchase_iron": 40,
+        "walk_seconds": 3,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2403,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "U5",
+        "until_second": 2449,
+        "kind": "upgrade",
+        "from_pos": [
+          0,
+          24
+        ],
+        "pos": [
+          -6,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 16
+      },
+      {
+        "second": 2449,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "U5",
+        "pos": [
+          -6,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2449,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "U6",
+        "until_second": 2482,
+        "kind": "upgrade",
+        "from_pos": [
+          -6,
+          -6
+        ],
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 2460,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "U2",
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2460,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "U7",
+        "until_second": 2502,
+        "kind": "upgrade",
+        "from_pos": [
+          -6,
+          -12
+        ],
+        "pos": [
+          18,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 12
+      },
+      {
+        "second": 2467,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "U3",
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2467,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "U8",
+        "until_second": 2509,
+        "kind": "upgrade",
+        "from_pos": [
+          0,
+          -12
+        ],
+        "pos": [
+          24,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 12
+      },
+      {
+        "second": 2482,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "U6",
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2482,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "extraCorrosion1",
+        "until_second": 2542,
+        "kind": "corrosion",
+        "from_pos": [
+          0,
+          -6
+        ],
+        "pos": [
+          42,
+          36
+        ],
+        "lane": "B",
+        "walk_seconds": 30
+      },
+      {
+        "second": 2502,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "U7",
+        "pos": [
+          18,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2502,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "V2",
+        "until_second": 2568,
+        "kind": "solar",
+        "from_pos": [
+          18,
+          -12
+        ],
+        "pos": [
+          76,
+          -30
+        ],
+        "lane": "B",
+        "walk_seconds": 31
+      },
+      {
+        "second": 2509,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "U8",
+        "pos": [
+          24,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2509,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraSteel1",
+        "until_second": 2579,
+        "kind": "steelrain",
+        "from_pos": [
+          24,
+          -12
+        ],
+        "pos": [
+          -18,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 30
+      },
+      {
+        "second": 2542,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "extraCorrosion1",
+        "pos": [
+          42,
+          36
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2542,
+        "id": "extraCorrosion1",
+        "kind": "corrosion",
+        "lane": "B",
+        "pos": [
+          42,
+          36
+        ],
+        "order_second": 2482,
+        "purchase_gold": 4200,
+        "purchase_iron": 40,
+        "walk_seconds": 30,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2542,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "extraCorrosion2",
+        "until_second": 2575,
+        "kind": "corrosion",
+        "from_pos": [
+          42,
+          36
+        ],
+        "pos": [
+          48,
+          36
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 2568,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "V2",
+        "pos": [
+          76,
+          -30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2568,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraSteel2",
+        "until_second": 2650,
+        "kind": "steelrain",
+        "from_pos": [
+          76,
+          -30
+        ],
+        "pos": [
+          48,
+          48
+        ],
+        "lane": "B",
+        "walk_seconds": 42
+      },
+      {
+        "second": 2575,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "extraCorrosion2",
+        "pos": [
+          48,
+          36
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2575,
+        "id": "extraCorrosion2",
+        "kind": "corrosion",
+        "lane": "B",
+        "pos": [
+          48,
+          36
+        ],
+        "order_second": 2542,
+        "purchase_gold": 4200,
+        "purchase_iron": 40,
+        "walk_seconds": 3,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2579,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraSteel1",
+        "pos": [
+          -18,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2579,
+        "id": "extraSteel1",
+        "kind": "steel",
+        "lane": "A",
+        "pos": [
+          -18,
+          30
+        ],
+        "order_second": 2509,
+        "purchase_gold": 10000,
+        "purchase_iron": 120,
+        "walk_seconds": 30,
+        "build_seconds": 40,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2580,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "V3",
+        "until_second": 2653,
+        "kind": "solar",
+        "from_pos": [
+          48,
+          36
+        ],
+        "pos": [
+          84,
+          -30
+        ],
+        "lane": "B",
+        "walk_seconds": 38
+      },
+      {
+        "second": 2622,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraSteel3",
+        "until_second": 2668,
+        "kind": "steelrain",
+        "from_pos": [
+          -18,
+          30
+        ],
+        "pos": [
+          -6,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 6
+      },
+      {
+        "second": 2650,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraSteel2",
+        "pos": [
+          48,
+          48
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2650,
+        "id": "extraSteel2",
+        "kind": "steel",
+        "lane": "B",
+        "pos": [
+          48,
+          48
+        ],
+        "order_second": 2568,
+        "purchase_gold": 10000,
+        "purchase_iron": 120,
+        "walk_seconds": 42,
+        "build_seconds": 40,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2650,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraCorrosion3",
+        "until_second": 2687,
+        "kind": "corrosion",
+        "from_pos": [
+          48,
+          48
+        ],
+        "pos": [
+          54,
+          36
+        ],
+        "lane": "B",
+        "walk_seconds": 7
+      },
+      {
+        "second": 2653,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "V3",
+        "pos": [
+          84,
+          -30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2668,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraSteel3",
+        "pos": [
+          -6,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2668,
+        "id": "extraSteel3",
+        "kind": "steel",
+        "lane": "A",
+        "pos": [
+          -6,
+          30
+        ],
+        "order_second": 2622,
+        "purchase_gold": 10000,
+        "purchase_iron": 120,
+        "walk_seconds": 6,
+        "build_seconds": 40,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2677,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "U4",
+        "pos": [
+          -12,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2687,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraCorrosion3",
+        "pos": [
+          54,
+          36
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2687,
+        "id": "extraCorrosion3",
+        "kind": "corrosion",
+        "lane": "B",
+        "pos": [
+          54,
+          36
+        ],
+        "order_second": 2650,
+        "purchase_gold": 4200,
+        "purchase_iron": 40,
+        "walk_seconds": 7,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2700,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraSteel4",
+        "until_second": 2746,
+        "kind": "steelrain",
+        "from_pos": [
+          54,
+          36
+        ],
+        "pos": [
+          54,
+          48
+        ],
+        "lane": "B",
+        "walk_seconds": 6
+      },
+      {
+        "second": 2746,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraSteel4",
+        "pos": [
+          54,
+          48
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2746,
+        "id": "extraSteel4",
+        "kind": "steel",
+        "lane": "B",
+        "pos": [
+          54,
+          48
+        ],
+        "order_second": 2700,
+        "purchase_gold": 10000,
+        "purchase_iron": 120,
+        "walk_seconds": 6,
+        "build_seconds": 40,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2760,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "lastCannon0",
+        "until_second": 2805,
+        "kind": "cannon",
+        "from_pos": [
+          54,
+          48
+        ],
+        "pos": [
+          36,
+          42
+        ],
+        "lane": "B",
+        "walk_seconds": 10
+      },
+      {
+        "second": 2760,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "V4",
+        "until_second": 2799,
+        "kind": "solar",
+        "from_pos": [
+          84,
+          -30
+        ],
+        "pos": [
+          92,
+          -30
+        ],
+        "lane": "B",
+        "walk_seconds": 4
+      },
+      {
+        "second": 2799,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "V4",
+        "pos": [
+          92,
+          -30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2805,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "lastCannon0",
+        "pos": [
+          36,
+          42
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2805,
+        "id": "lastCannon0",
+        "kind": "cannon",
+        "lane": "B",
+        "pos": [
+          36,
+          42
+        ],
+        "order_second": 2760,
+        "purchase_gold": 5600,
+        "purchase_iron": 60,
+        "walk_seconds": 10,
+        "build_seconds": 35,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2850,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "lastCannon1",
+        "until_second": 2888,
+        "kind": "cannon",
+        "from_pos": [
+          36,
+          42
+        ],
+        "pos": [
+          42,
+          42
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 2888,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "lastCannon1",
+        "pos": [
+          42,
+          42
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2888,
+        "id": "lastCannon1",
+        "kind": "cannon",
+        "lane": "B",
+        "pos": [
+          42,
+          42
+        ],
+        "order_second": 2850,
+        "purchase_gold": 5600,
+        "purchase_iron": 60,
+        "walk_seconds": 3,
+        "build_seconds": 35,
+        "type": "tower_complete"
+      }
+    ],
+    "hero_absences": [],
+    "notes": [
+      "fixed combat clock is an input pass, not a closed fixed point",
+      "controlled 20min house /26min tower+two troops losses preserved; completed buildings refund0",
+      "old fixed repair600 removed; actual combat repair fees required, missing fees not counted as included",
+      "enemy damage, repaired HP and garrison behavior must be fed back by combat model",
+      "phase balances use floor-second conservative snapshots; completions compare to exact float wave time"
+    ],
+    "initial_workers": 2,
+    "initial_towers": 0,
+    "initial_walls": 0,
+    "repair_policy": "available_workers",
+    "repair_targets": "walls_only",
+    "clock_input": {
+      "big_seconds": [
+        430.0,
+        925.0,
+        1407.0,
+        1905.1,
+        2400.2,
+        2896.9
+      ],
+      "end_second": 2997.5
+    },
+    "economic_event_source": "actual purchase completion seconds, zero future towers"
+  },
+  "魔法未验证营地反例": {
+    "events": [
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker1",
+        "kind": "worker",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "worker_complete",
+        "id": "worker2",
+        "kind": "worker",
+        "lane": "B",
+        "pos": [
+          0,
+          0
+        ],
+        "role": "construction_only"
+      },
+      {
+        "second": 0,
+        "type": "hero_present",
+        "id": "hero",
+        "kind": "hero",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "second": 0,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H1",
+        "until_second": 29,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 9
+      },
+      {
+        "second": 29,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H1",
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 56,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A1",
+        "until_second": 83,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          -12
+        ],
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 83,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A1",
+        "pos": [
+          -18,
+          0
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 83,
+        "id": "A1",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -18,
+          0
+        ],
+        "order_second": 56,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 7,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 120,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H2",
+        "until_second": 147,
+        "kind": "house",
+        "from_pos": [
+          0.0,
+          0.0
+        ],
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 147,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H2",
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 155,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "A2",
+        "until_second": 197,
+        "kind": "tower",
+        "from_pos": [
+          -6,
+          -12
+        ],
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 197,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "A2",
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 197,
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 155,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 22,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 201,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C1",
+        "until_second": 253,
+        "kind": "coal",
+        "from_pos": [
+          36,
+          0
+        ],
+        "pos": [
+          80,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 240,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H3",
+        "until_second": 271,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          0
+        ],
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 11
+      },
+      {
+        "second": 253,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "C1",
+        "pos": [
+          80,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 262,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "B1",
+        "until_second": 331,
+        "kind": "bread",
+        "from_pos": [
+          80,
+          0
+        ],
+        "pos": [
+          -6,
+          -18
+        ],
+        "lane": "A",
+        "walk_seconds": 44
+      },
+      {
+        "second": 271,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H3",
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 300,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "R1",
+        "until_second": 339,
+        "kind": "barracks",
+        "from_pos": [
+          0,
+          -12
+        ],
+        "pos": [
+          -18,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 9
+      },
+      {
+        "second": 331,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "B1",
+        "pos": [
+          -6,
+          -18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 339,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "R1",
+        "pos": [
+          -18,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 354,
+        "id": "m300_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 339,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 360,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H4",
+        "until_second": 385,
+        "kind": "house",
+        "from_pos": [
+          -18,
+          -12
+        ],
+        "pos": [
+          -12,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 5
+      },
+      {
+        "second": 369,
+        "id": "m300_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 354,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 385,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H4",
+        "pos": [
+          -12,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 386,
+        "id": "repair1",
+        "kind": "worker",
+        "lane": "A",
+        "pos": [
+          -18,
+          0
+        ],
+        "order_second": 362,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "worker_complete",
+        "role": "repair_only",
+        "recruit_complete_second": 377,
+        "travel_seconds": 9,
+        "excluded_from_construction_pool": true
+      },
+      {
+        "second": 393,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "G1",
+        "until_second": 421,
+        "kind": "grocery",
+        "from_pos": [
+          -6,
+          -18
+        ],
+        "pos": [
+          0,
+          -18
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 410,
+        "id": "repair2",
+        "kind": "worker",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 377,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "worker_complete",
+        "role": "repair_only",
+        "recruit_complete_second": 392,
+        "travel_seconds": 18,
+        "excluded_from_construction_pool": true
+      },
+      {
+        "second": 420,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "Q1",
+        "until_second": 463,
+        "kind": "sentry",
+        "from_pos": [
+          -12,
+          -6
+        ],
+        "pos": [
+          42,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 28
+      },
+      {
+        "second": 421,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "G1",
+        "pos": [
+          0,
+          -18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 435,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "M1",
+        "until_second": 526,
+        "kind": "mine",
+        "from_pos": [
+          0,
+          -18
+        ],
+        "pos": [
+          120,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 61
+      },
+      {
+        "second": 463,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "Q1",
+        "pos": [
+          42,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 463,
+        "id": "Q1",
+        "kind": "sentry",
+        "lane": "B",
+        "pos": [
+          42,
+          0
+        ],
+        "order_second": 420,
+        "purchase_gold": 1600,
+        "purchase_iron": 0,
+        "walk_seconds": 28,
+        "build_seconds": 15,
+        "type": "tower_complete"
+      },
+      {
+        "second": 480,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H5",
+        "until_second": 525,
+        "kind": "house",
+        "from_pos": [
+          42,
+          0
+        ],
+        "pos": [
+          -6,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 25
+      },
+      {
+        "second": 495,
+        "id": "worker3",
+        "kind": "worker_unit",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "order_second": 480,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "worker_complete",
+        "role": "construction_only"
+      },
+      {
+        "second": 495,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "T1",
+        "until_second": 535,
+        "kind": "tavern",
+        "from_pos": [
+          0,
+          0
+        ],
+        "pos": [
+          24,
+          -18
+        ],
+        "lane": "B",
+        "walk_seconds": 15
+      },
+      {
+        "second": 525,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H5",
+        "pos": [
+          -6,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 526,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "M1",
+        "pos": [
+          120,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 535,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "T1",
+        "pos": [
+          24,
+          -18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 540,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "W1",
+        "until_second": 580,
+        "kind": "wall",
+        "from_pos": [
+          -6,
+          -6
+        ],
+        "pos": [
+          -20,
+          6
+        ],
+        "lane": "A",
+        "walk_seconds": 10
+      },
+      {
+        "second": 570,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "W2",
+        "until_second": 624,
+        "kind": "wall",
+        "from_pos": [
+          24,
+          -18
+        ],
+        "pos": [
+          -16,
+          6
+        ],
+        "lane": "A",
+        "walk_seconds": 24
+      },
+      {
+        "second": 580,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "W1",
+        "pos": [
+          -20,
+          6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 580,
+        "id": "W1",
+        "kind": "wall",
+        "lane": "A",
+        "pos": [
+          -20,
+          6
+        ],
+        "order_second": 540,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 10,
+        "build_seconds": 30,
+        "type": "wall_complete",
+        "hp": 2000,
+        "armor": 15
+      },
+      {
+        "second": 600,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H6",
+        "until_second": 632,
+        "kind": "house",
+        "from_pos": [
+          -20,
+          6
+        ],
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 12
+      },
+      {
+        "second": 600,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "W3",
+        "until_second": 697,
+        "kind": "wall",
+        "from_pos": [
+          120,
+          0
+        ],
+        "pos": [
+          -12,
+          6
+        ],
+        "lane": "A",
+        "walk_seconds": 67
+      },
+      {
+        "second": 624,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "W2",
+        "pos": [
+          -16,
+          6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 624,
+        "id": "W2",
+        "kind": "wall",
+        "lane": "A",
+        "pos": [
+          -16,
+          6
+        ],
+        "order_second": 570,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 24,
+        "build_seconds": 30,
+        "type": "wall_complete",
+        "hp": 2000,
+        "armor": 15
+      },
+      {
+        "second": 632,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H6",
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 675,
+        "id": "m660_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 660,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 690,
+        "id": "m660_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 675,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 697,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "W3",
+        "pos": [
+          -12,
+          6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 697,
+        "id": "W3",
+        "kind": "wall",
+        "lane": "A",
+        "pos": [
+          -12,
+          6
+        ],
+        "order_second": 600,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 67,
+        "build_seconds": 30,
+        "type": "wall_complete",
+        "hp": 2000,
+        "armor": 15
+      },
+      {
+        "second": 720,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H7",
+        "until_second": 750,
+        "kind": "house",
+        "from_pos": [
+          0,
+          -6
+        ],
+        "pos": [
+          18,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 10
+      },
+      {
+        "second": 720,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "S1",
+        "until_second": 780,
+        "kind": "smith",
+        "from_pos": [
+          -12,
+          6
+        ],
+        "pos": [
+          48,
+          6
+        ],
+        "lane": "B",
+        "walk_seconds": 30
+      },
+      {
+        "second": 720,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "C2",
+        "until_second": 834,
+        "kind": "coal",
+        "from_pos": [
+          -16,
+          6
+        ],
+        "pos": [
+          150,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 84
+      },
+      {
+        "second": 750,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H7",
+        "pos": [
+          18,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 780,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "S1",
+        "pos": [
+          48,
+          6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 826,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "U1",
+        "until_second": 871,
+        "kind": "upgrade",
+        "from_pos": [
+          18,
+          -12
+        ],
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 15
+      },
+      {
+        "second": 834,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "C2",
+        "pos": [
+          150,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 840,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H8",
+        "until_second": 875,
+        "kind": "house",
+        "from_pos": [
+          48,
+          6
+        ],
+        "pos": [
+          24,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 15
+      },
+      {
+        "second": 871,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "U1",
+        "pos": [
+          -12,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 875,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H8",
+        "pos": [
+          24,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 900,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A3",
+        "until_second": 931,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          -12
+        ],
+        "pos": [
+          -24,
+          6
+        ],
+        "lane": "A",
+        "walk_seconds": 11
+      },
+      {
+        "second": 931,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A3",
+        "pos": [
+          -24,
+          6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 931,
+        "id": "A3",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -24,
+          6
+        ],
+        "order_second": 900,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 11,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 960,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H9",
+        "until_second": 983,
+        "kind": "house",
+        "from_pos": [
+          24,
+          -12
+        ],
+        "pos": [
+          30,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 960,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "P1",
+        "until_second": 1012,
+        "kind": "potion",
+        "from_pos": [
+          -24,
+          6
+        ],
+        "pos": [
+          12,
+          -18
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 960,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "M2",
+        "until_second": 1005,
+        "kind": "mine",
+        "from_pos": [
+          150,
+          0
+        ],
+        "pos": [
+          180,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 15
+      },
+      {
+        "second": 983,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H9",
+        "pos": [
+          30,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1005,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "M2",
+        "pos": [
+          180,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1012,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "P1",
+        "pos": [
+          12,
+          -18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1051,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "U2",
+        "until_second": 1091,
+        "kind": "upgrade",
+        "from_pos": [
+          12,
+          -18
+        ],
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 10
+      },
+      {
+        "second": 1080,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H10",
+        "until_second": 1107,
+        "kind": "house",
+        "from_pos": [
+          30,
+          -12
+        ],
+        "pos": [
+          18,
+          -6
+        ],
+        "lane": "B",
+        "walk_seconds": 7
+      },
+      {
+        "second": 1080,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "K1",
+        "until_second": 1198,
+        "kind": "market",
+        "from_pos": [
+          180,
+          0
+        ],
+        "pos": [
+          6,
+          -18
+        ],
+        "lane": "A",
+        "walk_seconds": 88
+      },
+      {
+        "second": 1091,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "U2",
+        "pos": [
+          -6,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1091,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "extraArrow0",
+        "until_second": 1133,
+        "kind": "tower",
+        "from_pos": [
+          -6,
+          -12
+        ],
+        "pos": [
+          -18,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 22
+      },
+      {
+        "second": 1095,
+        "id": "worker4",
+        "kind": "worker_unit",
+        "lane": "A",
+        "pos": [
+          0,
+          0
+        ],
+        "order_second": 1080,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "worker_complete",
+        "role": "construction_only"
+      },
+      {
+        "second": 1100,
+        "id": "gun0",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1080,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1107,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H10",
+        "pos": [
+          18,
+          -6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1130,
+        "id": "gun1",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1110,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1133,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "extraArrow0",
+        "pos": [
+          -18,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1133,
+        "id": "extraArrow0",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -18,
+          30
+        ],
+        "order_second": 1091,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 22,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1140,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "F1",
+        "until_second": 1200,
+        "kind": "cinema",
+        "from_pos": [
+          18,
+          -6
+        ],
+        "pos": [
+          6,
+          -32
+        ],
+        "lane": "A",
+        "walk_seconds": 15
+      },
+      {
+        "second": 1160,
+        "id": "gun2",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1140,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1190,
+        "id": "gun3",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1170,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1198,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "K1",
+        "pos": [
+          6,
+          -18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1200,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "F1",
+        "pos": [
+          6,
+          -32
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1200,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "H11",
+        "until_second": 1231,
+        "kind": "house",
+        "from_pos": [
+          6,
+          -18
+        ],
+        "pos": [
+          24,
+          -6
+        ],
+        "lane": "B",
+        "walk_seconds": 11
+      },
+      {
+        "second": 1200,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "A4",
+        "until_second": 1242,
+        "kind": "tower",
+        "from_pos": [
+          0,
+          0
+        ],
+        "pos": [
+          42,
+          6
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 1200,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "extraFrost0",
+        "until_second": 1244,
+        "kind": "frost",
+        "from_pos": [
+          -18,
+          30
+        ],
+        "pos": [
+          30,
+          30
+        ],
+        "lane": "B",
+        "walk_seconds": 24
+      },
+      {
+        "second": 1200,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "extraArrow1",
+        "until_second": 1253,
+        "kind": "tower",
+        "from_pos": [
+          6,
+          -32
+        ],
+        "pos": [
+          -12,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 33
+      },
+      {
+        "second": 1220,
+        "id": "gun4",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1200,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1231,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "H11",
+        "pos": [
+          24,
+          -6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1231,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "H6",
+        "until_second": 1263,
+        "kind": "house",
+        "from_pos": [
+          24,
+          -6
+        ],
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 12
+      },
+      {
+        "second": 1235,
+        "id": "m1200_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1220,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1242,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "A4",
+        "pos": [
+          42,
+          6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1242,
+        "id": "A4",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          42,
+          6
+        ],
+        "order_second": 1200,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 22,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1242,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "TEC",
+        "until_second": 1315,
+        "kind": "research",
+        "from_pos": [
+          42,
+          6
+        ],
+        "pos": [
+          6,
+          -48
+        ],
+        "lane": "A",
+        "walk_seconds": 33
+      },
+      {
+        "second": 1244,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "extraFrost0",
+        "pos": [
+          30,
+          30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1244,
+        "id": "extraFrost0",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          30,
+          30
+        ],
+        "order_second": 1200,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 24,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1250,
+        "id": "m1200_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1235,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1253,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "extraArrow1",
+        "pos": [
+          -12,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1253,
+        "id": "extraArrow1",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -12,
+          30
+        ],
+        "order_second": 1200,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 33,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1263,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "H6",
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1270,
+        "id": "gun5",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1250,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1290,
+        "id": "gun6",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1270,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1310,
+        "id": "gun7",
+        "kind": "musket",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1290,
+        "purchase_gold": 2200,
+        "purchase_iron": 5,
+        "walk_seconds": 0,
+        "build_seconds": 20,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1315,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "TEC",
+        "pos": [
+          6,
+          -48
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1320,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "H12",
+        "until_second": 1355,
+        "kind": "house",
+        "from_pos": [
+          0,
+          -6
+        ],
+        "pos": [
+          30,
+          -6
+        ],
+        "lane": "B",
+        "walk_seconds": 15
+      },
+      {
+        "second": 1320,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "extraArrow2",
+        "until_second": 1343,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          30
+        ],
+        "pos": [
+          -6,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 1321,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "O1",
+        "until_second": 1442,
+        "kind": "oil",
+        "from_pos": [
+          30,
+          30
+        ],
+        "pos": [
+          210,
+          20
+        ],
+        "lane": "B",
+        "walk_seconds": 91
+      },
+      {
+        "second": 1343,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "extraArrow2",
+        "pos": [
+          -6,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1343,
+        "id": "extraArrow2",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          -6,
+          30
+        ],
+        "order_second": 1320,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 3,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1350,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "extraFrost1",
+        "until_second": 1391,
+        "kind": "frost",
+        "from_pos": [
+          -6,
+          30
+        ],
+        "pos": [
+          36,
+          30
+        ],
+        "lane": "B",
+        "walk_seconds": 21
+      },
+      {
+        "second": 1355,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "H12",
+        "pos": [
+          30,
+          -6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1391,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "extraFrost1",
+        "pos": [
+          36,
+          30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1391,
+        "id": "extraFrost1",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          36,
+          30
+        ],
+        "order_second": 1350,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 21,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1440,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H13",
+        "until_second": 1477,
+        "kind": "house",
+        "from_pos": [
+          36,
+          30
+        ],
+        "pos": [
+          6,
+          18
+        ],
+        "lane": "A",
+        "walk_seconds": 17
+      },
+      {
+        "second": 1440,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraArrow3",
+        "until_second": 1484,
+        "kind": "tower",
+        "from_pos": [
+          30,
+          -6
+        ],
+        "pos": [
+          0,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 24
+      },
+      {
+        "second": 1441,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "U3",
+        "until_second": 1490,
+        "kind": "upgrade",
+        "from_pos": [
+          6,
+          -48
+        ],
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A",
+        "walk_seconds": 19
+      },
+      {
+        "second": 1442,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "O1",
+        "pos": [
+          210,
+          20
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1477,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H13",
+        "pos": [
+          6,
+          18
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1484,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraArrow3",
+        "pos": [
+          0,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1484,
+        "id": "extraArrow3",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          0,
+          30
+        ],
+        "order_second": 1440,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 24,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1490,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "U3",
+        "pos": [
+          0,
+          -12
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1500,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "Z1",
+        "until_second": 1539,
+        "kind": "frost",
+        "from_pos": [
+          6,
+          18
+        ],
+        "pos": [
+          42,
+          12
+        ],
+        "lane": "B",
+        "walk_seconds": 19
+      },
+      {
+        "second": 1500,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "C3",
+        "until_second": 1557,
+        "kind": "coal",
+        "from_pos": [
+          210,
+          20
+        ],
+        "pos": [
+          260,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 27
+      },
+      {
+        "second": 1500,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraFrost2",
+        "until_second": 1541,
+        "kind": "frost",
+        "from_pos": [
+          0,
+          30
+        ],
+        "pos": [
+          42,
+          30
+        ],
+        "lane": "B",
+        "walk_seconds": 21
+      },
+      {
+        "second": 1539,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "Z1",
+        "pos": [
+          42,
+          12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1539,
+        "id": "Z1",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          42,
+          12
+        ],
+        "order_second": 1500,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 19,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1541,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraFrost2",
+        "pos": [
+          42,
+          30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1541,
+        "id": "extraFrost2",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          42,
+          30
+        ],
+        "order_second": 1500,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 21,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1557,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "C3",
+        "pos": [
+          260,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1560,
+        "type": "tower_destroyed",
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B"
+      },
+      {
+        "second": 1560,
+        "type": "unit_loss",
+        "count": 2,
+        "kind": "militia",
+        "source": "controlled loss input, combat not predicted"
+      },
+      {
+        "second": 1560,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "H14",
+        "until_second": 1596,
+        "kind": "house",
+        "from_pos": [
+          42,
+          12
+        ],
+        "pos": [
+          12,
+          18
+        ],
+        "lane": "B",
+        "walk_seconds": 16
+      },
+      {
+        "second": 1560,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "extraArrow4",
+        "until_second": 1598,
+        "kind": "tower",
+        "from_pos": [
+          42,
+          30
+        ],
+        "pos": [
+          6,
+          30
+        ],
+        "lane": "A",
+        "walk_seconds": 18
+      },
+      {
+        "second": 1561,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "U4",
+        "until_second": 1598,
+        "kind": "upgrade",
+        "from_pos": [
+          0,
+          -12
+        ],
+        "pos": [
+          -12,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 7
+      },
+      {
+        "second": 1590,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "A2",
+        "until_second": 1722,
+        "kind": "tower",
+        "from_pos": [
+          260,
+          0
+        ],
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B",
+        "walk_seconds": 112
+      },
+      {
+        "second": 1596,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "H14",
+        "pos": [
+          12,
+          18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1598,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "extraArrow4",
+        "pos": [
+          6,
+          30
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1598,
+        "id": "extraArrow4",
+        "kind": "arrow",
+        "lane": "A",
+        "pos": [
+          6,
+          30
+        ],
+        "order_second": 1560,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 18,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1598,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "U4",
+        "pos": [
+          -12,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1635,
+        "id": "replacement0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1620,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1650,
+        "id": "replacement1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1635,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1650,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "extraFrost3",
+        "until_second": 1689,
+        "kind": "frost",
+        "from_pos": [
+          12,
+          18
+        ],
+        "pos": [
+          48,
+          30
+        ],
+        "lane": "B",
+        "walk_seconds": 19
+      },
+      {
+        "second": 1680,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "W4",
+        "until_second": 1730,
+        "kind": "wall",
+        "from_pos": [
+          6,
+          30
+        ],
+        "pos": [
+          36,
+          6
+        ],
+        "lane": "B",
+        "walk_seconds": 20
+      },
+      {
+        "second": 1680,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "extraArrow5",
+        "until_second": 1722,
+        "kind": "tower",
+        "from_pos": [
+          -12,
+          -6
+        ],
+        "pos": [
+          12,
+          30
+        ],
+        "lane": "B",
+        "walk_seconds": 22
+      },
+      {
+        "second": 1689,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "extraFrost3",
+        "pos": [
+          48,
+          30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1689,
+        "id": "extraFrost3",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          48,
+          30
+        ],
+        "order_second": 1650,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 19,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1695,
+        "id": "m1680_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1680,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1710,
+        "id": "m1680_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 1695,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 1722,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "A2",
+        "pos": [
+          36,
+          0
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1722,
+        "id": "A2",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          36,
+          0
+        ],
+        "order_second": 1590,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 112,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1722,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "extraArrow5",
+        "pos": [
+          12,
+          30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1722,
+        "id": "extraArrow5",
+        "kind": "arrow",
+        "lane": "B",
+        "pos": [
+          12,
+          30
+        ],
+        "order_second": 1680,
+        "purchase_gold": 2400,
+        "purchase_iron": 0,
+        "walk_seconds": 22,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1730,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "W4",
+        "pos": [
+          36,
+          6
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1730,
+        "id": "W4",
+        "kind": "wall",
+        "lane": "B",
+        "pos": [
+          36,
+          6
+        ],
+        "order_second": 1680,
+        "purchase_gold": 1000,
+        "purchase_iron": 0,
+        "walk_seconds": 20,
+        "build_seconds": 30,
+        "type": "wall_complete",
+        "hp": 2000,
+        "armor": 15
+      },
+      {
+        "second": 1740,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "U5",
+        "until_second": 1791,
+        "kind": "upgrade",
+        "from_pos": [
+          12,
+          30
+        ],
+        "pos": [
+          -6,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 21
+      },
+      {
+        "second": 1791,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "U5",
+        "pos": [
+          -6,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 1800,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "extraFrost4",
+        "until_second": 1823,
+        "kind": "frost",
+        "from_pos": [
+          48,
+          30
+        ],
+        "pos": [
+          54,
+          30
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 1823,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "extraFrost4",
+        "pos": [
+          54,
+          30
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 1823,
+        "id": "extraFrost4",
+        "kind": "frost",
+        "lane": "B",
+        "pos": [
+          54,
+          30
+        ],
+        "order_second": 1800,
+        "purchase_gold": 3600,
+        "purchase_iron": 0,
+        "walk_seconds": 3,
+        "build_seconds": 20,
+        "type": "tower_complete"
+      },
+      {
+        "second": 1920,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C4",
+        "until_second": 2114,
+        "kind": "coal",
+        "from_pos": [
+          54,
+          30
+        ],
+        "pos": [
+          380,
+          20
+        ],
+        "lane": "B",
+        "walk_seconds": 164
+      },
+      {
+        "second": 1980,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "U6",
+        "until_second": 2013,
+        "kind": "upgrade",
+        "from_pos": [
+          -6,
+          -6
+        ],
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 1980,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "MAG_CANNON0",
+        "until_second": 2048,
+        "kind": "cannon",
+        "from_pos": [
+          36,
+          6
+        ],
+        "pos": [
+          -18,
+          42
+        ],
+        "lane": "A",
+        "walk_seconds": 33
+      },
+      {
+        "second": 2013,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "U6",
+        "pos": [
+          0,
+          -6
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2048,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "MAG_CANNON0",
+        "pos": [
+          -18,
+          42
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2048,
+        "id": "MAG_CANNON0",
+        "kind": "cannon",
+        "lane": "A",
+        "pos": [
+          -18,
+          42
+        ],
+        "order_second": 1980,
+        "purchase_gold": 5600,
+        "purchase_iron": 60,
+        "walk_seconds": 33,
+        "build_seconds": 35,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2070,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "MAG_CANNON1",
+        "until_second": 2108,
+        "kind": "cannon",
+        "from_pos": [
+          -18,
+          42
+        ],
+        "pos": [
+          -12,
+          42
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 2100,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "H15",
+        "until_second": 2133,
+        "kind": "house",
+        "from_pos": [
+          36,
+          0
+        ],
+        "pos": [
+          18,
+          18
+        ],
+        "lane": "B",
+        "walk_seconds": 13
+      },
+      {
+        "second": 2101,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "U7",
+        "until_second": 2141,
+        "kind": "upgrade",
+        "from_pos": [
+          0,
+          -6
+        ],
+        "pos": [
+          18,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 10
+      },
+      {
+        "second": 2108,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "MAG_CANNON1",
+        "pos": [
+          -12,
+          42
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2108,
+        "id": "MAG_CANNON1",
+        "kind": "cannon",
+        "lane": "A",
+        "pos": [
+          -12,
+          42
+        ],
+        "order_second": 2070,
+        "purchase_gold": 5600,
+        "purchase_iron": 60,
+        "walk_seconds": 3,
+        "build_seconds": 35,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2114,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "C4",
+        "pos": [
+          380,
+          20
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2115,
+        "id": "m2100_0",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 2100,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 2130,
+        "id": "m2100_1",
+        "kind": "militia",
+        "lane": "A",
+        "pos": [
+          -18,
+          -12
+        ],
+        "order_second": 2115,
+        "purchase_gold": 1200,
+        "purchase_iron": 0,
+        "walk_seconds": 0,
+        "build_seconds": 15,
+        "type": "unit_complete",
+        "facility_level": 1,
+        "armor": 0,
+        "equipment": null,
+        "equipment_note": "smith at (48,6), barracks(-18,-12): out of15m; no free armor"
+      },
+      {
+        "second": 2133,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "H15",
+        "pos": [
+          18,
+          18
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2141,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "U7",
+        "pos": [
+          18,
+          -12
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2191,
+        "type": "worker_task_start",
+        "id": "worker3",
+        "target_id": "MAG_CANNON2",
+        "until_second": 2229,
+        "kind": "cannon",
+        "from_pos": [
+          -12,
+          42
+        ],
+        "pos": [
+          -6,
+          42
+        ],
+        "lane": "A",
+        "walk_seconds": 3
+      },
+      {
+        "second": 2229,
+        "type": "worker_task_finish",
+        "id": "worker3",
+        "target_id": "MAG_CANNON2",
+        "pos": [
+          -6,
+          42
+        ],
+        "lane": "A"
+      },
+      {
+        "second": 2229,
+        "id": "MAG_CANNON2",
+        "kind": "cannon",
+        "lane": "A",
+        "pos": [
+          -6,
+          42
+        ],
+        "order_second": 2191,
+        "purchase_gold": 5600,
+        "purchase_iron": 60,
+        "walk_seconds": 3,
+        "build_seconds": 35,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2280,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "MAG_DOUBLE0",
+        "until_second": 2325,
+        "kind": "double",
+        "from_pos": [
+          18,
+          18
+        ],
+        "pos": [
+          36,
+          42
+        ],
+        "lane": "B",
+        "walk_seconds": 15
+      },
+      {
+        "second": 2325,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "MAG_DOUBLE0",
+        "pos": [
+          36,
+          42
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2325,
+        "id": "MAG_DOUBLE0",
+        "kind": "double",
+        "lane": "B",
+        "pos": [
+          36,
+          42
+        ],
+        "order_second": 2280,
+        "purchase_gold": 4800,
+        "purchase_iron": 40,
+        "walk_seconds": 15,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2340,
+        "type": "worker_task_start",
+        "id": "worker2",
+        "target_id": "C5",
+        "until_second": 2420,
+        "kind": "coal",
+        "from_pos": [
+          380,
+          20
+        ],
+        "pos": [
+          480,
+          20
+        ],
+        "lane": "B",
+        "walk_seconds": 50
+      },
+      {
+        "second": 2370,
+        "type": "worker_task_start",
+        "id": "worker1",
+        "target_id": "MAG_DOUBLE1",
+        "until_second": 2403,
+        "kind": "double",
+        "from_pos": [
+          36,
+          42
+        ],
+        "pos": [
+          42,
+          42
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 2403,
+        "type": "worker_task_finish",
+        "id": "worker1",
+        "target_id": "MAG_DOUBLE1",
+        "pos": [
+          42,
+          42
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2403,
+        "id": "MAG_DOUBLE1",
+        "kind": "double",
+        "lane": "B",
+        "pos": [
+          42,
+          42
+        ],
+        "order_second": 2370,
+        "purchase_gold": 4800,
+        "purchase_iron": 40,
+        "walk_seconds": 3,
+        "build_seconds": 30,
+        "type": "tower_complete"
+      },
+      {
+        "second": 2420,
+        "type": "worker_task_finish",
+        "id": "worker2",
+        "target_id": "C5",
+        "pos": [
+          480,
+          20
+        ],
+        "lane": "B"
+      },
+      {
+        "second": 2431,
+        "type": "worker_task_start",
+        "id": "worker4",
+        "target_id": "U8",
+        "until_second": 2464,
+        "kind": "upgrade",
+        "from_pos": [
+          18,
+          -12
+        ],
+        "pos": [
+          24,
+          -12
+        ],
+        "lane": "B",
+        "walk_seconds": 3
+      },
+      {
+        "second": 2464,
+        "type": "worker_task_finish",
+        "id": "worker4",
+        "target_id": "U8",
+        "pos": [
+          24,
+          -12
+        ],
+        "lane": "B"
+      }
+    ],
+    "hero_absences": [],
+    "notes": [
+      "fixed combat clock is an input pass, not a closed fixed point",
+      "controlled 20min house /26min tower+two troops losses preserved; completed buildings refund0",
+      "old fixed repair600 removed; actual combat repair fees required, missing fees not counted as included",
+      "enemy damage, repaired HP and garrison behavior must be fed back by combat model",
+      "phase balances use floor-second conservative snapshots; completions compare to exact float wave time"
+    ],
+    "initial_workers": 2,
+    "initial_towers": 0,
+    "initial_walls": 0,
+    "repair_policy": "available_workers",
+    "repair_targets": "walls_only",
+    "clock_input": {
+      "big_seconds": [
+        430,
+        925,
+        1416,
+        1922.1,
+        2426.7,
+        2929.8
+      ],
+      "end_second": 3043.4
+    },
+    "economic_event_source": "actual purchase completion seconds, zero future towers"
+  }
+}

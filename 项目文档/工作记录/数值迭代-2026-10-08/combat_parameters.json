@@ -1,0 +1,149 @@
+{
+  "military": {
+    "箭塔": {
+      "cost": "2400",
+      "maintenance": 200,
+      "energy": 0
+    },
+    "凝霜塔": {
+      "cost": "3600",
+      "maintenance": 260,
+      "energy": 0
+    },
+    "双重箭塔": {
+      "cost": "4800 金币 + 40 钢铁",
+      "maintenance": 400,
+      "energy": 50
+    },
+    "火炮塔": {
+      "cost": "5600 金币 + 60 钢铁",
+      "maintenance": 400,
+      "energy": 50
+    },
+    "腐蚀塔": {
+      "cost": "4200 金币 + 40 钢铁",
+      "maintenance": 400,
+      "energy": 50
+    },
+    "雷环塔": {
+      "cost": "4800 金币 + 30 魔晶",
+      "maintenance": 400,
+      "energy": 50
+    },
+    "裁决": {
+      "cost": "4600 金币 + 30 魔晶",
+      "maintenance": 400,
+      "energy": 50
+    },
+    "风暴尖塔": {
+      "cost": "9000 金币 + 70 魔晶",
+      "maintenance": 600,
+      "energy": 100
+    },
+    "灵魂熔炉": {
+      "cost": "11000 金币 + 100 魔晶",
+      "maintenance": 700,
+      "energy": 120
+    },
+    "钢雨": {
+      "cost": "10000 金币 + 120 钢铁",
+      "maintenance": 650,
+      "energy": 100
+    },
+    "核弹发射井": {
+      "cost": "14000 金币 + 200 钢铁",
+      "maintenance": 1000,
+      "energy": 200
+    },
+    "缚灵塔": {
+      "cost": "8000 金币 + 60 魔晶 + 40 钢铁",
+      "maintenance": 600,
+      "energy": 100
+    },
+    "曙光": {
+      "cost": "18000 金币 + 160 魔晶 + 180 钢铁",
+      "maintenance": 1000,
+      "energy": 300
+    },
+    "无人机坞": {
+      "cost": "10000 金币 + 70 魔晶 + 120 钢铁",
+      "maintenance": 600,
+      "energy": 100
+    },
+    "魔导护盾器": {
+      "cost": "2400 金币 + 20 魔晶 + 20 钢铁",
+      "maintenance": 300,
+      "energy": 60
+    },
+    "传送阵": {
+      "cost": "6000 金币 + 50 魔晶 / 座",
+      "maintenance": 200,
+      "energy": 100
+    },
+    "圣堂": {
+      "cost": "5000 金币 + 40 魔晶",
+      "maintenance": 0,
+      "energy": 50
+    },
+    "星象殿": {
+      "cost": "9000 金币 + 80 魔晶",
+      "maintenance": 600,
+      "energy": 100
+    },
+    "造船厂": {
+      "cost": "6000 金币 + 60 钢铁",
+      "maintenance": 400,
+      "energy": 50
+    }
+  },
+  "units": {
+    "火枪手": {
+      "cost": "2200 金币 + 5 钢铁",
+      "maintenance": 140
+    },
+    "骑士": {
+      "cost": "3000 金币 + 12 钢铁",
+      "maintenance": 160
+    },
+    "圣骑士": {
+      "cost": "3800 金币 + 15 钢铁 + 15 魔晶",
+      "maintenance": 200
+    },
+    "圣堂刺客": {
+      "cost": "3400 金币 + 12 魔晶",
+      "maintenance": 180
+    },
+    "牧师": {
+      "cost": "2600 金币 + 5 魔晶",
+      "maintenance": 160
+    },
+    "法师": {
+      "cost": "4200 金币 + 15 魔晶",
+      "maintenance": 220
+    },
+    "大主教": {
+      "cost": "4800 金币 + 30 魔晶",
+      "maintenance": 240
+    },
+    "先知": {
+      "cost": "4200 金币 + 25 魔晶",
+      "maintenance": 200
+    },
+    "防御术士": {
+      "cost": "4600 金币 + 30 魔晶",
+      "maintenance": 220
+    },
+    "星术士": {
+      "cost": "6000 金币 + 40 魔晶",
+      "maintenance": 300
+    },
+    "运输舰": {
+      "cost": "4800 金币 + 40 钢铁",
+      "maintenance": 120
+    },
+    "曙光号": {
+      "cost": "20000 金币 + 250 钢铁 + 180 魔晶",
+      "maintenance": 800
+    }
+  }
+}
