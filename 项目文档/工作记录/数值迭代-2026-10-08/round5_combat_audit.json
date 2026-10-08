@@ -1,0 +1,3829 @@
+{
+  "_meta": {
+    "nature": "desk calculation under stated assumptions; not playtest, not engine, not win-rate",
+    "inputs_read_only": [
+      "survival_config.json",
+      "设计文档/**/*.md"
+    ],
+    "output_only": "round5_combat_audit.json"
+  },
+  "claims_recheck": [
+    {
+      "file": "敌人/铁皮绿皮.md",
+      "where": "强度检验·火枪手(30点)每发",
+      "claimed": 15,
+      "computed": 20.0,
+      "match": false,
+      "note": "火枪手.md 为 40 点：对护甲30实为20/发"
+    },
+    {
+      "file": "敌人/铁皮绿皮.md",
+      "where": "强度检验·火枪手需要发数",
+      "claimed": 20,
+      "computed": 15,
+      "match": false,
+      "note": "300HP/20=15发"
+    },
+    {
+      "file": "敌人/野猪骑手.md",
+      "where": "强度检验·火枪手(30点)每发",
+      "claimed": 25.7,
+      "computed": 34.29,
+      "match": false,
+      "note": "40×30/35=34.29"
+    },
+    {
+      "file": "敌人/野猪骑手.md",
+      "where": "强度检验·火枪手需要发数",
+      "claimed": 20,
+      "computed": 15,
+      "match": false,
+      "note": "500/34.29=14.6→15发"
+    },
+    {
+      "file": "敌人/破咒小子.md",
+      "where": "强度检验·火枪手每发",
+      "claimed": 30,
+      "computed": 30.0,
+      "match": true,
+      "note": "40×0.75=30，原文一致"
+    },
+    {
+      "file": "敌人/破咒小子.md",
+      "where": "强度检验·火枪手需要发数",
+      "claimed": 10,
+      "computed": 10,
+      "match": true,
+      "note": "原文一致"
+    },
+    {
+      "file": "敌人/绿皮弓手.md",
+      "where": "火枪手消灭一只弓手命中数",
+      "claimed": 3,
+      "computed": 3,
+      "match": true,
+      "note": "原文一致"
+    },
+    {
+      "file": "敌人/破咒小子.md",
+      "where": "圣堂刺客对300血首击额外伤害",
+      "claimed": 60,
+      "computed": 45.0,
+      "match": false,
+      "note": "战斗与护甲规则/刺客基线：额外部分整体过护甲，破咒甲10→45；铁皮甲30→30"
+    },
+    {
+      "file": "建筑/军事建筑/凝霜塔.md",
+      "where": "设计意图·价格高出箭塔",
+      "claimed": 800,
+      "computed": 1200,
+      "match": false,
+      "note": "成本主表3600−2400=1200"
+    },
+    {
+      "file": "建筑/军事建筑/核弹发射井.md",
+      "where": "强度检验·破咒被消灭半径(m)",
+      "claimed": 11,
+      "computed": 12.85,
+      "match": false,
+      "note": "需原始伤害≥400：1000−46.67d≥400→d≤12.86m"
+    },
+    {
+      "file": "建筑/军事建筑/核弹发射井.md",
+      "where": "(新增)铁皮被消灭半径",
+      "claimed": null,
+      "computed": 8.57,
+      "match": null,
+      "note": "铁皮甲30需原始≥600→d≤8.57m；巨怪最大857<2000不死"
+    },
+    {
+      "file": "建筑/军事建筑/曙光.md",
+      "where": "强度检验·消灭激光上的普通绿皮(秒)",
+      "claimed": 3.5,
+      "computed": 4.0,
+      "match": false,
+      "note": "0.5秒一跳，需到4.0秒；若首跳t=0也是4.0"
+    },
+    {
+      "file": "敌人/孢囊怪.md",
+      "where": "金币合计·一阶",
+      "claimed": "240–360",
+      "computed": "220–360",
+      "match": false,
+      "note": "低端应为220"
+    },
+    {
+      "file": "敌人/孢囊怪.md",
+      "where": "金币合计·二阶",
+      "claimed": "480–680",
+      "computed": "480–800",
+      "match": false,
+      "note": "高端应为800"
+    },
+    {
+      "file": "敌人/投矛绿皮.md",
+      "where": "强度检验·转近战后",
+      "claimed": "15点，弱于普通绿皮(20)",
+      "computed": "属性表近战30/次(1.5s)",
+      "match": false,
+      "note": "同文档属性表写30，高于普通绿皮20"
+    },
+    {
+      "file": "系统/建造与修理.md",
+      "where": "4.3 满修时间公式 max(建造时间,HP/35)·城墙",
+      "claimed": 60,
+      "computed": 57.14,
+      "match": false,
+      "note": "若除数改为33.33则=60.0；城墙/主城都以33.33HP/s(60s)进入全部第三/四轮验算"
+    },
+    {
+      "file": "系统/建造与修理.md",
+      "where": "4.3 满修时间公式 max(建造时间,HP/35)·箭塔",
+      "claimed": null,
+      "computed": 20,
+      "match": null,
+      "note": "若除数改为33.33则=20；城墙/主城都以33.33HP/s(60s)进入全部第三/四轮验算"
+    },
+    {
+      "file": "系统/建造与修理.md",
+      "where": "4.3 满修时间公式 max(建造时间,HP/35)·兵营",
+      "claimed": null,
+      "computed": 30,
+      "match": null,
+      "note": "若除数改为33.33则=30；城墙/主城都以33.33HP/s(60s)进入全部第三/四轮验算"
+    },
+    {
+      "file": "系统/建造与修理.md",
+      "where": "4.3 满修时间公式 max(建造时间,HP/35)·法师营地3本",
+      "claimed": null,
+      "computed": 60,
+      "match": null,
+      "note": "若除数改为33.33则=60；城墙/主城都以33.33HP/s(60s)进入全部第三/四轮验算"
+    },
+    {
+      "file": "系统/建造与修理.md",
+      "where": "4.3 满修时间公式 max(建造时间,HP/35)·曙光",
+      "claimed": null,
+      "computed": 45,
+      "match": null,
+      "note": "若除数改为33.33则=45；城墙/主城都以33.33HP/s(60s)进入全部第三/四轮验算"
+    },
+    {
+      "file": "系统/建造与修理.md",
+      "where": "4.3/4.4 主城满修时间",
+      "claimed": 120,
+      "computed": 57.14,
+      "match": false,
+      "note": "公式给57.14；主城120秒是显式例外，应写成例外"
+    }
+  ],
+  "tower_vs_greens_resim": {
+    "method": "塔t=0起每1.5秒齐射；绿皮3.33秒到塔下并每1.5秒攻击；同刻塔先行；锁定最近。",
+    "doc_claims": {
+      "箭塔": {
+        "vs1": "剩约170",
+        "vs2": "约18秒被拆,消灭1只",
+        "vs3": "被拆"
+      },
+      "双重箭塔": {
+        "vs2": "约15秒消灭2只,塔剩约130",
+        "vs3": "勉强同归于尽",
+        "vs4": "被拆"
+      },
+      "多重箭塔": {
+        "vs2": "约7.5秒,塔剩约410",
+        "vs3": "约12秒,塔剩约270",
+        "vs4": "约15秒,塔仅剩约10"
+      }
+    },
+    "resim": {
+      "箭塔": {
+        "vs1只绿皮": {
+          "result": "cleared",
+          "clear_sec": 13.5,
+          "tower_hp_left": 172.7
+        },
+        "vs2只绿皮": {
+          "result": "tower_destroyed",
+          "destroyed_sec": 16.83,
+          "enemies_alive": 1,
+          "enemies_killed": 1
+        },
+        "vs3只绿皮": {
+          "result": "tower_destroyed",
+          "destroyed_sec": 10.83,
+          "enemies_alive": 3,
+          "enemies_killed": 0
+        },
+        "vs4只绿皮": {
+          "result": "tower_destroyed",
+          "destroyed_sec": 9.33,
+          "enemies_alive": 4,
+          "enemies_killed": 0
+        }
+      },
+      "双重箭塔": {
+        "vs1只绿皮": {
+          "result": "cleared",
+          "clear_sec": 6.0,
+          "tower_hp_left": 365.7
+        },
+        "vs2只绿皮": {
+          "result": "cleared",
+          "clear_sec": 13.5,
+          "tower_hp_left": 160.0
+        },
+        "vs3只绿皮": {
+          "result": "tower_destroyed",
+          "destroyed_sec": 16.83,
+          "enemies_alive": 1,
+          "enemies_killed": 2
+        },
+        "vs4只绿皮": {
+          "result": "tower_destroyed",
+          "destroyed_sec": 10.83,
+          "enemies_alive": 4,
+          "enemies_killed": 0
+        }
+      },
+      "多重箭塔": {
+        "vs1只绿皮": {
+          "result": "cleared",
+          "clear_sec": 3.0,
+          "tower_hp_left": 500.0
+        },
+        "vs2只绿皮": {
+          "result": "cleared",
+          "clear_sec": 7.5,
+          "tower_hp_left": 436.8
+        },
+        "vs3只绿皮": {
+          "result": "cleared",
+          "clear_sec": 10.5,
+          "tower_hp_left": 326.3
+        },
+        "vs4只绿皮": {
+          "result": "cleared",
+          "clear_sec": 13.5,
+          "tower_hp_left": 57.9
+        }
+      }
+    }
+  },
+  "speed_tiers": [
+    {
+      "unit": "孢子",
+      "speed": 3.4,
+      "claimed": "快档下沿",
+      "by_standard": "标准"
+    },
+    {
+      "unit": "破咒小子",
+      "speed": 2.8,
+      "claimed": "标准档下沿",
+      "by_standard": "标准"
+    },
+    {
+      "unit": "圣堂刺客",
+      "speed": 4.2,
+      "claimed": "快档上沿",
+      "by_standard": "快"
+    },
+    {
+      "unit": "骑士",
+      "speed": 4.0,
+      "claimed": "快档",
+      "by_standard": "快"
+    },
+    {
+      "unit": "巨怪",
+      "speed": 1.6,
+      "claimed": "很慢档",
+      "by_standard": "很慢"
+    },
+    {
+      "unit": "铁皮绿皮",
+      "speed": 2.4,
+      "claimed": "慢档",
+      "by_standard": "慢"
+    },
+    {
+      "unit": "攀墙鬼",
+      "speed": 5.0,
+      "claimed": "很快档",
+      "by_standard": "很快"
+    },
+    {
+      "unit": "攀墙鬼(翻后)",
+      "speed": 2.2,
+      "claimed": "慢档",
+      "by_standard": "慢"
+    },
+    {
+      "unit": "野猪骑手",
+      "speed": 5.5,
+      "claimed": "很快档",
+      "by_standard": "很快"
+    },
+    {
+      "unit": "开拓者",
+      "speed": 2.5,
+      "claimed": "慢档",
+      "by_standard": "慢"
+    },
+    {
+      "unit": "无人机",
+      "speed": 6.0,
+      "claimed": "很快档",
+      "by_standard": "很快"
+    },
+    {
+      "unit": "运输舰",
+      "speed": 4.0,
+      "claimed": "快档",
+      "by_standard": "快"
+    },
+    {
+      "unit": "投矛(近战)",
+      "speed": 3.4,
+      "claimed": "未标",
+      "by_standard": "标准"
+    }
+  ],
+  "range_constraint_scan": {
+    "rule": "SYS-BHV-001 §2：攻击距离 ≤ 警戒距离 ≤ 视野（星象殿/塔无警戒项时只比攻击≤视野）",
+    "violations": [
+      {
+        "doc": "敌人/野猪骑手.md",
+        "attack": 1.5,
+        "alert": 12.0,
+        "vision": 10.0,
+        "issues": [
+          "警戒12.0>视野10.0"
+        ]
+      },
+      {
+        "doc": "单位/星术士.md",
+        "attack": 14.0,
+        "alert": null,
+        "vision": 12.0,
+        "issues": [
+          "攻击/施法14.0>视野12.0"
+        ]
+      }
+    ],
+    "scanned": 49
+  },
+  "cost_cross_check": {
+    "main_rows": 31,
+    "issues": [],
+    "note": "空列表=对象文档的基线块与属性表同成本体系主表一致（只比较金币/钢铁/魔晶/维持费/能源）"
+  },
+  "wave_audit": {
+    "doc_vs_config_mismatch": [],
+    "waves": [
+      {
+        "stage": 1,
+        "wave": "小波1",
+        "points": 6,
+        "individuals_with_children": 6,
+        "total_hp": 1200,
+        "phys_ehp": 1200,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 0,
+        "climbers": 0,
+        "fast": 0,
+        "species": 1,
+        "new_species": [
+          "普通绿皮"
+        ],
+        "arrow_tower_seconds": 90.0
+      },
+      {
+        "stage": 1,
+        "wave": "小波2",
+        "points": 9,
+        "individuals_with_children": 8,
+        "total_hp": 1500,
+        "phys_ehp": 1500,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 1,
+        "climbers": 0,
+        "fast": 0,
+        "species": 2,
+        "new_species": [
+          "绿皮弓手"
+        ],
+        "arrow_tower_seconds": 112.5
+      },
+      {
+        "stage": 1,
+        "wave": "小波3",
+        "points": 12,
+        "individuals_with_children": 10,
+        "total_hp": 1800,
+        "phys_ehp": 1800,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 2,
+        "climbers": 0,
+        "fast": 0,
+        "species": 2,
+        "new_species": [],
+        "arrow_tower_seconds": 135.0
+      },
+      {
+        "stage": 1,
+        "wave": "大波",
+        "points": 16,
+        "individuals_with_children": 14,
+        "total_hp": 2600,
+        "phys_ehp": 2600,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 2,
+        "climbers": 0,
+        "fast": 0,
+        "species": 2,
+        "new_species": [],
+        "arrow_tower_seconds": 195.0
+      },
+      {
+        "stage": 2,
+        "wave": "小波1",
+        "points": 12,
+        "individuals_with_children": 8,
+        "total_hp": 1600,
+        "phys_ehp": 1900,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.188,
+        "ranged": 1,
+        "climbers": 0,
+        "fast": 0,
+        "species": 3,
+        "new_species": [
+          "铁皮绿皮"
+        ],
+        "arrow_tower_seconds": 142.5
+      },
+      {
+        "stage": 2,
+        "wave": "小波2",
+        "points": 16,
+        "individuals_with_children": 13,
+        "total_hp": 2100,
+        "phys_ehp": 2100,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 3,
+        "climbers": 0,
+        "fast": 0,
+        "species": 3,
+        "new_species": [
+          "孢囊怪"
+        ],
+        "arrow_tower_seconds": 157.5
+      },
+      {
+        "stage": 2,
+        "wave": "小波3",
+        "points": 20,
+        "individuals_with_children": 14,
+        "total_hp": 2270,
+        "phys_ehp": 2270,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 3,
+        "climbers": 1,
+        "fast": 1,
+        "species": 5,
+        "new_species": [
+          "投矛绿皮",
+          "攀墙鬼"
+        ],
+        "arrow_tower_seconds": 171.0
+      },
+      {
+        "stage": 2,
+        "wave": "大波",
+        "points": 36,
+        "individuals_with_children": 24,
+        "total_hp": 4300,
+        "phys_ehp": 4900,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.14,
+        "ranged": 4,
+        "climbers": 0,
+        "fast": 0,
+        "species": 5,
+        "new_species": [],
+        "arrow_tower_seconds": 369.0
+      },
+      {
+        "stage": 3,
+        "wave": "小波1",
+        "points": 20,
+        "individuals_with_children": 11,
+        "total_hp": 2400,
+        "phys_ehp": 2583,
+        "immune_hp": 300,
+        "immune_hp_share": 0.125,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 2,
+        "climbers": 0,
+        "fast": 1,
+        "species": 4,
+        "new_species": [
+          "破咒小子",
+          "野猪骑手"
+        ],
+        "arrow_tower_seconds": 195.0
+      },
+      {
+        "stage": 3,
+        "wave": "小波2",
+        "points": 26,
+        "individuals_with_children": 13,
+        "total_hp": 2740,
+        "phys_ehp": 3240,
+        "immune_hp": 600,
+        "immune_hp_share": 0.219,
+        "heavy_armor_hp_share": 0.109,
+        "ranged": 0,
+        "climbers": 2,
+        "fast": 2,
+        "species": 4,
+        "new_species": [],
+        "arrow_tower_seconds": 243.0
+      },
+      {
+        "stage": 3,
+        "wave": "小波3",
+        "points": 32,
+        "individuals_with_children": 16,
+        "total_hp": 3500,
+        "phys_ehp": 4300,
+        "immune_hp": 600,
+        "immune_hp_share": 0.171,
+        "heavy_armor_hp_share": 0.171,
+        "ranged": 2,
+        "climbers": 0,
+        "fast": 0,
+        "species": 4,
+        "new_species": [],
+        "arrow_tower_seconds": 324.0
+      },
+      {
+        "stage": 3,
+        "wave": "大波",
+        "points": 64,
+        "individuals_with_children": 32,
+        "total_hp": 8250,
+        "phys_ehp": 9383,
+        "immune_hp": 600,
+        "immune_hp_share": 0.073,
+        "heavy_armor_hp_share": 0.073,
+        "ranged": 2,
+        "climbers": 0,
+        "fast": 0,
+        "species": 7,
+        "new_species": [
+          "巨怪"
+        ],
+        "arrow_tower_seconds": 705.0
+      },
+      {
+        "stage": 4,
+        "wave": "小波1",
+        "points": 36,
+        "individuals_with_children": 12,
+        "total_hp": 3300,
+        "phys_ehp": 4267,
+        "immune_hp": 600,
+        "immune_hp_share": 0.182,
+        "heavy_armor_hp_share": 0.182,
+        "ranged": 2,
+        "climbers": 0,
+        "fast": 2,
+        "species": 5,
+        "new_species": [],
+        "arrow_tower_seconds": 324.0
+      },
+      {
+        "stage": 4,
+        "wave": "小波2",
+        "points": 44,
+        "individuals_with_children": 28,
+        "total_hp": 4940,
+        "phys_ehp": 5840,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.182,
+        "ranged": 3,
+        "climbers": 2,
+        "fast": 2,
+        "species": 5,
+        "new_species": [
+          "孢巢母体"
+        ],
+        "arrow_tower_seconds": 438.0
+      },
+      {
+        "stage": 4,
+        "wave": "小波3",
+        "points": 52,
+        "individuals_with_children": 25,
+        "total_hp": 5450,
+        "phys_ehp": 6000,
+        "immune_hp": 900,
+        "immune_hp_share": 0.165,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 3,
+        "climbers": 0,
+        "fast": 3,
+        "species": 5,
+        "new_species": [],
+        "arrow_tower_seconds": 456.0
+      },
+      {
+        "stage": 4,
+        "wave": "大波",
+        "points": 96,
+        "individuals_with_children": 32,
+        "total_hp": 8800,
+        "phys_ehp": 10983,
+        "immune_hp": 1200,
+        "immune_hp_share": 0.136,
+        "heavy_armor_hp_share": 0.136,
+        "ranged": 7,
+        "climbers": 0,
+        "fast": 3,
+        "species": 8,
+        "new_species": [],
+        "arrow_tower_seconds": 831.0
+      },
+      {
+        "stage": 5,
+        "wave": "小波1",
+        "points": 52,
+        "individuals_with_children": 28,
+        "total_hp": 5900,
+        "phys_ehp": 7350,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.203,
+        "ranged": 0,
+        "climbers": 0,
+        "fast": 3,
+        "species": 4,
+        "new_species": [],
+        "arrow_tower_seconds": 555.0
+      },
+      {
+        "stage": 5,
+        "wave": "小波2",
+        "points": 64,
+        "individuals_with_children": 24,
+        "total_hp": 5800,
+        "phys_ehp": 6533,
+        "immune_hp": 1200,
+        "immune_hp_share": 0.207,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 8,
+        "climbers": 0,
+        "fast": 4,
+        "species": 5,
+        "new_species": [],
+        "arrow_tower_seconds": 498.0
+      },
+      {
+        "stage": 5,
+        "wave": "小波3",
+        "points": 76,
+        "individuals_with_children": 45,
+        "total_hp": 7480,
+        "phys_ehp": 8980,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.201,
+        "ranged": 4,
+        "climbers": 4,
+        "fast": 4,
+        "species": 5,
+        "new_species": [],
+        "arrow_tower_seconds": 676.5
+      },
+      {
+        "stage": 5,
+        "wave": "大波",
+        "points": 132,
+        "individuals_with_children": 46,
+        "total_hp": 13200,
+        "phys_ehp": 15800,
+        "immune_hp": 1200,
+        "immune_hp_share": 0.091,
+        "heavy_armor_hp_share": 0.091,
+        "ranged": 8,
+        "climbers": 0,
+        "fast": 4,
+        "species": 8,
+        "new_species": [],
+        "arrow_tower_seconds": 1194.0
+      },
+      {
+        "stage": 6,
+        "wave": "小波1",
+        "points": 72,
+        "individuals_with_children": 32,
+        "total_hp": 7400,
+        "phys_ehp": 9333,
+        "immune_hp": 1200,
+        "immune_hp_share": 0.162,
+        "heavy_armor_hp_share": 0.162,
+        "ranged": 0,
+        "climbers": 0,
+        "fast": 4,
+        "species": 5,
+        "new_species": [],
+        "arrow_tower_seconds": 705.0
+      },
+      {
+        "stage": 6,
+        "wave": "小波2",
+        "points": 88,
+        "individuals_with_children": 58,
+        "total_hp": 8220,
+        "phys_ehp": 8220,
+        "immune_hp": 0,
+        "immune_hp_share": 0.0,
+        "heavy_armor_hp_share": 0.0,
+        "ranged": 12,
+        "climbers": 6,
+        "fast": 6,
+        "species": 5,
+        "new_species": [],
+        "arrow_tower_seconds": 621.0
+      },
+      {
+        "stage": 6,
+        "wave": "小波3",
+        "points": 104,
+        "individuals_with_children": 32,
+        "total_hp": 9100,
+        "phys_ehp": 12000,
+        "immune_hp": 1800,
+        "immune_hp_share": 0.198,
+        "heavy_armor_hp_share": 0.198,
+        "ranged": 6,
+        "climbers": 0,
+        "fast": 6,
+        "species": 5,
+        "new_species": [],
+        "arrow_tower_seconds": 912.0
+      },
+      {
+        "stage": 6,
+        "wave": "大波",
+        "points": 180,
+        "individuals_with_children": 65,
+        "total_hp": 18200,
+        "phys_ehp": 21933,
+        "immune_hp": 1800,
+        "immune_hp_share": 0.099,
+        "heavy_armor_hp_share": 0.099,
+        "ranged": 8,
+        "climbers": 0,
+        "fast": 4,
+        "species": 8,
+        "new_species": [],
+        "arrow_tower_seconds": 1654.5
+      }
+    ]
+  },
+  "wave_multi_new_species": [
+    {
+      "stage": 2,
+      "wave": "小波3",
+      "new": [
+        "投矛绿皮",
+        "攀墙鬼"
+      ]
+    },
+    {
+      "stage": 3,
+      "wave": "小波1",
+      "new": [
+        "破咒小子",
+        "野猪骑手"
+      ]
+    }
+  ],
+  "budget_curve": [
+    {
+      "stage": 1,
+      "small": [
+        6,
+        9,
+        12
+      ],
+      "big": 16,
+      "big_over_small3": 1.33
+    },
+    {
+      "stage": 2,
+      "small": [
+        12,
+        16,
+        20
+      ],
+      "big": 36,
+      "big_over_small3": 1.8
+    },
+    {
+      "stage": 3,
+      "small": [
+        20,
+        26,
+        32
+      ],
+      "big": 64,
+      "big_over_small3": 2.0
+    },
+    {
+      "stage": 4,
+      "small": [
+        36,
+        44,
+        52
+      ],
+      "big": 96,
+      "big_over_small3": 1.85
+    },
+    {
+      "stage": 5,
+      "small": [
+        52,
+        64,
+        76
+      ],
+      "big": 132,
+      "big_over_small3": 1.74
+    },
+    {
+      "stage": 6,
+      "small": [
+        72,
+        88,
+        104
+      ],
+      "big": 180,
+      "big_over_small3": 1.73
+    }
+  ],
+  "concurrency_upper_bound_per_wave": {
+    "method": "一波全部个体(含全部分裂子代同时存活的最坏)+其后2次普通出怪根预算(按1点=1只普通取)；不含上一波未清残余",
+    "max_individuals": 65,
+    "max_with_normals": 73,
+    "per_wave": [
+      {
+        "stage": 1,
+        "wave": "小波1",
+        "individuals": 6,
+        "plus_two_normal_pulses": 8
+      },
+      {
+        "stage": 1,
+        "wave": "小波2",
+        "individuals": 8,
+        "plus_two_normal_pulses": 10
+      },
+      {
+        "stage": 1,
+        "wave": "小波3",
+        "individuals": 10,
+        "plus_two_normal_pulses": 12
+      },
+      {
+        "stage": 1,
+        "wave": "大波",
+        "individuals": 14,
+        "plus_two_normal_pulses": 16
+      },
+      {
+        "stage": 2,
+        "wave": "小波1",
+        "individuals": 8,
+        "plus_two_normal_pulses": 12
+      },
+      {
+        "stage": 2,
+        "wave": "小波2",
+        "individuals": 13,
+        "plus_two_normal_pulses": 17
+      },
+      {
+        "stage": 2,
+        "wave": "小波3",
+        "individuals": 14,
+        "plus_two_normal_pulses": 18
+      },
+      {
+        "stage": 2,
+        "wave": "大波",
+        "individuals": 24,
+        "plus_two_normal_pulses": 28
+      },
+      {
+        "stage": 3,
+        "wave": "小波1",
+        "individuals": 11,
+        "plus_two_normal_pulses": 17
+      },
+      {
+        "stage": 3,
+        "wave": "小波2",
+        "individuals": 13,
+        "plus_two_normal_pulses": 19
+      },
+      {
+        "stage": 3,
+        "wave": "小波3",
+        "individuals": 16,
+        "plus_two_normal_pulses": 22
+      },
+      {
+        "stage": 3,
+        "wave": "大波",
+        "individuals": 32,
+        "plus_two_normal_pulses": 38
+      },
+      {
+        "stage": 4,
+        "wave": "小波1",
+        "individuals": 12,
+        "plus_two_normal_pulses": 20
+      },
+      {
+        "stage": 4,
+        "wave": "小波2",
+        "individuals": 28,
+        "plus_two_normal_pulses": 36
+      },
+      {
+        "stage": 4,
+        "wave": "小波3",
+        "individuals": 25,
+        "plus_two_normal_pulses": 33
+      },
+      {
+        "stage": 4,
+        "wave": "大波",
+        "individuals": 32,
+        "plus_two_normal_pulses": 40
+      },
+      {
+        "stage": 5,
+        "wave": "小波1",
+        "individuals": 28,
+        "plus_two_normal_pulses": 36
+      },
+      {
+        "stage": 5,
+        "wave": "小波2",
+        "individuals": 24,
+        "plus_two_normal_pulses": 32
+      },
+      {
+        "stage": 5,
+        "wave": "小波3",
+        "individuals": 45,
+        "plus_two_normal_pulses": 53
+      },
+      {
+        "stage": 5,
+        "wave": "大波",
+        "individuals": 46,
+        "plus_two_normal_pulses": 54
+      },
+      {
+        "stage": 6,
+        "wave": "小波1",
+        "individuals": 32,
+        "plus_two_normal_pulses": 40
+      },
+      {
+        "stage": 6,
+        "wave": "小波2",
+        "individuals": 58,
+        "plus_two_normal_pulses": 66
+      },
+      {
+        "stage": 6,
+        "wave": "小波3",
+        "individuals": 32,
+        "plus_two_normal_pulses": 40
+      },
+      {
+        "stage": 6,
+        "wave": "大波",
+        "individuals": 65,
+        "plus_two_normal_pulses": 73
+      }
+    ]
+  },
+  "enemy_cost_vs_points": [
+    {
+      "enemy": "普通绿皮",
+      "points": 1,
+      "lineage_hp": 200,
+      "phys_ehp": 200,
+      "hp_per_point": 200.0,
+      "dps_vs_wall15": 8.89,
+      "dps_vs_wall_per_point": 8.89,
+      "dps_vs_arrowtower": 12.12,
+      "arrow_tower_seconds_per_point": 15.0,
+      "kill_by_one_arrow_tower_sec": 15.0
+    },
+    {
+      "enemy": "绿皮弓手",
+      "points": 2,
+      "lineage_hp": 100,
+      "phys_ehp": 100,
+      "hp_per_point": 50.0,
+      "dps_vs_wall15": 5.0,
+      "dps_vs_wall_per_point": 2.5,
+      "dps_vs_arrowtower": 6.82,
+      "arrow_tower_seconds_per_point": 3.75,
+      "kill_by_one_arrow_tower_sec": 7.5
+    },
+    {
+      "enemy": "孢囊怪",
+      "points": 3,
+      "lineage_hp": 400,
+      "phys_ehp": 400,
+      "hp_per_point": 133.3,
+      "dps_vs_wall15": 6.67,
+      "dps_vs_wall_per_point": 2.22,
+      "dps_vs_arrowtower": 9.09,
+      "arrow_tower_seconds_per_point": 10.0,
+      "kill_by_one_arrow_tower_sec": 30.0
+    },
+    {
+      "enemy": "攀墙鬼",
+      "points": 3,
+      "lineage_hp": 120,
+      "phys_ehp": 120,
+      "hp_per_point": 40.0,
+      "dps_vs_wall15": 8.33,
+      "dps_vs_wall_per_point": 2.78,
+      "dps_vs_arrowtower": 11.36,
+      "arrow_tower_seconds_per_point": 3.0,
+      "kill_by_one_arrow_tower_sec": 9.0
+    },
+    {
+      "enemy": "投矛绿皮",
+      "points": 3,
+      "lineage_hp": 150,
+      "phys_ehp": 150,
+      "hp_per_point": 50.0,
+      "dps_vs_wall15": 13.33,
+      "dps_vs_wall_per_point": 4.44,
+      "dps_vs_arrowtower": 18.18,
+      "arrow_tower_seconds_per_point": 4.0,
+      "kill_by_one_arrow_tower_sec": 12.0
+    },
+    {
+      "enemy": "破咒小子",
+      "points": 4,
+      "lineage_hp": 300,
+      "phys_ehp": 400,
+      "hp_per_point": 75.0,
+      "dps_vs_wall15": 8.89,
+      "dps_vs_wall_per_point": 2.22,
+      "dps_vs_arrowtower": 12.12,
+      "arrow_tower_seconds_per_point": 7.5,
+      "kill_by_one_arrow_tower_sec": 30.0
+    },
+    {
+      "enemy": "铁皮绿皮",
+      "points": 4,
+      "lineage_hp": 300,
+      "phys_ehp": 600,
+      "hp_per_point": 75.0,
+      "dps_vs_wall15": 11.11,
+      "dps_vs_wall_per_point": 2.78,
+      "dps_vs_arrowtower": 15.15,
+      "arrow_tower_seconds_per_point": 11.25,
+      "kill_by_one_arrow_tower_sec": 45.0
+    },
+    {
+      "enemy": "野猪骑手",
+      "points": 5,
+      "lineage_hp": 500,
+      "phys_ehp": 583,
+      "hp_per_point": 100.0,
+      "dps_vs_wall15": 11.11,
+      "dps_vs_wall_per_point": 2.22,
+      "dps_vs_arrowtower": 15.15,
+      "arrow_tower_seconds_per_point": 9.0,
+      "kill_by_one_arrow_tower_sec": 45.0
+    },
+    {
+      "enemy": "孢巢母体",
+      "points": 7,
+      "lineage_hp": 900,
+      "phys_ehp": 900,
+      "hp_per_point": 128.6,
+      "dps_vs_wall15": 8.0,
+      "dps_vs_wall_per_point": 1.14,
+      "dps_vs_arrowtower": 10.91,
+      "arrow_tower_seconds_per_point": 9.64,
+      "kill_by_one_arrow_tower_sec": 67.5
+    },
+    {
+      "enemy": "巨怪",
+      "points": 18,
+      "lineage_hp": 2000,
+      "phys_ehp": 2333,
+      "hp_per_point": 111.1,
+      "dps_vs_wall15": 21.33,
+      "dps_vs_wall_per_point": 1.19,
+      "dps_vs_arrowtower": 29.09,
+      "arrow_tower_seconds_per_point": 9.75,
+      "kill_by_one_arrow_tower_sec": 175.5
+    }
+  ],
+  "reaction_windows": {
+    "note": "开门当刻提示后，敌人沿路径120–250m走到最近建筑的时间；英雄回援跨54m=18秒；假定2秒玩家反应",
+    "rows": [
+      {
+        "enemy": "普通绿皮",
+        "speed": 3.0,
+        "arrive_min_sec": 40.0,
+        "arrive_max_sec": 83.3,
+        "hero_cross_54m_sec": 18,
+        "slack_vs_min_after_2s_reaction": 20.0
+      },
+      {
+        "enemy": "破咒小子",
+        "speed": 2.8,
+        "arrive_min_sec": 42.9,
+        "arrive_max_sec": 89.3,
+        "hero_cross_54m_sec": 18,
+        "slack_vs_min_after_2s_reaction": 22.9
+      },
+      {
+        "enemy": "铁皮绿皮",
+        "speed": 2.4,
+        "arrive_min_sec": 50.0,
+        "arrive_max_sec": 104.2,
+        "hero_cross_54m_sec": 18,
+        "slack_vs_min_after_2s_reaction": 30.0
+      },
+      {
+        "enemy": "攀墙鬼",
+        "speed": 5.0,
+        "arrive_min_sec": 24.0,
+        "arrive_max_sec": 50.0,
+        "hero_cross_54m_sec": 18,
+        "slack_vs_min_after_2s_reaction": 4.0
+      },
+      {
+        "enemy": "野猪骑手",
+        "speed": 5.5,
+        "arrive_min_sec": 21.8,
+        "arrive_max_sec": 45.5,
+        "hero_cross_54m_sec": 18,
+        "slack_vs_min_after_2s_reaction": 1.8
+      },
+      {
+        "enemy": "巨怪",
+        "speed": 1.6,
+        "arrive_min_sec": 75.0,
+        "arrive_max_sec": 156.2,
+        "hero_cross_54m_sec": 18,
+        "slack_vs_min_after_2s_reaction": 55.0
+      },
+      {
+        "enemy": "绿皮弓手",
+        "speed": 3.0,
+        "arrive_min_sec": 37.0,
+        "arrive_max_sec": 80.3,
+        "hero_cross_54m_sec": 18,
+        "slack_vs_min_after_2s_reaction": 17.0
+      }
+    ]
+  },
+  "portal_destruction_feasibility": {
+    "small_wave_drop_window_sec": 8,
+    "big_wave_last_batch_sec": 24,
+    "rows": [
+      {
+        "unit": "古塞奇尤/民兵",
+        "speed": 3.0,
+        "reach_120m_sec": 40.0,
+        "reach_250m_sec": 83.3
+      },
+      {
+        "unit": "骑士",
+        "speed": 4.0,
+        "reach_120m_sec": 30.0,
+        "reach_250m_sec": 62.5
+      },
+      {
+        "unit": "圣堂刺客",
+        "speed": 4.2,
+        "reach_120m_sec": 28.6,
+        "reach_250m_sec": 59.5
+      },
+      {
+        "unit": "无人机(不可控,经集结点)",
+        "speed": 6.0,
+        "reach_120m_sec": 20.0,
+        "reach_250m_sec": 41.7
+      }
+    ],
+    "note": "玩家单位最快4.2m/s需≥28.6s才到最近的120m门，晚于大波末批24秒；门若可摧毁则几乎只剩无人机可触及"
+  },
+  "corrosion": {
+    "普通(0)": [
+      {
+        "hits": 0,
+        "armor": 0,
+        "phys_mult": 1.0,
+        "seconds": 0
+      },
+      {
+        "hits": 1,
+        "armor": -4,
+        "phys_mult": 1.15,
+        "seconds": 0.0
+      },
+      {
+        "hits": 2,
+        "armor": -8,
+        "phys_mult": 1.36,
+        "seconds": 2.0
+      },
+      {
+        "hits": 3,
+        "armor": -12,
+        "phys_mult": 1.67,
+        "seconds": 4.0
+      },
+      {
+        "hits": 4,
+        "armor": -15,
+        "phys_mult": 2.0,
+        "seconds": 6.0
+      }
+    ],
+    "野猪/巨怪(5)": [
+      {
+        "hits": 0,
+        "armor": 5,
+        "phys_mult": 1.0,
+        "seconds": 0
+      },
+      {
+        "hits": 1,
+        "armor": 1,
+        "phys_mult": 1.13,
+        "seconds": 0.0
+      },
+      {
+        "hits": 2,
+        "armor": -3,
+        "phys_mult": 1.3,
+        "seconds": 2.0
+      },
+      {
+        "hits": 3,
+        "armor": -7,
+        "phys_mult": 1.52,
+        "seconds": 4.0
+      },
+      {
+        "hits": 4,
+        "armor": -11,
+        "phys_mult": 1.84,
+        "seconds": 6.0
+      },
+      {
+        "hits": 5,
+        "armor": -15,
+        "phys_mult": 2.33,
+        "seconds": 8.0
+      }
+    ],
+    "破咒(10,魔免但腐蚀是物理)": [
+      {
+        "hits": 0,
+        "armor": 10,
+        "phys_mult": 1.0,
+        "seconds": 0
+      },
+      {
+        "hits": 1,
+        "armor": 6,
+        "phys_mult": 1.11,
+        "seconds": 0.0
+      },
+      {
+        "hits": 2,
+        "armor": 2,
+        "phys_mult": 1.25,
+        "seconds": 2.0
+      },
+      {
+        "hits": 3,
+        "armor": -2,
+        "phys_mult": 1.43,
+        "seconds": 4.0
+      },
+      {
+        "hits": 4,
+        "armor": -6,
+        "phys_mult": 1.67,
+        "seconds": 6.0
+      },
+      {
+        "hits": 5,
+        "armor": -10,
+        "phys_mult": 2.0,
+        "seconds": 8.0
+      },
+      {
+        "hits": 6,
+        "armor": -14,
+        "phys_mult": 2.5,
+        "seconds": 10.0
+      },
+      {
+        "hits": 7,
+        "armor": -15,
+        "phys_mult": 2.67,
+        "seconds": 12.0
+      }
+    ],
+    "铁皮(30)": [
+      {
+        "hits": 0,
+        "armor": 30,
+        "phys_mult": 1.0,
+        "seconds": 0
+      },
+      {
+        "hits": 1,
+        "armor": 26,
+        "phys_mult": 1.07,
+        "seconds": 0.0
+      },
+      {
+        "hits": 2,
+        "armor": 22,
+        "phys_mult": 1.15,
+        "seconds": 2.0
+      },
+      {
+        "hits": 3,
+        "armor": 18,
+        "phys_mult": 1.25,
+        "seconds": 4.0
+      },
+      {
+        "hits": 4,
+        "armor": 14,
+        "phys_mult": 1.36,
+        "seconds": 6.0
+      },
+      {
+        "hits": 5,
+        "armor": 10,
+        "phys_mult": 1.5,
+        "seconds": 8.0
+      },
+      {
+        "hits": 6,
+        "armor": 6,
+        "phys_mult": 1.67,
+        "seconds": 10.0
+      },
+      {
+        "hits": 7,
+        "armor": 2,
+        "phys_mult": 1.88,
+        "seconds": 12.0
+      },
+      {
+        "hits": 8,
+        "armor": -2,
+        "phys_mult": 2.14,
+        "seconds": 14.0
+      },
+      {
+        "hits": 9,
+        "armor": -6,
+        "phys_mult": 2.5,
+        "seconds": 16.0
+      },
+      {
+        "hits": 10,
+        "armor": -10,
+        "phys_mult": 3.0,
+        "seconds": 18.0
+      },
+      {
+        "hits": 11,
+        "armor": -14,
+        "phys_mult": 3.75,
+        "seconds": 20.0
+      },
+      {
+        "hits": 12,
+        "armor": -15,
+        "phys_mult": 4.0,
+        "seconds": 22.0
+      }
+    ],
+    "铁皮(30)·腐蚀塔2s+腐蚀无人机1.5s合并命中(每0.857s一次,共用同一累计池)": [
+      {
+        "hits": 0,
+        "armor": 30,
+        "phys_mult": 1.0,
+        "seconds": 0
+      },
+      {
+        "hits": 1,
+        "armor": 26,
+        "phys_mult": 1.07,
+        "seconds": 0.0
+      },
+      {
+        "hits": 2,
+        "armor": 22,
+        "phys_mult": 1.15,
+        "seconds": 0.9
+      },
+      {
+        "hits": 3,
+        "armor": 18,
+        "phys_mult": 1.25,
+        "seconds": 1.7
+      },
+      {
+        "hits": 4,
+        "armor": 14,
+        "phys_mult": 1.36,
+        "seconds": 2.6
+      },
+      {
+        "hits": 5,
+        "armor": 10,
+        "phys_mult": 1.5,
+        "seconds": 3.4
+      },
+      {
+        "hits": 6,
+        "armor": 6,
+        "phys_mult": 1.67,
+        "seconds": 4.3
+      },
+      {
+        "hits": 7,
+        "armor": 2,
+        "phys_mult": 1.88,
+        "seconds": 5.1
+      },
+      {
+        "hits": 8,
+        "armor": -2,
+        "phys_mult": 2.14,
+        "seconds": 6.0
+      },
+      {
+        "hits": 9,
+        "armor": -6,
+        "phys_mult": 2.5,
+        "seconds": 6.9
+      },
+      {
+        "hits": 10,
+        "armor": -10,
+        "phys_mult": 3.0,
+        "seconds": 7.7
+      },
+      {
+        "hits": 11,
+        "armor": -14,
+        "phys_mult": 3.75,
+        "seconds": 8.6
+      },
+      {
+        "hits": 12,
+        "armor": -15,
+        "phys_mult": 4.0,
+        "seconds": 9.4
+      }
+    ]
+  },
+  "corrosion_exposure": [
+    {
+      "enemy": "铁皮绿皮",
+      "speed": 2.4,
+      "seconds_in_12m_range_before_contact": 4.6,
+      "hits_by_one_corrosion_tower": 3,
+      "seconds_to_break_one_wall": 180.0
+    },
+    {
+      "enemy": "普通绿皮",
+      "speed": 3.0,
+      "seconds_in_12m_range_before_contact": 3.7,
+      "hits_by_one_corrosion_tower": 2,
+      "seconds_to_break_one_wall": 225.0
+    }
+  ],
+  "dps_efficiency": {
+    "assumptions": [
+      "总HP去除速率(DPS)，不计射程/站位/弹道躲避/过量伤害(裁决除外)/建筑血量/占地/能源余量/施工时间",
+      "持有成本=一次性金币+(维持费+军人失税180)×20分钟；材料与能源另列，不折算成金币",
+      "火炮塔每发命中min(k,6)个目标；雷环/灵魂熔炉/曙光对k个目标全部命中；风暴尖塔最多链5个",
+      "古塞奇尤Lv1无成本(英雄)；刺客上限80；钢雨取满速64"
+    ],
+    "hold_minutes": 20,
+    "scenarios": [
+      "1只普通绿皮",
+      "8只普通挤在一起",
+      "3只铁皮",
+      "3只破咒",
+      "1只巨怪",
+      "4只野猪(忽略躲避)",
+      "1只孢巢母体谱系(7体)"
+    ],
+    "rows": [
+      {
+        "option": "箭塔",
+        "req": "基",
+        "gold": 2400,
+        "steel": 0,
+        "crystal": 0,
+        "energy": 0,
+        "maint": 200,
+        "tax": 0,
+        "hold_cost_20min": 6400,
+        "dps": {
+          "1只普通绿皮": 13.33,
+          "8只普通挤在一起": 13.33,
+          "3只铁皮": 6.67,
+          "3只破咒": 10.0,
+          "1只巨怪": 11.43,
+          "4只野猪(忽略躲避)": 11.43,
+          "1只孢巢母体谱系(7体)": 13.33
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 2.083,
+          "8只普通挤在一起": 2.083,
+          "3只铁皮": 1.042,
+          "3只破咒": 1.562,
+          "1只巨怪": 1.786,
+          "4只野猪(忽略躲避)": 1.786,
+          "1只孢巢母体谱系(7体)": 2.083
+        }
+      },
+      {
+        "option": "箭塔Lv2(升级后合计)",
+        "req": "科2",
+        "gold": 5400,
+        "steel": 30,
+        "crystal": 0,
+        "energy": 0,
+        "maint": 300,
+        "tax": 0,
+        "hold_cost_20min": 11400,
+        "dps": {
+          "1只普通绿皮": 21.33,
+          "8只普通挤在一起": 21.33,
+          "3只铁皮": 10.67,
+          "3只破咒": 16.0,
+          "1只巨怪": 18.29,
+          "4只野猪(忽略躲避)": 18.29,
+          "1只孢巢母体谱系(7体)": 21.33
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 1.871,
+          "8只普通挤在一起": 1.871,
+          "3只铁皮": 0.936,
+          "3只破咒": 1.404,
+          "1只巨怪": 1.604,
+          "4只野猪(忽略躲避)": 1.604,
+          "1只孢巢母体谱系(7体)": 1.871
+        }
+      },
+      {
+        "option": "双重箭塔",
+        "req": "科2",
+        "gold": 4800,
+        "steel": 40,
+        "crystal": 0,
+        "energy": 50,
+        "maint": 400,
+        "tax": 0,
+        "hold_cost_20min": 12800,
+        "dps": {
+          "1只普通绿皮": 26.67,
+          "8只普通挤在一起": 26.67,
+          "3只铁皮": 13.33,
+          "3只破咒": 20.0,
+          "1只巨怪": 22.86,
+          "4只野猪(忽略躲避)": 22.86,
+          "1只孢巢母体谱系(7体)": 26.67
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 2.083,
+          "8只普通挤在一起": 2.083,
+          "3只铁皮": 1.042,
+          "3只破咒": 1.562,
+          "1只巨怪": 1.786,
+          "4只野猪(忽略躲避)": 1.786,
+          "1只孢巢母体谱系(7体)": 2.083
+        }
+      },
+      {
+        "option": "多重箭塔",
+        "req": "科3",
+        "gold": 8800,
+        "steel": 120,
+        "crystal": 0,
+        "energy": 80,
+        "maint": 600,
+        "tax": 0,
+        "hold_cost_20min": 20800,
+        "dps": {
+          "1只普通绿皮": 53.33,
+          "8只普通挤在一起": 53.33,
+          "3只铁皮": 26.67,
+          "3只破咒": 40.0,
+          "1只巨怪": 45.71,
+          "4只野猪(忽略躲避)": 45.71,
+          "1只孢巢母体谱系(7体)": 53.33
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 2.564,
+          "8只普通挤在一起": 2.564,
+          "3只铁皮": 1.282,
+          "3只破咒": 1.923,
+          "1只巨怪": 2.198,
+          "4只野猪(忽略躲避)": 2.198,
+          "1只孢巢母体谱系(7体)": 2.564
+        }
+      },
+      {
+        "option": "凝霜塔",
+        "req": "基",
+        "gold": 3600,
+        "steel": 0,
+        "crystal": 0,
+        "energy": 0,
+        "maint": 260,
+        "tax": 0,
+        "hold_cost_20min": 8800,
+        "dps": {
+          "1只普通绿皮": 13.33,
+          "8只普通挤在一起": 13.33,
+          "3只铁皮": 13.33,
+          "3只破咒": 0.0,
+          "1只巨怪": 13.33,
+          "4只野猪(忽略躲避)": 13.33,
+          "1只孢巢母体谱系(7体)": 13.33
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 1.515,
+          "8只普通挤在一起": 1.515,
+          "3只铁皮": 1.515,
+          "3只破咒": 0.0,
+          "1只巨怪": 1.515,
+          "4只野猪(忽略躲避)": 1.515,
+          "1只孢巢母体谱系(7体)": 1.515
+        }
+      },
+      {
+        "option": "火炮塔",
+        "req": "科2",
+        "gold": 5600,
+        "steel": 60,
+        "crystal": 0,
+        "energy": 50,
+        "maint": 400,
+        "tax": 0,
+        "hold_cost_20min": 13600,
+        "dps": {
+          "1只普通绿皮": 13.33,
+          "8只普通挤在一起": 80.0,
+          "3只铁皮": 20.0,
+          "3只破咒": 30.0,
+          "1只巨怪": 11.43,
+          "4只野猪(忽略躲避)": 45.71,
+          "1只孢巢母体谱系(7体)": 80.0
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 0.98,
+          "8只普通挤在一起": 5.882,
+          "3只铁皮": 1.471,
+          "3只破咒": 2.206,
+          "1只巨怪": 0.84,
+          "4只野猪(忽略躲避)": 3.361,
+          "1只孢巢母体谱系(7体)": 5.882
+        }
+      },
+      {
+        "option": "钢雨(满速)",
+        "req": "科3",
+        "gold": 10000,
+        "steel": 120,
+        "crystal": 0,
+        "energy": 100,
+        "maint": 650,
+        "tax": 0,
+        "hold_cost_20min": 23000,
+        "dps": {
+          "1只普通绿皮": 64.0,
+          "8只普通挤在一起": 64.0,
+          "3只铁皮": 32.0,
+          "3只破咒": 48.0,
+          "1只巨怪": 54.86,
+          "4只野猪(忽略躲避)": 54.86,
+          "1只孢巢母体谱系(7体)": 64.0
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 2.783,
+          "8只普通挤在一起": 2.783,
+          "3只铁皮": 1.391,
+          "3只破咒": 2.087,
+          "1只巨怪": 2.385,
+          "4只野猪(忽略躲避)": 2.385,
+          "1只孢巢母体谱系(7体)": 2.783
+        }
+      },
+      {
+        "option": "雷环塔",
+        "req": "魔2",
+        "gold": 4800,
+        "steel": 0,
+        "crystal": 30,
+        "energy": 50,
+        "maint": 400,
+        "tax": 0,
+        "hold_cost_20min": 12800,
+        "dps": {
+          "1只普通绿皮": 6.0,
+          "8只普通挤在一起": 48.0,
+          "3只铁皮": 18.0,
+          "3只破咒": 0.0,
+          "1只巨怪": 6.0,
+          "4只野猪(忽略躲避)": 24.0,
+          "1只孢巢母体谱系(7体)": 42.0
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 0.469,
+          "8只普通挤在一起": 3.75,
+          "3只铁皮": 1.406,
+          "3只破咒": 0.0,
+          "1只巨怪": 0.469,
+          "4只野猪(忽略躲避)": 1.875,
+          "1只孢巢母体谱系(7体)": 3.281
+        }
+      },
+      {
+        "option": "裁决",
+        "req": "魔2",
+        "gold": 4600,
+        "steel": 0,
+        "crystal": 30,
+        "energy": 50,
+        "maint": 400,
+        "tax": 0,
+        "hold_cost_20min": 12600,
+        "dps": {
+          "1只普通绿皮": 6.67,
+          "8只普通挤在一起": 6.67,
+          "3只铁皮": 10.0,
+          "3只破咒": 0.0,
+          "1只巨怪": 20.0,
+          "4只野猪(忽略躲避)": 16.67,
+          "1只孢巢母体谱系(7体)": 4.29
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 0.529,
+          "8只普通挤在一起": 0.529,
+          "3只铁皮": 0.794,
+          "3只破咒": 0.0,
+          "1只巨怪": 1.587,
+          "4只野猪(忽略躲避)": 1.323,
+          "1只孢巢母体谱系(7体)": 0.34
+        }
+      },
+      {
+        "option": "风暴尖塔",
+        "req": "魔3",
+        "gold": 9000,
+        "steel": 0,
+        "crystal": 70,
+        "energy": 100,
+        "maint": 600,
+        "tax": 0,
+        "hold_cost_20min": 21000,
+        "dps": {
+          "1只普通绿皮": 24.0,
+          "8只普通挤在一起": 80.68,
+          "3只铁皮": 58.56,
+          "3只破咒": 0.0,
+          "1只巨怪": 24.0,
+          "4只野猪(忽略躲避)": 70.85,
+          "1只孢巢母体谱系(7体)": 80.68
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 1.143,
+          "8只普通挤在一起": 3.842,
+          "3只铁皮": 2.789,
+          "3只破咒": 0.0,
+          "1只巨怪": 1.143,
+          "4只野猪(忽略躲避)": 3.374,
+          "1只孢巢母体谱系(7体)": 3.842
+        }
+      },
+      {
+        "option": "灵魂熔炉",
+        "req": "魔3",
+        "gold": 11000,
+        "steel": 0,
+        "crystal": 100,
+        "energy": 120,
+        "maint": 700,
+        "tax": 0,
+        "hold_cost_20min": 25000,
+        "dps": {
+          "1只普通绿皮": 53.33,
+          "8只普通挤在一起": 426.67,
+          "3只铁皮": 160.0,
+          "3只破咒": 0.0,
+          "1只巨怪": 53.33,
+          "4只野猪(忽略躲避)": 213.33,
+          "1只孢巢母体谱系(7体)": 373.33
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 2.133,
+          "8只普通挤在一起": 17.067,
+          "3只铁皮": 6.4,
+          "3只破咒": 0.0,
+          "1只巨怪": 2.133,
+          "4只野猪(忽略躲避)": 8.533,
+          "1只孢巢母体谱系(7体)": 14.933
+        }
+      },
+      {
+        "option": "曙光",
+        "req": "混33",
+        "gold": 18000,
+        "steel": 180,
+        "crystal": 160,
+        "energy": 300,
+        "maint": 1000,
+        "tax": 0,
+        "hold_cost_20min": 38000,
+        "dps": {
+          "1只普通绿皮": 23.57,
+          "8只普通挤在一起": 188.57,
+          "3只铁皮": 53.04,
+          "3只破咒": 26.52,
+          "1只巨怪": 21.89,
+          "4只野猪(忽略躲避)": 87.55,
+          "1只孢巢母体谱系(7体)": 165.0
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 0.62,
+          "8只普通挤在一起": 4.962,
+          "3只铁皮": 1.396,
+          "3只破咒": 0.698,
+          "1只巨怪": 0.576,
+          "4只野猪(忽略躲避)": 2.304,
+          "1只孢巢母体谱系(7体)": 4.342
+        }
+      },
+      {
+        "option": "民兵",
+        "req": "基",
+        "gold": 1200,
+        "steel": 0,
+        "crystal": 0,
+        "energy": 0,
+        "maint": 100,
+        "tax": 180,
+        "hold_cost_20min": 6800,
+        "dps": {
+          "1只普通绿皮": 10.0,
+          "8只普通挤在一起": 10.0,
+          "3只铁皮": 5.0,
+          "3只破咒": 7.5,
+          "1只巨怪": 8.57,
+          "4只野猪(忽略躲避)": 8.57,
+          "1只孢巢母体谱系(7体)": 10.0
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 1.471,
+          "8只普通挤在一起": 1.471,
+          "3只铁皮": 0.735,
+          "3只破咒": 1.103,
+          "1只巨怪": 1.261,
+          "4只野猪(忽略躲避)": 1.261,
+          "1只孢巢母体谱系(7体)": 1.471
+        }
+      },
+      {
+        "option": "火枪手",
+        "req": "基+解锁",
+        "gold": 2200,
+        "steel": 5,
+        "crystal": 0,
+        "energy": 0,
+        "maint": 140,
+        "tax": 180,
+        "hold_cost_20min": 8600,
+        "dps": {
+          "1只普通绿皮": 16.0,
+          "8只普通挤在一起": 16.0,
+          "3只铁皮": 8.0,
+          "3只破咒": 12.0,
+          "1只巨怪": 13.71,
+          "4只野猪(忽略躲避)": 13.71,
+          "1只孢巢母体谱系(7体)": 16.0
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 1.86,
+          "8只普通挤在一起": 1.86,
+          "3只铁皮": 0.93,
+          "3只破咒": 1.395,
+          "1只巨怪": 1.595,
+          "4只野猪(忽略躲避)": 1.595,
+          "1只孢巢母体谱系(7体)": 1.86
+        }
+      },
+      {
+        "option": "骑士(3本)",
+        "req": "科3",
+        "gold": 3000,
+        "steel": 12,
+        "crystal": 0,
+        "energy": 0,
+        "maint": 160,
+        "tax": 180,
+        "hold_cost_20min": 9800,
+        "dps": {
+          "1只普通绿皮": 23.33,
+          "8只普通挤在一起": 23.33,
+          "3只铁皮": 11.67,
+          "3只破咒": 17.5,
+          "1只巨怪": 20.0,
+          "4只野猪(忽略躲避)": 20.0,
+          "1只孢巢母体谱系(7体)": 23.33
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 2.381,
+          "8只普通挤在一起": 2.381,
+          "3只铁皮": 1.19,
+          "3只破咒": 1.786,
+          "1只巨怪": 2.041,
+          "4只野猪(忽略躲避)": 2.041,
+          "1只孢巢母体谱系(7体)": 2.381
+        }
+      },
+      {
+        "option": "圣骑士",
+        "req": "混22",
+        "gold": 3800,
+        "steel": 15,
+        "crystal": 15,
+        "energy": 0,
+        "maint": 200,
+        "tax": 180,
+        "hold_cost_20min": 11400,
+        "dps": {
+          "1只普通绿皮": 16.67,
+          "8只普通挤在一起": 16.67,
+          "3只铁皮": 8.33,
+          "3只破咒": 12.5,
+          "1只巨怪": 14.29,
+          "4只野猪(忽略躲避)": 14.29,
+          "1只孢巢母体谱系(7体)": 16.67
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 1.462,
+          "8只普通挤在一起": 1.462,
+          "3只铁皮": 0.731,
+          "3只破咒": 1.096,
+          "1只巨怪": 1.253,
+          "4只野猪(忽略躲避)": 1.253,
+          "1只孢巢母体谱系(7体)": 1.462
+        }
+      },
+      {
+        "option": "圣堂刺客(上限80)",
+        "req": "魔2+解锁",
+        "gold": 3400,
+        "steel": 0,
+        "crystal": 12,
+        "energy": 0,
+        "maint": 180,
+        "tax": 180,
+        "hold_cost_20min": 10600,
+        "dps": {
+          "1只普通绿皮": 32.0,
+          "8只普通挤在一起": 32.0,
+          "3只铁皮": 17.14,
+          "3只破咒": 26.67,
+          "1只巨怪": 57.14,
+          "4只野猪(忽略躲避)": 40.0,
+          "1只孢巢母体谱系(7体)": 41.14
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 3.019,
+          "8只普通挤在一起": 3.019,
+          "3只铁皮": 1.617,
+          "3只破咒": 2.516,
+          "1只巨怪": 5.391,
+          "4只野猪(忽略躲避)": 3.774,
+          "1只孢巢母体谱系(7体)": 3.881
+        }
+      },
+      {
+        "option": "法师(3本)",
+        "req": "魔3",
+        "gold": 4200,
+        "steel": 0,
+        "crystal": 15,
+        "energy": 0,
+        "maint": 220,
+        "tax": 180,
+        "hold_cost_20min": 12200,
+        "dps": {
+          "1只普通绿皮": 33.5,
+          "8只普通挤在一起": 58.5,
+          "3只铁皮": 58.5,
+          "3只破咒": 0.0,
+          "1只巨怪": 33.5,
+          "4只野猪(忽略躲避)": 58.5,
+          "1只孢巢母体谱系(7体)": 58.5
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": 2.746,
+          "8只普通挤在一起": 4.795,
+          "3只铁皮": 4.795,
+          "3只破咒": 0.0,
+          "1只巨怪": 2.746,
+          "4只野猪(忽略躲避)": 4.795,
+          "1只孢巢母体谱系(7体)": 4.795
+        }
+      },
+      {
+        "option": "古塞奇尤(Lv1)",
+        "req": "英雄",
+        "gold": 0,
+        "steel": 0,
+        "crystal": 0,
+        "energy": 0,
+        "maint": 0,
+        "tax": 0,
+        "hold_cost_20min": 0,
+        "dps": {
+          "1只普通绿皮": 26.67,
+          "8只普通挤在一起": 46.67,
+          "3只铁皮": 40.0,
+          "3只破咒": 0.0,
+          "1只巨怪": 26.67,
+          "4只野猪(忽略躲避)": 46.67,
+          "1只孢巢母体谱系(7体)": 46.67
+        },
+        "dps_per_1000_hold": {
+          "1只普通绿皮": null,
+          "8只普通挤在一起": null,
+          "3只铁皮": null,
+          "3只破咒": null,
+          "1只巨怪": null,
+          "4只野猪(忽略躲避)": null,
+          "1只孢巢母体谱系(7体)": null
+        }
+      }
+    ]
+  },
+  "dps_efficiency_top3_by_scenario": {
+    "仅基础(无解锁)": {
+      "1只普通绿皮": [
+        "箭塔=2.083",
+        "凝霜塔=1.515",
+        "民兵=1.471"
+      ],
+      "8只普通挤在一起": [
+        "箭塔=2.083",
+        "凝霜塔=1.515",
+        "民兵=1.471"
+      ],
+      "3只铁皮": [
+        "凝霜塔=1.515",
+        "箭塔=1.042",
+        "民兵=0.735"
+      ],
+      "3只破咒": [
+        "箭塔=1.562",
+        "民兵=1.103",
+        "凝霜塔=0.0"
+      ],
+      "1只巨怪": [
+        "箭塔=1.786",
+        "凝霜塔=1.515",
+        "民兵=1.261"
+      ],
+      "4只野猪(忽略躲避)": [
+        "箭塔=1.786",
+        "凝霜塔=1.515",
+        "民兵=1.261"
+      ],
+      "1只孢巢母体谱系(7体)": [
+        "箭塔=2.083",
+        "凝霜塔=1.515",
+        "民兵=1.471"
+      ]
+    },
+    "基础+科技2本": {
+      "1只普通绿皮": [
+        "箭塔=2.083",
+        "双重箭塔=2.083",
+        "箭塔Lv2(升级后合计)=1.871"
+      ],
+      "8只普通挤在一起": [
+        "火炮塔=5.882",
+        "箭塔=2.083",
+        "双重箭塔=2.083"
+      ],
+      "3只铁皮": [
+        "凝霜塔=1.515",
+        "火炮塔=1.471",
+        "箭塔=1.042"
+      ],
+      "3只破咒": [
+        "火炮塔=2.206",
+        "箭塔=1.562",
+        "双重箭塔=1.562"
+      ],
+      "1只巨怪": [
+        "箭塔=1.786",
+        "双重箭塔=1.786",
+        "箭塔Lv2(升级后合计)=1.604"
+      ],
+      "4只野猪(忽略躲避)": [
+        "火炮塔=3.361",
+        "箭塔=1.786",
+        "双重箭塔=1.786"
+      ],
+      "1只孢巢母体谱系(7体)": [
+        "火炮塔=5.882",
+        "箭塔=2.083",
+        "双重箭塔=2.083"
+      ]
+    },
+    "基础+魔法2本": {
+      "1只普通绿皮": [
+        "圣堂刺客(上限80)=3.019",
+        "箭塔=2.083",
+        "凝霜塔=1.515"
+      ],
+      "8只普通挤在一起": [
+        "雷环塔=3.75",
+        "圣堂刺客(上限80)=3.019",
+        "箭塔=2.083"
+      ],
+      "3只铁皮": [
+        "圣堂刺客(上限80)=1.617",
+        "凝霜塔=1.515",
+        "雷环塔=1.406"
+      ],
+      "3只破咒": [
+        "圣堂刺客(上限80)=2.516",
+        "箭塔=1.562",
+        "民兵=1.103"
+      ],
+      "1只巨怪": [
+        "圣堂刺客(上限80)=5.391",
+        "箭塔=1.786",
+        "裁决=1.587"
+      ],
+      "4只野猪(忽略躲避)": [
+        "圣堂刺客(上限80)=3.774",
+        "雷环塔=1.875",
+        "箭塔=1.786"
+      ],
+      "1只孢巢母体谱系(7体)": [
+        "圣堂刺客(上限80)=3.881",
+        "雷环塔=3.281",
+        "箭塔=2.083"
+      ]
+    },
+    "科技全(含科3)": {
+      "1只普通绿皮": [
+        "钢雨(满速)=2.783",
+        "多重箭塔=2.564",
+        "骑士(3本)=2.381"
+      ],
+      "8只普通挤在一起": [
+        "火炮塔=5.882",
+        "钢雨(满速)=2.783",
+        "多重箭塔=2.564"
+      ],
+      "3只铁皮": [
+        "凝霜塔=1.515",
+        "火炮塔=1.471",
+        "钢雨(满速)=1.391"
+      ],
+      "3只破咒": [
+        "火炮塔=2.206",
+        "钢雨(满速)=2.087",
+        "多重箭塔=1.923"
+      ],
+      "1只巨怪": [
+        "钢雨(满速)=2.385",
+        "多重箭塔=2.198",
+        "骑士(3本)=2.041"
+      ],
+      "4只野猪(忽略躲避)": [
+        "火炮塔=3.361",
+        "钢雨(满速)=2.385",
+        "多重箭塔=2.198"
+      ],
+      "1只孢巢母体谱系(7体)": [
+        "火炮塔=5.882",
+        "钢雨(满速)=2.783",
+        "多重箭塔=2.564"
+      ]
+    },
+    "魔法全(含魔3)": {
+      "1只普通绿皮": [
+        "圣堂刺客(上限80)=3.019",
+        "法师(3本)=2.746",
+        "灵魂熔炉=2.133"
+      ],
+      "8只普通挤在一起": [
+        "灵魂熔炉=17.067",
+        "法师(3本)=4.795",
+        "风暴尖塔=3.842"
+      ],
+      "3只铁皮": [
+        "灵魂熔炉=6.4",
+        "法师(3本)=4.795",
+        "风暴尖塔=2.789"
+      ],
+      "3只破咒": [
+        "圣堂刺客(上限80)=2.516",
+        "箭塔=1.562",
+        "民兵=1.103"
+      ],
+      "1只巨怪": [
+        "圣堂刺客(上限80)=5.391",
+        "法师(3本)=2.746",
+        "灵魂熔炉=2.133"
+      ],
+      "4只野猪(忽略躲避)": [
+        "灵魂熔炉=8.533",
+        "法师(3本)=4.795",
+        "圣堂刺客(上限80)=3.774"
+      ],
+      "1只孢巢母体谱系(7体)": [
+        "灵魂熔炉=14.933",
+        "法师(3本)=4.795",
+        "圣堂刺客(上限80)=3.881"
+      ]
+    }
+  },
+  "pairwise_comparison": [
+    {
+      "a": "钢雨(满速)",
+      "b": "多重箭塔",
+      "cost_ratio_hold": 1.11,
+      "dps_ratio": {
+        "1只普通绿皮": 1.2,
+        "8只普通挤在一起": 1.2,
+        "3只铁皮": 1.2,
+        "3只破咒": 1.2,
+        "1只巨怪": 1.2,
+        "4只野猪(忽略躲避)": 1.2,
+        "1只孢巢母体谱系(7体)": 1.2
+      }
+    },
+    {
+      "a": "箭塔Lv2(升级后合计)",
+      "b": "双重箭塔",
+      "cost_ratio_hold": 0.89,
+      "dps_ratio": {
+        "1只普通绿皮": 0.8,
+        "8只普通挤在一起": 0.8,
+        "3只铁皮": 0.8,
+        "3只破咒": 0.8,
+        "1只巨怪": 0.8,
+        "4只野猪(忽略躲避)": 0.8,
+        "1只孢巢母体谱系(7体)": 0.8
+      }
+    },
+    {
+      "a": "民兵",
+      "b": "箭塔",
+      "cost_ratio_hold": 1.06,
+      "dps_ratio": {
+        "1只普通绿皮": 0.75,
+        "8只普通挤在一起": 0.75,
+        "3只铁皮": 0.75,
+        "3只破咒": 0.75,
+        "1只巨怪": 0.75,
+        "4只野猪(忽略躲避)": 0.75,
+        "1只孢巢母体谱系(7体)": 0.75
+      }
+    },
+    {
+      "a": "灵魂熔炉",
+      "b": "雷环塔",
+      "cost_ratio_hold": 1.95,
+      "dps_ratio": {
+        "1只普通绿皮": 8.89,
+        "8只普通挤在一起": 8.89,
+        "3只铁皮": 8.89,
+        "3只破咒": null,
+        "1只巨怪": 8.89,
+        "4只野猪(忽略躲避)": 8.89,
+        "1只孢巢母体谱系(7体)": 8.89
+      }
+    }
+  ],
+  "steel_rain_window": {
+    "3s": {
+      "shots": 7.5,
+      "dmg_vs_armor0": 120.0,
+      "multi_arrow_tower": 160.0
+    },
+    "5s": {
+      "shots": 15.5,
+      "dmg_vs_armor0": 248.0,
+      "multi_arrow_tower": 266.7
+    },
+    "10s": {
+      "shots": 35.5,
+      "dmg_vs_armor0": 568.0,
+      "multi_arrow_tower": 533.3
+    },
+    "20s": {
+      "shots": 75.5,
+      "dmg_vs_armor0": 1208.0,
+      "multi_arrow_tower": 1066.7
+    },
+    "60s": {
+      "shots": 235.5,
+      "dmg_vs_armor0": 3768.0,
+      "multi_arrow_tower": 3200.0
+    }
+  },
+  "duel_matrix": {
+    "note": "1v1/1vN近战离散对战，双方t=0同时首击，无走位；用于看“谁克谁”，不是胜率",
+    "rows": {
+      "民兵(1本)": {
+        "普通绿皮": {
+          "winner": "enemy",
+          "sec": 10.5,
+          "enemy_hp_left": 80.0,
+          "kills": 0
+        },
+        "铁皮绿皮": {
+          "winner": "enemy",
+          "sec": 7.5,
+          "enemy_hp_left": 255.0,
+          "kills": 0
+        },
+        "破咒小子": {
+          "winner": "enemy",
+          "sec": 10.5,
+          "enemy_hp_left": 210.0,
+          "kills": 0
+        },
+        "野猪骑手": {
+          "winner": "enemy",
+          "sec": 7.5,
+          "enemy_hp_left": 422.9,
+          "kills": 0
+        },
+        "攀墙鬼": {
+          "winner": "unit",
+          "sec": 10.5,
+          "unit_hp_left": 15.0,
+          "kills": 1
+        },
+        "孢囊怪(含2孢子)": {
+          "winner": "enemy",
+          "sec": 13.5,
+          "enemy_hp_left": 90.0,
+          "kills": 0
+        },
+        "2普通绿皮": {
+          "winner": "enemy",
+          "sec": 4.5,
+          "enemy_hp_left": 340.0,
+          "kills": 0
+        },
+        "3普通绿皮": {
+          "winner": "enemy",
+          "sec": 3.0,
+          "enemy_hp_left": 555.0,
+          "kills": 0
+        },
+        "巨怪": {
+          "winner": "enemy",
+          "sec": 2.5,
+          "enemy_hp_left": 1974.3,
+          "kills": 0
+        }
+      },
+      "民兵(3本)": {
+        "普通绿皮": {
+          "winner": "unit",
+          "sec": 13.5,
+          "unit_hp_left": 30.0,
+          "kills": 1
+        },
+        "铁皮绿皮": {
+          "winner": "enemy",
+          "sec": 12.0,
+          "enemy_hp_left": 205.5,
+          "kills": 0
+        },
+        "破咒小子": {
+          "winner": "enemy",
+          "sec": 15.0,
+          "enemy_hp_left": 126.8,
+          "kills": 0
+        },
+        "野猪骑手": {
+          "winner": "enemy",
+          "sec": 12.0,
+          "enemy_hp_left": 338.0,
+          "kills": 0
+        },
+        "攀墙鬼": {
+          "winner": "unit",
+          "sec": 7.5,
+          "unit_hp_left": 105.0,
+          "kills": 1
+        },
+        "孢囊怪(含2孢子)": {
+          "winner": "enemy",
+          "sec": 18.9,
+          "enemy_hp_left": 139.0,
+          "kills": 1
+        },
+        "2普通绿皮": {
+          "winner": "enemy",
+          "sec": 7.5,
+          "enemy_hp_left": 274.0,
+          "kills": 0
+        },
+        "3普通绿皮": {
+          "winner": "enemy",
+          "sec": 4.5,
+          "enemy_hp_left": 516.0,
+          "kills": 0
+        },
+        "巨怪": {
+          "winner": "enemy",
+          "sec": 5.0,
+          "enemy_hp_left": 1928.0,
+          "kills": 0
+        }
+      },
+      "圣堂刺客(1本,上限80)": {
+        "普通绿皮": {
+          "winner": "unit",
+          "sec": 5.0,
+          "unit_hp_left": 70.0,
+          "kills": 1
+        },
+        "铁皮绿皮": {
+          "winner": "enemy",
+          "sec": 7.5,
+          "enemy_hp_left": 91.3,
+          "kills": 0
+        },
+        "破咒小子": {
+          "winner": "unit",
+          "sec": 10.0,
+          "unit_hp_left": 10.0,
+          "kills": 1
+        },
+        "野猪骑手": {
+          "winner": "enemy",
+          "sec": 7.5,
+          "enemy_hp_left": 67.4,
+          "kills": 0
+        },
+        "攀墙鬼": {
+          "winner": "unit",
+          "sec": 3.75,
+          "unit_hp_left": 90.0,
+          "kills": 1
+        },
+        "孢囊怪(含2孢子)": {
+          "winner": "enemy",
+          "sec": 9.85,
+          "enemy_hp_left": 95.2,
+          "kills": 1
+        },
+        "2普通绿皮": {
+          "winner": "enemy",
+          "sec": 4.5,
+          "enemy_hp_left": 222.9,
+          "kills": 0
+        },
+        "3普通绿皮": {
+          "winner": "enemy",
+          "sec": 3.0,
+          "enemy_hp_left": 453.6,
+          "kills": 0
+        },
+        "巨怪": {
+          "winner": "enemy",
+          "sec": 2.5,
+          "enemy_hp_left": 1742.9,
+          "kills": 0
+        }
+      },
+      "圣堂刺客(1本,无上限)": {
+        "普通绿皮": {
+          "winner": "unit",
+          "sec": 5.0,
+          "unit_hp_left": 70.0,
+          "kills": 1
+        },
+        "铁皮绿皮": {
+          "winner": "enemy",
+          "sec": 7.5,
+          "enemy_hp_left": 91.3,
+          "kills": 0
+        },
+        "破咒小子": {
+          "winner": "unit",
+          "sec": 10.0,
+          "unit_hp_left": 10.0,
+          "kills": 1
+        },
+        "野猪骑手": {
+          "winner": "enemy",
+          "sec": 7.5,
+          "enemy_hp_left": 60.9,
+          "kills": 0
+        },
+        "攀墙鬼": {
+          "winner": "unit",
+          "sec": 3.75,
+          "unit_hp_left": 90.0,
+          "kills": 1
+        },
+        "孢囊怪(含2孢子)": {
+          "winner": "enemy",
+          "sec": 9.85,
+          "enemy_hp_left": 95.2,
+          "kills": 1
+        },
+        "2普通绿皮": {
+          "winner": "enemy",
+          "sec": 4.5,
+          "enemy_hp_left": 222.9,
+          "kills": 0
+        },
+        "3普通绿皮": {
+          "winner": "enemy",
+          "sec": 3.0,
+          "enemy_hp_left": 453.6,
+          "kills": 0
+        },
+        "巨怪": {
+          "winner": "enemy",
+          "sec": 2.5,
+          "enemy_hp_left": 1094.6,
+          "kills": 0
+        }
+      },
+      "圣堂刺客(3本,上限80)": {
+        "普通绿皮": {
+          "winner": "unit",
+          "sec": 3.75,
+          "unit_hp_left": 150.0,
+          "kills": 1
+        },
+        "铁皮绿皮": {
+          "winner": "enemy",
+          "sec": 12.0,
+          "enemy_hp_left": 13.4,
+          "kills": 0
+        },
+        "破咒小子": {
+          "winner": "unit",
+          "sec": 8.75,
+          "unit_hp_left": 90.0,
+          "kills": 1
+        },
+        "野猪骑手": {
+          "winner": "unit",
+          "sec": 10.0,
+          "unit_hp_left": 35.0,
+          "kills": 1
+        },
+        "攀墙鬼": {
+          "winner": "unit",
+          "sec": 2.5,
+          "unit_hp_left": 165.0,
+          "kills": 1
+        },
+        "孢囊怪(含2孢子)": {
+          "winner": "unit",
+          "sec": 12.5,
+          "unit_hp_left": 40.0,
+          "kills": 3
+        },
+        "2普通绿皮": {
+          "winner": "unit",
+          "sec": 8.75,
+          "unit_hp_left": 30.0,
+          "kills": 2
+        },
+        "3普通绿皮": {
+          "winner": "enemy",
+          "sec": 4.5,
+          "enemy_hp_left": 400.0,
+          "kills": 1
+        },
+        "巨怪": {
+          "winner": "enemy",
+          "sec": 5.0,
+          "enemy_hp_left": 1537.1,
+          "kills": 0
+        }
+      },
+      "骑士(3本)": {
+        "普通绿皮": {
+          "winner": "unit",
+          "sec": 7.5,
+          "unit_hp_left": 264.3,
+          "kills": 1
+        },
+        "铁皮绿皮": {
+          "winner": "enemy",
+          "sec": 24.0,
+          "enemy_hp_left": 2.5,
+          "kills": 0
+        },
+        "破咒小子": {
+          "winner": "unit",
+          "sec": 16.5,
+          "unit_hp_left": 161.4,
+          "kills": 1
+        },
+        "野猪骑手": {
+          "winner": "unit",
+          "sec": 24.0,
+          "unit_hp_left": 7.1,
+          "kills": 1
+        },
+        "攀墙鬼": {
+          "winner": "unit",
+          "sec": 4.5,
+          "unit_hp_left": 298.6,
+          "kills": 1
+        },
+        "孢囊怪(含2孢子)": {
+          "winner": "unit",
+          "sec": 18.0,
+          "unit_hp_left": 170.0,
+          "kills": 3
+        },
+        "2普通绿皮": {
+          "winner": "unit",
+          "sec": 16.5,
+          "unit_hp_left": 75.7,
+          "kills": 2
+        },
+        "3普通绿皮": {
+          "winner": "enemy",
+          "sec": 10.5,
+          "enemy_hp_left": 330.0,
+          "kills": 1
+        },
+        "巨怪": {
+          "winner": "enemy",
+          "sec": 12.5,
+          "enemy_hp_left": 1730.0,
+          "kills": 0
+        }
+      },
+      "圣骑士(1本,含2%/s回血)": {
+        "普通绿皮": {
+          "winner": "unit",
+          "sec": 10.5,
+          "unit_hp_left": 282.2,
+          "kills": 1
+        },
+        "铁皮绿皮": {
+          "winner": "unit",
+          "sec": 34.5,
+          "unit_hp_left": 109.6,
+          "kills": 1
+        },
+        "破咒小子": {
+          "winner": "unit",
+          "sec": 22.5,
+          "unit_hp_left": 239.0,
+          "kills": 1
+        },
+        "野猪骑手": {
+          "winner": "unit",
+          "sec": 34.5,
+          "unit_hp_left": 109.6,
+          "kills": 1
+        },
+        "攀墙鬼": {
+          "winner": "unit",
+          "sec": 6.0,
+          "unit_hp_left": 302.2,
+          "kills": 1
+        },
+        "孢囊怪(含2孢子)": {
+          "winner": "unit",
+          "sec": 25.5,
+          "unit_hp_left": 269.5,
+          "kills": 3
+        },
+        "2普通绿皮": {
+          "winner": "unit",
+          "sec": 22.5,
+          "unit_hp_left": 134.0,
+          "kills": 2
+        },
+        "3普通绿皮": {
+          "winner": "enemy",
+          "sec": 15.0,
+          "enemy_hp_left": 325.0,
+          "kills": 1
+        },
+        "巨怪": {
+          "winner": "enemy",
+          "sec": 15.0,
+          "enemy_hp_left": 1764.3,
+          "kills": 0
+        }
+      }
+    }
+  },
+  "assassin_vs_enemy": {
+    "普通绿皮": {
+      "上限80": {
+        "first_hit": 60.0,
+        "hits_to_kill": 5,
+        "seconds": 5.0
+      },
+      "无上限": {
+        "first_hit": 60.0,
+        "hits_to_kill": 5,
+        "seconds": 5.0
+      },
+      "上限40": {
+        "first_hit": 60.0,
+        "hits_to_kill": 5,
+        "seconds": 5.0
+      }
+    },
+    "铁皮绿皮": {
+      "上限80": {
+        "first_hit": 40.0,
+        "hits_to_kill": 14,
+        "seconds": 16.2
+      },
+      "无上限": {
+        "first_hit": 40.0,
+        "hits_to_kill": 14,
+        "seconds": 16.2
+      },
+      "上限40": {
+        "first_hit": 30.0,
+        "hits_to_kill": 14,
+        "seconds": 16.2
+      }
+    },
+    "破咒小子": {
+      "上限80": {
+        "first_hit": 60.0,
+        "hits_to_kill": 9,
+        "seconds": 10.0
+      },
+      "无上限": {
+        "first_hit": 60.0,
+        "hits_to_kill": 9,
+        "seconds": 10.0
+      },
+      "上限40": {
+        "first_hit": 45.0,
+        "hits_to_kill": 9,
+        "seconds": 10.0
+      }
+    },
+    "野猪骑手": {
+      "上限80": {
+        "first_hit": 85.7,
+        "hits_to_kill": 10,
+        "seconds": 11.2
+      },
+      "无上限": {
+        "first_hit": 102.9,
+        "hits_to_kill": 10,
+        "seconds": 11.2
+      },
+      "上限40": {
+        "first_hit": 51.4,
+        "hits_to_kill": 12,
+        "seconds": 13.8
+      }
+    },
+    "巨怪": {
+      "上限80": {
+        "first_hit": 85.7,
+        "hits_to_kill": 28,
+        "seconds": 33.8
+      },
+      "无上限": {
+        "first_hit": 360.0,
+        "hits_to_kill": 17,
+        "seconds": 20.0
+      },
+      "上限40": {
+        "first_hit": 51.4,
+        "hits_to_kill": 41,
+        "seconds": 50.0
+      }
+    },
+    "孢巢母体": {
+      "上限80": {
+        "first_hit": 92.0,
+        "hits_to_kill": 7,
+        "seconds": 7.5
+      },
+      "无上限": {
+        "first_hit": 92.0,
+        "hits_to_kill": 7,
+        "seconds": 7.5
+      },
+      "上限40": {
+        "first_hit": 60.0,
+        "hits_to_kill": 8,
+        "seconds": 8.8
+      }
+    }
+  },
+  "visibility_vs_range": {
+    "note": "天气能见度乘数目前只在昼夜系统文档中定义、尚未被视野/射程读取；此处假设“有效射程=min(射程,视野×乘数)”以暴露风险；哨塔灯照明范围内按1.0",
+    "enemy_ranged": {
+      "绿皮弓手": 9,
+      "投矛绿皮": 8
+    },
+    "rows": [
+      {
+        "tower": "箭塔",
+        "base_range": 10,
+        "base_vision": 12,
+        "晴(未照明)": 10,
+        "降雨(未照明)": 9.0,
+        "雷暴(未照明)": 6.6,
+        "沙尘(未照明)": 4.8,
+        "浓雾(未照明)": 4.2,
+        "夜间候选×0.75(未照明)": 9.0
+      },
+      {
+        "tower": "双重/多重箭塔",
+        "base_range": 10,
+        "base_vision": 12,
+        "晴(未照明)": 10,
+        "降雨(未照明)": 9.0,
+        "雷暴(未照明)": 6.6,
+        "沙尘(未照明)": 4.8,
+        "浓雾(未照明)": 4.2,
+        "夜间候选×0.75(未照明)": 9.0
+      },
+      {
+        "tower": "凝霜塔",
+        "base_range": 10,
+        "base_vision": 12,
+        "晴(未照明)": 10,
+        "降雨(未照明)": 9.0,
+        "雷暴(未照明)": 6.6,
+        "沙尘(未照明)": 4.8,
+        "浓雾(未照明)": 4.2,
+        "夜间候选×0.75(未照明)": 9.0
+      },
+      {
+        "tower": "火炮塔",
+        "base_range": 12,
+        "base_vision": 12,
+        "晴(未照明)": 12,
+        "降雨(未照明)": 9.0,
+        "雷暴(未照明)": 6.6,
+        "沙尘(未照明)": 4.8,
+        "浓雾(未照明)": 4.2,
+        "夜间候选×0.75(未照明)": 9.0
+      },
+      {
+        "tower": "钢雨",
+        "base_range": 12,
+        "base_vision": 12,
+        "晴(未照明)": 12,
+        "降雨(未照明)": 9.0,
+        "雷暴(未照明)": 6.6,
+        "沙尘(未照明)": 4.8,
+        "浓雾(未照明)": 4.2,
+        "夜间候选×0.75(未照明)": 9.0
+      },
+      {
+        "tower": "腐蚀塔",
+        "base_range": 12,
+        "base_vision": 12,
+        "晴(未照明)": 12,
+        "降雨(未照明)": 9.0,
+        "雷暴(未照明)": 6.6,
+        "沙尘(未照明)": 4.8,
+        "浓雾(未照明)": 4.2,
+        "夜间候选×0.75(未照明)": 9.0
+      },
+      {
+        "tower": "裁决",
+        "base_range": 12,
+        "base_vision": 12,
+        "晴(未照明)": 12,
+        "降雨(未照明)": 9.0,
+        "雷暴(未照明)": 6.6,
+        "沙尘(未照明)": 4.8,
+        "浓雾(未照明)": 4.2,
+        "夜间候选×0.75(未照明)": 9.0
+      },
+      {
+        "tower": "风暴尖塔",
+        "base_range": 11,
+        "base_vision": 11,
+        "晴(未照明)": 11,
+        "降雨(未照明)": 8.25,
+        "雷暴(未照明)": 6.05,
+        "沙尘(未照明)": 4.4,
+        "浓雾(未照明)": 3.85,
+        "夜间候选×0.75(未照明)": 8.25
+      },
+      {
+        "tower": "雷环塔",
+        "base_range": 6,
+        "base_vision": 10,
+        "晴(未照明)": 6,
+        "降雨(未照明)": 6,
+        "雷暴(未照明)": 5.5,
+        "沙尘(未照明)": 4.0,
+        "浓雾(未照明)": 3.5,
+        "夜间候选×0.75(未照明)": 6
+      },
+      {
+        "tower": "灵魂熔炉",
+        "base_range": 4,
+        "base_vision": 8,
+        "晴(未照明)": 4,
+        "降雨(未照明)": 4,
+        "雷暴(未照明)": 4,
+        "沙尘(未照明)": 3.2,
+        "浓雾(未照明)": 2.8,
+        "夜间候选×0.75(未照明)": 4
+      },
+      {
+        "tower": "曙光",
+        "base_range": 20,
+        "base_vision": 20,
+        "晴(未照明)": 20,
+        "降雨(未照明)": 15.0,
+        "雷暴(未照明)": 11.0,
+        "沙尘(未照明)": 8.0,
+        "浓雾(未照明)": 7.0,
+        "夜间候选×0.75(未照明)": 15.0
+      },
+      {
+        "tower": "哨塔视野",
+        "base_range": 0,
+        "base_vision": 20,
+        "晴(未照明)": 20.0,
+        "降雨(未照明)": 15.0,
+        "雷暴(未照明)": 11.0,
+        "沙尘(未照明)": 8.0,
+        "浓雾(未照明)": 7.0,
+        "夜间候选×0.75(未照明)": 15.0
+      }
+    ]
+  },
+  "camp_guard_toy": {
+    "note": "合成玩具对照：无走位/碰撞/经验成长/营地拆除时间；绿皮先打最前民兵；只看守卫点数与损兵量级，不是营地可达证明，也不是胜率",
+    "rows": [
+      {
+        "party": "A:4民兵1本+英雄Lv1",
+        "guard_points": 6,
+        "greens": 4,
+        "archers": 1,
+        "sec": 16.6,
+        "militia_lost": 3,
+        "hero_hp": 600.0,
+        "result": "cleared",
+        "gold_lost": 3600
+      },
+      {
+        "party": "A:4民兵1本+英雄Lv1",
+        "guard_points": 7,
+        "greens": 5,
+        "archers": 1,
+        "sec": 22.6,
+        "militia_lost": 4,
+        "hero_hp": 321.4,
+        "result": "cleared",
+        "gold_lost": 4800
+      },
+      {
+        "party": "A:4民兵1本+英雄Lv1",
+        "guard_points": 8,
+        "greens": 6,
+        "archers": 1,
+        "sec": 24.5,
+        "militia_lost": 4,
+        "hero_hp": 0,
+        "result": "party_wiped"
+      },
+      {
+        "party": "A:4民兵1本+英雄Lv1",
+        "guard_points": 9,
+        "greens": 7,
+        "archers": 1,
+        "sec": 15.5,
+        "militia_lost": 4,
+        "hero_hp": 0,
+        "result": "party_wiped"
+      },
+      {
+        "party": "A:4民兵1本+英雄Lv1",
+        "guard_points": 10,
+        "greens": 8,
+        "archers": 1,
+        "sec": 12.5,
+        "militia_lost": 4,
+        "hero_hp": 0,
+        "result": "party_wiped"
+      },
+      {
+        "party": "A:4民兵1本+英雄Lv1",
+        "guard_points": 12,
+        "greens": 10,
+        "archers": 1,
+        "sec": 9.5,
+        "militia_lost": 4,
+        "hero_hp": 0,
+        "result": "party_wiped"
+      },
+      {
+        "party": "B:6民兵1本+英雄Lv1",
+        "guard_points": 6,
+        "greens": 4,
+        "archers": 1,
+        "sec": 10.6,
+        "militia_lost": 2,
+        "hero_hp": 600.0,
+        "result": "cleared",
+        "gold_lost": 2400
+      },
+      {
+        "party": "B:6民兵1本+英雄Lv1",
+        "guard_points": 7,
+        "greens": 5,
+        "archers": 1,
+        "sec": 15.1,
+        "militia_lost": 4,
+        "hero_hp": 600.0,
+        "result": "cleared",
+        "gold_lost": 4800
+      },
+      {
+        "party": "B:6民兵1本+英雄Lv1",
+        "guard_points": 8,
+        "greens": 6,
+        "archers": 1,
+        "sec": 19.6,
+        "militia_lost": 5,
+        "hero_hp": 600.0,
+        "result": "cleared",
+        "gold_lost": 6000
+      },
+      {
+        "party": "B:6民兵1本+英雄Lv1",
+        "guard_points": 9,
+        "greens": 7,
+        "archers": 1,
+        "sec": 28.6,
+        "militia_lost": 6,
+        "hero_hp": 107.1,
+        "result": "cleared",
+        "gold_lost": 7200
+      },
+      {
+        "party": "B:6民兵1本+英雄Lv1",
+        "guard_points": 10,
+        "greens": 8,
+        "archers": 1,
+        "sec": 20.0,
+        "militia_lost": 6,
+        "hero_hp": 0,
+        "result": "party_wiped"
+      },
+      {
+        "party": "B:6民兵1本+英雄Lv1",
+        "guard_points": 12,
+        "greens": 10,
+        "archers": 1,
+        "sec": 14.0,
+        "militia_lost": 6,
+        "hero_hp": 0,
+        "result": "party_wiped"
+      },
+      {
+        "party": "C:4民兵3本+英雄Lv5+1牧师",
+        "guard_points": 6,
+        "greens": 4,
+        "archers": 1,
+        "sec": 10.6,
+        "militia_lost": 1,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 1200
+      },
+      {
+        "party": "C:4民兵3本+英雄Lv5+1牧师",
+        "guard_points": 7,
+        "greens": 5,
+        "archers": 1,
+        "sec": 12.1,
+        "militia_lost": 2,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 2400
+      },
+      {
+        "party": "C:4民兵3本+英雄Lv5+1牧师",
+        "guard_points": 8,
+        "greens": 6,
+        "archers": 1,
+        "sec": 16.6,
+        "militia_lost": 3,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 3600
+      },
+      {
+        "party": "C:4民兵3本+英雄Lv5+1牧师",
+        "guard_points": 9,
+        "greens": 7,
+        "archers": 1,
+        "sec": 22.6,
+        "militia_lost": 4,
+        "hero_hp": 712.9,
+        "result": "cleared",
+        "gold_lost": 4800
+      },
+      {
+        "party": "C:4民兵3本+英雄Lv5+1牧师",
+        "guard_points": 10,
+        "greens": 8,
+        "archers": 1,
+        "sec": 30.1,
+        "militia_lost": 4,
+        "hero_hp": 305.7,
+        "result": "cleared",
+        "gold_lost": 4800
+      },
+      {
+        "party": "C:4民兵3本+英雄Lv5+1牧师",
+        "guard_points": 12,
+        "greens": 10,
+        "archers": 1,
+        "sec": 17.0,
+        "militia_lost": 4,
+        "hero_hp": 0,
+        "result": "party_wiped"
+      },
+      {
+        "party": "D:6民兵3本+英雄Lv5+2牧师",
+        "guard_points": 6,
+        "greens": 4,
+        "archers": 1,
+        "sec": 7.6,
+        "militia_lost": 0,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 0
+      },
+      {
+        "party": "D:6民兵3本+英雄Lv5+2牧师",
+        "guard_points": 7,
+        "greens": 5,
+        "archers": 1,
+        "sec": 9.1,
+        "militia_lost": 1,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 1200
+      },
+      {
+        "party": "D:6民兵3本+英雄Lv5+2牧师",
+        "guard_points": 8,
+        "greens": 6,
+        "archers": 1,
+        "sec": 10.6,
+        "militia_lost": 1,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 1200
+      },
+      {
+        "party": "D:6民兵3本+英雄Lv5+2牧师",
+        "guard_points": 9,
+        "greens": 7,
+        "archers": 1,
+        "sec": 13.6,
+        "militia_lost": 2,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 2400
+      },
+      {
+        "party": "D:6民兵3本+英雄Lv5+2牧师",
+        "guard_points": 10,
+        "greens": 8,
+        "archers": 1,
+        "sec": 16.6,
+        "militia_lost": 3,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 3600
+      },
+      {
+        "party": "D:6民兵3本+英雄Lv5+2牧师",
+        "guard_points": 12,
+        "greens": 10,
+        "archers": 1,
+        "sec": 30.1,
+        "militia_lost": 6,
+        "hero_hp": 760.0,
+        "result": "cleared",
+        "gold_lost": 7200
+      }
+    ],
+    "reward_reference": {
+      "S01固定": 50,
+      "近带(300–700m)C": "30–50",
+      "远带(>700m)C": "50–60",
+      "损1名民兵(金币)": 1200,
+      "宝箱": "300HP/0甲，4民兵每1.5秒共60伤→约7.5秒"
+    }
+  },
+  "arrow_family_knapsack": {
+    "note": "只比较 箭塔(2400/0能) / 箭塔Lv2(5400+30钢/0能) / 双重箭塔(4800+40钢/50能) 的单目标DPS；不含钢铁、维护、占地、塔数上限",
+    "rows": [
+      {
+        "gold_budget": 15000,
+        "spare_energy": 0,
+        "arrow": 6,
+        "arrow_lv2": 0,
+        "double_arrow": 0,
+        "gold_used": 14400,
+        "dps": 80.0
+      },
+      {
+        "gold_budget": 15000,
+        "spare_energy": 100,
+        "arrow": 2,
+        "arrow_lv2": 0,
+        "double_arrow": 2,
+        "gold_used": 14400,
+        "dps": 80.0
+      },
+      {
+        "gold_budget": 15000,
+        "spare_energy": 300,
+        "arrow": 0,
+        "arrow_lv2": 0,
+        "double_arrow": 3,
+        "gold_used": 14400,
+        "dps": 80.0
+      },
+      {
+        "gold_budget": 30000,
+        "spare_energy": 0,
+        "arrow": 12,
+        "arrow_lv2": 0,
+        "double_arrow": 0,
+        "gold_used": 28800,
+        "dps": 160.0
+      },
+      {
+        "gold_budget": 30000,
+        "spare_energy": 100,
+        "arrow": 8,
+        "arrow_lv2": 0,
+        "double_arrow": 2,
+        "gold_used": 28800,
+        "dps": 160.0
+      },
+      {
+        "gold_budget": 30000,
+        "spare_energy": 300,
+        "arrow": 0,
+        "arrow_lv2": 0,
+        "double_arrow": 6,
+        "gold_used": 28800,
+        "dps": 160.0
+      },
+      {
+        "gold_budget": 60000,
+        "spare_energy": 0,
+        "arrow": 11,
+        "arrow_lv2": 6,
+        "double_arrow": 0,
+        "gold_used": 58800,
+        "dps": 274.7
+      },
+      {
+        "gold_budget": 60000,
+        "spare_energy": 100,
+        "arrow": 12,
+        "arrow_lv2": 4,
+        "double_arrow": 2,
+        "gold_used": 60000,
+        "dps": 298.7
+      },
+      {
+        "gold_budget": 60000,
+        "spare_energy": 300,
+        "arrow": 12,
+        "arrow_lv2": 0,
+        "double_arrow": 6,
+        "gold_used": 57600,
+        "dps": 320.0
+      }
+    ]
+  },
+  "upgrade_vs_rest90": {
+    "rest_sec": 90,
+    "rows": [
+      {
+        "name": "箭塔Lv2",
+        "sec": 25,
+        "fits_in_rest": true
+      },
+      {
+        "name": "多重箭塔",
+        "sec": 30,
+        "fits_in_rest": true
+      },
+      {
+        "name": "兵营1→2",
+        "sec": 40,
+        "fits_in_rest": true
+      },
+      {
+        "name": "兵营2→3",
+        "sec": 60,
+        "fits_in_rest": true
+      },
+      {
+        "name": "圣堂1→2",
+        "sec": 40,
+        "fits_in_rest": true
+      },
+      {
+        "name": "圣堂2→3",
+        "sec": 60,
+        "fits_in_rest": true
+      },
+      {
+        "name": "研究院/法师营地建成",
+        "sec": 40,
+        "fits_in_rest": true
+      },
+      {
+        "name": "研究院/法师营地2→3",
+        "sec": 60,
+        "fits_in_rest": true
+      },
+      {
+        "name": "火枪手解锁",
+        "sec": 30,
+        "fits_in_rest": true
+      },
+      {
+        "name": "圣骑士解锁",
+        "sec": 45,
+        "fits_in_rest": true
+      },
+      {
+        "name": "刺客解锁",
+        "sec": 40,
+        "fits_in_rest": true
+      },
+      {
+        "name": "法师解锁",
+        "sec": 45,
+        "fits_in_rest": true
+      },
+      {
+        "name": "无人机坞增机",
+        "sec": 20,
+        "fits_in_rest": true
+      }
+    ],
+    "two_60s_sequential": 120,
+    "note": "单项都≤90秒；同一栋两次连续60秒升级=120秒>90"
+  },
+  "tag_gaps": {
+    "not_mentioned_in_标签md": [
+      "曙光"
+    ]
+  },
+  "armor_rule_tables_recheck": {
+    "main_city_hits_table": {
+      "10": 334,
+      "20": 167,
+      "50": 67,
+      "100": 34,
+      "200": 17
+    },
+    "main_city_hits_doc": {
+      "10": 334,
+      "20": 167,
+      "50": 67,
+      "100": 34,
+      "200": 17
+    },
+    "main_city_ehp": 3333.33,
+    "growth_ehp_per_1000hp": {
+      "0": 1000.0,
+      "10": 1333.33,
+      "20": 1666.67,
+      "30": 2000.0,
+      "50": 2666.67,
+      "70": 3333.33
+    },
+    "growth_reduction_pct": {
+      "0": 0.0,
+      "10": 25.0,
+      "20": 40.0,
+      "30": 50.0,
+      "50": 62.5,
+      "70": 70.0
+    },
+    "negative_armor_dmg_pct": {
+      "-4": 115.4,
+      "-8": 136.4,
+      "-12": 166.7,
+      "-15": 200.0
+    },
+    "all_equal_to_doc": true
+  },
+  "consecutive_wave_overlap_worst_case": {
+    "note": "假设上一波完全未清、下一波已全部刷出；不含普通出怪",
+    "max": 97,
+    "rows": [
+      {
+        "stage": 1,
+        "pair": "小波1+小波2",
+        "individuals": 14
+      },
+      {
+        "stage": 1,
+        "pair": "小波2+小波3",
+        "individuals": 18
+      },
+      {
+        "stage": 1,
+        "pair": "小波3+大波",
+        "individuals": 24
+      },
+      {
+        "stage": 2,
+        "pair": "小波1+小波2",
+        "individuals": 21
+      },
+      {
+        "stage": 2,
+        "pair": "小波2+小波3",
+        "individuals": 27
+      },
+      {
+        "stage": 2,
+        "pair": "小波3+大波",
+        "individuals": 38
+      },
+      {
+        "stage": 3,
+        "pair": "小波1+小波2",
+        "individuals": 24
+      },
+      {
+        "stage": 3,
+        "pair": "小波2+小波3",
+        "individuals": 29
+      },
+      {
+        "stage": 3,
+        "pair": "小波3+大波",
+        "individuals": 48
+      },
+      {
+        "stage": 4,
+        "pair": "小波1+小波2",
+        "individuals": 40
+      },
+      {
+        "stage": 4,
+        "pair": "小波2+小波3",
+        "individuals": 53
+      },
+      {
+        "stage": 4,
+        "pair": "小波3+大波",
+        "individuals": 57
+      },
+      {
+        "stage": 5,
+        "pair": "小波1+小波2",
+        "individuals": 52
+      },
+      {
+        "stage": 5,
+        "pair": "小波2+小波3",
+        "individuals": 69
+      },
+      {
+        "stage": 5,
+        "pair": "小波3+大波",
+        "individuals": 91
+      },
+      {
+        "stage": 6,
+        "pair": "小波1+小波2",
+        "individuals": 90
+      },
+      {
+        "stage": 6,
+        "pair": "小波2+小波3",
+        "individuals": 90
+      },
+      {
+        "stage": 6,
+        "pair": "小波3+大波",
+        "individuals": 97
+      }
+    ]
+  },
+  "assassin_life_vs_giant": {
+    "note": "1本刺客(150HP)对1只巨怪：巨怪t=0与2.5s攻击，刺客共出手3次(t=0/1.25/2.5)",
+    "rows": {
+      "上限80": {
+        "damage_in_life": 257.1,
+        "giants_equivalent": 0.129,
+        "assassins_for_one_giant": 7.78
+      },
+      "无上限": {
+        "damage_in_life": 905.4,
+        "giants_equivalent": 0.453,
+        "assassins_for_one_giant": 2.21
+      },
+      "上限40": {
+        "damage_in_life": 154.3,
+        "giants_equivalent": 0.077,
+        "assassins_for_one_giant": 12.96
+      }
+    }
+  },
+  "lobbed_projectile_dodge": {
+    "note": "落点式弹道(火炮1.0s,半径2.5；腐蚀弹假设0.8s,半径2.0)按发射时位置落地：目标直线匀速移动时是否逃出爆心半径。队列中后续敌人可能落入范围，未计",
+    "rows": [
+      {
+        "enemy": "普通绿皮",
+        "speed": 3.0,
+        "cannon_shift_m": 3.0,
+        "cannon_radius": 2.5,
+        "cannon_target_escapes": true,
+        "acid_lob_shift_m": 2.4,
+        "acid_radius": 2.0,
+        "acid_lob_target_escapes": true
+      },
+      {
+        "enemy": "破咒小子",
+        "speed": 2.8,
+        "cannon_shift_m": 2.8,
+        "cannon_radius": 2.5,
+        "cannon_target_escapes": true,
+        "acid_lob_shift_m": 2.24,
+        "acid_radius": 2.0,
+        "acid_lob_target_escapes": true
+      },
+      {
+        "enemy": "铁皮绿皮",
+        "speed": 2.4,
+        "cannon_shift_m": 2.4,
+        "cannon_radius": 2.5,
+        "cannon_target_escapes": false,
+        "acid_lob_shift_m": 1.92,
+        "acid_radius": 2.0,
+        "acid_lob_target_escapes": false
+      },
+      {
+        "enemy": "巨怪",
+        "speed": 1.6,
+        "cannon_shift_m": 1.6,
+        "cannon_radius": 2.5,
+        "cannon_target_escapes": false,
+        "acid_lob_shift_m": 1.28,
+        "acid_radius": 2.0,
+        "acid_lob_target_escapes": false
+      },
+      {
+        "enemy": "野猪骑手",
+        "speed": 5.5,
+        "cannon_shift_m": 5.5,
+        "cannon_radius": 2.5,
+        "cannon_target_escapes": true,
+        "acid_lob_shift_m": 4.4,
+        "acid_radius": 2.0,
+        "acid_lob_target_escapes": true
+      },
+      {
+        "enemy": "攀墙鬼(翻前)",
+        "speed": 5.0,
+        "cannon_shift_m": 5.0,
+        "cannon_radius": 2.5,
+        "cannon_target_escapes": true,
+        "acid_lob_shift_m": 4.0,
+        "acid_radius": 2.0,
+        "acid_lob_target_escapes": true
+      },
+      {
+        "enemy": "攀墙鬼(翻后)",
+        "speed": 2.2,
+        "cannon_shift_m": 2.2,
+        "cannon_radius": 2.5,
+        "cannon_target_escapes": false,
+        "acid_lob_shift_m": 1.76,
+        "acid_radius": 2.0,
+        "acid_lob_target_escapes": false
+      },
+      {
+        "enemy": "孢子",
+        "speed": 3.4,
+        "cannon_shift_m": 3.4,
+        "cannon_radius": 2.5,
+        "cannon_target_escapes": true,
+        "acid_lob_shift_m": 2.72,
+        "acid_radius": 2.0,
+        "acid_lob_target_escapes": true
+      }
+    ]
+  },
+  "visibility_floor_candidate": {
+    "rule": "候选(设计提案)：建筑视野 = max(基础视野×能见度, 射程×0.8)；灯光/哨塔照明范围内恢复×1",
+    "enemy_ranged": {
+      "绿皮弓手": 9,
+      "投矛绿皮": 8
+    },
+    "rows": [
+      {
+        "tower": "箭塔",
+        "base_range": 10,
+        "晴": 10,
+        "降雨": 9.0,
+        "雷暴": 8.0,
+        "沙尘": 8.0,
+        "浓雾": 8.0
+      },
+      {
+        "tower": "双重/多重箭塔",
+        "base_range": 10,
+        "晴": 10,
+        "降雨": 9.0,
+        "雷暴": 8.0,
+        "沙尘": 8.0,
+        "浓雾": 8.0
+      },
+      {
+        "tower": "凝霜塔",
+        "base_range": 10,
+        "晴": 10,
+        "降雨": 9.0,
+        "雷暴": 8.0,
+        "沙尘": 8.0,
+        "浓雾": 8.0
+      },
+      {
+        "tower": "火炮塔",
+        "base_range": 12,
+        "晴": 12,
+        "降雨": 9.6,
+        "雷暴": 9.6,
+        "沙尘": 9.6,
+        "浓雾": 9.6
+      },
+      {
+        "tower": "钢雨",
+        "base_range": 12,
+        "晴": 12,
+        "降雨": 9.6,
+        "雷暴": 9.6,
+        "沙尘": 9.6,
+        "浓雾": 9.6
+      },
+      {
+        "tower": "腐蚀塔",
+        "base_range": 12,
+        "晴": 12,
+        "降雨": 9.6,
+        "雷暴": 9.6,
+        "沙尘": 9.6,
+        "浓雾": 9.6
+      },
+      {
+        "tower": "裁决",
+        "base_range": 12,
+        "晴": 12,
+        "降雨": 9.6,
+        "雷暴": 9.6,
+        "沙尘": 9.6,
+        "浓雾": 9.6
+      },
+      {
+        "tower": "风暴尖塔",
+        "base_range": 11,
+        "晴": 11,
+        "降雨": 8.8,
+        "雷暴": 8.8,
+        "沙尘": 8.8,
+        "浓雾": 8.8
+      },
+      {
+        "tower": "雷环塔",
+        "base_range": 6,
+        "晴": 6,
+        "降雨": 6,
+        "雷暴": 5.5,
+        "沙尘": 4.8,
+        "浓雾": 4.8
+      },
+      {
+        "tower": "灵魂熔炉",
+        "base_range": 4,
+        "晴": 4,
+        "降雨": 4,
+        "雷暴": 4,
+        "沙尘": 3.2,
+        "浓雾": 3.2
+      },
+      {
+        "tower": "曙光",
+        "base_range": 20,
+        "晴": 20,
+        "降雨": 16.0,
+        "雷暴": 16.0,
+        "沙尘": 16.0,
+        "浓雾": 16.0
+      }
+    ]
+  },
+  "notification_counts": {
+    "s02_big": 6,
+    "s02_small": 18,
+    "s02_total_open_events": 24,
+    "avg_gap_between_open_events_min": 2.36,
+    "note": "若小波开门当刻也提示，一局约24次提示事件（18小波+6大波）；普通出怪(S02名义6次/阶段×6阶段=36次)不提示"
+  }
+}

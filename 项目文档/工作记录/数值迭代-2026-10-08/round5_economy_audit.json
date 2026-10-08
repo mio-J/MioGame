@@ -1,0 +1,565 @@
+{
+  "schema": "round5_economy_audit_v1",
+  "scope": "desk calculation on one scripted synthetic route; not playtest evidence",
+  "energy": {
+    "cost_per_energy_by_horizon_min": {
+      "20": {
+        "coal": 16.67,
+        "oil": 22.5,
+        "offshore": 20.0,
+        "solar": 33.33
+      },
+      "30": {
+        "coal": 20.0,
+        "oil": 27.5,
+        "offshore": 23.75,
+        "solar": 33.33
+      },
+      "50": {
+        "coal": 26.67,
+        "oil": 37.5,
+        "offshore": 31.25,
+        "solar": 33.33
+      }
+    },
+    "per_site_supply": {},
+    "upkeep_per_energy_per_min": {
+      "coal": 0.3333,
+      "oil": 0.5,
+      "offshore": 0.375,
+      "solar": 0.0
+    },
+    "solar_vs_coal_breakeven_minutes_at_multiplier": {
+      "1.0": 70.0,
+      "1.15": 85.0,
+      "1.3": 100.0,
+      "1.5": 120.0
+    },
+    "oil_vs_coal_breakeven_same_multiplier_note": "oil upkeep/E=0.50 vs coal 0.333 vs offshore 0.375: oil is the dearest to run per energy; its only edge is +33% energy per scarce site and no steel-free alternative if coal sites are taken",
+    "oil_upkeep_if_set_to_120_cost_per_E_50min": 27.5,
+    "coal_cost_per_E_50min": 26.67,
+    "round4_route": {
+      "final_supply": 3500,
+      "final_used": 2020,
+      "energy_wait_seconds_total": 69,
+      "solar_orders": [
+        [
+          2040,
+          2000,
+          1070
+        ],
+        [
+          2220,
+          2300,
+          1070
+        ],
+        [
+          2525,
+          2600,
+          1420
+        ],
+        [
+          2602,
+          2900,
+          1670
+        ],
+        [
+          2760,
+          3200,
+          1970
+        ]
+      ],
+      "note": "supply minus reserved at each solar order = spare energy already present when solar was bought"
+    },
+    "deluxe_both_route_demand": {
+      "items": {
+        "研究院3本": 400,
+        "法师营地3本": 400,
+        "兵营3本": 50,
+        "圣堂3本": 100,
+        "星象殿": 100,
+        "市政厅": 200,
+        "电影院": 100,
+        "炼钢厂x2": 200,
+        "电器行": 50,
+        "炼金坊": 50,
+        "塔灯x8": 160,
+        "双重箭塔x4": 200,
+        "火炮塔x4": 200,
+        "腐蚀塔x3": 150,
+        "钢雨x6": 600,
+        "风暴尖塔x2": 200,
+        "灵魂熔炉": 120,
+        "雷环塔x2": 100,
+        "核弹发射井": 200,
+        "曙光": 300,
+        "无人机坞": 100,
+        "缚灵塔": 100
+      },
+      "total": 4080,
+      "coal_sites_needed_at_x1.0": 14,
+      "oil_sites_needed_at_x1.0": 11,
+      "coal_sites_needed_at_x1.15": 12,
+      "oil_sites_needed_at_x1.15": 9,
+      "coal_sites_needed_at_x1.3": 11,
+      "oil_sites_needed_at_x1.3": 8
+    }
+  },
+  "cash": {
+    "first_snapshot_second_with_gold_at_least": {
+      "10000": 1560,
+      "20000": 1680,
+      "50000": 1800,
+      "100000": 2160,
+      "200000": 2880
+    },
+    "wait_seconds_by_reason_and_order_era": {
+      "0-600": {
+        "gold": 1377
+      },
+      "600-1200": {
+        "gold": 2662,
+        "energy": 69,
+        "requires_barracks": 402,
+        "production_queue": 71,
+        "town_level": 163,
+        "worker": 10,
+        "iron": 16,
+        "requires_tech2": 666
+      },
+      "1200-1800": {
+        "requires_tech2": 162,
+        "iron": 249,
+        "gold": 677,
+        "town_level": 118,
+        "production_queue": 30,
+        "worker": 6
+      },
+      "1800-end": {
+        "requires_tech3": 108,
+        "iron": 231,
+        "requires_barracks2_and_tech3": 108,
+        "production_queue": 15,
+        "worker": 738
+      }
+    },
+    "gold_spent_purchases": 470358.67,
+    "upkeep": 331532.5,
+    "repair": 5958.67,
+    "final_gold": 286673.1,
+    "lifetime_income_estimate": 1085564.3,
+    "unspent_share_of_lifetime_income": 0.264,
+    "largest_single_gold_price_in_route": 16000,
+    "gold_snapshots": {
+      "0": [
+        1000.0,
+        1320
+      ],
+      "600": [
+        360.07,
+        7456
+      ],
+      "1200": [
+        1375.9,
+        13724
+      ],
+      "1800": [
+        59426.9,
+        19540
+      ],
+      "2400": [
+        145749.9,
+        17026
+      ],
+      "2997": [
+        286673.1,
+        27216
+      ]
+    },
+    "balance_over_16000_by_snapshot": {
+      "0": 0.06,
+      "600": 0.02,
+      "1200": 0.09,
+      "1800": 3.71,
+      "2400": 9.11,
+      "2997": 17.92
+    }
+  },
+  "workers": {
+    "per_worker_cost_per_min": 240,
+    "hire_gold": 1000,
+    "construction_workers_in_route": 4,
+    "per_worker": {
+      "worker1": {
+        "tasks": 35,
+        "busy_seconds": 1518,
+        "utilization": 0.507
+      },
+      "worker2": {
+        "tasks": 19,
+        "busy_seconds": 1516,
+        "utilization": 0.506
+      },
+      "worker3": {
+        "tasks": 22,
+        "busy_seconds": 1107,
+        "utilization": 0.369
+      },
+      "worker4": {
+        "tasks": 12,
+        "busy_seconds": 1098,
+        "utilization": 0.366
+      }
+    },
+    "total_worker_wait_seconds_in_orders": 754,
+    "worker_wait_after_1800_seconds": 738,
+    "late_worker_cost_vs_net_per_min_at_2400": 0.0141,
+    "note": "the plan keeps worker count fixed; a rational player buys one more worker for 1000 gold, so worker wait is a plan artefact, not a design constraint"
+  },
+  "commerce": {
+    "shop_sequence_for_40_residents": [
+      {
+        "shop": "面包房",
+        "price": 2000,
+        "marginal_gold_per_min_for_40_residents": 480.0,
+        "payback_minutes": 4.2,
+        "sum_of_client_prices_after": 12
+      },
+      {
+        "shop": "杂货铺",
+        "price": 2000,
+        "marginal_gold_per_min_for_40_residents": 480.0,
+        "payback_minutes": 4.2,
+        "sum_of_client_prices_after": 24
+      },
+      {
+        "shop": "酒馆(日均)",
+        "price": 3000,
+        "marginal_gold_per_min_for_40_residents": 528.0,
+        "payback_minutes": 5.7,
+        "sum_of_client_prices_after": 37.2
+      },
+      {
+        "shop": "药水铺",
+        "price": 4000,
+        "marginal_gold_per_min_for_40_residents": 112.0,
+        "payback_minutes": 35.7,
+        "sum_of_client_prices_after": 49.2
+      },
+      {
+        "shop": "集市",
+        "price": 5000,
+        "marginal_gold_per_min_for_40_residents": 0.0,
+        "payback_minutes": null,
+        "sum_of_client_prices_after": 61.2
+      },
+      {
+        "shop": "铁匠铺",
+        "price": 3000,
+        "marginal_gold_per_min_for_40_residents": 0.0,
+        "payback_minutes": null,
+        "sum_of_client_prices_after": 67.2
+      },
+      {
+        "shop": "旅馆(日均)",
+        "price": 6000,
+        "marginal_gold_per_min_for_40_residents": 0.0,
+        "payback_minutes": null,
+        "sum_of_client_prices_after": 78.4
+      }
+    ],
+    "booster_payback_by_covered_residents": {
+      "电影院": {
+        "30": {
+          "gain_per_min": 1320.0,
+          "payback_min": 6.1
+        },
+        "60": {
+          "gain_per_min": 2940.0,
+          "payback_min": 2.7
+        },
+        "100": {
+          "gain_per_min": 5100.0,
+          "payback_min": 1.6
+        },
+        "150": {
+          "gain_per_min": 7800.0,
+          "payback_min": 1.0
+        }
+      },
+      "市政厅": {
+        "30": {
+          "gain_per_min": 1830.0,
+          "payback_min": 13.1
+        },
+        "60": {
+          "gain_per_min": 4260.0,
+          "payback_min": 5.6
+        },
+        "100": {
+          "gain_per_min": 7500.0,
+          "payback_min": 3.2
+        },
+        "150": {
+          "gain_per_min": 11550.0,
+          "payback_min": 2.1
+        }
+      }
+    },
+    "per_resident_with_three_12_shops_vs_boosters": {
+      "无加成": {
+        "tax": 180.0,
+        "commerce": 36.0,
+        "total_per_resident": 216.0
+      },
+      "电影院": {
+        "tax": 234.0,
+        "commerce": 36.0,
+        "total_per_resident": 270.0
+      },
+      "电影院+市政厅": {
+        "tax": 315.0,
+        "commerce": 36.0,
+        "total_per_resident": 351.0
+      },
+      "电影院+市政厅+大杂院": {
+        "tax": 333.0,
+        "commerce": 27.0,
+        "total_per_resident": 360.0
+      },
+      "再加小村落不可同成员": {
+        "tax": 333.0,
+        "commerce": 27.0,
+        "total_per_resident": 360.0
+      }
+    },
+    "note": "pool 40 and shared +100% cap from 城镇经营 5.1.1; tax is >=80% of per-resident income, so shops are economically a 3-kind business; later kinds pay for effects/prosperity/combos"
+  },
+  "housing": {
+    "new_house_price_with_n_existing": {
+      "0": 2000,
+      "5": 3500,
+      "10": 5000,
+      "15": 6500,
+      "20": 8000,
+      "30": 11000
+    },
+    "upgrade_to_tile_roof": "3000 gold + 80 steel (+10 pop)",
+    "upgrade_to_apartment": "5000 gold (+10 pop)",
+    "new_house_cheaper_than_tile_upgrade_for_n_at_most": 3,
+    "new_house_dearer_than_apartment_upgrade_for_n_at_or_above": 10,
+    "gold_per_new_pop_at_n15": 650.0,
+    "payback_min_at_n15": 3.61
+  },
+  "fixed_gold_rewards_vs_income_seconds": {
+    "高利贷立即金币": {
+      "600": 241.4,
+      "1200": 131.2,
+      "1800": 92.1,
+      "2400": 105.7
+    },
+    "清场奖金封顶": {
+      "600": 32.2,
+      "1200": 17.5,
+      "1800": 12.3,
+      "2400": 14.1
+    },
+    "余粮生息封顶(15屋)": {
+      "600": 16.9,
+      "1200": 9.2,
+      "1800": 6.4,
+      "2400": 7.4
+    },
+    "英雄复活费": {
+      "600": 80.5,
+      "1200": 43.7,
+      "1800": 30.7,
+      "2400": 35.2
+    },
+    "丰饶之种(+20/空闲人/分)_每分钟": {
+      "at_final_free_pop_214": 4280,
+      "share_of_net_per_min_at_2997": 0.157
+    },
+    "unit_note": "values are SECONDS of that moment's net income (rows) / gold per minute (丰饶之种)"
+  },
+  "town_level_timeline_vs_doc_target": {
+    "2": {
+      "first_seconds": 339,
+      "minutes": 5.7,
+      "target_minutes": [
+        3,
+        5
+      ],
+      "inside_target": false
+    },
+    "3": {
+      "first_seconds": 703,
+      "minutes": 11.7,
+      "target_minutes": [
+        8,
+        14
+      ],
+      "inside_target": true
+    },
+    "4": {
+      "first_seconds": 1003,
+      "minutes": 16.7,
+      "target_minutes": [
+        16,
+        24
+      ],
+      "inside_target": true
+    },
+    "5": {
+      "first_seconds": 1618,
+      "minutes": 27.0,
+      "target_minutes": [
+        25,
+        35
+      ],
+      "inside_target": true
+    }
+  },
+  "prosperity_arithmetic": {
+    "people_incl_city": 240,
+    "six_shop_kinds": 48,
+    "legal_combos": 40,
+    "cinema": 10,
+    "sum": 338,
+    "town_hall_would_add": 20,
+    "sum_with_town_hall": 358,
+    "lv6_threshold": 340,
+    "note": "town hall is a Lv5 public building (+20); the 'Lv6 unreachable' statement holds only if it is excluded"
+  },
+  "steel_mills": {
+    "mills_built_in_route": 1,
+    "mines_built": 5,
+    "extra_mill_marginal_steel_per_min_per_mine_from_base20": {
+      "2nd": 7.5,
+      "3rd": 5.625,
+      "4th": 4.219
+    },
+    "iron_wait_seconds": 496,
+    "extra_mill_cost": "7000 gold + 40 steel + 200/min upkeep + 100 energy"
+  },
+  "economy_pool_card_value": {
+    "旧房翻新": {
+      "upgrades_in_route": 8,
+      "steel_saved_if_steel_also_-40pct": 256.0,
+      "gold_saved_if_gold_only": 9600.0,
+      "steel_saved_share_of_route_steel": 0.092,
+      "gold_saved_seconds_of_net_at_2400": 33.8,
+      "ruling_needed": "card text says 费用 -40%; if steel is not discounted the card is worth ~0 in a gold-glut game"
+    },
+    "夜市灯火": {
+      "assumed_covered_residents": 60,
+      "average_extra_gold_per_min": 144.0,
+      "share_of_net_at_1200": 0.0105,
+      "share_of_net_at_2400": 0.0085,
+      "note": "upper-ish bound (both tavern and inn assumed present); pool cap 40/resident also applies"
+    }
+  },
+  "crystal_from_drops_estimate": {
+    "plain_in_small_big_waves": 212,
+    "expected_crystal_per_plain": 0.3,
+    "wave_plain_drops": 63.6,
+    "normal_spawn_points_one_door": 108,
+    "normal_spawn_points_two_doors_upper": 216,
+    "normal_spawn_drops_if_all_plain_one_door": 32.4,
+    "normal_spawn_drops_if_all_plain_two_doors": 64.8,
+    "total_expected_range": [
+      96.0,
+      128.4
+    ],
+    "magic_route_need_for_two_hubs": 400,
+    "alchemy_cap_over_50min_after_hub_at_10min": "15/day x 4-5 days = 60-75",
+    "note": "all kills assumed and every normal-spawn point assumed a plain goblin; real kills/leaks/other types lower it"
+  },
+  "opening_replay_vs_成本体系_section8": {
+    "tower_first_affordable": {
+      "tower_paid_second": 52,
+      "gold_at_52": 5,
+      "residents_at_52": 6,
+      "gold_at_60": 340,
+      "residents_at_60": 8,
+      "gold_at_70": 815,
+      "residents_at_70": 10,
+      "gold_at_120": 3415,
+      "residents_at_120": 10
+    },
+    "no_tower": {
+      "gold_at_52": 2405,
+      "residents_at_52": 6,
+      "gold_at_60": 2740,
+      "residents_at_60": 8,
+      "gold_at_70": 3215,
+      "residents_at_70": 10,
+      "gold_at_120": 5815,
+      "residents_at_120": 10
+    },
+    "doc_claims": {
+      "tower_paid_second": 52,
+      "balance_at_60": 340,
+      "no_tower_balance_at_60": 2740
+    }
+  },
+  "proposal_affordability": {
+    "魔力护盾": {
+      "gold": 3500,
+      "seconds_of_net_income_at_1800": 10.7
+    },
+    "雷电强化": {
+      "gold": 3000,
+      "seconds_of_net_income_at_1800": 9.2
+    },
+    "星象殿1→2": {
+      "gold": 7000,
+      "seconds_of_net_income_at_1800": 21.5
+    },
+    "星象殿2→3": {
+      "gold": 12000,
+      "seconds_of_net_income_at_1800": 36.8
+    },
+    "法师营地被毁后重建到3本": {
+      "gold": 24000,
+      "seconds_of_net_income_at_1800": 73.7
+    },
+    "星象殿升本回本单位数(每单位约+20%×均价)": {
+      "avg_unit_gold_4800to6000": 5400,
+      "value_per_unit_20pct": 1080,
+      "break_even_units_1to2": 6.5,
+      "兵营1to2_for_reference": 7.5,
+      "圣堂1to2_for_reference": 5.9
+    },
+    "油井维持费200→120_每50分钟每座省": 4000
+  },
+  "unit_soft_cap_arithmetic_at_1800": {
+    "free_pop": 140,
+    "net_per_min": 19540,
+    "gold": 59426.9,
+    "militia_only_cases": {
+      "20": {
+        "purchase_gold": 24000,
+        "affordable_from_1800_balance": true,
+        "net_per_min_after": 13940,
+        "net_drop_share": 0.287,
+        "pop_free_after": 120
+      },
+      "40": {
+        "purchase_gold": 48000,
+        "affordable_from_1800_balance": true,
+        "net_per_min_after": 8340,
+        "net_drop_share": 0.573,
+        "pop_free_after": 100
+      },
+      "80": {
+        "purchase_gold": 96000,
+        "affordable_from_1800_balance": false,
+        "net_per_min_after": -2860,
+        "net_drop_share": 1.146,
+        "pop_free_after": 60
+      }
+    },
+    "note": "produces no combat claim; shows that extra units are paid by lost tax, so late idle gold is a property of the light-army scripted route, not proof that gold has no use"
+  }
+}

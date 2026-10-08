@@ -1,0 +1,211 @@
+{
+  "schema": "round5_map_supply_v1",
+  "seed": 20260918,
+  "scope": "one actual seed, candidate walk grid, not engine navigation",
+  "generator_province_rules": {
+    "iron": {
+      "province_count": 9,
+      "per_province": [
+        2,
+        5
+      ],
+      "expected_points": 31.5
+    },
+    "coal": {
+      "province_count": 8,
+      "per_province": [
+        2,
+        5
+      ],
+      "expected_points": 28.0
+    },
+    "oil": {
+      "province_count": 5,
+      "per_province": [
+        2,
+        4
+      ],
+      "expected_points": 15.0
+    },
+    "offshore": {
+      "province_count": 5,
+      "per_province": [
+        2,
+        5
+      ],
+      "expected_points": 17.5
+    }
+  },
+  "per_kind": {
+    "iron": {
+      "world_total": 34,
+      "reachable_from_spawn_on_candidate_grid": 9,
+      "expected_world_total_from_rules": 31.5,
+      "straight_nearest_5": [
+        89.7,
+        289.6,
+        302.6,
+        340.8,
+        355.1
+      ],
+      "reachable_path_nearest_5": [
+        427.2,
+        528.9,
+        539.2,
+        676.7,
+        783.5
+      ],
+      "yield_band_counts_all": {
+        "1.15": 8,
+        "1.3": 17,
+        "1.5": 8,
+        "1.0": 1
+      },
+      "yield_band_counts_reachable": {
+        "1.15": 4,
+        "1.3": 5
+      },
+      "reachable_supply_upper_bound_at_actual_multipliers": 222.0
+    },
+    "coal": {
+      "world_total": 27,
+      "reachable_from_spawn_on_candidate_grid": 8,
+      "expected_world_total_from_rules": 28.0,
+      "straight_nearest_5": [
+        24.6,
+        29.8,
+        278.1,
+        314.8,
+        343.7
+      ],
+      "reachable_path_nearest_5": [
+        17.0,
+        20.0,
+        430.3,
+        614.2,
+        676.5
+      ],
+      "yield_band_counts_all": {
+        "1.0": 2,
+        "1.15": 8,
+        "1.3": 7,
+        "1.5": 10
+      },
+      "yield_band_counts_reachable": {
+        "1.0": 2,
+        "1.15": 3,
+        "1.3": 3
+      },
+      "reachable_supply_upper_bound_at_actual_multipliers": 2805.0
+    },
+    "oil": {
+      "world_total": 13,
+      "reachable_from_spawn_on_candidate_grid": 10,
+      "expected_world_total_from_rules": 15.0,
+      "straight_nearest_5": [
+        250.2,
+        286.1,
+        287.9,
+        298.7,
+        343.1
+      ],
+      "reachable_path_nearest_5": [
+        420.2,
+        486.6,
+        529.6,
+        556.2,
+        652.7
+      ],
+      "yield_band_counts_all": {
+        "1.15": 8,
+        "1.3": 3,
+        "1.5": 2
+      },
+      "yield_band_counts_reachable": {
+        "1.15": 8,
+        "1.3": 2
+      },
+      "reachable_supply_upper_bound_at_actual_multipliers": 4720.0
+    },
+    "offshore": {
+      "world_total": 17,
+      "reachable_from_spawn_on_candidate_grid": 0,
+      "expected_world_total_from_rules": 17.5,
+      "straight_nearest_5": [
+        431.0,
+        614.7,
+        665.6,
+        713.2,
+        785.8
+      ],
+      "reachable_path_nearest_5": [],
+      "yield_band_counts_all": {
+        "1.5": 11,
+        "1.3": 5,
+        "1.15": 1
+      },
+      "yield_band_counts_reachable": {},
+      "reachable_supply_upper_bound_at_actual_multipliers": 0
+    }
+  },
+  "first_mine_reality_check": {
+    "design_starter_range_m": 200.0,
+    "generated_iron_within_range": 1,
+    "generated_iron_within_range_reachable": 0,
+    "nearest_reachable_iron_straight_m": 289.6,
+    "nearest_reachable_iron_path_m": 427.2,
+    "nearest_reachable_iron_multiplier": 1.15,
+    "nearest_coal_path_m": 17.0,
+    "second_coal_path_m": 20.0,
+    "model_first_mine_walk_s_at_120m_x1.25": 60,
+    "real_seed_first_iron_walk_s_one_way": 171,
+    "steel_per_min_first_mine_model": 20.0,
+    "steel_per_min_first_mine_real_seed": 23.0
+  },
+  "steel_mill_100m_coverage_reachable_iron": {
+    "reachable_iron_points": 9,
+    "max_points_covered_by_one_100m_mill": 2,
+    "nearest_neighbour_distance_median_m": 144.6,
+    "pairwise_distance_nearest_10": [
+      51.2,
+      79.1,
+      103.1,
+      117.1,
+      125.0,
+      128.7,
+      144.6,
+      146.2,
+      155.8,
+      234.2
+    ],
+    "all_iron_points": 34,
+    "all_iron_nearest_neighbour_median_m": 68.4,
+    "all_iron_max_covered_by_one_100m_mill_free_centre": 5,
+    "reachable_iron_max_covered_free_centre": 4,
+    "design_doc_claim": "地图与资源点5.5: 相邻矿点间距中位数约113m, 100m炼钢厂基本照顾整片矿区"
+  },
+  "base_rate_sync": {
+    "code_base_rate_units_per_second_placeholder": {
+      "iron": 1.0,
+      "coal": 1.2,
+      "oil": 1.1,
+      "offshore": 1.6
+    },
+    "design_values": {
+      "iron_steel_per_min": 20,
+      "iron_steel_per_second": 0.3333,
+      "coal_energy": 300,
+      "oil_energy": 400,
+      "offshore_energy": 800
+    },
+    "ratios_oil_over_coal_code_vs_design": [
+      0.917,
+      1.333
+    ],
+    "ratios_offshore_over_coal_code_vs_design": [
+      1.333,
+      2.667
+    ],
+    "other_gd_references_to_base_rate": 0
+  }
+}

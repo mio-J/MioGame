@@ -1,0 +1,1096 @@
+{
+  "schema": "round5_doc_audit_v1",
+  "scope": "document text only; no gameplay/balance claim",
+  "master_rows_parsed": 52,
+  "objects_compared": 39,
+  "numeric_mismatches": [],
+  "compared_rows": [
+    {
+      "object": "传送阵",
+      "master_cost": {
+        "gold": 6000.0,
+        "steel": 0.0,
+        "crystal": 50.0
+      },
+      "doc_cost": {
+        "gold": 6000.0,
+        "steel": 0.0,
+        "crystal": 50.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 200.0,
+      "doc_upkeep": 200.0,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "凝霜塔",
+      "master_cost": {
+        "gold": 3600.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 3600.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 260.0,
+      "doc_upkeep": 260.0,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "双重箭塔",
+      "master_cost": {
+        "gold": 4800.0,
+        "steel": 40.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 4800.0,
+        "steel": 40.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 400.0,
+      "doc_upkeep": 400.0,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "圣堂",
+      "master_cost": {
+        "gold": 5000.0,
+        "steel": 0.0,
+        "crystal": 40.0
+      },
+      "doc_cost": {
+        "gold": 5000.0,
+        "steel": 0.0,
+        "crystal": 40.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": 0.0,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "无人机坞",
+      "master_cost": {
+        "gold": 10000.0,
+        "steel": 120.0,
+        "crystal": 70.0
+      },
+      "doc_cost": {
+        "gold": 10000.0,
+        "steel": 120.0,
+        "crystal": 70.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 600.0,
+      "doc_upkeep": 600.0,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "星象殿",
+      "master_cost": {
+        "gold": 9000.0,
+        "steel": 0.0,
+        "crystal": 80.0
+      },
+      "doc_cost": {
+        "gold": 9000.0,
+        "steel": 0.0,
+        "crystal": 80.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 600.0,
+      "doc_upkeep": 600.0,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "曙光",
+      "master_cost": {
+        "gold": 18000.0,
+        "steel": 180.0,
+        "crystal": 160.0
+      },
+      "doc_cost": {
+        "gold": 18000.0,
+        "steel": 180.0,
+        "crystal": 160.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 1000.0,
+      "doc_upkeep": 1000.0,
+      "master_energy": 300.0,
+      "doc_energy": 300.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "核弹发射井",
+      "master_cost": {
+        "gold": 14000.0,
+        "steel": 200.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 14000.0,
+        "steel": 200.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 1000.0,
+      "doc_upkeep": 1000.0,
+      "master_energy": 200.0,
+      "doc_energy": 200.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "火炮塔",
+      "master_cost": {
+        "gold": 5600.0,
+        "steel": 60.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 5600.0,
+        "steel": 60.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 400.0,
+      "doc_upkeep": 400.0,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "灵魂熔炉",
+      "master_cost": {
+        "gold": 11000.0,
+        "steel": 0.0,
+        "crystal": 100.0
+      },
+      "doc_cost": {
+        "gold": 11000.0,
+        "steel": 0.0,
+        "crystal": 100.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 700.0,
+      "doc_upkeep": 700.0,
+      "master_energy": 120.0,
+      "doc_energy": 120.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "箭塔",
+      "master_cost": {
+        "gold": 2400.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 2400.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 200.0,
+      "doc_upkeep": 200.0,
+      "master_energy": 0.0,
+      "doc_energy": null,
+      "upkeep_ok": true,
+      "energy_ok": null
+    },
+    {
+      "object": "缚灵塔",
+      "master_cost": {
+        "gold": 8000.0,
+        "steel": 40.0,
+        "crystal": 60.0
+      },
+      "doc_cost": {
+        "gold": 8000.0,
+        "steel": 40.0,
+        "crystal": 60.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 600.0,
+      "doc_upkeep": 600.0,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "腐蚀塔",
+      "master_cost": {
+        "gold": 4200.0,
+        "steel": 40.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 4200.0,
+        "steel": 40.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 400.0,
+      "doc_upkeep": 400.0,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "裁决",
+      "master_cost": {
+        "gold": 4600.0,
+        "steel": 0.0,
+        "crystal": 30.0
+      },
+      "doc_cost": {
+        "gold": 4600.0,
+        "steel": 0.0,
+        "crystal": 30.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 400.0,
+      "doc_upkeep": 400.0,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "造船厂",
+      "master_cost": {
+        "gold": 6000.0,
+        "steel": 60.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 6000.0,
+        "steel": 60.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 400.0,
+      "doc_upkeep": 400.0,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "钢雨",
+      "master_cost": {
+        "gold": 10000.0,
+        "steel": 120.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 10000.0,
+        "steel": 120.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 650.0,
+      "doc_upkeep": 650.0,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "雷环塔",
+      "master_cost": {
+        "gold": 4800.0,
+        "steel": 0.0,
+        "crystal": 30.0
+      },
+      "doc_cost": {
+        "gold": 4800.0,
+        "steel": 0.0,
+        "crystal": 30.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 400.0,
+      "doc_upkeep": 400.0,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "风暴尖塔",
+      "master_cost": {
+        "gold": 9000.0,
+        "steel": 0.0,
+        "crystal": 70.0
+      },
+      "doc_cost": {
+        "gold": 9000.0,
+        "steel": 0.0,
+        "crystal": 70.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 600.0,
+      "doc_upkeep": 600.0,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "魔导护盾器",
+      "master_cost": {
+        "gold": 2400.0,
+        "steel": 20.0,
+        "crystal": 20.0
+      },
+      "doc_cost": {
+        "gold": 2400.0,
+        "steel": 20.0,
+        "crystal": 20.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 300.0,
+      "doc_upkeep": 300.0,
+      "master_energy": 60.0,
+      "doc_energy": 60.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "主角雕像",
+      "master_cost": {
+        "gold": 20000.0,
+        "steel": 200.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 20000.0,
+        "steel": 200.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "太阳能发电站",
+      "master_cost": {
+        "gold": 10000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 10000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": null,
+      "upkeep_ok": true,
+      "energy_ok": null
+    },
+    {
+      "object": "市政厅",
+      "master_cost": {
+        "gold": 24000.0,
+        "steel": 120.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 24000.0,
+        "steel": 120.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 600.0,
+      "doc_upkeep": 600.0,
+      "master_energy": 200.0,
+      "doc_energy": 200.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "旅馆",
+      "master_cost": {
+        "gold": 6000.0,
+        "steel": 30.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 6000.0,
+        "steel": 30.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "杂货铺",
+      "master_cost": {
+        "gold": 2000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 2000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "油井",
+      "master_cost": {
+        "gold": 5000.0,
+        "steel": 40.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 5000.0,
+        "steel": 40.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 200.0,
+      "doc_upkeep": 200.0,
+      "master_energy": 0.0,
+      "doc_energy": null,
+      "upkeep_ok": true,
+      "energy_ok": null
+    },
+    {
+      "object": "海上石油平台",
+      "master_cost": {
+        "gold": 10000.0,
+        "steel": 100.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 10000.0,
+        "steel": 100.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 300.0,
+      "doc_upkeep": 300.0,
+      "master_energy": 0.0,
+      "doc_energy": null,
+      "upkeep_ok": true,
+      "energy_ok": null
+    },
+    {
+      "object": "炼金坊",
+      "master_cost": {
+        "gold": 5000.0,
+        "steel": 0.0,
+        "crystal": 25.0
+      },
+      "doc_cost": {
+        "gold": 5000.0,
+        "steel": 0.0,
+        "crystal": 25.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 300.0,
+      "doc_upkeep": 300.0,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "炼钢厂",
+      "master_cost": {
+        "gold": 7000.0,
+        "steel": 40.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 7000.0,
+        "steel": 40.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 200.0,
+      "doc_upkeep": 200.0,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "煤矿",
+      "master_cost": {
+        "gold": 3000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 3000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 100.0,
+      "doc_upkeep": 100.0,
+      "master_energy": 0.0,
+      "doc_energy": null,
+      "upkeep_ok": true,
+      "energy_ok": null
+    },
+    {
+      "object": "电器行",
+      "master_cost": {
+        "gold": 8000.0,
+        "steel": 60.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 8000.0,
+        "steel": 60.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 50.0,
+      "doc_energy": 50.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "电影院",
+      "master_cost": {
+        "gold": 8000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 8000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 300.0,
+      "doc_upkeep": 300.0,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "百货公司",
+      "master_cost": {
+        "gold": 16000.0,
+        "steel": 150.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 16000.0,
+        "steel": 150.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 100.0,
+      "doc_energy": 100.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "药水铺",
+      "master_cost": {
+        "gold": 4000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 4000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "酒馆",
+      "master_cost": {
+        "gold": 3000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 3000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "采矿场",
+      "master_cost": {
+        "gold": 3000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": null,
+      "cost_ok": null,
+      "master_upkeep": 100.0,
+      "doc_upkeep": 100.0,
+      "master_energy": 0.0,
+      "doc_energy": null,
+      "upkeep_ok": true,
+      "energy_ok": null
+    },
+    {
+      "object": "铁匠铺",
+      "master_cost": {
+        "gold": 3000.0,
+        "steel": 20.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 3000.0,
+        "steel": 20.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "集市",
+      "master_cost": {
+        "gold": 5000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 5000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "面包房",
+      "master_cost": {
+        "gold": 2000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 2000.0,
+        "steel": 0.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 0.0,
+      "doc_energy": 0.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    },
+    {
+      "object": "魔导器专卖店",
+      "master_cost": {
+        "gold": 10000.0,
+        "steel": 80.0,
+        "crystal": 0.0
+      },
+      "doc_cost": {
+        "gold": 10000.0,
+        "steel": 80.0,
+        "crystal": 0.0
+      },
+      "cost_ok": true,
+      "master_upkeep": 0.0,
+      "doc_upkeep": null,
+      "master_energy": 80.0,
+      "doc_energy": 80.0,
+      "upkeep_ok": true,
+      "energy_ok": true
+    }
+  ],
+  "not_fully_checked": [
+    "箭塔",
+    "太阳能发电站",
+    "油井",
+    "海上石油平台",
+    "煤矿",
+    "采矿场"
+  ],
+  "stale_phrase_hits": [
+    {
+      "issue": "研究院/法师营地升本门槛写总人口，已改城镇等级",
+      "file": "项目文档/设计文档/建筑/军事建筑/研究院.md",
+      "line": 24,
+      "text": "| 建成（科技 2 本） | 8000 金币 + 100 钢铁 | **200** | 总人口 50 |"
+    },
+    {
+      "issue": "研究院/法师营地升本门槛写总人口，已改城镇等级",
+      "file": "项目文档/设计文档/建筑/军事建筑/研究院.md",
+      "line": 25,
+      "text": "| 2 → 3 本 | 16000 金币 + 300 钢铁 | **400**（不叠加，由 200 变为 400） | 总人口 120 |"
+    },
+    {
+      "issue": "文档称升本要看总人口",
+      "file": "项目文档/设计文档/建筑/军事建筑/研究院.md",
+      "line": 18,
+      "text": "它本身不生产单位、不参与战斗。科技靠经营建设成长，所以升本要看总人口，花费的是钢铁，见[科技系统](../../系统/科技系统.md)。"
+    },
+    {
+      "issue": "研究价格/时间/本数仍称待定，成本体系5已有",
+      "file": "项目文档/设计文档/建筑/军事建筑/研究院.md",
+      "line": 68,
+      "text": "研究的价格、时间、本数要求待定。"
+    },
+    {
+      "issue": "研究价格/时间/本数仍称待定，成本体系5已有",
+      "file": "项目文档/设计文档/建筑/军事建筑/法师营地.md",
+      "line": 67,
+      "text": "研究的价格、时间、本数要求待定。"
+    },
+    {
+      "issue": "电影院/市政厅仍挂研究院本数，已改城镇等级",
+      "file": "项目文档/设计文档/建筑/军事建筑/研究院.md",
+      "line": 53,
+      "text": "| 科技 2 本（建成） | [双重箭塔](双重箭塔.md)（可升级为多重箭塔）、[炼钢厂](../经营建筑/炼钢厂.md)、[电影院](../经营建筑/电影院.md)、油井、海上石油平台；与法师营地 2 本共同解锁[魔导护盾器](魔导护盾器.md) |"
+    },
+    {
+      "issue": "电影院/市政厅仍挂研究院本数，已改城镇等级",
+      "file": "项目文档/设计文档/建筑/军事建筑/研究院.md",
+      "line": 54,
+      "text": "| 科技 3 本 | [市政厅](../经营建筑/市政厅.md)、太阳能发电站、科技 3 本的 2 座塔（机枪塔等，待设计） |"
+    },
+    {
+      "issue": "3本塔仍写待设计占位（机枪塔/雷霆塔）",
+      "file": "项目文档/设计文档/建筑/军事建筑/研究院.md",
+      "line": 54,
+      "text": "| 科技 3 本 | [市政厅](../经营建筑/市政厅.md)、太阳能发电站、科技 3 本的 2 座塔（机枪塔等，待设计） |"
+    },
+    {
+      "issue": "3本塔仍写待设计占位（机枪塔/雷霆塔）",
+      "file": "项目文档/设计文档/建筑/军事建筑/法师营地.md",
+      "line": 53,
+      "text": "| 魔法 3 本 | [星象殿](星象殿.md)、魔法 3 本的 2 座塔（雷霆塔等，待设计）；解锁[法师](../../单位/法师.md)的前置条件之一 |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/主角雕像.md",
+      "line": 37,
+      "text": "| 成本 | **20000 金币 + 200 钢铁** | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/旅馆.md",
+      "line": 36,
+      "text": "| 成本 | **6000 金币 + 30 钢铁**（每多一座 +400 金币） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/杂货铺.md",
+      "line": 36,
+      "text": "| 成本 | **2000 金币**（每多一座 +400） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/油井.md",
+      "line": 37,
+      "text": "| 成本 | **5000 金币 + 40 钢铁** | 设计提案（金币已按 ×20 数量级），待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/海上石油平台.md",
+      "line": 38,
+      "text": "| 成本 | **10000 金币 + 100 钢铁** | 设计提案（金币已按 ×20 数量级），待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/煤矿.md",
+      "line": 37,
+      "text": "| 成本 | **3000 金币** | 设计提案（金币已按 ×20 数量级），待写入[成本体系](../../系统/成本体系.md)；与采矿场相同 |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/电器行.md",
+      "line": 36,
+      "text": "| 成本 | **8000 金币 + 60 钢铁**（每多一座 +400 金币） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/百货公司.md",
+      "line": 37,
+      "text": "| 成本 | **16000 金币 + 150 钢铁** | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/药水铺.md",
+      "line": 36,
+      "text": "| 成本 | **4000 金币**（每多一座 +400） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/酒馆.md",
+      "line": 36,
+      "text": "| 成本 | **3000 金币**（每多一座 +400） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/铁匠铺.md",
+      "line": 37,
+      "text": "| 成本 | **3000 金币 + 20 钢铁**（每多一座 +400 金币） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/集市.md",
+      "line": 36,
+      "text": "| 成本 | **5000 金币**（每多一座 +400） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/面包房.md",
+      "line": 36,
+      "text": "| 成本 | **2000 金币**（每多一座 +400） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "价格仍写待写入成本体系（主表已收录）",
+      "file": "项目文档/设计文档/建筑/经营建筑/魔导器专卖店.md",
+      "line": 36,
+      "text": "| 成本 | **10000 金币 + 80 钢铁**（每多一座 +400 金币） | 设计提案，待写入[成本体系](../../系统/成本体系.md) |"
+    },
+    {
+      "issue": "状态栏仍写价格待定（主表已有价格）",
+      "file": "项目文档/设计文档/建筑/经营建筑/市政厅.md",
+      "line": 9,
+      "text": "| 状态 | 由城镇等级解锁（2026-10-07，原为 3 本建筑）、增加附近民居金币收入 +45%、范围比电影院小，已确定；具体范围与全部数值为设计提案；价格待定；本轮优化为原型测试基线 |"
+    },
+    {
+      "issue": "状态栏仍写价格待定（主表已有价格）",
+      "file": "项目文档/设计文档/建筑/经营建筑/炼金坊.md",
+      "line": 9,
+      "text": "| 状态 | 魔法 2 本建筑、资源之间相互转换、每天有限额且每天刷新，已确定；名称暂定；汇率、限额与其余数值为设计提案；价格待定；本轮优化为原型测试基线 |"
+    },
+    {
+      "issue": "状态栏仍写价格待定（主表已有价格）",
+      "file": "项目文档/设计文档/建筑/经营建筑/炼钢厂.md",
+      "line": 9,
+      "text": "| 状态 | 2 本建筑、建在采矿场附近、提升采矿场效率、加成可非线性叠加（第 1 座 +50%，每多一座收益递减）已确定；归属科技体系与全部数值为设计提案；价格待定；本轮优化为原型测试基线 |"
+    },
+    {
+      "issue": "状态栏仍写价格待定（主表已有价格）",
+      "file": "项目文档/设计文档/建筑/经营建筑/电影院.md",
+      "line": 9,
+      "text": "| 状态 | 由城镇等级解锁（2026-10-07，原为 2 本建筑）、增加附近民居金币收入 +30%（电影院之间不叠加，与市政厅可叠加），已确定；范围与全部数值为设计提案；价格待定；本轮优化为原型测试基线 |"
+    },
+    {
+      "issue": "状态栏仍写价格待定（主表已有价格）",
+      "file": "项目文档/设计文档/系统/能源体系.md",
+      "line": 46,
+      "text": "| 价格 | **10000 金币**（煤矿等资源点建筑的数倍，具体价格待定） |"
+    },
+    {
+      "issue": "能源体系仍写具体价格待定",
+      "file": "项目文档/设计文档/系统/能源体系.md",
+      "line": 46,
+      "text": "| 价格 | **10000 金币**（煤矿等资源点建筑的数倍，具体价格待定） |"
+    },
+    {
+      "issue": "能源体系遗留放大10倍待确认",
+      "file": "项目文档/设计文档/系统/能源体系.md",
+      "line": 69,
+      "text": "产出单位改为百位数后，耗能数值按原提案同比例放大 10 倍，待确认。"
+    },
+    {
+      "issue": "能源建筑属性仍列待设计，但建筑文档已有",
+      "file": "项目文档/设计文档/系统/能源体系.md",
+      "line": 93,
+      "text": "| 能源建筑属性 | 生命值、护甲、占地、价格、维持费 |"
+    },
+    {
+      "issue": "科技系统仍称法师营地/研究院生命值等待设计",
+      "file": "项目文档/设计文档/系统/科技系统.md",
+      "line": 152,
+      "text": "| 法师营地、研究院 | 生命值、护甲、占地、建造时间 |"
+    },
+    {
+      "issue": "箭塔Lv2是否需2本仍写待定，科技系统6已定",
+      "file": "项目文档/设计文档/系统/科技系统.md",
+      "line": 80,
+      "text": "| **2 本** | 研究院 / 法师营地建成 | 油井、海上石油平台、[炼钢厂](../建筑/经营建筑/炼钢厂.md)、各体系 2 座 2 本塔（科技：[双重箭塔](../建筑/军事建筑/双重箭塔.md)等）；箭塔 Lv2 是否需要 2 本待定 | 能源建筑已确定，其余待定 "
+    },
+    {
+      "issue": "箭塔Lv2是否需2本仍写待定，科技系统6已定",
+      "file": "项目文档/设计文档/建筑/军事建筑/研究院.md",
+      "line": 56,
+      "text": "箭塔 Lv2（弩塔）是否需要研究院 2 本，待定。"
+    },
+    {
+      "issue": "核心循环3.1仍写箭塔Lv2价格待定",
+      "file": "项目文档/设计文档/核心玩法循环.md",
+      "line": 73,
+      "text": "- **钢铁与升级线**：箭塔可升级为箭塔 Lv2（即弩塔，价格待定，预计消耗钢铁），体现从木石到金属的推进；火炮塔等是科技体系解锁的独立新塔，见 [科技系统](系统/科技系统.md)。"
+    },
+    {
+      "issue": "核心循环6仍列维持费金额待设计（5.2已定）",
+      "file": "项目文档/设计文档/核心玩法循环.md",
+      "line": 157,
+      "text": "| 维持费 | 各单位与建筑的具体金额 |"
+    },
+    {
+      "issue": "开拓者人口占用数量仍写待定（核心循环4已定1人）",
+      "file": "项目文档/设计文档/单位/开拓者.md",
+      "line": 30,
+      "text": "| 人口占用 | 占用人口 | 已确定；数量待定 |"
+    },
+    {
+      "issue": "开拓者建造速度仍写待定",
+      "file": "项目文档/设计文档/单位/开拓者.md",
+      "line": 32,
+      "text": "| 建造速度 | 待定 | 待设计 |"
+    },
+    {
+      "issue": "炼金坊仍用旧采矿场每分钟10钢铁作对照",
+      "file": "项目文档/设计文档/建筑/经营建筑/炼金坊.md",
+      "line": 100,
+      "text": "| 一天（10 分钟）最多换到的钢铁 | 50，相当于每分钟 5 钢铁，只有一座采矿场（每分钟 10）的一半 |"
+    },
+    {
+      "issue": "炼金坊仍用旧中期净收入7000/分钟",
+      "file": "项目文档/设计文档/建筑/经营建筑/炼金坊.md",
+      "line": 101,
+      "text": "| 一天（10 分钟）最多换到的金币 | 10000，相当于每分钟 1000 金币，远低于中期净收入（约 7000 / 分钟） |"
+    },
+    {
+      "issue": "城镇经营残留乱码句：不能仅由人口估算 人",
+      "file": "项目文档/设计文档/系统/城镇经营.md",
+      "line": 79,
+      "text": "- Lv3 不能仅由人口估算 人，对应原来的「人口 50」，基本一致；"
+    },
+    {
+      "issue": "城镇经营残留乱码句：不能仅由人口估算 人",
+      "file": "项目文档/设计文档/系统/城镇经营.md",
+      "line": 80,
+      "text": "- Lv5 不能仅由人口估算 人，**比原来的「人口 120」难一些**，需要试玩确认。"
+    },
+    {
+      "issue": "城镇6级名称不一致（开拓之都/开拓之城）",
+      "file": "项目文档/设计文档/系统/城镇经营.md",
+      "line": 258,
+      "text": "4. **城镇等级的名字**：暂用「落脚营地 → 拓荒村 → 定居镇 → 集镇 → 城镇 → 开拓之城」，可改得更有异星味道，例如「着陆营地 → … → 星港之城」。"
+    },
+    {
+      "issue": "城镇经营商店价格仍写待定/逐座递增而无数字（主表+400）",
+      "file": "项目文档/设计文档/系统/城镇经营.md",
+      "line": 96,
+      "text": "| 占地、价格 | 3 × 3 m；同种店价格逐座递增；具体价格待定 |"
+    },
+    {
+      "issue": "建造与修理出现两个4.5节编号",
+      "file": "项目文档/设计文档/系统/建造与修理.md",
+      "line": 166,
+      "text": "### 4.5 作为金币消耗口"
+    },
+    {
+      "issue": "建造与修理出现两个4.5节编号",
+      "file": "项目文档/设计文档/系统/建造与修理.md",
+      "line": 184,
+      "text": "### 4.5 生产设施升本与解锁"
+    },
+    {
+      "issue": "地图文档矿点数量/采矿速度仍列待设计",
+      "file": "项目文档/设计文档/系统/地图与资源点.md",
+      "line": 240,
+      "text": "| 矿点数量 | 世界里一共有多少个铁矿、煤矿、油田、海上油田 |"
+    },
+    {
+      "issue": "采矿场仍称矿点数量/一矿一座待定",
+      "file": "项目文档/设计文档/建筑/经营建筑/采矿场.md",
+      "line": 67,
+      "text": "| 矿点数量 | 一个矿点是否只能建一座采矿场；世界里一共有多少个铁矿点 |"
+    },
+    {
+      "issue": "采矿场钢铁用途仍写箭塔Lv2待定",
+      "file": "项目文档/设计文档/建筑/经营建筑/采矿场.md",
+      "line": 53,
+      "text": "| 箭塔升级为 Lv2（弩塔）、铁箭头研究 | 待定 | 设计提案 |"
+    },
+    {
+      "issue": "星象殿升本价格/时间/前置仍待定",
+      "file": "项目文档/设计文档/建筑/军事建筑/星象殿.md",
+      "line": 87,
+      "text": "| 升本花费 | 价格、时间、前置条件 | 待定 |"
+    }
+  ],
+  "stale_hit_count": 50
+}
